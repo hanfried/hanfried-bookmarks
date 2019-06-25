@@ -1,0 +1,225 @@
+* Bookmarks
+** Misc
+*** Anzeige von Bahn API Daten https://marudor.de/
+
+Inklusive detaillierte Wagenreihung und Anfahrtspläne für einen Bahnhof
+
+*** http://www.webpagetest.org/  - checks speed of a web page from different locations, browsers, with auth, protocols ...
+*** http://scienceandpublic.com/  - DeJargonizer
+*** https://www.usecue.com/blog/code-warriors/
+
+A true warrior masters his sword and his mind. A ‘code warrior’ masters his software and his
+system. Mastering your software is not the most difficult part, just read the quick-start and
+off you go. Mastering the system that makes your software function, however, can take a
+lifetime.
+
+*** https://hackernoon.com/a-documentation-crash-course-45006a85c15c
+*** https://github.com/timqian/star-history
+
+(1.0.0 -> 1.0.1 bugfix -> 1.1.0 new functionality -> ... -> 2.0.0 backward incompatible breaking change)
+
+*** https://tech.trello.com/ice-scoring/  - Prioritize A/B Test Ideas
+*** https://medium.com/fast-company/start-taking-back-your-online-privacy-by-making-these-4-easy-changes-def3668bf69b
+*** https://www.fast.ai/2019/05/13/blogging-advice/  - Advice for Better Blog Posts
+** Freelancer-Portale
+*** https://codecontrol.io/en/home
+** Software-Development
+*** Misc
+**** https://hackernoon.com/the-fine-art-of-fast-development-f3b1abb509da
+**** https://testing.googleblog.com/2015/04/just-say-no-to-more-end-to-end-tests.html
+**** https://medium.com/@cscalfani/goodbye-object-oriented-programming-a59cda4c0e53
+**** https://semver.org/spec/v2.0.0.html  - Semantic versioning
+**** https://github.com/github/semantic/blob/master/docs/examples.md  - Haskell library and command line tool for parsing, analyzing, and comparing source code
+*** YAML
+**** https://blog.atomist.com/in-defense-of-yaml/
+**** https://noyaml.com/
+**** https://arp242.net/weblog/yaml_probably_not_so_great_after_all.html
+*** Python
+**** Best Practices
+***** https://gist.github.com/sloria/7001839  - The Best of the Best Practices (BOBP) Guide for Python
+***** https://towardsdatascience.com/whats-init-for-me-d70a312da583  - Designing for Python package import patterns
+**** Modules
+***** https://github.com/vinta/awesome-python  - A curated list of awesome Python frameworks, libraries, software and resources.
+***** https://github.com/jpvanhal/inflection  - string transformation library. It singularizes and pluralizes English words, and transforms strings from CamelCase to underscored string.
+***** https://github.com/lepture/python-livereload  - nice file watcher
+***** https://github.com/Delgan/loguru  - Python logging made (stupidly) simple
+
+  Loguru is a library which aims to bring enjoyable logging in Python.
+
+  Did you ever feel lazy about configuring a logger and used print() instead?... I did, yet
+  logging is fundamental to every application and eases the process of debugging. Using Loguru you
+  have no excuse not to use logging from the start, this is as simple as from loguru import
+  logger.
+
+  Also, this library is intended to make Python logging less painful by adding a bunch of useful
+  functionalities that solve caveats of the standard loggers. Using logs in your application
+  should be an automatism, Loguru tries to make it both pleasant and powerful.
+
+***** https://tox.readthedocs.io/en/latest/  - standardize testing in Python
+***** https://github.com/rubik/radon and https://github.com/rubik/xenon  - measure and test program complexity
+***** https://github.com/tiangolo/fastapi  - framework, high performance, easy to learn, fast to code, ready for production
+***** https://towardsdatascience.com/an-overview-of-pythons-datatable-package-5d3a97394ee9
+*** Django
+**** https://www.youtube.com/watch?v=FPfBhqL-uek  - Django for Admins
+**** https://djangosuit.com/  - Modern theme for Django admin interface
+
+ There also alternatives w/ different pricing or open source models and different looks.
+ Note, it's not a good idea to give customers access to django admin panels (it's really only for internal purposes).
+ For externals, just give a REST API and HyperlinkedModelSerializer view.
+
+** Data Science / ML / NLP
+*** Misc
+**** https://lilianweng.github.io/lil-log/2019/03/14/are-deep-neural-networks-dramatically-overfitted.html
+
+ Give the idea to re-randomize layers or re-initialize top-layers and measure re-randomization or
+ re-initialization robustness to find a "best" iteration stop. As big DL models won't really
+ overfit in classical sense of increasing error again at some point in training, but still start
+ to memorize etc.
+
+**** https://nextjournal.com/schmudde/how-to-version-control-jupyter
+**** https://towardsdatascience.com/top-10-coding-mistakes-made-by-data-scientists-bb5bc82faaee
+**** https://medium.com/predict/five-interview-questions-to-predict-a-good-data-scientist-40d310cdcd68
+**** https://hbr.org/2019/02/how-to-choose-your-first-ai-project
+**** https://techblog.commercetools.com/building-up-a-data-science-team-from-scratch-7a7b24ba9f2d
+**** https://karpathy.github.io/2019/04/25/recipe/  - A Recipe for Training Neural Networks
+**** https://towardsdatascience.com/neural-odes-breakdown-of-another-deep-learning-breakthrough-3e78c7213795
+**** https://towardsdatascience.com/finding-good-learning-rate-and-the-one-cycle-policy-7159fe1db5d6
+*** Datasets
+**** https://www.europeandataportal.eu/de/homepage
+**** http://kitab-project.org/2019/06/08/first-open-access-release-of-our-arabic-corpus/
+**** https://tfhub.dev/  - Pretrained Models from Google & DeepMind
+
+- Text (Embeddings)
+- Image (Classification, Feature Vector, Generator, Other)
+- Video (Classification)
+
+*** Data Exploration / Feature Engineering
+**** https://github.com/pandas-profiling/pandas-profiling  - Generates profile reports from a pandas DataFrame.
+
+ The pandas df.describe() function is great but a little basic for serious exploratory data analysis.
+
+**** https://towardsdatascience.com/the-hitchhikers-guide-to-feature-extraction-b4c157e96631
+**** https://distill.pub/2016/misread-tsne/  - A nice _interactive_ overview of the effect of hyperparameters for t-SNE
+*** Data Visualization
+**** [[https://pudding.cool/2018/10/city_3d/?fbclid=IwAR3YX_t3CyRYCMKhuqXcQ4Xxy-eg1gGJpmsK8AA8_GpPfzmfcTwWmaMk2bw][Human Terrain - Visualizing World Population in 3D]]
+**** https://link.medium.com/xL0hrHaJSV  - Data visualizations “Mistakes, we’ve drawn a few” by Sarah Leo
+**** https://towardsdatascience.com/pythons-one-liner-graph-creation-library-with-animations-hans-rosling-style-f2cb50490396
+**** https://towardsdatascience.com/its-2019-make-your-data-visualizations-interactive-with-plotly-b361e7d45dc6  - Plotly, Express, Cufflinks comparison
+**** https://towardsdatascience.com/reviewing-python-visualization-packages-fa7fe12e622b
+**** https://medium.com/nautilus-magazine/5-ways-to-lie-with-charts-173cd7fe2dc0
+**** https://modus.medium.com/how-to-not-suck-at-color-b3980ee8084a
+**** https://www.freecodecamp.org/news/fundamental-design-principles-for-non-designers-ad34c30caa7
+*** NLP
+**** Misc
+***** https://www.slideshare.net/farizbashirov  - 8 do's and don't of chatbots
+***** https://medium.com/huggingface/how-to-build-a-state-of-the-art-conversational-ai-with-transfer-learning-2d818ac26313
+***** https://towardsdatascience.com/state-of-the-art-multilingual-lemmatization-f303e8ff1a8  - State-of-the-art Multilingual Lemmatization
+***** https://link.medium.com/kQI6IF7p5V  - “HMTL: Multi-task learning for state of the art NLP” by Elvis
+
+  including ELMO etc
+
+***** https://www.analyticsvidhya.com/blog/2019/03/pretrained-models-get-started-nlp/
+***** https://towardsdatascience.com/data-augmentation-for-natural-language-processing-6ae928313a3f
+***** https://towardsdatascience.com/these-are-the-easiest-data-augmentation-techniques-in-natural-language-processing-you-can-think-of-88e393fd610
+***** https://towardsdatascience.com/reliving-avengers-infinity-war-with-spacy-and-natural-language-processing-2abcb48e4ba1  - Discovering the top nouns, verbs, entities and text similarity
+***** https://towardsdatascience.com/a-technique-for-building-nlp-classifiers-efficiently-with-transfer-learning-and-weak-supervision-a8e2f21ca9c8
+**** Tools
+***** http://www.nlpbuddy.io/  - Open Source Text Analysis Tool (Website w/ Spacy Analysis)
+
+ - Language
+ - Keywords
+ - Summary
+ - Entities
+ - Location
+ - Organization
+ - Part Of Speech
+ - Lexical (like Numerals)
+ - Tokens
+ - Noun chunks
+ - Sentences
+
+***** http://gltr.io/dist/index.html  - Giant Language model Test Room: detect whether a text could be real or fake
+
+  Read also explanation about usage in http://gltr.io/
+
+***** https://github.com/msg-systems/holmes-extractor  - information extraction from English and German texts.
+
+In all use cases, the information extraction is based on analysing the semantic relationships expressed by the component parts of each sentence:
+
+***** https://towardsdatascience.com/text-classification-with-state-of-the-art-nlp-library-flair-b541d7add21f
+
+- https://github.com/zalandoresearch/flair/
+
+***** https://talktotransformer.com/
+**** Embeddings
+***** https://nlp.stanford.edu/projects/glove/  Global Vectors for Word Representation
+***** https://towardsdatascience.com/use-cases-of-googles-universal-sentence-encoder-in-production-dd5aaab4fc15
+**** Metrics
+***** https://towardsdatascience.com/evaluating-text-output-in-nlp-bleu-at-your-own-risk-e8609665a213
+***** https://gluebenchmark.com/  - General Language Understanding Evaluation (GLUE)
+
+  nine sentence- or sentence-pair language understanding tasks built on established existing
+  datasets and selected to cover a diverse range of dataset sizes, text genres, and degrees of
+  difficulty
+
+***** http://sjmielke.com/comparing-perplexities.htm
+**** BERT / Attention / Transformers / ...
+***** https://medium.com/inside-machine-learning/what-is-a-transformer-d07dd1fbec04
+***** http://nlp.seas.harvard.edu/2018/04/03/attention.html  - annotated implementation of a transformer
+***** http://mostafadehghani.com/2019/05/05/universal-transformers/
+***** https://medium.com/synapse-dev/understanding-bert-transformer-attention-isnt-all-you-need-5839ebd396db
+***** https://medium.com/@_init_/why-bert-has-3-embedding-layers-and-their-implementation-details-9c261108e28a
+***** https://towardsdatascience.com/xlm-enhancing-bert-for-cross-lingual-language-model-5aeed9e6f14b
+***** https://towardsdatascience.com/a-review-of-bert-based-models-4ffdc0f15d58
+*** Deployments
+**** https://towardsdatascience.com/chapter-1-intro-to-aws-sagemaker-a1ecf00ec761
+** DevOps / Security
+*** Misc
+**** https://medium.com/s/story/technical-debt-is-like-tetris-168f64d8b700
+**** https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/
+**** http://onemogin.com/observability/dashboards/practitioners-guide-to-system-dashboard-design.html
+**** https://www.rookout.com/cant-git-no-satisfaction-why-we-need-a-new-gen-source-control/  - Advantages/Disadvantages of Monorepo vs Multirepo
+*** Site Reliability
+**** https://www.oreilly.com/ideas/how-to-get-started-with-site-reliability-engineering-sre
+**** https://medium.com/kudos-engineering/faking-fires-get-better-incident-management-with-practise-e61a5d66578d
+**** https://shubheksha.com/posts/2019/04/re-framing-how-we-think-about-production-incidents/
+**** https://developers.soundcloud.com/blog/alerting-on-slos
+**** https://charity.wtf/2019/05/01/friday-deploy-freezes-are-exactly-like-murdering-puppies/
+**** https://blog.turbinelabs.io/deploy-not-equal-release-part-one-4724bc1e726b
+**** https://medium.com/@copyconstruct/testing-in-production-the-safe-way-18ca102d0ef1
+*** Microservices / Serverless
+**** https://www.vinaysahni.com/best-practices-for-building-a-microservice-architecture?fbclid=IwAR1LEKYyJ6p1N2v8sf7HpxkCjgj_MQaDL6t7OizR4FWGma-hzWeFSQfHjJg#platform
+**** https://cloudncode.blog/2017/03/02/best-practices-aws-lambda-function/?fbclid=IwAR2t2c23c1VM21GNPIh0yHHGRhV9LoWYm0QOEofZ-youUYtDRLdR_UOj5Vs
+**** http://leebriggs.co.uk/blog/2019/04/13/the-fargate-illusion.html  - severless not being infrastructureless
+**** https://theburningmonk.com/2019/04/comparing-nuclio-and-aws-lambda/
+*** Containers (Docker / Kubernetes)
+**** https://pythonspeed.com/articles/base-image-python-docker-images/
+**** https://pythonspeed.com/articles/dockerizing-python-is-hard/
+**** https://semaphoreci.com/blog/docker-benefits
+**** https://matthias-endler.de/2019/maybe-you-dont-need-kubernetes/
+**** https://zwischenzugs.com/2019/03/25/aws-vs-k8s-is-the-new-windows-vs-linux/
+**** https://towardsdatascience.com/key-kubernetes-commands-741fe61fde8
+*** SSH
+**** https://yanaiela.github.io/post/remote-servers/  - Make SSH great again (config, tunnelling, ...)
+*** Security
+**** Tool https://github.com/hannob/snallygaster  - scan for secret files on HTTP Servers
+**** Video https://www.youtube.com/watch?v=Bppr9rbmwz4  - Attacking with HTTP Requests
+**** https://medium.freecodecamp.org/discovering-the-hidden-mine-of-credentials-and-sensitive-information-8e5ccfef2724
+**** https://medium.freecodecamp.org/hash-table-attack-8e4371fc5261  - The moment when you realize every server in the world is vulnerable
+**** https://blog.usejournal.com/how-to-avoid-ruining-lives-front-end-security-matters-26d4f906c7a6  - XSS and CSRF tokens
+** Gesellschaftliches
+*** https://www.youtube.com/watch?v=pKymOx9UDoM  - Harald Lesch: wenn nicht jetzt, wann dann? Vortrag
+*** http://m.spiegel.de/gesundheit/psychologie/psychotherapie-wie-ein-lobbyverband-psychisch-kranken-schadet-a-1259159.html
+*** https://www.zeit.de/kultur/2019-04/sexualitaet-jugendliche-pubertaet-youporn
+*** https://onezero.medium.com/relentless-com-life-as-a-cog-in-amazons-e-tail-machine-d46b3ef05eb8
+*** https://onezero.medium.com/the-efficiency-delusion-f6a97241e1e1
+*** https://www.youtube.com/watch?time_continue=283&v=jbkSRLYSojo  - Hans Rosling's 200 Countries, 200 Years, 4 Minutes - The Joy of Stats
+*** https://medium.com/dair-ai/examining-gender-and-race-bias-in-sentiment-analysis-systems-b04b269a653
+*** https://medium.com/the-post-grad-survival-guide/transform-your-terrible-networking-skills-with-this-psychology-trick-d61625e1d1d2
+*** https://www.bento.de/gefuehle/badeunfall-mein-freund-waere-fast-ertrunken-was-ich-daraus-gelernt-habe-a-1517a3af-5571-483b-af01-4e25d9600927
+** Math
+*** https://de.wikipedia.org/wiki/Braess-Paradoxon
+
+zusätzliche Handlungsoption unter der Annahme rationaler Einzelentscheidungen zu einer
+Verschlechterung der Situation für alle führen kann
+
