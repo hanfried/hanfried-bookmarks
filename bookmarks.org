@@ -4,6 +4,7 @@
 
 Inklusive detaillierte Wagenreihung und Anfahrtspläne für einen Bahnhof
 
+*** https://bahn.guru  - Sparpreis-Finder
 *** http://www.webpagetest.org/  - checks speed of a web page from different locations, browsers, with auth, protocols ...
 *** http://scienceandpublic.com/  - DeJargonizer
 *** https://www.usecue.com/blog/code-warriors/
@@ -76,7 +77,6 @@ lifetime.
  overfit in classical sense of increasing error again at some point in training, but still start
  to memorize etc.
 
-**** https://nextjournal.com/schmudde/how-to-version-control-jupyter
 **** https://towardsdatascience.com/top-10-coding-mistakes-made-by-data-scientists-bb5bc82faaee
 **** https://medium.com/predict/five-interview-questions-to-predict-a-good-data-scientist-40d310cdcd68
 **** https://hbr.org/2019/02/how-to-choose-your-first-ai-project
@@ -84,6 +84,11 @@ lifetime.
 **** https://karpathy.github.io/2019/04/25/recipe/  - A Recipe for Training Neural Networks
 **** https://towardsdatascience.com/neural-odes-breakdown-of-another-deep-learning-breakthrough-3e78c7213795
 **** https://towardsdatascience.com/finding-good-learning-rate-and-the-one-cycle-policy-7159fe1db5d6
+*** Jupyter Notebooks
+**** https://nextjournal.com/schmudde/how-to-version-control-jupyter
+**** https://towardsdatascience.com/advanced-jupyter-notebooks-a-tutorial-3569d8153057
+**** https://towardsdatascience.com/how-to-effortlessly-optimize-jupyter-notebooks-e864162a06ee
+**** https://github.com/fastai/fastprogress  - Simple and flexible progress bar for Jupyter Notebook and console
 *** Datasets
 **** https://www.europeandataportal.eu/de/homepage
 **** http://kitab-project.org/2019/06/08/first-open-access-release-of-our-arabic-corpus/
@@ -100,6 +105,7 @@ lifetime.
 
 **** https://towardsdatascience.com/the-hitchhikers-guide-to-feature-extraction-b4c157e96631
 **** https://distill.pub/2016/misread-tsne/  - A nice _interactive_ overview of the effect of hyperparameters for t-SNE
+**** https://towardsdatascience.com/five-command-line-tools-for-data-science-29f04e5b9c16  - especially csvkit and csvquery
 *** Data Visualization
 **** [[https://pudding.cool/2018/10/city_3d/?fbclid=IwAR3YX_t3CyRYCMKhuqXcQ4Xxy-eg1gGJpmsK8AA8_GpPfzmfcTwWmaMk2bw][Human Terrain - Visualizing World Population in 3D]]
 **** https://link.medium.com/xL0hrHaJSV  - Data visualizations “Mistakes, we’ve drawn a few” by Sarah Leo
@@ -146,14 +152,16 @@ lifetime.
 
 In all use cases, the information extraction is based on analysing the semantic relationships expressed by the component parts of each sentence:
 
+***** https://talktotransformer.com/  - See how a modern neural network completes your text.
 ***** https://towardsdatascience.com/text-classification-with-state-of-the-art-nlp-library-flair-b541d7add21f
 
 - https://github.com/zalandoresearch/flair/
 
-***** https://talktotransformer.com/
+***** https://github.com/pytorch/fairseq
 **** Embeddings
 ***** https://nlp.stanford.edu/projects/glove/  Global Vectors for Word Representation
 ***** https://towardsdatascience.com/use-cases-of-googles-universal-sentence-encoder-in-production-dd5aaab4fc15
+***** https://towardsdatascience.com/fse-2b1ffa791cf9  - Sentence Embeddings. Fast, please!
 **** Metrics
 ***** https://towardsdatascience.com/evaluating-text-output-in-nlp-bleu-at-your-own-risk-e8609665a213
 ***** https://gluebenchmark.com/  - General Language Understanding Evaluation (GLUE)
@@ -163,16 +171,23 @@ In all use cases, the information extraction is based on analysing the semantic 
   difficulty
 
 ***** http://sjmielke.com/comparing-perplexities.htm
+***** https://towardsdatascience.com/how-to-find-shortest-dependency-path-with-spacy-and-stanfordnlp-539d45d28239
 **** BERT / Attention / Transformers / ...
 ***** https://medium.com/inside-machine-learning/what-is-a-transformer-d07dd1fbec04
 ***** http://nlp.seas.harvard.edu/2018/04/03/attention.html  - annotated implementation of a transformer
 ***** http://mostafadehghani.com/2019/05/05/universal-transformers/
+***** https://medium.com/tensorflow/lingvo-a-tensorflow-framework-for-sequence-modeling-8b1d6ffba5bb
+***** https://slator.com/technology/is-googles-new-lingvo-framework-a-big-deal-for-machine-translation/
 ***** https://medium.com/synapse-dev/understanding-bert-transformer-attention-isnt-all-you-need-5839ebd396db
 ***** https://medium.com/@_init_/why-bert-has-3-embedding-layers-and-their-implementation-details-9c261108e28a
 ***** https://towardsdatascience.com/xlm-enhancing-bert-for-cross-lingual-language-model-5aeed9e6f14b
 ***** https://towardsdatascience.com/a-review-of-bert-based-models-4ffdc0f15d58
+***** https://towardsdatascience.com/what-is-xlnet-and-why-it-outperforms-bert-8d8fce710335
+***** https://medium.com/dair-ai/xlnet-outperforms-bert-on-several-nlp-tasks-9ec867bb563b
 *** Deployments
 **** https://towardsdatascience.com/chapter-1-intro-to-aws-sagemaker-a1ecf00ec761
+**** https://medium.com/datadriveninvestor/deploy-your-pytorch-model-to-production-f69460192217
+**** https://medium.com/@colinshaw_36798/fully-utilizing-your-deep-learning-gpus-61ee7acd3e57
 ** DevOps / Security
 *** Misc
 **** https://medium.com/s/story/technical-debt-is-like-tetris-168f64d8b700

@@ -1,80 +1,87 @@
 
 # Table of Contents
 
-1.  [Bookmarks](#org164a2e0)
-    1.  [Misc](#orgcace362)
-        1.  [Anzeige von Bahn API Daten https://marudor.de/](#orgf346144)
-        2.  [http://www.webpagetest.org/  - checks speed of a web page from different locations, browsers, with auth, protocols &#x2026;](#orgd28bc85)
-        3.  [http://scienceandpublic.com/  - DeJargonizer](#orga426462)
-        4.  [https://www.usecue.com/blog/code-warriors/](#org678d9c8)
-        5.  [https://hackernoon.com/a-documentation-crash-course-45006a85c15c](#orgb7cc1cf)
-        6.  [https://github.com/timqian/star-history](#orgc70cd43)
-        7.  [https://tech.trello.com/ice-scoring/  - Prioritize A/B Test Ideas](#orga8e3279)
-        8.  [https://medium.com/fast-company/start-taking-back-your-online-privacy-by-making-these-4-easy-changes-def3668bf69b](#org23f8a78)
-        9.  [https://www.fast.ai/2019/05/13/blogging-advice/  - Advice for Better Blog Posts](#orgfbad2a2)
-    2.  [Freelancer-Portale](#org07d10f0)
-        1.  [https://codecontrol.io/en/home](#orgc00aa02)
-    3.  [Software-Development](#org5ad6fa8)
-        1.  [Misc](#orgfb33517)
-        2.  [YAML](#org3bb4989)
-        3.  [Python](#org9e30598)
-        4.  [Django](#orge535c82)
-    4.  [Data Science / ML / NLP](#org44cb072)
-        1.  [Misc](#org5de56cd)
-        2.  [Datasets](#org38f6420)
-        3.  [Data Exploration / Feature Engineering](#orgec5f2a1)
-        4.  [Data Visualization](#org57630c4)
-        5.  [NLP](#org3ff1b7e)
-        6.  [Deployments](#org51a8615)
-    5.  [DevOps / Security](#org502c954)
-        1.  [Misc](#org3f63fec)
-        2.  [Site Reliability](#org81017f4)
-        3.  [Microservices / Serverless](#orgfb3711e)
-        4.  [Containers (Docker / Kubernetes)](#org3de3cb0)
-        5.  [SSH](#orgd35f9bb)
-        6.  [Security](#org028d01b)
-    6.  [Gesellschaftliches](#org71b1e8d)
-        1.  [https://www.youtube.com/watch?v=pKymOx9UDoM  - Harald Lesch: wenn nicht jetzt, wann dann? Vortrag](#org235650d)
-        2.  [http://m.spiegel.de/gesundheit/psychologie/psychotherapie-wie-ein-lobbyverband-psychisch-kranken-schadet-a-1259159.html](#org792b3f5)
-        3.  [https://www.zeit.de/kultur/2019-04/sexualitaet-jugendliche-pubertaet-youporn](#org23cc38a)
-        4.  [https://onezero.medium.com/relentless-com-life-as-a-cog-in-amazons-e-tail-machine-d46b3ef05eb8](#org890805e)
-        5.  [https://onezero.medium.com/the-efficiency-delusion-f6a97241e1e1](#org4f37991)
-        6.  [https://www.youtube.com/watch?time\_continue=283&v=jbkSRLYSojo  - Hans Rosling's 200 Countries, 200 Years, 4 Minutes - The Joy of Stats](#org6961e14)
-        7.  [https://medium.com/dair-ai/examining-gender-and-race-bias-in-sentiment-analysis-systems-b04b269a653](#orgb513501)
-        8.  [https://medium.com/the-post-grad-survival-guide/transform-your-terrible-networking-skills-with-this-psychology-trick-d61625e1d1d2](#org5326793)
-        9.  [https://www.bento.de/gefuehle/badeunfall-mein-freund-waere-fast-ertrunken-was-ich-daraus-gelernt-habe-a-1517a3af-5571-483b-af01-4e25d9600927](#org1e0a892)
-    7.  [Math](#org2bd6776)
-        1.  [https://de.wikipedia.org/wiki/Braess-Paradoxon](#org6be1de9)
+1.  [Bookmarks](#orga1131d5)
+    1.  [Misc](#org080410c)
+        1.  [Anzeige von Bahn API Daten https://marudor.de/](#orga219291)
+        2.  [https://bahn.guru  - Sparpreis-Finder](#org10341d0)
+        3.  [http://www.webpagetest.org/  - checks speed of a web page from different locations, browsers, with auth, protocols &#x2026;](#org5c1151c)
+        4.  [http://scienceandpublic.com/  - DeJargonizer](#org190afd1)
+        5.  [https://www.usecue.com/blog/code-warriors/](#org0483795)
+        6.  [https://hackernoon.com/a-documentation-crash-course-45006a85c15c](#org543fa67)
+        7.  [https://github.com/timqian/star-history](#orge51b3ea)
+        8.  [https://tech.trello.com/ice-scoring/  - Prioritize A/B Test Ideas](#org8deb6e0)
+        9.  [https://medium.com/fast-company/start-taking-back-your-online-privacy-by-making-these-4-easy-changes-def3668bf69b](#org44201cf)
+        10. [https://www.fast.ai/2019/05/13/blogging-advice/  - Advice for Better Blog Posts](#org11a6581)
+    2.  [Freelancer-Portale](#org6dd3008)
+        1.  [https://codecontrol.io/en/home](#orga0a6a29)
+    3.  [Software-Development](#orgb7f076f)
+        1.  [Misc](#org9f8d100)
+        2.  [YAML](#org6328e5c)
+        3.  [Python](#org2fee938)
+        4.  [Django](#org3ea3ecb)
+    4.  [Data Science / ML / NLP](#orgca80437)
+        1.  [Misc](#org6c5bcf5)
+        2.  [Jupyter Notebooks](#orgf0951df)
+        3.  [Datasets](#orgceeca85)
+        4.  [Data Exploration / Feature Engineering](#org6b84303)
+        5.  [Data Visualization](#org4b85a9b)
+        6.  [NLP](#orgb180386)
+        7.  [Deployments](#org3404b61)
+    5.  [DevOps / Security](#org2eb5a62)
+        1.  [Misc](#orga4e7484)
+        2.  [Site Reliability](#orga604083)
+        3.  [Microservices / Serverless](#orga340f36)
+        4.  [Containers (Docker / Kubernetes)](#org3cdc841)
+        5.  [SSH](#org77d8a1f)
+        6.  [Security](#org4efbac4)
+    6.  [Gesellschaftliches](#org0168055)
+        1.  [https://www.youtube.com/watch?v=pKymOx9UDoM  - Harald Lesch: wenn nicht jetzt, wann dann? Vortrag](#org910e29a)
+        2.  [http://m.spiegel.de/gesundheit/psychologie/psychotherapie-wie-ein-lobbyverband-psychisch-kranken-schadet-a-1259159.html](#org9fc765e)
+        3.  [https://www.zeit.de/kultur/2019-04/sexualitaet-jugendliche-pubertaet-youporn](#org9fe2909)
+        4.  [https://onezero.medium.com/relentless-com-life-as-a-cog-in-amazons-e-tail-machine-d46b3ef05eb8](#orge6f3b13)
+        5.  [https://onezero.medium.com/the-efficiency-delusion-f6a97241e1e1](#org1c84ffd)
+        6.  [https://www.youtube.com/watch?time\_continue=283&v=jbkSRLYSojo  - Hans Rosling's 200 Countries, 200 Years, 4 Minutes - The Joy of Stats](#orgead12aa)
+        7.  [https://medium.com/dair-ai/examining-gender-and-race-bias-in-sentiment-analysis-systems-b04b269a653](#orgf5da2eb)
+        8.  [https://medium.com/the-post-grad-survival-guide/transform-your-terrible-networking-skills-with-this-psychology-trick-d61625e1d1d2](#org7522e23)
+        9.  [https://www.bento.de/gefuehle/badeunfall-mein-freund-waere-fast-ertrunken-was-ich-daraus-gelernt-habe-a-1517a3af-5571-483b-af01-4e25d9600927](#org1fde2a9)
+    7.  [Math](#org315129a)
+        1.  [https://de.wikipedia.org/wiki/Braess-Paradoxon](#org207cb71)
 
 
-<a id="org164a2e0"></a>
+<a id="orga1131d5"></a>
 
 # Bookmarks
 
 
-<a id="orgcace362"></a>
+<a id="org080410c"></a>
 
 ## Misc
 
 
-<a id="orgf346144"></a>
+<a id="orga219291"></a>
 
 ### Anzeige von Bahn API Daten <https://marudor.de/>
 
 Inklusive detaillierte Wagenreihung und Anfahrtspläne für einen Bahnhof
 
 
-<a id="orgd28bc85"></a>
+<a id="org10341d0"></a>
+
+### <https://bahn.guru>  - Sparpreis-Finder
+
+
+<a id="org5c1151c"></a>
 
 ### <http://www.webpagetest.org/>  - checks speed of a web page from different locations, browsers, with auth, protocols &#x2026;
 
 
-<a id="orga426462"></a>
+<a id="org190afd1"></a>
 
 ### <http://scienceandpublic.com/>  - DeJargonizer
 
 
-<a id="org678d9c8"></a>
+<a id="org0483795"></a>
 
 ### <https://www.usecue.com/blog/code-warriors/>
 
@@ -84,49 +91,49 @@ off you go. Mastering the system that makes your software function, however, can
 lifetime.
 
 
-<a id="orgb7cc1cf"></a>
+<a id="org543fa67"></a>
 
 ### <https://hackernoon.com/a-documentation-crash-course-45006a85c15c>
 
 
-<a id="orgc70cd43"></a>
+<a id="orge51b3ea"></a>
 
 ### <https://github.com/timqian/star-history>
 
 (1.0.0 -> 1.0.1 bugfix -> 1.1.0 new functionality -> &#x2026; -> 2.0.0 backward incompatible breaking change)
 
 
-<a id="orga8e3279"></a>
+<a id="org8deb6e0"></a>
 
 ### <https://tech.trello.com/ice-scoring/>  - Prioritize A/B Test Ideas
 
 
-<a id="org23f8a78"></a>
+<a id="org44201cf"></a>
 
 ### <https://medium.com/fast-company/start-taking-back-your-online-privacy-by-making-these-4-easy-changes-def3668bf69b>
 
 
-<a id="orgfbad2a2"></a>
+<a id="org11a6581"></a>
 
 ### <https://www.fast.ai/2019/05/13/blogging-advice/>  - Advice for Better Blog Posts
 
 
-<a id="org07d10f0"></a>
+<a id="org6dd3008"></a>
 
 ## Freelancer-Portale
 
 
-<a id="orgc00aa02"></a>
+<a id="orga0a6a29"></a>
 
 ### <https://codecontrol.io/en/home>
 
 
-<a id="org5ad6fa8"></a>
+<a id="orgb7f076f"></a>
 
 ## Software-Development
 
 
-<a id="orgfb33517"></a>
+<a id="org9f8d100"></a>
 
 ### Misc
 
@@ -141,7 +148,7 @@ lifetime.
 5.  <https://github.com/github/semantic/blob/master/docs/examples.md>  - Haskell library and command line tool for parsing, analyzing, and comparing source code
 
 
-<a id="org3bb4989"></a>
+<a id="org6328e5c"></a>
 
 ### YAML
 
@@ -152,7 +159,7 @@ lifetime.
 3.  <https://arp242.net/weblog/yaml_probably_not_so_great_after_all.html>
 
 
-<a id="org9e30598"></a>
+<a id="org2fee938"></a>
 
 ### Python
 
@@ -192,7 +199,7 @@ lifetime.
     8.  <https://towardsdatascience.com/an-overview-of-pythons-datatable-package-5d3a97394ee9>
 
 
-<a id="orge535c82"></a>
+<a id="org3ea3ecb"></a>
 
 ### Django
 
@@ -205,12 +212,12 @@ lifetime.
     For externals, just give a REST API and HyperlinkedModelSerializer view.
 
 
-<a id="org44cb072"></a>
+<a id="orgca80437"></a>
 
 ## Data Science / ML / NLP
 
 
-<a id="org5de56cd"></a>
+<a id="org6c5bcf5"></a>
 
 ### Misc
 
@@ -221,24 +228,35 @@ lifetime.
     overfit in classical sense of increasing error again at some point in training, but still start
     to memorize etc.
 
-2.  <https://nextjournal.com/schmudde/how-to-version-control-jupyter>
+2.  <https://towardsdatascience.com/top-10-coding-mistakes-made-by-data-scientists-bb5bc82faaee>
 
-3.  <https://towardsdatascience.com/top-10-coding-mistakes-made-by-data-scientists-bb5bc82faaee>
+3.  <https://medium.com/predict/five-interview-questions-to-predict-a-good-data-scientist-40d310cdcd68>
 
-4.  <https://medium.com/predict/five-interview-questions-to-predict-a-good-data-scientist-40d310cdcd68>
+4.  <https://hbr.org/2019/02/how-to-choose-your-first-ai-project>
 
-5.  <https://hbr.org/2019/02/how-to-choose-your-first-ai-project>
+5.  <https://techblog.commercetools.com/building-up-a-data-science-team-from-scratch-7a7b24ba9f2d>
 
-6.  <https://techblog.commercetools.com/building-up-a-data-science-team-from-scratch-7a7b24ba9f2d>
+6.  <https://karpathy.github.io/2019/04/25/recipe/>  - A Recipe for Training Neural Networks
 
-7.  <https://karpathy.github.io/2019/04/25/recipe/>  - A Recipe for Training Neural Networks
+7.  <https://towardsdatascience.com/neural-odes-breakdown-of-another-deep-learning-breakthrough-3e78c7213795>
 
-8.  <https://towardsdatascience.com/neural-odes-breakdown-of-another-deep-learning-breakthrough-3e78c7213795>
-
-9.  <https://towardsdatascience.com/finding-good-learning-rate-and-the-one-cycle-policy-7159fe1db5d6>
+8.  <https://towardsdatascience.com/finding-good-learning-rate-and-the-one-cycle-policy-7159fe1db5d6>
 
 
-<a id="org38f6420"></a>
+<a id="orgf0951df"></a>
+
+### Jupyter Notebooks
+
+1.  <https://nextjournal.com/schmudde/how-to-version-control-jupyter>
+
+2.  <https://towardsdatascience.com/advanced-jupyter-notebooks-a-tutorial-3569d8153057>
+
+3.  <https://towardsdatascience.com/how-to-effortlessly-optimize-jupyter-notebooks-e864162a06ee>
+
+4.  <https://github.com/fastai/fastprogress>  - Simple and flexible progress bar for Jupyter Notebook and console
+
+
+<a id="orgceeca85"></a>
 
 ### Datasets
 
@@ -253,7 +271,7 @@ lifetime.
     -   Video (Classification)
 
 
-<a id="orgec5f2a1"></a>
+<a id="org6b84303"></a>
 
 ### Data Exploration / Feature Engineering
 
@@ -265,8 +283,10 @@ lifetime.
 
 3.  <https://distill.pub/2016/misread-tsne/>  - A nice <span class="underline">interactive</span> overview of the effect of hyperparameters for t-SNE
 
+4.  <https://towardsdatascience.com/five-command-line-tools-for-data-science-29f04e5b9c16>  - especially csvkit and csvquery
 
-<a id="org57630c4"></a>
+
+<a id="org4b85a9b"></a>
 
 ### Data Visualization
 
@@ -287,7 +307,7 @@ lifetime.
 8.  <https://www.freecodecamp.org/news/fundamental-design-principles-for-non-designers-ad34c30caa7>
 
 
-<a id="org3ff1b7e"></a>
+<a id="orgb180386"></a>
 
 ### NLP
 
@@ -337,17 +357,21 @@ lifetime.
     
         In all use cases, the information extraction is based on analysing the semantic relationships expressed by the component parts of each sentence:
     
-    4.  <https://towardsdatascience.com/text-classification-with-state-of-the-art-nlp-library-flair-b541d7add21f>
+    4.  <https://talktotransformer.com/>  - See how a modern neural network completes your text.
+    
+    5.  <https://towardsdatascience.com/text-classification-with-state-of-the-art-nlp-library-flair-b541d7add21f>
     
         -   <https://github.com/zalandoresearch/flair/>
     
-    5.  <https://talktotransformer.com/>
+    6.  <https://github.com/pytorch/fairseq>
 
 3.  Embeddings
 
     1.  <https://nlp.stanford.edu/projects/glove/>  Global Vectors for Word Representation
     
     2.  <https://towardsdatascience.com/use-cases-of-googles-universal-sentence-encoder-in-production-dd5aaab4fc15>
+    
+    3.  <https://towardsdatascience.com/fse-2b1ffa791cf9>  - Sentence Embeddings. Fast, please!
 
 4.  Metrics
 
@@ -360,6 +384,8 @@ lifetime.
         difficulty
     
     3.  <http://sjmielke.com/comparing-perplexities.htm>
+    
+    4.  <https://towardsdatascience.com/how-to-find-shortest-dependency-path-with-spacy-and-stanfordnlp-539d45d28239>
 
 5.  BERT / Attention / Transformers / &#x2026;
 
@@ -369,28 +395,40 @@ lifetime.
     
     3.  <http://mostafadehghani.com/2019/05/05/universal-transformers/>
     
-    4.  <https://medium.com/synapse-dev/understanding-bert-transformer-attention-isnt-all-you-need-5839ebd396db>
+    4.  <https://medium.com/tensorflow/lingvo-a-tensorflow-framework-for-sequence-modeling-8b1d6ffba5bb>
     
-    5.  <https://medium.com/@_init_/why-bert-has-3-embedding-layers-and-their-implementation-details-9c261108e28a>
+    5.  <https://slator.com/technology/is-googles-new-lingvo-framework-a-big-deal-for-machine-translation/>
     
-    6.  <https://towardsdatascience.com/xlm-enhancing-bert-for-cross-lingual-language-model-5aeed9e6f14b>
+    6.  <https://medium.com/synapse-dev/understanding-bert-transformer-attention-isnt-all-you-need-5839ebd396db>
     
-    7.  <https://towardsdatascience.com/a-review-of-bert-based-models-4ffdc0f15d58>
+    7.  <https://medium.com/@_init_/why-bert-has-3-embedding-layers-and-their-implementation-details-9c261108e28a>
+    
+    8.  <https://towardsdatascience.com/xlm-enhancing-bert-for-cross-lingual-language-model-5aeed9e6f14b>
+    
+    9.  <https://towardsdatascience.com/a-review-of-bert-based-models-4ffdc0f15d58>
+    
+    10. <https://towardsdatascience.com/what-is-xlnet-and-why-it-outperforms-bert-8d8fce710335>
+    
+    11. <https://medium.com/dair-ai/xlnet-outperforms-bert-on-several-nlp-tasks-9ec867bb563b>
 
 
-<a id="org51a8615"></a>
+<a id="org3404b61"></a>
 
 ### Deployments
 
 1.  <https://towardsdatascience.com/chapter-1-intro-to-aws-sagemaker-a1ecf00ec761>
 
+2.  <https://medium.com/datadriveninvestor/deploy-your-pytorch-model-to-production-f69460192217>
 
-<a id="org502c954"></a>
+3.  <https://medium.com/@colinshaw_36798/fully-utilizing-your-deep-learning-gpus-61ee7acd3e57>
+
+
+<a id="org2eb5a62"></a>
 
 ## DevOps / Security
 
 
-<a id="org3f63fec"></a>
+<a id="orga4e7484"></a>
 
 ### Misc
 
@@ -403,7 +441,7 @@ lifetime.
 4.  <https://www.rookout.com/cant-git-no-satisfaction-why-we-need-a-new-gen-source-control/>  - Advantages/Disadvantages of Monorepo vs Multirepo
 
 
-<a id="org81017f4"></a>
+<a id="orga604083"></a>
 
 ### Site Reliability
 
@@ -422,7 +460,7 @@ lifetime.
 7.  <https://medium.com/@copyconstruct/testing-in-production-the-safe-way-18ca102d0ef1>
 
 
-<a id="orgfb3711e"></a>
+<a id="orga340f36"></a>
 
 ### Microservices / Serverless
 
@@ -435,7 +473,7 @@ lifetime.
 4.  <https://theburningmonk.com/2019/04/comparing-nuclio-and-aws-lambda/>
 
 
-<a id="org3de3cb0"></a>
+<a id="org3cdc841"></a>
 
 ### Containers (Docker / Kubernetes)
 
@@ -452,14 +490,14 @@ lifetime.
 6.  <https://towardsdatascience.com/key-kubernetes-commands-741fe61fde8>
 
 
-<a id="orgd35f9bb"></a>
+<a id="org77d8a1f"></a>
 
 ### SSH
 
 1.  <https://yanaiela.github.io/post/remote-servers/>  - Make SSH great again (config, tunnelling, &#x2026;)
 
 
-<a id="org028d01b"></a>
+<a id="org4efbac4"></a>
 
 ### Security
 
@@ -474,62 +512,62 @@ lifetime.
 5.  <https://blog.usejournal.com/how-to-avoid-ruining-lives-front-end-security-matters-26d4f906c7a6>  - XSS and CSRF tokens
 
 
-<a id="org71b1e8d"></a>
+<a id="org0168055"></a>
 
 ## Gesellschaftliches
 
 
-<a id="org235650d"></a>
+<a id="org910e29a"></a>
 
 ### <https://www.youtube.com/watch?v=pKymOx9UDoM>  - Harald Lesch: wenn nicht jetzt, wann dann? Vortrag
 
 
-<a id="org792b3f5"></a>
+<a id="org9fc765e"></a>
 
 ### <http://m.spiegel.de/gesundheit/psychologie/psychotherapie-wie-ein-lobbyverband-psychisch-kranken-schadet-a-1259159.html>
 
 
-<a id="org23cc38a"></a>
+<a id="org9fe2909"></a>
 
 ### <https://www.zeit.de/kultur/2019-04/sexualitaet-jugendliche-pubertaet-youporn>
 
 
-<a id="org890805e"></a>
+<a id="orge6f3b13"></a>
 
 ### <https://onezero.medium.com/relentless-com-life-as-a-cog-in-amazons-e-tail-machine-d46b3ef05eb8>
 
 
-<a id="org4f37991"></a>
+<a id="org1c84ffd"></a>
 
 ### <https://onezero.medium.com/the-efficiency-delusion-f6a97241e1e1>
 
 
-<a id="org6961e14"></a>
+<a id="orgead12aa"></a>
 
 ### <https://www.youtube.com/watch?time_continue=283&v=jbkSRLYSojo>  - Hans Rosling's 200 Countries, 200 Years, 4 Minutes - The Joy of Stats
 
 
-<a id="orgb513501"></a>
+<a id="orgf5da2eb"></a>
 
 ### <https://medium.com/dair-ai/examining-gender-and-race-bias-in-sentiment-analysis-systems-b04b269a653>
 
 
-<a id="org5326793"></a>
+<a id="org7522e23"></a>
 
 ### <https://medium.com/the-post-grad-survival-guide/transform-your-terrible-networking-skills-with-this-psychology-trick-d61625e1d1d2>
 
 
-<a id="org1e0a892"></a>
+<a id="org1fde2a9"></a>
 
 ### <https://www.bento.de/gefuehle/badeunfall-mein-freund-waere-fast-ertrunken-was-ich-daraus-gelernt-habe-a-1517a3af-5571-483b-af01-4e25d9600927>
 
 
-<a id="org2bd6776"></a>
+<a id="org315129a"></a>
 
 ## Math
 
 
-<a id="org6be1de9"></a>
+<a id="org207cb71"></a>
 
 ### <https://de.wikipedia.org/wiki/Braess-Paradoxon>
 
