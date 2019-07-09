@@ -22,8 +22,7 @@ lifetime.
 *** https://tech.trello.com/ice-scoring/  - Prioritize A/B Test Ideas
 *** https://medium.com/fast-company/start-taking-back-your-online-privacy-by-making-these-4-easy-changes-def3668bf69b
 *** https://www.fast.ai/2019/05/13/blogging-advice/  - Advice for Better Blog Posts
-** Freelancer-Portale
-*** https://codecontrol.io/en/home
+*** https://clutch.co/app-developers/resources/what-is-riskiest-assumption-test  - RAT vs MVP
 ** Software-Development
 *** Misc
 **** https://hackernoon.com/the-fine-art-of-fast-development-f3b1abb509da
@@ -89,6 +88,7 @@ lifetime.
 **** https://towardsdatascience.com/advanced-jupyter-notebooks-a-tutorial-3569d8153057
 **** https://towardsdatascience.com/how-to-effortlessly-optimize-jupyter-notebooks-e864162a06ee
 **** https://github.com/fastai/fastprogress  - Simple and flexible progress bar for Jupyter Notebook and console
+**** https://towardsdatascience.com/jupyter-is-the-new-excel-but-not-for-your-boss-d24340ebf314  - ways to export/give other easy access to notebooks (hiding cells etc)
 *** Datasets
 **** https://www.europeandataportal.eu/de/homepage
 **** http://kitab-project.org/2019/06/08/first-open-access-release-of-our-arabic-corpus/
@@ -184,6 +184,13 @@ In all use cases, the information extraction is based on analysing the semantic 
 ***** https://towardsdatascience.com/a-review-of-bert-based-models-4ffdc0f15d58
 ***** https://towardsdatascience.com/what-is-xlnet-and-why-it-outperforms-bert-8d8fce710335
 ***** https://medium.com/dair-ai/xlnet-outperforms-bert-on-several-nlp-tasks-9ec867bb563b
+*** Computer Vision
+**** https://towardsdatascience.com/deep-learning-for-image-classification-why-its-challenging-where-we-ve-been-and-what-s-next-93b56948fcef
+
+Good overview
+
+**** https://blog.floydhub.com/colorizing-and-restoring-old-images-with-deep-learning/  - with Self Attention GANs, has a github link included
+
 *** Deployments
 **** https://towardsdatascience.com/chapter-1-intro-to-aws-sagemaker-a1ecf00ec761
 **** https://medium.com/datadriveninvestor/deploy-your-pytorch-model-to-production-f69460192217
@@ -194,6 +201,8 @@ In all use cases, the information extraction is based on analysing the semantic 
 **** https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/
 **** http://onemogin.com/observability/dashboards/practitioners-guide-to-system-dashboard-design.html
 **** https://www.rookout.com/cant-git-no-satisfaction-why-we-need-a-new-gen-source-control/  - Advantages/Disadvantages of Monorepo vs Multirepo
+**** https://medium.com/anton-on-security/retaining-logs-for-a-year-boring-or-useful-70ea21fa3dda
+**** https://arslan.io/2019/07/03/how-to-write-idempotent-bash-scripts/
 *** Site Reliability
 **** https://www.oreilly.com/ideas/how-to-get-started-with-site-reliability-engineering-sre
 **** https://medium.com/kudos-engineering/faking-fires-get-better-incident-management-with-practise-e61a5d66578d
