@@ -5,31 +5,31 @@
 Inklusive detaillierte Wagenreihung und Anfahrtspläne für einen Bahnhof
 
 *** https://bahn.guru  - Sparpreis-Finder
-*** http://www.webpagetest.org/  - checks speed of a web page from different locations, browsers, with auth, protocols ...
 *** http://scienceandpublic.com/  - DeJargonizer
-*** https://www.usecue.com/blog/code-warriors/
-
-A true warrior masters his sword and his mind. A ‘code warrior’ masters his software and his
-system. Mastering your software is not the most difficult part, just read the quick-start and
-off you go. Mastering the system that makes your software function, however, can take a
-lifetime.
-
-*** https://hackernoon.com/a-documentation-crash-course-45006a85c15c
-*** https://github.com/timqian/star-history
-
-(1.0.0 -> 1.0.1 bugfix -> 1.1.0 new functionality -> ... -> 2.0.0 backward incompatible breaking change)
-
-*** https://tech.trello.com/ice-scoring/  - Prioritize A/B Test Ideas
 *** https://medium.com/fast-company/start-taking-back-your-online-privacy-by-making-these-4-easy-changes-def3668bf69b
 *** https://www.fast.ai/2019/05/13/blogging-advice/  - Advice for Better Blog Posts
 *** https://clutch.co/app-developers/resources/what-is-riskiest-assumption-test  - RAT vs MVP
 ** Software-Development
 *** Misc
+**** http://www.webpagetest.org/  - checks speed of a web page from different locations, browsers, with auth, protocols ...
+**** https://www.usecue.com/blog/code-warriors/
+
+ A true warrior masters his sword and his mind. A ‘code warrior’ masters his software and his
+ system. Mastering your software is not the most difficult part, just read the quick-start and
+ off you go. Mastering the system that makes your software function, however, can take a
+ lifetime.
+
+**** https://hackernoon.com/a-documentation-crash-course-45006a85c15c
+**** https://github.com/timqian/star-history
+
+ (1.0.0 -> 1.0.1 bugfix -> 1.1.0 new functionality -> ... -> 2.0.0 backward incompatible breaking change)
+
 **** https://hackernoon.com/the-fine-art-of-fast-development-f3b1abb509da
 **** https://testing.googleblog.com/2015/04/just-say-no-to-more-end-to-end-tests.html
 **** https://medium.com/@cscalfani/goodbye-object-oriented-programming-a59cda4c0e53
 **** https://semver.org/spec/v2.0.0.html  - Semantic versioning
 **** https://github.com/github/semantic/blob/master/docs/examples.md  - Haskell library and command line tool for parsing, analyzing, and comparing source code
+**** https://medium.com/@liman.rom/f-spoiled-me-or-why-i-dont-enjoy-c-anymore-39e025035a98  - nice examples of advantages of a well designed functional language
 *** YAML
 **** https://blog.atomist.com/in-defense-of-yaml/
 **** https://noyaml.com/
@@ -59,6 +59,19 @@ lifetime.
 ***** https://github.com/rubik/radon and https://github.com/rubik/xenon  - measure and test program complexity
 ***** https://github.com/tiangolo/fastapi  - framework, high performance, easy to learn, fast to code, ready for production
 ***** https://towardsdatascience.com/an-overview-of-pythons-datatable-package-5d3a97394ee9
+***** https://github.com/ray-project/ray  - seems to be an elegant alternative to celery
+
+- Blog https://towardsdatascience.com/modern-parallel-and-distributed-python-a-quick-tutorial-on-ray-99f8d70369b8
+- Documentation https://ray.readthedocs.io/en/latest/index.html
+
+I'm not completely sure about the differences,
+but it looks it's much easier to setup and maintain.
+Also, the DAG handling is nicer on first look.
+
+One of the subprojects is a seamless pandas scaling framework [[https://github.com/modin-project/modin][modin]]!
+
+***** https://github.com/modin-project/modin  - scale your pandas workflows by changing one line of code
+
 *** Django
 **** https://www.youtube.com/watch?v=FPfBhqL-uek  - Django for Admins
 **** https://djangosuit.com/  - Modern theme for Django admin interface
@@ -69,26 +82,38 @@ lifetime.
 
 ** Data Science / ML / NLP
 *** Misc
+**** http://www.arxiv-sanity.com/
+**** https://tech.trello.com/ice-scoring/  - Prioritize A/B Test Ideas
 **** https://lilianweng.github.io/lil-log/2019/03/14/are-deep-neural-networks-dramatically-overfitted.html
 
  Give the idea to re-randomize layers or re-initialize top-layers and measure re-randomization or
  re-initialization robustness to find a "best" iteration stop. As big DL models won't really
  overfit in classical sense of increasing error again at some point in training, but still start
  to memorize etc.
+  - View by information theory/compression
 
 **** https://towardsdatascience.com/top-10-coding-mistakes-made-by-data-scientists-bb5bc82faaee
-**** https://medium.com/predict/five-interview-questions-to-predict-a-good-data-scientist-40d310cdcd68
-**** https://hbr.org/2019/02/how-to-choose-your-first-ai-project
-**** https://techblog.commercetools.com/building-up-a-data-science-team-from-scratch-7a7b24ba9f2d
 **** https://karpathy.github.io/2019/04/25/recipe/  - A Recipe for Training Neural Networks
 **** https://towardsdatascience.com/neural-odes-breakdown-of-another-deep-learning-breakthrough-3e78c7213795
 **** https://towardsdatascience.com/finding-good-learning-rate-and-the-one-cycle-policy-7159fe1db5d6
+**** https://docs.nvidia.com/deeplearning/sdk/dali-developer-guide/docs/index.html  - Nvidia Dali GPU/CPU fast Augmentations library
+*** Team (Management, Hiring, Organization, ...)
+**** https://medium.com/predict/five-interview-questions-to-predict-a-good-data-scientist-40d310cdcd68
+**** https://hbr.org/2019/02/how-to-choose-your-first-ai-project
+**** https://techblog.commercetools.com/building-up-a-data-science-team-from-scratch-7a7b24ba9f2d
+**** https://towardsdatascience.com/important-traits-to-help-you-become-a-better-data-science-manager-dc0de3a37961
+**** https://towardsdatascience.com/12-things-i-learned-during-my-first-year-as-a-machine-learning-engineer-2991573a9195
+
 *** Jupyter Notebooks
 **** https://nextjournal.com/schmudde/how-to-version-control-jupyter
 **** https://towardsdatascience.com/advanced-jupyter-notebooks-a-tutorial-3569d8153057
 **** https://towardsdatascience.com/how-to-effortlessly-optimize-jupyter-notebooks-e864162a06ee
 **** https://github.com/fastai/fastprogress  - Simple and flexible progress bar for Jupyter Notebook and console
 **** https://towardsdatascience.com/jupyter-is-the-new-excel-but-not-for-your-boss-d24340ebf314  - ways to export/give other easy access to notebooks (hiding cells etc)
+
+*** Pytorch/fastai
+**** https://towardsdatascience.com/multi-layer-perceptron-usingfastai-and-pytorch-9e401dd288b8
+**** https://towardsdatascience.com/deep-learning-for-diagnosis-of-skin-images-with-fastai-792160ab5495
 *** Datasets
 **** https://www.europeandataportal.eu/de/homepage
 **** http://kitab-project.org/2019/06/08/first-open-access-release-of-our-arabic-corpus/
@@ -108,6 +133,7 @@ lifetime.
 **** https://towardsdatascience.com/five-command-line-tools-for-data-science-29f04e5b9c16  - especially csvkit and csvquery
 *** Data Visualization
 **** [[https://pudding.cool/2018/10/city_3d/?fbclid=IwAR3YX_t3CyRYCMKhuqXcQ4Xxy-eg1gGJpmsK8AA8_GpPfzmfcTwWmaMk2bw][Human Terrain - Visualizing World Population in 3D]]
+**** https://www.youtube.com/watch?time_continue=283&v=jbkSRLYSojo  - Hans Rosling's 200 Countries, 200 Years, 4 Minutes - The Joy of Stats
 **** https://link.medium.com/xL0hrHaJSV  - Data visualizations “Mistakes, we’ve drawn a few” by Sarah Leo
 **** https://towardsdatascience.com/pythons-one-liner-graph-creation-library-with-animations-hans-rosling-style-f2cb50490396
 **** https://towardsdatascience.com/its-2019-make-your-data-visualizations-interactive-with-plotly-b361e7d45dc6  - Plotly, Express, Cufflinks comparison
@@ -180,9 +206,11 @@ In all use cases, the information extraction is based on analysing the semantic 
 ***** https://slator.com/technology/is-googles-new-lingvo-framework-a-big-deal-for-machine-translation/
 ***** https://medium.com/synapse-dev/understanding-bert-transformer-attention-isnt-all-you-need-5839ebd396db
 ***** https://medium.com/@_init_/why-bert-has-3-embedding-layers-and-their-implementation-details-9c261108e28a
+***** https://towardsdatascience.com/deconstructing-bert-distilling-6-patterns-from-100-million-parameters-b49113672f77
 ***** https://towardsdatascience.com/xlm-enhancing-bert-for-cross-lingual-language-model-5aeed9e6f14b
 ***** https://towardsdatascience.com/a-review-of-bert-based-models-4ffdc0f15d58
 ***** https://towardsdatascience.com/what-is-xlnet-and-why-it-outperforms-bert-8d8fce710335
+***** https://towardsdatascience.com/xlnet-a-clever-language-modeling-solution-ab41e87798b0
 ***** https://medium.com/dair-ai/xlnet-outperforms-bert-on-several-nlp-tasks-9ec867bb563b
 *** Computer Vision
 **** https://towardsdatascience.com/deep-learning-for-image-classification-why-its-challenging-where-we-ve-been-and-what-s-next-93b56948fcef
@@ -191,6 +219,7 @@ Good overview
 
 **** https://blog.floydhub.com/colorizing-and-restoring-old-images-with-deep-learning/  - with Self Attention GANs, has a github link included
 
+**** Good list of architectures on https://keras.io/applications including default image sizes
 *** Deployments
 **** https://towardsdatascience.com/chapter-1-intro-to-aws-sagemaker-a1ecf00ec761
 **** https://medium.com/datadriveninvestor/deploy-your-pytorch-model-to-production-f69460192217
@@ -232,14 +261,14 @@ Good overview
 **** https://medium.freecodecamp.org/hash-table-attack-8e4371fc5261  - The moment when you realize every server in the world is vulnerable
 **** https://blog.usejournal.com/how-to-avoid-ruining-lives-front-end-security-matters-26d4f906c7a6  - XSS and CSRF tokens
 ** Gesellschaftliches
-*** https://www.youtube.com/watch?v=pKymOx9UDoM  - Harald Lesch: wenn nicht jetzt, wann dann? Vortrag
+*** https://www.youtube.com/watch?v=pKymOx9UDoM  - Harald Lesch: wenn nicht jetzt, wann dann? Vortrag (Klima)
 *** http://m.spiegel.de/gesundheit/psychologie/psychotherapie-wie-ein-lobbyverband-psychisch-kranken-schadet-a-1259159.html
 *** https://www.zeit.de/kultur/2019-04/sexualitaet-jugendliche-pubertaet-youporn
 *** https://onezero.medium.com/relentless-com-life-as-a-cog-in-amazons-e-tail-machine-d46b3ef05eb8
+*** https://forge.medium.com/10-habits-of-unsuccessful-people-you-dont-want-to-copy-d401ac677c91
 *** https://onezero.medium.com/the-efficiency-delusion-f6a97241e1e1
-*** https://www.youtube.com/watch?time_continue=283&v=jbkSRLYSojo  - Hans Rosling's 200 Countries, 200 Years, 4 Minutes - The Joy of Stats
-*** https://medium.com/dair-ai/examining-gender-and-race-bias-in-sentiment-analysis-systems-b04b269a653
 *** https://medium.com/the-post-grad-survival-guide/transform-your-terrible-networking-skills-with-this-psychology-trick-d61625e1d1d2
+*** https://medium.com/dair-ai/examining-gender-and-race-bias-in-sentiment-analysis-systems-b04b269a653
 *** https://www.bento.de/gefuehle/badeunfall-mein-freund-waere-fast-ertrunken-was-ich-daraus-gelernt-habe-a-1517a3af-5571-483b-af01-4e25d9600927
 ** Math
 *** https://de.wikipedia.org/wiki/Braess-Paradoxon
