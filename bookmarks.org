@@ -124,6 +124,9 @@ One of the subprojects is a seamless pandas scaling framework [[https://github.c
 - Video (Classification)
 
 *** Data Exploration / Feature Engineering
+**** https://towardsdatascience.com/7-useful-pandas-tips-for-data-management-8b23a85bf41f  - read_html and read_pdf, use .xs method for multi-indexing
+**** https://hackersandslackers.com/intro-to-data-analysis-in-python-using-pandas/  - Really deep and good information (interesting for beginners and advanced readers) in 12 Parts ...
+**** https://hackersandslackers.com/using-hierarchical-indexes-with-pandas/   - That's part 12 of it
 **** https://github.com/pandas-profiling/pandas-profiling  - Generates profile reports from a pandas DataFrame.
 
  The pandas df.describe() function is great but a little basic for serious exploratory data analysis.
@@ -138,6 +141,7 @@ One of the subprojects is a seamless pandas scaling framework [[https://github.c
 **** https://towardsdatascience.com/pythons-one-liner-graph-creation-library-with-animations-hans-rosling-style-f2cb50490396
 **** https://towardsdatascience.com/its-2019-make-your-data-visualizations-interactive-with-plotly-b361e7d45dc6  - Plotly, Express, Cufflinks comparison
 **** https://towardsdatascience.com/reviewing-python-visualization-packages-fa7fe12e622b
+**** https://towardsdatascience.com/build-your-own-data-dashboard-93e4848a0dcf  - With Dash, nice short introduction example
 **** https://medium.com/nautilus-magazine/5-ways-to-lie-with-charts-173cd7fe2dc0
 **** https://modus.medium.com/how-to-not-suck-at-color-b3980ee8084a
 **** https://www.freecodecamp.org/news/fundamental-design-principles-for-non-designers-ad34c30caa7
@@ -198,15 +202,17 @@ In all use cases, the information extraction is based on analysing the semantic 
 
 ***** http://sjmielke.com/comparing-perplexities.htm
 ***** https://towardsdatascience.com/how-to-find-shortest-dependency-path-with-spacy-and-stanfordnlp-539d45d28239
-**** BERT / Attention / Transformers / ...
+**** Attention / Transformers / ...
 ***** https://medium.com/inside-machine-learning/what-is-a-transformer-d07dd1fbec04
 ***** http://nlp.seas.harvard.edu/2018/04/03/attention.html  - annotated implementation of a transformer
 ***** http://mostafadehghani.com/2019/05/05/universal-transformers/
 ***** https://medium.com/tensorflow/lingvo-a-tensorflow-framework-for-sequence-modeling-8b1d6ffba5bb
 ***** https://slator.com/technology/is-googles-new-lingvo-framework-a-big-deal-for-machine-translation/
+**** BERT / XLNet
 ***** https://medium.com/synapse-dev/understanding-bert-transformer-attention-isnt-all-you-need-5839ebd396db
 ***** https://medium.com/@_init_/why-bert-has-3-embedding-layers-and-their-implementation-details-9c261108e28a
 ***** https://towardsdatascience.com/deconstructing-bert-distilling-6-patterns-from-100-million-parameters-b49113672f77
+***** https://medium.com/hiredscore-engineering/introducing-octoml-73bd527491b1  - makes it easy to use BERT
 ***** https://towardsdatascience.com/xlm-enhancing-bert-for-cross-lingual-language-model-5aeed9e6f14b
 ***** https://towardsdatascience.com/a-review-of-bert-based-models-4ffdc0f15d58
 ***** https://towardsdatascience.com/what-is-xlnet-and-why-it-outperforms-bert-8d8fce710335
@@ -217,9 +223,13 @@ In all use cases, the information extraction is based on analysing the semantic 
 
 Good overview
 
+**** Good list of architectures on https://keras.io/applications including default image sizes
 **** https://blog.floydhub.com/colorizing-and-restoring-old-images-with-deep-learning/  - with Self Attention GANs, has a github link included
 
-**** Good list of architectures on https://keras.io/applications including default image sizes
+**** https://towardsdatascience.com/u-nets-with-resnet-encoders-and-cross-connections-d8ba94125a2c
+**** https://towardsdatascience.com/deep-learning-based-super-resolution-without-using-a-gan-11c9bb5b6cd5  - Super resolution with just a U-Net (trained from small images starting) and an impressive blog with lots of examples
+**** https://towardsdatascience.com/clean-up-your-own-model-data-without-leaving-jupyter-bdbcc9001734  - Annotator tool **Innotator** for images inside jupyter
+**** https://towardsdatascience.com/review-yolov3-you-only-look-once-object-detection-eab75d7a1ba6
 *** Deployments
 **** https://towardsdatascience.com/chapter-1-intro-to-aws-sagemaker-a1ecf00ec761
 **** https://medium.com/datadriveninvestor/deploy-your-pytorch-model-to-production-f69460192217
