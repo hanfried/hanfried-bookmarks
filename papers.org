@@ -1,0 +1,28 @@
+* Papers
+** Misc
+*** [[http://arxiv.org/abs/1907.06374v1][What does it mean to understand a neural network?]] (Lillicrap, Kording: July 2019)
+
+ Similar problems in neuro science to understanding artificial networks (easy to describe their
+ parts, but not what weights are and how they work together). But main advantage of artificial
+ networks is that we can inspect them and play around with them with ease, as we have at least
+ the whole information.
+
+** Computer Vision
+*** [[https://arxiv.org/abs/1905.11946][EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks]] (Tan, Le: May/June 2019)
+
+- Google Blog: https://ai.googleblog.com/2019/05/efficientnet-improving-accuracy-and.html
+- Source Code (Tensorflow): https://github.com/tensorflow/tpu/tree/master/models/official/efficientnet
+- Source Code (Keras): https://github.com/qubvel/efficientnet
+- Source Code (PyTorch): https://github.com/lukemelas/EfficientNet-PyTorch
+
+*** [[http://arxiv.org/abs/1907.07174v2][Natural Adversarial Examples]] (Hendrycks, Zhao, Basart, Steinhardt, Song: July 2019)
+
+ A big dataset with natural images that mislead completely imagenet pretrained models from
+ resnet, vgg to resnext and so. Emphasize that the models very often look not to the original
+ object, but to background, color and so.
+
+ The big dataset could be very helpful to train more robust models and also inspect for common
+ problems that could be tackled by data augmentation or better/other preprocessing.
+
+** NLP
+*** [[https://arxiv.org/abs/1906.08237v1][XLNet: Generalized Autoregressive Pretraining for Language Understanding]] (Yang, Dai, Yang, Carbonelle, Salakhutdinov, V. Le: June 2019)
