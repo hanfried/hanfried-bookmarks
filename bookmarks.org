@@ -1,3 +1,5 @@
+#+TAGS: Analysis(a) DataScience(D) NLP(N) Software_Development(S) Society(s) Philosophical(P) PyTorch(p) fastai (f) tensorflow(t)
+
 * Bookmarks
 ** Misc
 *** Anzeige von Bahn API Daten https://marudor.de/
@@ -9,7 +11,8 @@ Inklusive detaillierte Wagenreihung und Anfahrtspläne für einen Bahnhof
 *** https://medium.com/fast-company/start-taking-back-your-online-privacy-by-making-these-4-easy-changes-def3668bf69b
 *** https://www.fast.ai/2019/05/13/blogging-advice/  - Advice for Better Blog Posts
 *** https://clutch.co/app-developers/resources/what-is-riskiest-assumption-test  - RAT vs MVP
-** Software-Development
+*** https://entrepreneurshandbook.co/the-real-reasons-why-a-vc-passed-on-your-startup-917c30103ecb  - pretty complete check list
+** Software-Development                                :Software_Development:
 *** Misc
 **** http://www.webpagetest.org/  - checks speed of a web page from different locations, browsers, with auth, protocols ...
 **** https://www.usecue.com/blog/code-warriors/
@@ -80,7 +83,7 @@ One of the subprojects is a seamless pandas scaling framework [[https://github.c
  Note, it's not a good idea to give customers access to django admin panels (it's really only for internal purposes).
  For externals, just give a REST API and HyperlinkedModelSerializer view.
 
-** Data Science / ML / NLP
+** Data Science / ML / NLP                                      :DataScience:
 *** Misc
 **** http://www.arxiv-sanity.com/
 **** https://tech.trello.com/ice-scoring/  - Prioritize A/B Test Ideas
@@ -97,6 +100,12 @@ One of the subprojects is a seamless pandas scaling framework [[https://github.c
 **** https://towardsdatascience.com/neural-odes-breakdown-of-another-deep-learning-breakthrough-3e78c7213795
 **** https://towardsdatascience.com/finding-good-learning-rate-and-the-one-cycle-policy-7159fe1db5d6
 **** https://docs.nvidia.com/deeplearning/sdk/dali-developer-guide/docs/index.html  - Nvidia Dali GPU/CPU fast Augmentations library
+**** https://towardsdatascience.com/no-machine-learning-is-not-just-glorified-statistics-26d3952234e3 :Philosophical:
+*** Interesting Analysis                                           :Analysis:
+**** https://towardsdatascience.com/whos-tweeting-from-the-oval-office-96ea5b60c03  - Guess the author with NLP and (classic) ML techniques :NLP:Society:
+**** https://towardsdatascience.com/making-the-mueller-report-searchable-with-ocr-and-elasticsearch-4e73e55de341 :ElasticSearch:OCR:
+**** https://towardsdatascience.com/how-does-news-coverage-differ-between-media-outlets-20aa7be1c96a  - WordClouds for CNN, NBC, ... + TopWords + SentimentAnalysis of Headlines 
+**** https://www.youtube.com/watch?v=DpXy041BIlA&t=2s  - 30 weird chess algorithms - Data Science at its best I'd say completely out of usual domains :Chess:
 *** Team (Management, Hiring, Organization, ...)
 **** https://medium.com/predict/five-interview-questions-to-predict-a-good-data-scientist-40d310cdcd68
 **** https://hbr.org/2019/02/how-to-choose-your-first-ai-project
@@ -112,8 +121,9 @@ One of the subprojects is a seamless pandas scaling framework [[https://github.c
 **** https://towardsdatascience.com/jupyter-is-the-new-excel-but-not-for-your-boss-d24340ebf314  - ways to export/give other easy access to notebooks (hiding cells etc)
 
 *** Pytorch/fastai
-**** https://towardsdatascience.com/multi-layer-perceptron-usingfastai-and-pytorch-9e401dd288b8
-**** https://towardsdatascience.com/deep-learning-for-diagnosis-of-skin-images-with-fastai-792160ab5495
+**** https://towardsdatascience.com/multi-layer-perceptron-usingfastai-and-pytorch-9e401dd288b8 :PyTorch:fastai:
+**** https://towardsdatascience.com/deep-learning-for-diagnosis-of-skin-images-with-fastai-792160ab5495 :fastai:
+**** https://medium.com/huggingface/from-tensorflow-to-pytorch-265f40ef2a28 :PyTorch:tensorflow:
 *** Datasets
 **** https://www.europeandataportal.eu/de/homepage
 **** http://kitab-project.org/2019/06/08/first-open-access-release-of-our-arabic-corpus/
@@ -127,6 +137,7 @@ One of the subprojects is a seamless pandas scaling framework [[https://github.c
 **** https://towardsdatascience.com/7-useful-pandas-tips-for-data-management-8b23a85bf41f  - read_html and read_pdf, use .xs method for multi-indexing
 **** https://hackersandslackers.com/intro-to-data-analysis-in-python-using-pandas/  - Really deep and good information (interesting for beginners and advanced readers) in 12 Parts ...
 **** https://hackersandslackers.com/using-hierarchical-indexes-with-pandas/   - That's part 12 of it
+**** https://www.youtube.com/watch?v=xPPs59pn6qU  - pivot and pivot_table usage (part of a pandas video series)
 **** https://github.com/pandas-profiling/pandas-profiling  - Generates profile reports from a pandas DataFrame.
 
  The pandas df.describe() function is great but a little basic for serious exploratory data analysis.
@@ -145,20 +156,23 @@ One of the subprojects is a seamless pandas scaling framework [[https://github.c
 **** https://medium.com/nautilus-magazine/5-ways-to-lie-with-charts-173cd7fe2dc0
 **** https://modus.medium.com/how-to-not-suck-at-color-b3980ee8084a
 **** https://www.freecodecamp.org/news/fundamental-design-principles-for-non-designers-ad34c30caa7
-*** NLP
+*** NLP                                                                 :NLP:
 **** Misc
-***** https://www.slideshare.net/farizbashirov  - 8 do's and don't of chatbots
-***** https://medium.com/huggingface/how-to-build-a-state-of-the-art-conversational-ai-with-transfer-learning-2d818ac26313
 ***** https://towardsdatascience.com/state-of-the-art-multilingual-lemmatization-f303e8ff1a8  - State-of-the-art Multilingual Lemmatization
 ***** https://link.medium.com/kQI6IF7p5V  - “HMTL: Multi-task learning for state of the art NLP” by Elvis
 
   including ELMO etc
 
 ***** https://www.analyticsvidhya.com/blog/2019/03/pretrained-models-get-started-nlp/
-***** https://towardsdatascience.com/data-augmentation-for-natural-language-processing-6ae928313a3f
-***** https://towardsdatascience.com/these-are-the-easiest-data-augmentation-techniques-in-natural-language-processing-you-can-think-of-88e393fd610
 ***** https://towardsdatascience.com/reliving-avengers-infinity-war-with-spacy-and-natural-language-processing-2abcb48e4ba1  - Discovering the top nouns, verbs, entities and text similarity
 ***** https://towardsdatascience.com/a-technique-for-building-nlp-classifiers-efficiently-with-transfer-learning-and-weak-supervision-a8e2f21ca9c8
+***** https://towardsdatascience.com/fuzzy-matching-at-scale-84f2bfd0c536  - Use tf-idf on substrings to make very, very fast fuzzy matching - clever trick
+**** Chatbots
+***** https://www.slideshare.net/farizbashirov  - 8 do's and don't of chatbots
+***** https://medium.com/huggingface/how-to-build-a-state-of-the-art-conversational-ai-with-transfer-learning-2d818ac26313
+**** Data Augmentation
+***** https://towardsdatascience.com/data-augmentation-for-natural-language-processing-6ae928313a3f
+***** https://towardsdatascience.com/these-are-the-easiest-data-augmentation-techniques-in-natural-language-processing-you-can-think-of-88e393fd610
 **** Tools
 ***** http://www.nlpbuddy.io/  - Open Source Text Analysis Tool (Website w/ Spacy Analysis)
 
@@ -230,10 +244,12 @@ Good overview
 **** https://towardsdatascience.com/deep-learning-based-super-resolution-without-using-a-gan-11c9bb5b6cd5  - Super resolution with just a U-Net (trained from small images starting) and an impressive blog with lots of examples
 **** https://towardsdatascience.com/clean-up-your-own-model-data-without-leaving-jupyter-bdbcc9001734  - Annotator tool **Innotator** for images inside jupyter
 **** https://towardsdatascience.com/review-yolov3-you-only-look-once-object-detection-eab75d7a1ba6
+**** https://www.youtube.com/watch?v=fcnjHmBcLNQ  - Short video showing Style transfer in Videos, super impressive
 *** Deployments
 **** https://towardsdatascience.com/chapter-1-intro-to-aws-sagemaker-a1ecf00ec761
 **** https://medium.com/datadriveninvestor/deploy-your-pytorch-model-to-production-f69460192217
 **** https://medium.com/@colinshaw_36798/fully-utilizing-your-deep-learning-gpus-61ee7acd3e57
+
 ** DevOps / Security
 *** Misc
 **** https://medium.com/s/story/technical-debt-is-like-tetris-168f64d8b700
