@@ -1,6 +1,7 @@
-#+TAGS: Analysis(a) DataScience(D) NLP(N) Software_Development(S) Society(s) Pandas(þ)
-#+TAGS: Philosophical(P) PyTorch(p) fastai (f) tensorflow(t) Statistical(ſ) Augmentations(æ)
-#+TAGS: Jupyter_Notebook(J) Kaggle(K) Collaboration(C)
+#+TAGS: AWS(A) Analysis(a) Augmentations(æ) Collaboration(C) DataScience(D) DevOps(d) NLP(N)
+#+TAGS: Software_Development(S) Society(s) Pandas(þ)
+#+TAGS: Philosophical(P) PyTorch(p) fastai (f) tensorflow(t) Statistical(ſ)
+#+TAGS: Jupyter_Notebook(J) Kaggle(K)
 
 * Bookmarks
 ** Misc
@@ -138,6 +139,7 @@ Introductionary, but very well written text
 **** https://towardsdatascience.com/12-things-i-learned-during-my-first-year-as-a-machine-learning-engineer-2991573a9195
 
 **** https://towardsdatascience.com/six-challenges-every-data-scientist-will-face-and-how-to-overcome-them-2d7ccd6e88c4
+**** https://towardsdatascience.com/data-science-is-boring-1d43473e353e
 *** Optimizers / Learn Rates
 **** https://towardsdatascience.com/finding-good-learning-rate-and-the-one-cycle-policy-7159fe1db5d6 :fastai:
 **** https://medium.com/@lessw/new-deep-learning-optimizer-ranger-synergistic-combination-of-radam-lookahead-for-the-best-of-2dc83f79a48d :fastai:
@@ -187,6 +189,7 @@ Introductionary, but very well written text
 **** https://medium.com/nautilus-magazine/5-ways-to-lie-with-charts-173cd7fe2dc0
 **** https://modus.medium.com/how-to-not-suck-at-color-b3980ee8084a
 **** https://www.freecodecamp.org/news/fundamental-design-principles-for-non-designers-ad34c30caa7
+**** https://towardsdatascience.com/vis-amz-83dea6fcb059  - Visualizing 100,000 Products Fast sentence embeddings (fse) for millions of reviews in only a few minutes. :NLP:
 *** NLP                                                                 :NLP:
 **** Misc
 ***** https://towardsdatascience.com/state-of-the-art-multilingual-lemmatization-f303e8ff1a8  - State-of-the-art Multilingual Lemmatization
@@ -253,34 +256,43 @@ In all use cases, the information extraction is based on analysing the semantic 
 ***** http://mostafadehghani.com/2019/05/05/universal-transformers/
 ***** https://medium.com/tensorflow/lingvo-a-tensorflow-framework-for-sequence-modeling-8b1d6ffba5bb
 ***** https://slator.com/technology/is-googles-new-lingvo-framework-a-big-deal-for-machine-translation/
-**** BERT / XLNet
+**** BERT
 ***** https://medium.com/synapse-dev/understanding-bert-transformer-attention-isnt-all-you-need-5839ebd396db
 ***** https://medium.com/@_init_/why-bert-has-3-embedding-layers-and-their-implementation-details-9c261108e28a
 ***** https://towardsdatascience.com/deconstructing-bert-distilling-6-patterns-from-100-million-parameters-b49113672f77
 ***** https://medium.com/hiredscore-engineering/introducing-octoml-73bd527491b1  - makes it easy to use BERT
 ***** https://towardsdatascience.com/xlm-enhancing-bert-for-cross-lingual-language-model-5aeed9e6f14b
 ***** https://towardsdatascience.com/a-review-of-bert-based-models-4ffdc0f15d58
+***** https://x.ai/blog/the-unreasonable-effectiveness-of-neural-machine-translation-a-breakthrough-in-temporal-expression-understanding  - Parse date times with NLP / Bert instead of traditional stacking
+***** https://towardsdatascience.com/train-and-deploy-mighty-transformer-nlp-models-using-fastbert-and-aws-sagemaker-cc4303c51cf3 :AWS:DevOps:
+***** https://towardsdatascience.com/bert-for-dummies-step-by-step-tutorial-fb90890ffe03
+**** XLNet
 ***** https://towardsdatascience.com/what-is-xlnet-and-why-it-outperforms-bert-8d8fce710335
 ***** https://towardsdatascience.com/xlnet-a-clever-language-modeling-solution-ab41e87798b0
 ***** https://medium.com/dair-ai/xlnet-outperforms-bert-on-several-nlp-tasks-9ec867bb563b
-***** https://x.ai/blog/the-unreasonable-effectiveness-of-neural-machine-translation-a-breakthrough-in-temporal-expression-understanding  - Parse date times with NLP / Bert instead of traditional stacking
 *** Computer Vision
-**** https://towardsdatascience.com/deep-learning-for-image-classification-why-its-challenging-where-we-ve-been-and-what-s-next-93b56948fcef
+**** Misc
+***** Good overview https://towardsdatascience.com/deep-learning-for-image-classification-why-its-challenging-where-we-ve-been-and-what-s-next-93b56948fcef
 
-Good overview
+ Good overview
 
-**** Good list of architectures on https://keras.io/applications including default image sizes
-**** https://blog.floydhub.com/colorizing-and-restoring-old-images-with-deep-learning/  - with Self Attention GANs, has a github link included
-
-**** https://towardsdatascience.com/u-nets-with-resnet-encoders-and-cross-connections-d8ba94125a2c
-**** https://towardsdatascience.com/deep-learning-based-super-resolution-without-using-a-gan-11c9bb5b6cd5  - Super resolution with just a U-Net (trained from small images starting) and an impressive blog with lots of examples
-**** https://towardsdatascience.com/review-yolov3-you-only-look-once-object-detection-eab75d7a1ba6
-**** https://www.youtube.com/watch?v=fcnjHmBcLNQ  - Short video showing Style transfer in Videos, super impressive
-**** https://towardsdatascience.com/clean-up-your-own-model-data-without-leaving-jupyter-bdbcc9001734  - Annotator tool **Innotator** for images inside jupyter
-**** https://github.com/albu/albumentations  - Library for fast and convenient image augmentations :Augmentations:
-*** Deployments
-**** https://towardsdatascience.com/chapter-1-intro-to-aws-sagemaker-a1ecf00ec761
-**** https://medium.com/datadriveninvestor/deploy-your-pytorch-model-to-production-f69460192217
+***** Good list of architectures on https://keras.io/applications including default image sizes
+***** https://www.youtube.com/watch?v=fcnjHmBcLNQ  - Short video showing Style transfer in Videos, super impressive
+**** Tools
+***** https://github.com/albu/albumentations  - Library for fast and convenient image augmentations :Augmentations:
+***** https://towardsdatascience.com/clean-up-your-own-model-data-without-leaving-jupyter-bdbcc9001734  - Annotator tool **Innotator** for images inside jupyter
+***** https://github.com/tzutalin/labelImg  - a graphical image annotation tool which saves in Pascal VOG or YOLO Format
+**** U-Nets / Colorizing / Super-Resolution
+***** https://blog.floydhub.com/colorizing-and-restoring-old-images-with-deep-learning/  - with Self Attention GANs, has a github link included
+***** https://towardsdatascience.com/u-nets-with-resnet-encoders-and-cross-connections-d8ba94125a2c
+***** https://towardsdatascience.com/deep-learning-based-super-resolution-without-using-a-gan-11c9bb5b6cd5  - Super resolution with just a U-Net (trained from small images starting) and an impressive blog with lots of examples
+**** Bounding Boxes
+***** https://towardsdatascience.com/getting-started-with-bounding-box-regression-in-tensorflow-743e22d0ccb3
+***** https://towardsdatascience.com/implementation-of-mean-average-precision-map-with-non-maximum-suppression-f9311eb92522
+***** https://towardsdatascience.com/review-yolov3-you-only-look-once-object-detection-eab75d7a1ba6
+*** Deployments                                                      :DevOps:
+**** https://towardsdatascience.com/chapter-1-intro-to-aws-sagemaker-a1ecf00ec761 :AWS:
+**** https://medium.com/datadriveninvestor/deploy-your-pytorch-model-to-production-f69460192217 :PyTorch:
 **** https://medium.com/@colinshaw_36798/fully-utilizing-your-deep-learning-gpus-61ee7acd3e57
 
 
