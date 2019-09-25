@@ -1,4 +1,4 @@
-#+TAGS: AWS(A) Analysis(a) Augmentations(æ) Collaboration(C) DataScience(D) DevOps(d) NLP(N)
+#+TAGS: AWS(A) Analysis(a) Augmentations(æ) Collaboration(C) DataScience(D) DevOps(d) Math(M) NLP(N)
 #+TAGS: Software_Development(S) Society(s) Pandas(þ)
 #+TAGS: Philosophical(P) PyTorch(p) fastai (f) tensorflow(t) Statistical(ſ)
 #+TAGS: Jupyter_Notebook(J) Kaggle(K)
@@ -140,6 +140,7 @@ Introductionary, but very well written text
 
 **** https://towardsdatascience.com/six-challenges-every-data-scientist-will-face-and-how-to-overcome-them-2d7ccd6e88c4
 **** https://towardsdatascience.com/data-science-is-boring-1d43473e353e
+**** https://towardsdatascience.com/how-to-screw-up-a-computer-vision-project-166dfcc44a5f
 *** Optimizers / Learn Rates
 **** https://towardsdatascience.com/finding-good-learning-rate-and-the-one-cycle-policy-7159fe1db5d6 :fastai:
 **** https://medium.com/@lessw/new-deep-learning-optimizer-ranger-synergistic-combination-of-radam-lookahead-for-the-best-of-2dc83f79a48d :fastai:
@@ -178,6 +179,8 @@ Introductionary, but very well written text
 **** https://towardsdatascience.com/4-tips-for-advanced-feature-engineering-and-preprocessing-ec11575c09ea  - SMOTE Oversampling, featuretools creations, IterativeImputer, IsolationForest for Outlier Detection
 **** https://distill.pub/2016/misread-tsne/  - A nice _interactive_ overview of the effect of hyperparameters for t-SNE
 **** https://towardsdatascience.com/five-command-line-tools-for-data-science-29f04e5b9c16  - especially csvkit and csvquery
+**** https://medium.com/@ODSC/transforming-skewed-data-for-machine-learning-90e6cc364b0
+**** https://de.wikipedia.org/wiki/Shapiro-Wilk-Test  -  Signifikanztest, der die Hypothese überprüft, dass die zugrunde liegende Grundgesamtheit einer Stichprobe normalverteilt
 *** Data Visualization
 **** [[https://pudding.cool/2018/10/city_3d/?fbclid=IwAR3YX_t3CyRYCMKhuqXcQ4Xxy-eg1gGJpmsK8AA8_GpPfzmfcTwWmaMk2bw][Human Terrain - Visualizing World Population in 3D]]
 **** https://www.youtube.com/watch?time_continue=283&v=jbkSRLYSojo  - Hans Rosling's 200 Countries, 200 Years, 4 Minutes - The Joy of Stats
@@ -272,6 +275,7 @@ In all use cases, the information extraction is based on analysing the semantic 
 ***** https://medium.com/dair-ai/xlnet-outperforms-bert-on-several-nlp-tasks-9ec867bb563b
 *** Computer Vision
 **** Misc
+***** https://medium.com/@CharlesOllion/whats-easy-hard-in-ai-computer-vision-these-days-e7679b9f7db7
 ***** Good overview https://towardsdatascience.com/deep-learning-for-image-classification-why-its-challenging-where-we-ve-been-and-what-s-next-93b56948fcef
 
  Good overview
@@ -282,6 +286,9 @@ In all use cases, the information extraction is based on analysing the semantic 
 ***** https://github.com/albu/albumentations  - Library for fast and convenient image augmentations :Augmentations:
 ***** https://towardsdatascience.com/clean-up-your-own-model-data-without-leaving-jupyter-bdbcc9001734  - Annotator tool **Innotator** for images inside jupyter
 ***** https://github.com/tzutalin/labelImg  - a graphical image annotation tool which saves in Pascal VOG or YOLO Format
+**** Architectures
+***** Inception_v4 and predecessors: https://towardsdatascience.com/review-inception-v4-evolved-from-googlenet-merged-with-resnet-idea-image-classification-5e8c339d18bc
+***** ResNext: https://towardsdatascience.com/review-inception-v4-evolved-from-googlenet-merged-with-resnet-idea-image-classification-5e8c339d18bc
 **** U-Nets / Colorizing / Super-Resolution
 ***** https://blog.floydhub.com/colorizing-and-restoring-old-images-with-deep-learning/  - with Self Attention GANs, has a github link included
 ***** https://towardsdatascience.com/u-nets-with-resnet-encoders-and-cross-connections-d8ba94125a2c
@@ -334,7 +341,7 @@ In all use cases, the information extraction is based on analysing the semantic 
 **** https://medium.freecodecamp.org/hash-table-attack-8e4371fc5261  - The moment when you realize every server in the world is vulnerable
 **** https://blog.usejournal.com/how-to-avoid-ruining-lives-front-end-security-matters-26d4f906c7a6  - XSS and CSRF tokens
 
-** Math
+** Math                                                                :Math:
 *** https://de.wikipedia.org/wiki/Braess-Paradoxon
 
 zusätzliche Handlungsoption unter der Annahme rationaler Einzelentscheidungen zu einer
