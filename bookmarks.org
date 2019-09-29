@@ -171,6 +171,7 @@ Introductionary, but very well written text
 **** https://www.youtube.com/watch?v=xPPs59pn6qU  - pivot and pivot_table usage (part of a pandas video series)
 
 *** Data Exploration / Feature Engineering
+**** https://towardsdatascience.com/annotated-heatmaps-in-5-simple-steps-cc2a0660a27d
 **** https://github.com/pandas-profiling/pandas-profiling  - Generates profile reports from a pandas DataFrame. :Pandas:
 
  The pandas df.describe() function is great but a little basic for serious exploratory data analysis.
@@ -289,6 +290,7 @@ In all use cases, the information extraction is based on analysing the semantic 
 **** Architectures
 ***** Inception_v4 and predecessors: https://towardsdatascience.com/review-inception-v4-evolved-from-googlenet-merged-with-resnet-idea-image-classification-5e8c339d18bc
 ***** ResNext: https://towardsdatascience.com/review-inception-v4-evolved-from-googlenet-merged-with-resnet-idea-image-classification-5e8c339d18bc
+***** Res2Net: https://medium.com/@lessw/res2net-new-deep-learning-multi-scale-architecture-for-improved-object-detection-with-existing-de13095c9654
 **** U-Nets / Colorizing / Super-Resolution
 ***** https://blog.floydhub.com/colorizing-and-restoring-old-images-with-deep-learning/  - with Self Attention GANs, has a github link included
 ***** https://towardsdatascience.com/u-nets-with-resnet-encoders-and-cross-connections-d8ba94125a2c
