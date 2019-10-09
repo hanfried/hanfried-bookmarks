@@ -9,3 +9,4 @@ all:
 	emacsclient -e '(progn (find-file "~/org/bookmarks.org") (org-md-export-to-markdown))'
 	cp ~/org/bookmarks.md README.md
 	git commit -a -m "Bookmarks from ${TODAY}"
+	git push
