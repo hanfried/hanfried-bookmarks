@@ -1,6 +1,6 @@
 #+TAGS: AWS(A) Analysis(a) Augmentations(æ) Collaboration(C) DataScience(D) DevOps(d) Math(M) NLP(N)
 #+TAGS: Software_Development(S) Society(s) Pandas(þ)
-#+TAGS: Philosophical(P) PyTorch(p) fastai (f) tensorflow(t) Statistical(ſ)
+#+TAGS: Philosophical(P) PyTorch(p) fastai (f) TimeSeries(T) tensorflow(t) Statistical(ſ)
 #+TAGS: Jupyter_Notebook(J) Kaggle(K)
 
 * Bookmarks
@@ -10,6 +10,7 @@
 Inklusive detaillierte Wagenreihung und Anfahrtspläne für einen Bahnhof
 
 *** https://bahn.guru  - Sparpreis-Finder
+*** https://github.com/sherlock-project/sherlock  - find different social media accounts across the internet by username
 *** http://scienceandpublic.com/  - DeJargonizer
 *** https://medium.com/fast-company/start-taking-back-your-online-privacy-by-making-these-4-easy-changes-def3668bf69b
 *** https://www.fast.ai/2019/05/13/blogging-advice/  - Advice for Better Blog Posts
@@ -170,6 +171,7 @@ Introductionary, but very well written text
 **** https://hackersandslackers.com/using-hierarchical-indexes-with-pandas/   - That's part 12 of it
 **** https://www.youtube.com/watch?v=xPPs59pn6qU  - pivot and pivot_table usage (part of a pandas video series)
 
+**** https://towardsdatascience.com/analyzing-time-series-data-in-pandas-be3887fdd621 :TimeSeries:
 *** Data Exploration / Feature Engineering
 **** https://towardsdatascience.com/annotated-heatmaps-in-5-simple-steps-cc2a0660a27d
 **** https://github.com/pandas-profiling/pandas-profiling  - Generates profile reports from a pandas DataFrame. :Pandas:
@@ -287,6 +289,7 @@ In all use cases, the information extraction is based on analysing the semantic 
 ***** https://github.com/albu/albumentations  - Library for fast and convenient image augmentations :Augmentations:
 ***** https://towardsdatascience.com/clean-up-your-own-model-data-without-leaving-jupyter-bdbcc9001734  - Annotator tool **Innotator** for images inside jupyter
 ***** https://github.com/tzutalin/labelImg  - a graphical image annotation tool which saves in Pascal VOG or YOLO Format
+***** https://towardsdatascience.com/feature-visualisation-in-pytorch-saliency-maps-a3f99d08f78a
 **** Architectures
 ***** Inception_v4 and predecessors: https://towardsdatascience.com/review-inception-v4-evolved-from-googlenet-merged-with-resnet-idea-image-classification-5e8c339d18bc
 ***** ResNext: https://towardsdatascience.com/review-inception-v4-evolved-from-googlenet-merged-with-resnet-idea-image-classification-5e8c339d18bc
@@ -299,6 +302,9 @@ In all use cases, the information extraction is based on analysing the semantic 
 ***** https://towardsdatascience.com/getting-started-with-bounding-box-regression-in-tensorflow-743e22d0ccb3
 ***** https://towardsdatascience.com/implementation-of-mean-average-precision-map-with-non-maximum-suppression-f9311eb92522
 ***** https://towardsdatascience.com/review-yolov3-you-only-look-once-object-detection-eab75d7a1ba6
+      
+*** Time Series
+**** Forecasting at scale: https://facebook.github.io/prophet/
 *** Deployments                                                      :DevOps:
 **** https://towardsdatascience.com/chapter-1-intro-to-aws-sagemaker-a1ecf00ec761 :AWS:
 **** https://medium.com/datadriveninvestor/deploy-your-pytorch-model-to-production-f69460192217 :PyTorch:
@@ -349,3 +355,4 @@ In all use cases, the information extraction is based on analysing the semantic 
 zusätzliche Handlungsoption unter der Annahme rationaler Einzelentscheidungen zu einer
 Verschlechterung der Situation für alle führen kann
 
+*** https://towardsdatascience.com/the-inspection-paradox-is-everywhere-2ef1c2e9d709 :Statistical:

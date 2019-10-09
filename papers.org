@@ -8,6 +8,8 @@
  the whole information.
 
 ** Computer Vision
+*** [[https://arxiv.org/pdf/1711.02512.pdf][Fine-tuning CNN Image Retrievalwith No Human Annotation]] (Radenovic, Tolias, Chum: Jul 2018)
+*** [[https://arxiv.org/pdf/1709.01507.pdf][Squeeze-and-Excitation Networks]] (Hu, Chen, Albanie, Sun, Wu: Mai 2019)
 *** [[https://arxiv.org/abs/1905.11946][EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks]] (Tan, Le: May/June 2019)
 
 - Google Blog: https://ai.googleblog.com/2019/05/efficientnet-improving-accuracy-and.html
