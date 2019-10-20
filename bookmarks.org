@@ -26,6 +26,7 @@ Inklusive detaillierte Wagenreihung und Anfahrtspläne für einen Bahnhof
 *** https://www.youtube.com/watch?v=pKymOx9UDoM  - Harald Lesch: wenn nicht jetzt, wann dann? Vortrag (Klima)
 *** http://m.spiegel.de/gesundheit/psychologie/psychotherapie-wie-ein-lobbyverband-psychisch-kranken-schadet-a-1259159.html
 *** https://www.zeit.de/kultur/2019-04/sexualitaet-jugendliche-pubertaet-youporn
+*** https://www.heise.de/ct/artikel/Die-Psycho-Tricks-der-App-Entwickler-4547123.html
 *** https://onezero.medium.com/relentless-com-life-as-a-cog-in-amazons-e-tail-machine-d46b3ef05eb8
 *** https://www.bento.de/gefuehle/badeunfall-mein-freund-waere-fast-ertrunken-was-ich-daraus-gelernt-habe-a-1517a3af-5571-483b-af01-4e25d9600927
 ** Software-Development                                :Software_Development:
@@ -190,6 +191,7 @@ Introductionary, but very well written text
 **** https://link.medium.com/xL0hrHaJSV  - Data visualizations “Mistakes, we’ve drawn a few” by Sarah Leo
 **** https://towardsdatascience.com/pythons-one-liner-graph-creation-library-with-animations-hans-rosling-style-f2cb50490396
 **** https://towardsdatascience.com/its-2019-make-your-data-visualizations-interactive-with-plotly-b361e7d45dc6  - Plotly, Express, Cufflinks comparison
+**** https://towardsdatascience.com/how-to-write-web-apps-using-simple-python-for-data-scientists-a227a1a01582  - streamlit as lightweight Dash/Shiny-kind framework
 **** https://towardsdatascience.com/reviewing-python-visualization-packages-fa7fe12e622b
 **** https://towardsdatascience.com/build-your-own-data-dashboard-93e4848a0dcf  - With Dash, nice short introduction example
 **** https://medium.com/nautilus-magazine/5-ways-to-lie-with-charts-173cd7fe2dc0
@@ -290,6 +292,7 @@ In all use cases, the information extraction is based on analysing the semantic 
 ***** https://towardsdatascience.com/clean-up-your-own-model-data-without-leaving-jupyter-bdbcc9001734  - Annotator tool **Innotator** for images inside jupyter
 ***** https://github.com/tzutalin/labelImg  - a graphical image annotation tool which saves in Pascal VOG or YOLO Format
 ***** https://towardsdatascience.com/feature-visualisation-in-pytorch-saliency-maps-a3f99d08f78a
+***** https://github.com/idealo/imagededup  - python package that simplifies the task of finding exact and near duplicates in an image collection.
 **** Architectures
 ***** Inception_v4 and predecessors: https://towardsdatascience.com/review-inception-v4-evolved-from-googlenet-merged-with-resnet-idea-image-classification-5e8c339d18bc
 ***** ResNext: https://towardsdatascience.com/review-inception-v4-evolved-from-googlenet-merged-with-resnet-idea-image-classification-5e8c339d18bc
@@ -305,6 +308,7 @@ In all use cases, the information extraction is based on analysing the semantic 
       
 *** Time Series
 **** Forecasting at scale: https://facebook.github.io/prophet/
+**** https://towardsdatascience.com/on-the-automation-of-time-series-forecasting-models-technical-and-organizational-considerations-286db3120c8e
 *** Deployments                                                      :DevOps:
 **** https://towardsdatascience.com/chapter-1-intro-to-aws-sagemaker-a1ecf00ec761 :AWS:
 **** https://medium.com/datadriveninvestor/deploy-your-pytorch-model-to-production-f69460192217 :PyTorch:
