@@ -7,6 +7,8 @@
  networks is that we can inspect them and play around with them with ease, as we have at least
  the whole information.
 
+** NLP
+*** Pretrained Language Model Papers: https://github.com/thunlp/PLMpapers
 ** Computer Vision
 *** [[https://arxiv.org/pdf/1711.02512.pdf][Fine-tuning CNN Image Retrievalwith No Human Annotation]] (Radenovic, Tolias, Chum: Jul 2018)
 *** [[https://arxiv.org/pdf/1709.01507.pdf][Squeeze-and-Excitation Networks]] (Hu, Chen, Albanie, Sun, Wu: Mai 2019)

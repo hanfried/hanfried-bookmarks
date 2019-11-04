@@ -1,7 +1,7 @@
 #+TAGS: AWS(A) Analysis(a) Augmentations(æ) Collaboration(C) DataScience(D) DevOps(d) Math(M) NLP(N)
 #+TAGS: Software_Development(S) Society(s) Pandas(þ)
 #+TAGS: Philosophical(P) PyTorch(p) fastai (f) TimeSeries(T) tensorflow(t) Statistical(ſ)
-#+TAGS: Jupyter_Notebook(J) Kaggle(K)
+#+TAGS: Jupyter_Notebook(J) Kaggle(K) Visualization(V)
 
 * Bookmarks
 ** Misc
@@ -12,7 +12,7 @@ Inklusive detaillierte Wagenreihung und Anfahrtspläne für einen Bahnhof
 *** https://bahn.guru  - Sparpreis-Finder
 *** https://github.com/sherlock-project/sherlock  - find different social media accounts across the internet by username
 *** http://scienceandpublic.com/  - DeJargonizer
-*** https://medium.com/fast-company/start-taking-back-your-online-privacy-by-making-these-4-easy-changes-def3668bf69b
+*** https://www.nature.com/articles/d41586-019-02918-5
 *** https://www.fast.ai/2019/05/13/blogging-advice/  - Advice for Better Blog Posts
 *** https://clutch.co/app-developers/resources/what-is-riskiest-assumption-test  - RAT vs MVP
 *** https://entrepreneurshandbook.co/the-real-reasons-why-a-vc-passed-on-your-startup-917c30103ecb  - pretty complete check list
@@ -24,6 +24,7 @@ Inklusive detaillierte Wagenreihung und Anfahrtspläne für einen Bahnhof
 *** https://elemental.medium.com/why-you-should-try-micromastery-90b080b3befa
 ** Gesellschaftliches
 *** https://www.youtube.com/watch?v=pKymOx9UDoM  - Harald Lesch: wenn nicht jetzt, wann dann? Vortrag (Klima)
+*** https://medium.com/fast-company/start-taking-back-your-online-privacy-by-making-these-4-easy-changes-def3668bf69b
 *** http://m.spiegel.de/gesundheit/psychologie/psychotherapie-wie-ein-lobbyverband-psychisch-kranken-schadet-a-1259159.html
 *** https://www.zeit.de/kultur/2019-04/sexualitaet-jugendliche-pubertaet-youporn
 *** https://www.heise.de/ct/artikel/Die-Psycho-Tricks-der-App-Entwickler-4547123.html
@@ -168,12 +169,15 @@ Introductionary, but very well written text
 - Video (Classification)
 
 *** Pandas                                                           :Pandas:
+
 **** https://towardsdatascience.com/7-useful-pandas-tips-for-data-management-8b23a85bf41f  - read_html and read_pdf, use .xs method for multi-indexing
 **** https://hackersandslackers.com/intro-to-data-analysis-in-python-using-pandas/  - Really deep and good information (interesting for beginners and advanced readers) in 12 Parts ...
 **** https://hackersandslackers.com/using-hierarchical-indexes-with-pandas/   - That's part 12 of it
 **** https://www.youtube.com/watch?v=xPPs59pn6qU  - pivot and pivot_table usage (part of a pandas video series)
-
+**** 
 **** https://towardsdatascience.com/analyzing-time-series-data-in-pandas-be3887fdd621 :TimeSeries:
+**** https://towardsdatascience.com/geopandas-101-plot-any-data-with-a-latitude-and-longitude-on-a-map-98e01944b972 :Visualization:
+
 *** Data Exploration / Feature Engineering
 **** https://towardsdatascience.com/annotated-heatmaps-in-5-simple-steps-cc2a0660a27d
 **** https://github.com/pandas-profiling/pandas-profiling  - Generates profile reports from a pandas DataFrame. :Pandas:
@@ -186,7 +190,7 @@ Introductionary, but very well written text
 **** https://towardsdatascience.com/five-command-line-tools-for-data-science-29f04e5b9c16  - especially csvkit and csvquery
 **** https://medium.com/@ODSC/transforming-skewed-data-for-machine-learning-90e6cc364b0
 **** https://de.wikipedia.org/wiki/Shapiro-Wilk-Test  -  Signifikanztest, der die Hypothese überprüft, dass die zugrunde liegende Grundgesamtheit einer Stichprobe normalverteilt
-*** Data Visualization
+*** Data Visualization                                        :Visualization:
 **** [[https://pudding.cool/2018/10/city_3d/?fbclid=IwAR3YX_t3CyRYCMKhuqXcQ4Xxy-eg1gGJpmsK8AA8_GpPfzmfcTwWmaMk2bw][Human Terrain - Visualizing World Population in 3D]]
 **** https://www.youtube.com/watch?time_continue=283&v=jbkSRLYSojo  - Hans Rosling's 200 Countries, 200 Years, 4 Minutes - The Joy of Stats
 **** https://link.medium.com/xL0hrHaJSV  - Data visualizations “Mistakes, we’ve drawn a few” by Sarah Leo
@@ -246,6 +250,7 @@ In all use cases, the information extraction is based on analysing the semantic 
 
 ***** https://github.com/pytorch/fairseq
 **** Embeddings
+***** https://towardsdatascience.com/document-embedding-techniques-fed3e7a6a25d  - A review of notable literature on the topic
 ***** https://nlp.stanford.edu/projects/glove/  Global Vectors for Word Representation
 ***** https://towardsdatascience.com/use-cases-of-googles-universal-sentence-encoder-in-production-dd5aaab4fc15
 ***** https://towardsdatascience.com/fse-2b1ffa791cf9  - Sentence Embeddings. Fast, please!
@@ -260,6 +265,7 @@ In all use cases, the information extraction is based on analysing the semantic 
 ***** http://sjmielke.com/comparing-perplexities.htm
 ***** https://towardsdatascience.com/how-to-find-shortest-dependency-path-with-spacy-and-stanfordnlp-539d45d28239
 **** Attention / Transformers / ...
+***** https://github.com/sannykim/transformers  - a collection of resources to study Transformers in depth
 ***** https://medium.com/inside-machine-learning/what-is-a-transformer-d07dd1fbec04
 ***** http://nlp.seas.harvard.edu/2018/04/03/attention.html  - annotated implementation of a transformer
 ***** http://mostafadehghani.com/2019/05/05/universal-transformers/
@@ -302,6 +308,7 @@ In all use cases, the information extraction is based on analysing the semantic 
 ***** https://blog.floydhub.com/colorizing-and-restoring-old-images-with-deep-learning/  - with Self Attention GANs, has a github link included
 ***** https://towardsdatascience.com/u-nets-with-resnet-encoders-and-cross-connections-d8ba94125a2c
 ***** https://towardsdatascience.com/deep-learning-based-super-resolution-without-using-a-gan-11c9bb5b6cd5  - Super resolution with just a U-Net (trained from small images starting) and an impressive blog with lots of examples
+***** https://towardsdatascience.com/image-segmentation-kaggle-experience-9a41cb8924f0 :Kaggle:
 **** Bounding Boxes
 ***** https://towardsdatascience.com/getting-started-with-bounding-box-regression-in-tensorflow-743e22d0ccb3
 ***** https://towardsdatascience.com/implementation-of-mean-average-precision-map-with-non-maximum-suppression-f9311eb92522
