@@ -51,12 +51,14 @@ Inklusive detaillierte Wagenreihung und Anfahrtspläne für einen Bahnhof
 **** https://semver.org/spec/v2.0.0.html  - Semantic versioning
 **** https://github.com/github/semantic/blob/master/docs/examples.md  - Haskell library and command line tool for parsing, analyzing, and comparing source code
 **** https://medium.com/@liman.rom/f-spoiled-me-or-why-i-dont-enjoy-c-anymore-39e025035a98  - nice examples of advantages of a well designed functional language
+**** https://www.youtube.com/watch?v=UANN2Eu6ZnM  - Mental game of python -> how to reduce cognitive load and implement incrementally even OOP
 *** YAML
 **** https://blog.atomist.com/in-defense-of-yaml/
 **** https://noyaml.com/
 **** https://arp242.net/weblog/yaml_probably_not_so_great_after_all.html
 *** Python
 **** Best Practices
+***** https://docs.quantifiedcode.com/python-anti-patterns/index.html
 ***** https://gist.github.com/sloria/7001839  - The Best of the Best Practices (BOBP) Guide for Python
 ***** https://towardsdatascience.com/whats-init-for-me-d70a312da583  - Designing for Python package import patterns
 ***** https://instagram-engineering.com/static-analysis-at-scale-an-instagram-story-8f498ab71a0c  - Linters, Codemods, ...
@@ -94,6 +96,8 @@ One of the subprojects is a seamless pandas scaling framework [[https://github.c
 
 ***** https://github.com/modin-project/modin  - scale your pandas workflows by changing one line of code
 
+**** Debugging
+***** https://github.com/benfred/py-spy
 *** Django
 **** https://www.youtube.com/watch?v=FPfBhqL-uek  - Django for Admins
 **** https://djangosuit.com/  - Modern theme for Django admin interface
@@ -190,6 +194,13 @@ Introductionary, but very well written text
 **** https://towardsdatascience.com/five-command-line-tools-for-data-science-29f04e5b9c16  - especially csvkit and csvquery
 **** https://medium.com/@ODSC/transforming-skewed-data-for-machine-learning-90e6cc364b0
 **** https://de.wikipedia.org/wiki/Shapiro-Wilk-Test  -  Signifikanztest, der die Hypothese überprüft, dass die zugrunde liegende Grundgesamtheit einer Stichprobe normalverteilt
+
+*** Data Testing
+**** https://great-expectations.readthedocs.io/en/latest/index.html - helps teams save time and promote analytic integrity by offering pipeline tests.
+
+Pipeline tests are applied to data (instead of code) and at batch time (instead
+of compile or deploy time). Pipeline tests are like unit tests for datasets:
+they help you guard against upstream data changes and monitor data quality.
 *** Data Visualization                                        :Visualization:
 **** [[https://pudding.cool/2018/10/city_3d/?fbclid=IwAR3YX_t3CyRYCMKhuqXcQ4Xxy-eg1gGJpmsK8AA8_GpPfzmfcTwWmaMk2bw][Human Terrain - Visualizing World Population in 3D]]
 **** https://www.youtube.com/watch?time_continue=283&v=jbkSRLYSojo  - Hans Rosling's 200 Countries, 200 Years, 4 Minutes - The Joy of Stats
