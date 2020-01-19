@@ -33,6 +33,7 @@ Inklusive detaillierte Wagenreihung und Anfahrtspläne für einen Bahnhof
 ** Software-Development                                :Software_Development:
 *** Misc
 **** http://www.webpagetest.org/  - checks speed of a web page from different locations, browsers, with auth, protocols ...
+**** https://www.youtube.com/watch?v=ecIWPzGEbFc&feature=youtu.be  - "Uncle" Bob Martin - "The Future of Programming"
 **** https://www.usecue.com/blog/code-warriors/
 
  A true warrior masters his sword and his mind. A ‘code warrior’ masters his software and his
@@ -52,6 +53,7 @@ Inklusive detaillierte Wagenreihung und Anfahrtspläne für einen Bahnhof
 **** https://github.com/github/semantic/blob/master/docs/examples.md  - Haskell library and command line tool for parsing, analyzing, and comparing source code
 **** https://medium.com/@liman.rom/f-spoiled-me-or-why-i-dont-enjoy-c-anymore-39e025035a98  - nice examples of advantages of a well designed functional language
 **** https://www.youtube.com/watch?v=UANN2Eu6ZnM  - Mental game of python -> how to reduce cognitive load and implement incrementally even OOP
+**** https://www.youtube.com/watch?v=KGaFcI2UNrI  - States and Nomads: Handling Software Complexity - Why something like Software Patterns Gamma et al fail
 *** YAML
 **** https://blog.atomist.com/in-defense-of-yaml/
 **** https://noyaml.com/
@@ -63,6 +65,7 @@ Inklusive detaillierte Wagenreihung und Anfahrtspläne für einen Bahnhof
 ***** https://towardsdatascience.com/whats-init-for-me-d70a312da583  - Designing for Python package import patterns
 ***** https://instagram-engineering.com/static-analysis-at-scale-an-instagram-story-8f498ab71a0c  - Linters, Codemods, ...
 **** Modules
+***** https://www.youtube.com/watch?v=GIF3LaRqgXo  - Publishing (Perfect) Python Packages on PyPi
 ***** https://github.com/vinta/awesome-python  - A curated list of awesome Python frameworks, libraries, software and resources.
 ***** https://github.com/jpvanhal/inflection  - string transformation library. It singularizes and pluralizes English words, and transforms strings from CamelCase to underscored string.
 ***** https://github.com/lepture/python-livereload  - nice file watcher
