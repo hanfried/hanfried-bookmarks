@@ -54,6 +54,9 @@ Inklusive detaillierte Wagenreihung und Anfahrtspläne für einen Bahnhof
 **** https://medium.com/@liman.rom/f-spoiled-me-or-why-i-dont-enjoy-c-anymore-39e025035a98  - nice examples of advantages of a well designed functional language
 **** https://www.youtube.com/watch?v=UANN2Eu6ZnM  - Mental game of python -> how to reduce cognitive load and implement incrementally even OOP
 **** https://www.youtube.com/watch?v=KGaFcI2UNrI  - States and Nomads: Handling Software Complexity - Why something like Software Patterns Gamma et al fail
+**** https://medium.com/@copyconstruct/best-of-2019-in-tech-talks-bac697c3ee13
+
+- https://www.infoq.com/presentations/go-locks/
 *** YAML
 **** https://blog.atomist.com/in-defense-of-yaml/
 **** https://noyaml.com/
@@ -102,6 +105,10 @@ One of the subprojects is a seamless pandas scaling framework [[https://github.c
 **** Debugging
 ***** https://github.com/benfred/py-spy
 *** Django
+**** https://github.com/pydanny/cookiecutter-django -- Cookiecutter Django is a framework for jumpstarting production-ready Django projects quickly.
+
+Documentation: https://cookiecutter-django.readthedocs.io/en/latest/
+
 **** https://www.youtube.com/watch?v=FPfBhqL-uek  - Django for Admins
 **** https://djangosuit.com/  - Modern theme for Django admin interface
 
@@ -138,6 +145,7 @@ Introductionary, but very well written text
 **** https://towardsdatascience.com/making-the-mueller-report-searchable-with-ocr-and-elasticsearch-4e73e55de341 :ElasticSearch:OCR:
 **** https://towardsdatascience.com/how-does-news-coverage-differ-between-media-outlets-20aa7be1c96a  - WordClouds for CNN, NBC, ... + TopWords + SentimentAnalysis of Headlines 
 **** https://www.youtube.com/watch?v=DpXy041BIlA&t=2s  - 30 weird chess algorithms - Data Science at its best I'd say completely out of usual domains :Chess:
+**** https://towardsdatascience.com/march-madness-analyze-video-to-detect-players-teams-and-who-attempted-the-basket-8cad67745b88
 *** Kaggle                                                           :Kaggle:
 **** https://medium.com/@andrew.picart/using-kaggle-for-your-data-science-work-a2e78d692395 :Jupyter_Notebook:Kaggle:Collaboration:
 **** https://towardsdatascience.com/a-story-of-my-first-gold-medal-in-one-kaggle-competition-things-done-and-lessons-learned-c269d9c233d1
@@ -162,11 +170,15 @@ Introductionary, but very well written text
 **** https://github.com/fastai/fastprogress  - Simple and flexible progress bar for Jupyter Notebook and console
 **** https://towardsdatascience.com/jupyter-is-the-new-excel-but-not-for-your-boss-d24340ebf314  - ways to export/give other easy access to notebooks (hiding cells etc)
 
+*** Streamlit
+**** https://towardsdatascience.com/how-to-deploy-a-streamlit-app-using-an-amazon-free-ec2-instance-416a41f69dc3
 *** Pytorch/fastai
 **** https://towardsdatascience.com/multi-layer-perceptron-usingfastai-and-pytorch-9e401dd288b8 :PyTorch:fastai:
 **** https://towardsdatascience.com/deep-learning-for-diagnosis-of-skin-images-with-fastai-792160ab5495 :fastai:
 **** https://medium.com/huggingface/from-tensorflow-to-pytorch-265f40ef2a28 :PyTorch:tensorflow:
 *** Datasets
+**** https://github.com/neutraltone/awesome-stock-resources - A curated list of awesome stock photography, video and illustration websites.
+**** https://datasetsearch.research.google.com
 **** https://www.europeandataportal.eu/de/homepage
 **** http://kitab-project.org/2019/06/08/first-open-access-release-of-our-arabic-corpus/
 **** https://tfhub.dev/  - Pretrained Models from Google & DeepMind
@@ -308,6 +320,12 @@ In all use cases, the information extraction is based on analysing the semantic 
 
 ***** Good list of architectures on https://keras.io/applications including default image sizes
 ***** https://www.youtube.com/watch?v=fcnjHmBcLNQ  - Short video showing Style transfer in Videos, super impressive
+***** https://medium.com/bethgelab/neural-networks-seem-to-follow-a-puzzlingly-simple-strategy-to-classify-images-f4229317261f - ResNet are not much better: 
+
+than looking to tiny patches and sum up sum propabilities
+that's why shuffling pictures is robust for resnet
+but also why they are so sensitive to adversial networks
+
 **** Tools
 ***** https://github.com/albu/albumentations  - Library for fast and convenient image augmentations :Augmentations:
 ***** https://towardsdatascience.com/clean-up-your-own-model-data-without-leaving-jupyter-bdbcc9001734  - Annotator tool **Innotator** for images inside jupyter
@@ -331,6 +349,7 @@ In all use cases, the information extraction is based on analysing the semantic 
 *** Time Series
 **** Forecasting at scale: https://facebook.github.io/prophet/
 **** https://towardsdatascience.com/on-the-automation-of-time-series-forecasting-models-technical-and-organizational-considerations-286db3120c8e
+**** https://towardsdatascience.com/anomaly-detection-time-series-4c661f6f165f - Detect anomaly in time series with facebook Prophet
 *** Deployments                                                      :DevOps:
 **** https://towardsdatascience.com/chapter-1-intro-to-aws-sagemaker-a1ecf00ec761 :AWS:
 **** https://medium.com/datadriveninvestor/deploy-your-pytorch-model-to-production-f69460192217 :PyTorch:
@@ -339,6 +358,7 @@ In all use cases, the information extraction is based on analysing the semantic 
 
 ** DevOps / Security
 *** Misc
+**** https://www.youtube.com/watch?v=BreKdM7CKnY&list=PL_IxoDz1Nq2YjnEpUMSqeqVUXgyEcsJdu&index=2&t=0s  - Hirne hacken, Sicherheit aus psychologischer Sicht
 **** https://medium.com/s/story/technical-debt-is-like-tetris-168f64d8b700
 **** https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/
 **** https://blog.thepete.net/blog/2019/10/04/hello-production/  - Deploying something useless into production, as soon as you can, is the right way to start a new project
