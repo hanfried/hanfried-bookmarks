@@ -1,195 +1,199 @@
 
 # Table of Contents
 
-1.  [Bookmarks](#org885fcd1)
-    1.  [Misc](#org5733639)
-        1.  [Anzeige von Bahn API Daten https://marudor.de/](#orge7203ec)
-        2.  [https://bahn.guru  - Sparpreis-Finder](#org2a484f5)
-        3.  [https://github.com/sherlock-project/sherlock  - find different social media accounts across the internet by username](#org425c485)
-        4.  [http://scienceandpublic.com/  - DeJargonizer](#org0c6f68f)
-        5.  [https://www.nature.com/articles/d41586-019-02918-5](#orgf6ca23c)
-        6.  [https://www.fast.ai/2019/05/13/blogging-advice/  - Advice for Better Blog Posts](#org5a085b1)
-        7.  [https://clutch.co/app-developers/resources/what-is-riskiest-assumption-test  - RAT vs MVP](#org2c9a178)
-        8.  [https://entrepreneurshandbook.co/the-real-reasons-why-a-vc-passed-on-your-startup-917c30103ecb  - pretty complete check list](#org975686e)
-        9.  [https://www.gulp.de/knowledge-base/19/iii/neue-checkliste-fuer-freelancer-bin-ich-scheinselbststaendig.html](#org9ce42fe)
-    2.  [Personal Development](#orgd30d909)
-        1.  [https://forge.medium.com/10-habits-of-unsuccessful-people-you-dont-want-to-copy-d401ac677c91](#orgc74cb49)
-        2.  [https://onezero.medium.com/the-efficiency-delusion-f6a97241e1e1](#orga85f675)
-        3.  [https://medium.com/the-post-grad-survival-guide/transform-your-terrible-networking-skills-with-this-psychology-trick-d61625e1d1d2](#orgab3f6a1)
-        4.  [https://elemental.medium.com/why-you-should-try-micromastery-90b080b3befa](#org982c010)
-    3.  [Gesellschaftliches](#orgd480957)
-        1.  [https://www.youtube.com/watch?v=pKymOx9UDoM  - Harald Lesch: wenn nicht jetzt, wann dann? Vortrag (Klima)](#org3e60c18)
-        2.  [https://medium.com/fast-company/start-taking-back-your-online-privacy-by-making-these-4-easy-changes-def3668bf69b](#org53801cf)
-        3.  [http://m.spiegel.de/gesundheit/psychologie/psychotherapie-wie-ein-lobbyverband-psychisch-kranken-schadet-a-1259159.html](#orge41a04e)
-        4.  [https://www.zeit.de/kultur/2019-04/sexualitaet-jugendliche-pubertaet-youporn](#org526edf6)
-        5.  [https://www.heise.de/ct/artikel/Die-Psycho-Tricks-der-App-Entwickler-4547123.html](#org50999c7)
-        6.  [https://onezero.medium.com/relentless-com-life-as-a-cog-in-amazons-e-tail-machine-d46b3ef05eb8](#org97a2efb)
-        7.  [https://www.bento.de/gefuehle/badeunfall-mein-freund-waere-fast-ertrunken-was-ich-daraus-gelernt-habe-a-1517a3af-5571-483b-af01-4e25d9600927](#org0d9a8e4)
-    4.  [Software-Development](#org3241398):Software_Development:
-        1.  [Misc](#org4a34dd1)
-        2.  [YAML](#orga3c5423)
-        3.  [Python](#orgd3c9a08)
-        4.  [Django](#orgb0365fc)
-    5.  [Data Science / ML / NLP](#orga4f20b4):DataScience:
-        1.  [Misc](#org6e48d2e)
-        2.  [Interesting Analysis](#orgbd7f62c):Analysis:
-        3.  [Kaggle](#org482ee65):Kaggle:
-        4.  [Team (Management, Hiring, Organization, &#x2026;)](#orga94f08b)
-        5.  [Optimizers / Learn Rates](#orgea20a26)
-        6.  [Jupyter Notebooks](#orgad425a0)
-        7.  [Streamlit](#org4cb3e96)
-        8.  [Pytorch/fastai](#orgac1c6aa)
-        9.  [Datasets](#org5cab4be)
-        10. [Pandas](#org4f6d604):Pandas:
-        11. [Data Exploration / Feature Engineering](#org26b993b)
-        12. [Data Testing](#org488c0f3)
-        13. [Data Visualization](#orgabc2d6d):Visualization:
-        14. [NLP](#orga6dc997):NLP:
-        15. [Computer Vision](#org0d5435a)
-        16. [Time Series](#orgdd09a95)
-        17. [Deployments](#org9673855):DevOps:
-    6.  [DevOps / Security](#org39ea981)
-        1.  [Misc](#orgdcabade)
-        2.  [Site Reliability](#org57424b0)
-        3.  [Microservices / Serverless](#org93421c5)
-        4.  [Containers (Docker / Kubernetes)](#org9e796d4)
-        5.  [Monitoring](#org57e89f0)
-        6.  [SSH](#orgab81593)
-        7.  [Security](#orge08e28b)
-    7.  [Math](#org7e3a5a2):Math:
-        1.  [https://de.wikipedia.org/wiki/Braess-Paradoxon](#orgd5a2a46)
-        2.  [https://towardsdatascience.com/the-inspection-paradox-is-everywhere-2ef1c2e9d709](#orgfa20576):Statistical:
+1.  [Bookmarks](#org77397a1)
+    1.  [Misc](#org4c0e6f3)
+        1.  [Anzeige von Bahn API Daten https://marudor.de/](#org4ef8f33)
+        2.  [https://bahn.guru  - Sparpreis-Finder](#org551d24c)
+        3.  [https://github.com/sherlock-project/sherlock  - find different social media accounts across the internet by username](#org9a10aeb)
+        4.  [http://scienceandpublic.com/  - DeJargonizer](#org829e56c)
+        5.  [https://www.nature.com/articles/d41586-019-02918-5](#orgb047e4a)
+        6.  [https://www.fast.ai/2019/05/13/blogging-advice/  - Advice for Better Blog Posts](#org8eb9abd)
+        7.  [https://clutch.co/app-developers/resources/what-is-riskiest-assumption-test  - RAT vs MVP](#org6955e12)
+        8.  [https://entrepreneurshandbook.co/the-real-reasons-why-a-vc-passed-on-your-startup-917c30103ecb  - pretty complete check list](#org4fe5d9f)
+        9.  [https://www.gulp.de/knowledge-base/19/iii/neue-checkliste-fuer-freelancer-bin-ich-scheinselbststaendig.html](#orgb9ead4d)
+    2.  [Personal Development](#org7d8ee8b)
+        1.  [https://forge.medium.com/10-habits-of-unsuccessful-people-you-dont-want-to-copy-d401ac677c91](#orgab33031)
+        2.  [https://onezero.medium.com/the-efficiency-delusion-f6a97241e1e1](#org9434510)
+        3.  [https://medium.com/the-post-grad-survival-guide/transform-your-terrible-networking-skills-with-this-psychology-trick-d61625e1d1d2](#orgcd25b75)
+        4.  [https://elemental.medium.com/why-you-should-try-micromastery-90b080b3befa](#org816aa86)
+    3.  [Gesellschaftliches](#org0479977)
+        1.  [https://www.youtube.com/watch?v=pKymOx9UDoM  - Harald Lesch: wenn nicht jetzt, wann dann? Vortrag (Klima)](#org106cf9f)
+        2.  [https://medium.com/fast-company/start-taking-back-your-online-privacy-by-making-these-4-easy-changes-def3668bf69b](#orgc1bb231)
+        3.  [http://m.spiegel.de/gesundheit/psychologie/psychotherapie-wie-ein-lobbyverband-psychisch-kranken-schadet-a-1259159.html](#org141a46e)
+        4.  [https://www.zeit.de/kultur/2019-04/sexualitaet-jugendliche-pubertaet-youporn](#orgf3c5bab)
+        5.  [https://www.heise.de/ct/artikel/Die-Psycho-Tricks-der-App-Entwickler-4547123.html](#orgd3d9acb)
+        6.  [https://onezero.medium.com/relentless-com-life-as-a-cog-in-amazons-e-tail-machine-d46b3ef05eb8](#org5afdf3f)
+        7.  [https://www.bento.de/gefuehle/badeunfall-mein-freund-waere-fast-ertrunken-was-ich-daraus-gelernt-habe-a-1517a3af-5571-483b-af01-4e25d9600927](#orgbdaa01f)
+    4.  [Software-Development](#orgf63d58e):Software_Development:
+        1.  [Misc](#org3654b75)
+        2.  [YAML](#org21bb743)
+        3.  [Python](#org35a0c9b)
+        4.  [Django](#org55360a3)
+        5.  [Javascript](#orgd3b3d0a)
+        6.  [REST APIs / Web Development / HTML](#org1c99c77)
+    5.  [Data Science / ML / NLP](#org6e21465):DataScience:
+        1.  [Misc](#orgb113d9f)
+        2.  [Interesting Analysis](#orgd3fce39):Analysis:
+        3.  [Kaggle](#org78f975e):Kaggle:
+        4.  [Team (Management, Hiring, Organization, &#x2026;)](#org78288d4)
+        5.  [Optimizers / Learn Rates](#orgcf1aa58)
+        6.  [Jupyter Notebooks](#org8485e40)
+        7.  [Streamlit](#org61570ce)
+        8.  [Pytorch/fastai](#orgd57f584)
+        9.  [Datasets](#orgd96b8f5)
+        10. [Pandas](#org1069ecb):Pandas:
+        11. [Data Annotation](#orgf318654)
+        12. [Data Exploration / Feature Engineering](#orgf598edc)
+        13. [Data Testing](#orgee92af8)
+        14. [Data Visualization](#org4c61747):Visualization:
+        15. [NLP](#orgcb91f56):NLP:
+        16. [Computer Vision](#orgd1c7c7a)
+        17. [Time Series](#orgf041553)
+        18. [Deployments](#org3a201d4):DevOps:
+    6.  [DevOps / Security](#org6a007f1)
+        1.  [Misc](#orgf6969b9)
+        2.  [Site Reliability](#org0dfa8a2)
+        3.  [Microservices / Serverless](#org8d822ed)
+        4.  [Containers (Docker / Kubernetes)](#orgc07262c)
+        5.  [Monitoring](#org5535687)
+        6.  [SSH](#org1e2d371)
+        7.  [Security](#org9566733)
+    7.  [Math](#org4b897dc):Math:
+        1.  [https://de.wikipedia.org/wiki/Braess-Paradoxon](#orgdf21f7d)
+        2.  [https://towardsdatascience.com/the-inspection-paradox-is-everywhere-2ef1c2e9d709](#org4de47e1):Statistical:
+        3.  [https://towardsdatascience.com/a-b-testing-is-there-a-better-way-an-exploration-of-multi-armed-bandits-98ca927b357d  - Overview of different algorithms for Multi Armed Bandits](#orga8c607d)
 
 
 
-<a id="org885fcd1"></a>
+<a id="org77397a1"></a>
 
 # Bookmarks
 
 
-<a id="org5733639"></a>
+<a id="org4c0e6f3"></a>
 
 ## Misc
 
 
-<a id="orge7203ec"></a>
+<a id="org4ef8f33"></a>
 
 ### Anzeige von Bahn API Daten <https://marudor.de/>
 
 Inklusive detaillierte Wagenreihung und Anfahrtspläne für einen Bahnhof
 
 
-<a id="org2a484f5"></a>
+<a id="org551d24c"></a>
 
 ### <https://bahn.guru>  - Sparpreis-Finder
 
 
-<a id="org425c485"></a>
+<a id="org9a10aeb"></a>
 
 ### <https://github.com/sherlock-project/sherlock>  - find different social media accounts across the internet by username
 
 
-<a id="org0c6f68f"></a>
+<a id="org829e56c"></a>
 
 ### <http://scienceandpublic.com/>  - DeJargonizer
 
 
-<a id="orgf6ca23c"></a>
+<a id="orgb047e4a"></a>
 
 ### <https://www.nature.com/articles/d41586-019-02918-5>
 
 
-<a id="org5a085b1"></a>
+<a id="org8eb9abd"></a>
 
 ### <https://www.fast.ai/2019/05/13/blogging-advice/>  - Advice for Better Blog Posts
 
 
-<a id="org2c9a178"></a>
+<a id="org6955e12"></a>
 
 ### <https://clutch.co/app-developers/resources/what-is-riskiest-assumption-test>  - RAT vs MVP
 
 
-<a id="org975686e"></a>
+<a id="org4fe5d9f"></a>
 
 ### <https://entrepreneurshandbook.co/the-real-reasons-why-a-vc-passed-on-your-startup-917c30103ecb>  - pretty complete check list
 
 
-<a id="org9ce42fe"></a>
+<a id="orgb9ead4d"></a>
 
 ### <https://www.gulp.de/knowledge-base/19/iii/neue-checkliste-fuer-freelancer-bin-ich-scheinselbststaendig.html>
 
 
-<a id="orgd30d909"></a>
+<a id="org7d8ee8b"></a>
 
 ## Personal Development
 
 
-<a id="orgc74cb49"></a>
+<a id="orgab33031"></a>
 
 ### <https://forge.medium.com/10-habits-of-unsuccessful-people-you-dont-want-to-copy-d401ac677c91>
 
 
-<a id="orga85f675"></a>
+<a id="org9434510"></a>
 
 ### <https://onezero.medium.com/the-efficiency-delusion-f6a97241e1e1>
 
 
-<a id="orgab3f6a1"></a>
+<a id="orgcd25b75"></a>
 
 ### <https://medium.com/the-post-grad-survival-guide/transform-your-terrible-networking-skills-with-this-psychology-trick-d61625e1d1d2>
 
 
-<a id="org982c010"></a>
+<a id="org816aa86"></a>
 
 ### <https://elemental.medium.com/why-you-should-try-micromastery-90b080b3befa>
 
 
-<a id="orgd480957"></a>
+<a id="org0479977"></a>
 
 ## Gesellschaftliches
 
 
-<a id="org3e60c18"></a>
+<a id="org106cf9f"></a>
 
 ### <https://www.youtube.com/watch?v=pKymOx9UDoM>  - Harald Lesch: wenn nicht jetzt, wann dann? Vortrag (Klima)
 
 
-<a id="org53801cf"></a>
+<a id="orgc1bb231"></a>
 
 ### <https://medium.com/fast-company/start-taking-back-your-online-privacy-by-making-these-4-easy-changes-def3668bf69b>
 
 
-<a id="orge41a04e"></a>
+<a id="org141a46e"></a>
 
 ### <http://m.spiegel.de/gesundheit/psychologie/psychotherapie-wie-ein-lobbyverband-psychisch-kranken-schadet-a-1259159.html>
 
 
-<a id="org526edf6"></a>
+<a id="orgf3c5bab"></a>
 
 ### <https://www.zeit.de/kultur/2019-04/sexualitaet-jugendliche-pubertaet-youporn>
 
 
-<a id="org50999c7"></a>
+<a id="orgd3d9acb"></a>
 
 ### <https://www.heise.de/ct/artikel/Die-Psycho-Tricks-der-App-Entwickler-4547123.html>
 
 
-<a id="org97a2efb"></a>
+<a id="org5afdf3f"></a>
 
 ### <https://onezero.medium.com/relentless-com-life-as-a-cog-in-amazons-e-tail-machine-d46b3ef05eb8>
 
 
-<a id="org0d9a8e4"></a>
+<a id="orgbdaa01f"></a>
 
 ### <https://www.bento.de/gefuehle/badeunfall-mein-freund-waere-fast-ertrunken-was-ich-daraus-gelernt-habe-a-1517a3af-5571-483b-af01-4e25d9600927>
 
 
-<a id="org3241398"></a>
+<a id="orgf63d58e"></a>
 
 ## Software-Development     :Software_Development:
 
 
-<a id="org4a34dd1"></a>
+<a id="org3654b75"></a>
 
 ### Misc
 
@@ -204,34 +208,34 @@ Inklusive detaillierte Wagenreihung und Anfahrtspläne für einen Bahnhof
     off you go. Mastering the system that makes your software function, however, can take a
     lifetime.
 
-4.  <https://hackernoon.com/a-documentation-crash-course-45006a85c15c>
+4.  <https://hackernoon.com/the-fine-art-of-fast-development-f3b1abb509da>
 
 5.  <https://github.com/timqian/star-history>
 
     (1.0.0 -> 1.0.1 bugfix -> 1.1.0 new functionality -> &#x2026; -> 2.0.0 backward incompatible breaking change)
 
-6.  <https://hackernoon.com/the-fine-art-of-fast-development-f3b1abb509da>
+6.  <https://testing.googleblog.com/2015/04/just-say-no-to-more-end-to-end-tests.html>
 
-7.  <https://testing.googleblog.com/2015/04/just-say-no-to-more-end-to-end-tests.html>
+7.  <https://medium.com/@cscalfani/goodbye-object-oriented-programming-a59cda4c0e53>
 
-8.  <https://medium.com/@cscalfani/goodbye-object-oriented-programming-a59cda4c0e53>
+8.  <https://semver.org/spec/v2.0.0.html>  - Semantic versioning
 
-9.  <https://semver.org/spec/v2.0.0.html>  - Semantic versioning
+9.  <https://github.com/github/semantic/blob/master/docs/examples.md>  - Haskell library and command line tool for parsing, analyzing, and comparing source code
 
-10. <https://github.com/github/semantic/blob/master/docs/examples.md>  - Haskell library and command line tool for parsing, analyzing, and comparing source code
+10. <https://medium.com/@liman.rom/f-spoiled-me-or-why-i-dont-enjoy-c-anymore-39e025035a98>  - nice examples of advantages of a well designed functional language
 
-11. <https://medium.com/@liman.rom/f-spoiled-me-or-why-i-dont-enjoy-c-anymore-39e025035a98>  - nice examples of advantages of a well designed functional language
+11. <https://www.youtube.com/watch?v=UANN2Eu6ZnM>  - Mental game of python -> how to reduce cognitive load and implement incrementally even OOP
 
-12. <https://www.youtube.com/watch?v=UANN2Eu6ZnM>  - Mental game of python -> how to reduce cognitive load and implement incrementally even OOP
+12. <https://www.youtube.com/watch?v=KGaFcI2UNrI>  - States and Nomads: Handling Software Complexity - Why something like Software Patterns Gamma et al fail
 
-13. <https://www.youtube.com/watch?v=KGaFcI2UNrI>  - States and Nomads: Handling Software Complexity - Why something like Software Patterns Gamma et al fail
+13. <https://medium.com/@copyconstruct/best-of-2019-in-tech-talks-bac697c3ee13>
 
-14. <https://medium.com/@copyconstruct/best-of-2019-in-tech-talks-bac697c3ee13>
+    -   <https://www.infoq.com/presentations/go-locks/>  - Let’s Talk Locks:
+    -   <https://www.infoq.com/presentations/ebtree-design/?utm_source=presentations&utm_medium=ny&utm_campaign=qcon>  - Design for a Scheduler and Use (Almost) Everywhere
+    -   <https://www.infoq.com/presentations/pid-loops/>  - PID Loops and the Art of Keeping Systems Stable (Control Theory inside)
 
-    -   <https://www.infoq.com/presentations/go-locks/>
 
-
-<a id="orga3c5423"></a>
+<a id="org21bb743"></a>
 
 ### YAML
 
@@ -242,7 +246,7 @@ Inklusive detaillierte Wagenreihung und Anfahrtspläne für einen Bahnhof
 3.  <https://arp242.net/weblog/yaml_probably_not_so_great_after_all.html>
 
 
-<a id="orgd3c9a08"></a>
+<a id="org35a0c9b"></a>
 
 ### Python
 
@@ -305,7 +309,7 @@ Inklusive detaillierte Wagenreihung und Anfahrtspläne für einen Bahnhof
     1.  <https://github.com/benfred/py-spy>
 
 
-<a id="orgb0365fc"></a>
+<a id="org55360a3"></a>
 
 ### Django
 
@@ -313,21 +317,60 @@ Inklusive detaillierte Wagenreihung und Anfahrtspläne für einen Bahnhof
 
     Documentation: <https://cookiecutter-django.readthedocs.io/en/latest/>
 
-2.  <https://www.youtube.com/watch?v=FPfBhqL-uek>  - Django for Admins
+2.  <https://medium.com/@jwdobken/python-django-with-docker-and-gitlab-ci-b83cc4e7e2e>  - based on cookiecutter django
 
-3.  <https://djangosuit.com/>  - Modern theme for Django admin interface
+3.  <https://www.youtube.com/watch?v=FPfBhqL-uek>  - Django for Admins
+
+4.  <https://djangosuit.com/>  - Modern theme for Django admin interface
 
     There also alternatives w/ different pricing or open source models and different looks.
     Note, it's not a good idea to give customers access to django admin panels (it's really only for internal purposes).
     For externals, just give a REST API and HyperlinkedModelSerializer view.
 
+5.  <https://docs.djangoproject.com/en/3.0/topics/performance/>  - Optimizing Django
 
-<a id="orga4f20b4"></a>
+6.  <http://intercoolerjs.org/docs.html>  - Use familiar, declarative HTML attributes to add AJAX to your application. Use web standards like CSS, REST and Javascript events to enhance your app.
+
+    -   **Blog:** <https://engineering.instawork.com/iterating-with-simplicity-evolving-a-django-app-with-intercooler-js-8ed8e69d8a52>
+
+7.  <https://medium.com/better-programming/how-to-use-drf-serializers-effectively-dc58edc73998>  - How to use django rest framework serializers
+
+8.  <https://vsupalov.com/vue-js-in-django-template/>
+
+
+<a id="orgd3b3d0a"></a>
+
+### Javascript
+
+1.  <https://medium.com/@michael.karen/learning-modern-javascript-with-tetris-92d532bcd057>
+
+
+<a id="org1c99c77"></a>
+
+### REST APIs / Web Development / HTML
+
+1.  <https://hackernoon.com/a-documentation-crash--45006a85c15c>
+
+2.  <https://medium.com/better-programming/best-practices-for-versioning-an-api-for-rest-apis-530a9398f311>
+
+3.  <https://itnext.io/html-underrated-tags-119ef3e45b94>
+
+    -   **<picture>:** to have alternative imgs depending on media without all the css/js mash
+    -   **<progress>:** progressbars just in plain html
+    -   **<base>:** don't forget it :-)
+    -   **<input type="&#x2026;">:** we have plain html date, datetime-local, month, week, time, color, range input types
+    -   **<details>:** includes <summary> and only clicking on details shows all, again pure html
+    -   **<mark>:** use it instead of <span class="&#x2026;"> to mark something
+    -   **<abbr>:** easy to forget, but very useful
+    -   **<div contenteditable>:** to create an editable field (and get rid of textarea)
+
+
+<a id="org6e21465"></a>
 
 ## Data Science / ML / NLP     :DataScience:
 
 
-<a id="org6e48d2e"></a>
+<a id="orgb113d9f"></a>
 
 ### Misc
 
@@ -362,7 +405,7 @@ Inklusive detaillierte Wagenreihung und Anfahrtspläne für einen Bahnhof
     Introductionary, but very well written text
 
 
-<a id="orgbd7f62c"></a>
+<a id="orgd3fce39"></a>
 
 ### Interesting Analysis     :Analysis:
 
@@ -377,7 +420,7 @@ Inklusive detaillierte Wagenreihung und Anfahrtspläne für einen Bahnhof
 5.  <https://towardsdatascience.com/march-madness-analyze-video-to-detect-players-teams-and-who-attempted-the-basket-8cad67745b88>
 
 
-<a id="org482ee65"></a>
+<a id="org78f975e"></a>
 
 ### Kaggle     :Kaggle:
 
@@ -386,7 +429,7 @@ Inklusive detaillierte Wagenreihung und Anfahrtspläne für einen Bahnhof
 2.  <https://towardsdatascience.com/a-story-of-my-first-gold-medal-in-one-kaggle-competition-things-done-and-lessons-learned-c269d9c233d1>
 
 
-<a id="orga94f08b"></a>
+<a id="org78288d4"></a>
 
 ### Team (Management, Hiring, Organization, &#x2026;)
 
@@ -409,7 +452,7 @@ Inklusive detaillierte Wagenreihung und Anfahrtspläne für einen Bahnhof
 9.  <https://towardsdatascience.com/how-to-screw-up-a-computer-vision-project-166dfcc44a5f>
 
 
-<a id="orgea20a26"></a>
+<a id="orgcf1aa58"></a>
 
 ### Optimizers / Learn Rates
 
@@ -418,7 +461,7 @@ Inklusive detaillierte Wagenreihung und Anfahrtspläne für einen Bahnhof
 2.  <https://medium.com/@lessw/new-deep-learning-optimizer-ranger-synergistic-combination-of-radam-lookahead-for-the-best-of-2dc83f79a48d>     :fastai:
 
 
-<a id="orgad425a0"></a>
+<a id="org8485e40"></a>
 
 ### Jupyter Notebooks
 
@@ -432,15 +475,17 @@ Inklusive detaillierte Wagenreihung und Anfahrtspläne für einen Bahnhof
 
 5.  <https://towardsdatascience.com/jupyter-is-the-new-excel-but-not-for-your-boss-d24340ebf314>  - ways to export/give other easy access to notebooks (hiding cells etc)
 
+6.  <https://towardsdatascience.com/introduction-to-papermill-2c61f66bea30>  - How to transform your Jupyter Notebook into a workflow tool
 
-<a id="org4cb3e96"></a>
+
+<a id="org61570ce"></a>
 
 ### Streamlit
 
 1.  <https://towardsdatascience.com/how-to-deploy-a-streamlit-app-using-an-amazon-free-ec2-instance-416a41f69dc3>
 
 
-<a id="orgac1c6aa"></a>
+<a id="orgd57f584"></a>
 
 ### Pytorch/fastai
 
@@ -451,26 +496,53 @@ Inklusive detaillierte Wagenreihung und Anfahrtspläne für einen Bahnhof
 3.  <https://medium.com/huggingface/from-tensorflow-to-pytorch-265f40ef2a28>     :PyTorch:tensorflow:
 
 
-<a id="org5cab4be"></a>
+<a id="orgd96b8f5"></a>
 
 ### Datasets
 
-1.  <https://github.com/neutraltone/awesome-stock-resources> - A curated list of awesome stock photography, video and illustration websites.
+1.  <https://github.com/awesomedata/awesome-public-datasets>  - repository on GitHub of high quality topic-centric public data sources.
 
-2.  <https://datasetsearch.research.google.com>
+    They are collected and tidied from blogs, answers, and user responses. Almost all of these are
+    free with a few exceptions here and there
 
-3.  <https://www.europeandataportal.eu/de/homepage>
+2.  <https://tinyletter.com/data-is-plural>  - weekly newsletter of useful/curious datasets. Y
 
-4.  <http://kitab-project.org/2019/06/08/first-open-access-release-of-our-arabic-corpus/>
+    you can find a huge archive of datasets on their google doc. Just hit ctrl + f for a topic you’d
+    like to look into and see the dozens of results that pop up.
 
-5.  <https://tfhub.dev/>  - Pretrained Models from Google & DeepMind
+3.  <https://data.world/datasets/open-data>  - Data World is an open data repository containing data contributed by thousands of users and organizations all across the world.
+
+    it contains really hard to find data from. In particular, the healthcare field is one of the
+    more difficult industries to get publicly available data from(due to privacy concerns). But
+    luckily, Data World has 3667 free health datasets you can use for your next project.
+
+4.  <https://archive.ics.uci.edu/ml/index.php>  - UCI Machine Learning Repository is a collection of databases, domain theories, and data generators
+
+    used by the machine learning community for the empirical analysis of machine learning
+    algorithms. The archive was created as an ftp archive in 1987 by David Aha and fellow graduate
+    students at UC Irvine. Since that time, it has been widely used by students, educators, and
+    researchers all over the world as a primary source of machine learning data sets. As an
+    indication of the impact of the archive, it has been cited over 1000 times, making it one of the
+    top 100 most cited “papers” in all of computer science.
+
+5.  <https://www.data.gov/>
+
+6.  <https://github.com/neutraltone/awesome-stock-resources> - A curated list of awesome stock photography, video and illustration websites.
+
+7.  <https://datasetsearch.research.google.com>
+
+8.  <https://www.europeandataportal.eu/de/homepage>
+
+9.  <http://kitab-project.org/2019/06/08/first-open-access-release-of-our-arabic-corpus/>
+
+10. <https://tfhub.dev/>  - Pretrained Models from Google & DeepMind
 
     -   Text (Embeddings)
     -   Image (Classification, Feature Vector, Generator, Other)
     -   Video (Classification)
 
 
-<a id="org4f6d604"></a>
+<a id="org1069ecb"></a>
 
 ### Pandas     :Pandas:
 
@@ -489,7 +561,16 @@ Inklusive detaillierte Wagenreihung und Anfahrtspläne für einen Bahnhof
 7.  <https://towardsdatascience.com/geopandas-101-plot-any-data-with-a-latitude-and-longitude-on-a-map-98e01944b972>     :Visualization:
 
 
-<a id="org26b993b"></a>
+<a id="orgf318654"></a>
+
+### Data Annotation
+
+1.  <https://towardsdatascience.com/introducing-label-studio-a-swiss-army-knife-of-data-labeling-140c1be92881>
+
+    -   **Github:** <https://github.com/heartexlabs/label-studio>
+
+
+<a id="orgf598edc"></a>
 
 ### Data Exploration / Feature Engineering
 
@@ -512,7 +593,7 @@ Inklusive detaillierte Wagenreihung und Anfahrtspläne für einen Bahnhof
 8.  <https://de.wikipedia.org/wiki/Shapiro-Wilk-Test>  -  Signifikanztest, der die Hypothese überprüft, dass die zugrunde liegende Grundgesamtheit einer Stichprobe normalverteilt
 
 
-<a id="org488c0f3"></a>
+<a id="orgee92af8"></a>
 
 ### Data Testing
 
@@ -523,7 +604,7 @@ Inklusive detaillierte Wagenreihung und Anfahrtspläne für einen Bahnhof
     they help you guard against upstream data changes and monitor data quality.
 
 
-<a id="orgabc2d6d"></a>
+<a id="org4c61747"></a>
 
 ### Data Visualization     :Visualization:
 
@@ -552,7 +633,7 @@ Inklusive detaillierte Wagenreihung und Anfahrtspläne für einen Bahnhof
 12. <https://towardsdatascience.com/vis-amz-83dea6fcb059>  - Visualizing 100,000 Products Fast sentence embeddings (fse) for millions of reviews in only a few minutes.     :NLP:
 
 
-<a id="orga6dc997"></a>
+<a id="orgcb91f56"></a>
 
 ### NLP     :NLP:
 
@@ -683,7 +764,7 @@ Inklusive detaillierte Wagenreihung und Anfahrtspläne für einen Bahnhof
     3.  <https://medium.com/dair-ai/xlnet-outperforms-bert-on-several-nlp-tasks-9ec867bb563b>
 
 
-<a id="org0d5435a"></a>
+<a id="orgd1c7c7a"></a>
 
 ### Computer Vision
 
@@ -707,15 +788,17 @@ Inklusive detaillierte Wagenreihung und Anfahrtspläne für einen Bahnhof
 
 2.  Tools
 
-    1.  <https://github.com/albu/albumentations>  - Library for fast and convenient image augmentations     :Augmentations:
+    1.  <https://medium.com/better-programming/beginners-guide-to-tesseract-ocr-using-python-10ecbb426c3d>  - Complete first tutorial including setting it up
     
-    2.  <https://towardsdatascience.com/clean-up-your-own-model-data-without-leaving-jupyter-bdbcc9001734>  - Annotator tool ****Innotator**** for images inside jupyter
+    2.  <https://github.com/albu/albumentations>  - Library for fast and convenient image augmentations     :Augmentations:
     
-    3.  <https://github.com/tzutalin/labelImg>  - a graphical image annotation tool which saves in Pascal VOG or YOLO Format
+    3.  <https://towardsdatascience.com/clean-up-your-own-model-data-without-leaving-jupyter-bdbcc9001734>  - Annotator tool ****Innotator**** for images inside jupyter
     
-    4.  <https://towardsdatascience.com/feature-visualisation-in-pytorch-saliency-maps-a3f99d08f78a>
+    4.  <https://github.com/tzutalin/labelImg>  - a graphical image annotation tool which saves in Pascal VOG or YOLO Format
     
-    5.  <https://github.com/idealo/imagededup>  - python package that simplifies the task of finding exact and near duplicates in an image collection.
+    5.  <https://towardsdatascience.com/feature-visualisation-in-pytorch-saliency-maps-a3f99d08f78a>
+    
+    6.  <https://github.com/idealo/imagededup>  - python package that simplifies the task of finding exact and near duplicates in an image collection.
 
 3.  Architectures
 
@@ -744,7 +827,7 @@ Inklusive detaillierte Wagenreihung und Anfahrtspläne für einen Bahnhof
     3.  <https://towardsdatascience.com/review-yolov3-you-only-look-once-object-detection-eab75d7a1ba6>
 
 
-<a id="orgdd09a95"></a>
+<a id="orgf041553"></a>
 
 ### Time Series
 
@@ -755,7 +838,7 @@ Inklusive detaillierte Wagenreihung und Anfahrtspläne für einen Bahnhof
 3.  <https://towardsdatascience.com/anomaly-detection-time-series-4c661f6f165f> - Detect anomaly in time series with facebook Prophet
 
 
-<a id="org9673855"></a>
+<a id="org3a201d4"></a>
 
 ### Deployments     :DevOps:
 
@@ -766,22 +849,32 @@ Inklusive detaillierte Wagenreihung und Anfahrtspläne für einen Bahnhof
 3.  <https://medium.com/@colinshaw_36798/fully-utilizing-your-deep-learning-gpus-61ee7acd3e57>
 
 
-<a id="org39ea981"></a>
+<a id="org6a007f1"></a>
 
 ## DevOps / Security
 
 
-<a id="orgdcabade"></a>
+<a id="orgf6969b9"></a>
 
 ### Misc
 
-1.  <https://www.youtube.com/watch?v=BreKdM7CKnY&list=PL_IxoDz1Nq2YjnEpUMSqeqVUXgyEcsJdu&index=2&t=0s>  - Hirne hacken, Sicherheit aus psychologischer Sicht
+1.  <https://medium.com/s/story/technical-debt-is-like-tetris-168f64d8b700>
 
-2.  <https://medium.com/s/story/technical-debt-is-like-tetris-168f64d8b700>
+2.  <https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/>
 
-3.  <https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/>
+3.  <https://blog.thepete.net/blog/2019/10/04/hello-production/>  - Deploying something useless into production, as soon as you can, is the right way to start a new project
 
-4.  <https://blog.thepete.net/blog/2019/10/04/hello-production/>  - Deploying something useless into production, as soon as you can, is the right way to start a new project
+4.  <https://medium.com/@paulosman/production-oriented-development-8ae05f8cc7ea>  - code in production is the only code that matters.
+
+    1.  Engineers should operate their code.
+    2.  Buy Almost Always Beats Build
+    3.  Make Deploys Easy
+    4.  Trust the People Closest to the Knives
+    5.  QA Gates Make Quality Worse
+    6.  Boring Technology is Great.
+    7.  Simple Always Wins
+    8.  Non-Production Environments Have Diminishing Returns
+    9.  Things Will Always Break
 
 5.  <http://onemogin.com/observability/dashboards/practitioners-guide-to-system-dashboard-design.html>
 
@@ -792,7 +885,7 @@ Inklusive detaillierte Wagenreihung und Anfahrtspläne für einen Bahnhof
 8.  <https://arslan.io/2019/07/03/how-to-write-idempotent-bash-scripts/>
 
 
-<a id="org57424b0"></a>
+<a id="org0dfa8a2"></a>
 
 ### Site Reliability
 
@@ -813,7 +906,7 @@ Inklusive detaillierte Wagenreihung und Anfahrtspläne für einen Bahnhof
 8.  <https://medium.com/@copyconstruct/testing-in-production-the-safe-way-18ca102d0ef1>
 
 
-<a id="org93421c5"></a>
+<a id="org8d822ed"></a>
 
 ### Microservices / Serverless
 
@@ -826,7 +919,7 @@ Inklusive detaillierte Wagenreihung und Anfahrtspläne für einen Bahnhof
 4.  <https://theburningmonk.com/2019/04/comparing-nuclio-and-aws-lambda/>
 
 
-<a id="org9e796d4"></a>
+<a id="orgc07262c"></a>
 
 ### Containers (Docker / Kubernetes)
 
@@ -849,7 +942,7 @@ Inklusive detaillierte Wagenreihung und Anfahrtspläne für einen Bahnhof
 9.  <https://medium.com/ssense-tech/my-docker-support-stack-58b1e67f5f4f>  - Portainer to manage containers, WeaveScope to display network connections, Log-Io to pull logs from docker containers
 
 
-<a id="org57e89f0"></a>
+<a id="org5535687"></a>
 
 ### Monitoring
 
@@ -858,34 +951,40 @@ Inklusive detaillierte Wagenreihung und Anfahrtspläne für einen Bahnhof
 2.  <https://medium.com/@dyachuk/why-do-kubernetes-clusters-in-aws-cost-more-than-they-should-fa510c1964c6>
 
 
-<a id="orgab81593"></a>
+<a id="org1e2d371"></a>
 
 ### SSH
 
 1.  <https://yanaiela.github.io/post/remote-servers/>  - Make SSH great again (config, tunnelling, &#x2026;)
 
 
-<a id="orge08e28b"></a>
+<a id="org9566733"></a>
 
 ### Security
 
-1.  Tool <https://github.com/hannob/snallygaster>  - scan for secret files on HTTP Servers
+1.  <https://www.youtube.com/watch?v=BreKdM7CKnY&list=PL_IxoDz1Nq2YjnEpUMSqeqVUXgyEcsJdu&index=2&t=0s>  - Hirne hacken, Sicherheit aus psychologischer Sicht
 
-2.  Video <https://www.youtube.com/watch?v=Bppr9rbmwz4>  - Attacking with HTTP Requests
+2.  <https://medium.com/viithiisys/10-steps-to-secure-linux-server-for-production-environment-a135109a57c5>
 
-3.  <https://medium.freecodecamp.org/discovering-the-hidden-mine-of-credentials-and-sensitive-information-8e5ccfef2724>
+3.  Tool <https://github.com/hannob/snallygaster>  - scan for secret files on HTTP Servers
 
-4.  <https://medium.freecodecamp.org/hash-table-attack-8e4371fc5261>  - The moment when you realize every server in the world is vulnerable
+4.  Video <https://www.youtube.com/watch?v=Bppr9rbmwz4>  - Attacking with HTTP Requests
 
-5.  <https://blog.usejournal.com/how-to-avoid-ruining-lives-front-end-security-matters-26d4f906c7a6>  - XSS and CSRF tokens
+5.  <https://medium.freecodecamp.org/discovering-the-hidden-mine-of-credentials-and-sensitive-information-8e5ccfef2724>
+
+6.  <https://medium.freecodecamp.org/hash-table-attack-8e4371fc5261>  - The moment when you realize every server in the world is vulnerable
+
+7.  <https://blog.usejournal.com/how-to-avoid-ruining-lives-front-end-security-matters-26d4f906c7a6>  - XSS and CSRF tokens
+
+8.  <https://onezero.medium.com/how-to-totally-secure-your-smartphone-48b7a85a5ed8>
 
 
-<a id="org7e3a5a2"></a>
+<a id="org4b897dc"></a>
 
 ## Math     :Math:
 
 
-<a id="orgd5a2a46"></a>
+<a id="orgdf21f7d"></a>
 
 ### <https://de.wikipedia.org/wiki/Braess-Paradoxon>
 
@@ -893,7 +992,12 @@ zusätzliche Handlungsoption unter der Annahme rationaler Einzelentscheidungen z
 Verschlechterung der Situation für alle führen kann
 
 
-<a id="orgfa20576"></a>
+<a id="org4de47e1"></a>
 
 ### <https://towardsdatascience.com/the-inspection-paradox-is-everywhere-2ef1c2e9d709>     :Statistical:
+
+
+<a id="orga8c607d"></a>
+
+### <https://towardsdatascience.com/a-b-testing-is-there-a-better-way-an-exploration-of-multi-armed-bandits-98ca927b357d>  - Overview of different algorithms for Multi Armed Bandits
 
