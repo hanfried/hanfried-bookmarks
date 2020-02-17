@@ -32,7 +32,6 @@ Inklusive detaillierte Wagenreihung und Anfahrtspläne für einen Bahnhof
 *** https://www.bento.de/gefuehle/badeunfall-mein-freund-waere-fast-ertrunken-was-ich-daraus-gelernt-habe-a-1517a3af-5571-483b-af01-4e25d9600927
 ** Software-Development                                :Software_Development:
 *** Misc
-**** http://www.webpagetest.org/  - checks speed of a web page from different locations, browsers, with auth, protocols ...
 **** https://www.youtube.com/watch?v=ecIWPzGEbFc&feature=youtu.be  - "Uncle" Bob Martin - "The Future of Programming"
 **** https://www.usecue.com/blog/code-warriors/
 
@@ -42,14 +41,8 @@ Inklusive detaillierte Wagenreihung und Anfahrtspläne für einen Bahnhof
  lifetime.
 
 **** https://hackernoon.com/the-fine-art-of-fast-development-f3b1abb509da
-**** https://github.com/timqian/star-history
-
- (1.0.0 -> 1.0.1 bugfix -> 1.1.0 new functionality -> ... -> 2.0.0 backward incompatible breaking change)
-
 **** https://testing.googleblog.com/2015/04/just-say-no-to-more-end-to-end-tests.html
 **** https://medium.com/@cscalfani/goodbye-object-oriented-programming-a59cda4c0e53
-**** https://semver.org/spec/v2.0.0.html  - Semantic versioning
-**** https://github.com/github/semantic/blob/master/docs/examples.md  - Haskell library and command line tool for parsing, analyzing, and comparing source code
 **** https://medium.com/@liman.rom/f-spoiled-me-or-why-i-dont-enjoy-c-anymore-39e025035a98  - nice examples of advantages of a well designed functional language
 **** https://www.youtube.com/watch?v=UANN2Eu6ZnM  - Mental game of python -> how to reduce cognitive load and implement incrementally even OOP
 **** https://www.youtube.com/watch?v=KGaFcI2UNrI  - States and Nomads: Handling Software Complexity - Why something like Software Patterns Gamma et al fail
@@ -58,6 +51,7 @@ Inklusive detaillierte Wagenreihung und Anfahrtspläne für einen Bahnhof
 - https://www.infoq.com/presentations/go-locks/  - Let’s Talk Locks:
 - https://www.infoq.com/presentations/ebtree-design/?utm_source=presentations&utm_medium=ny&utm_campaign=qcon  - Design for a Scheduler and Use (Almost) Everywhere
 - https://www.infoq.com/presentations/pid-loops/  - PID Loops and the Art of Keeping Systems Stable (Control Theory inside)
+- https://www.infoq.com/presentations/state-serverless-computing/  - Serverless = lots of latency, only hard to get consistency without very significant latency
 *** YAML
 **** https://blog.atomist.com/in-defense-of-yaml/
 **** https://noyaml.com/
@@ -128,6 +122,7 @@ Documentation: https://cookiecutter-django.readthedocs.io/en/latest/
 *** Javascript
 **** https://medium.com/@michael.karen/learning-modern-javascript-with-tetris-92d532bcd057
 *** REST APIs / Web Development / HTML
+**** http://www.webpagetest.org/  - checks speed of a web page from different locations, browsers, with auth, protocols ...
 **** https://hackernoon.com/a-documentation-crash--45006a85c15c
 **** https://medium.com/better-programming/best-practices-for-versioning-an-api-for-rest-apis-530a9398f311
 **** https://itnext.io/html-underrated-tags-119ef3e45b94
@@ -140,6 +135,14 @@ Documentation: https://cookiecutter-django.readthedocs.io/en/latest/
 - <mark> :: use it instead of <span class="..."> to mark something
 - <abbr> :: easy to forget, but very useful
 - <div contenteditable> :: to create an editable field (and get rid of textarea)
+*** Git / GitHub / Versioning
+**** https://github.com/timqian/star-history
+
+ (1.0.0 -> 1.0.1 bugfix -> 1.1.0 new functionality -> ... -> 2.0.0 backward incompatible breaking change)
+
+**** https://semver.org/spec/v2.0.0.html  - Semantic versioning
+**** https://github.com/github/semantic/blob/master/docs/examples.md  - Haskell library and command line tool for parsing, analyzing, and comparing source code
+
 ** Data Science / ML / NLP                                      :DataScience:
 *** Misc
 **** http://www.arxiv-sanity.com/
@@ -465,7 +468,7 @@ but also why they are so sensitive to adversial networks
 **** https://yanaiela.github.io/post/remote-servers/  - Make SSH great again (config, tunnelling, ...)
 *** Security
 **** https://www.youtube.com/watch?v=BreKdM7CKnY&list=PL_IxoDz1Nq2YjnEpUMSqeqVUXgyEcsJdu&index=2&t=0s  - Hirne hacken, Sicherheit aus psychologischer Sicht
-**** https://medium.com/viithiisys/10-steps-to-secure-linux-server-for-production-environment-a135109a57c5
+**** https://medium.com/viithiisys/10-steps-to-secure-linux-server-for-production-environment-a135109a57c5  - <-- do this on a production server
 **** Tool https://github.com/hannob/snallygaster  - scan for secret files on HTTP Servers
 **** Video https://www.youtube.com/watch?v=Bppr9rbmwz4  - Attacking with HTTP Requests
 **** https://medium.freecodecamp.org/discovering-the-hidden-mine-of-credentials-and-sensitive-information-8e5ccfef2724
