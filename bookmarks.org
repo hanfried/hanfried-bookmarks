@@ -52,6 +52,7 @@ Inklusive detaillierte Wagenreihung und Anfahrtspläne für einen Bahnhof
 - https://www.infoq.com/presentations/ebtree-design/?utm_source=presentations&utm_medium=ny&utm_campaign=qcon  - Design for a Scheduler and Use (Almost) Everywhere
 - https://www.infoq.com/presentations/pid-loops/  - PID Loops and the Art of Keeping Systems Stable (Control Theory inside)
 - https://www.infoq.com/presentations/state-serverless-computing/  - Serverless = lots of latency, only hard to get consistency without very significant latency
+- https://www.youtube.com/watch?v=r-TLSBdHe1A  - Performance matters (about how difficult it is to really get correct measures and causal profiling [for parallel/distributed programs])
 *** YAML
 **** https://blog.atomist.com/in-defense-of-yaml/
 **** https://noyaml.com/
@@ -190,6 +191,7 @@ Introductionary, but very well written text
 *** Optimizers / Learn Rates
 **** https://towardsdatascience.com/finding-good-learning-rate-and-the-one-cycle-policy-7159fe1db5d6 :fastai:
 **** https://medium.com/@lessw/new-deep-learning-optimizer-ranger-synergistic-combination-of-radam-lookahead-for-the-best-of-2dc83f79a48d :fastai:
+**** https://towardsdatascience.com/self-paced-learning-for-machine-learning-f1c489316c61
 *** Jupyter Notebooks
 **** https://nextjournal.com/schmudde/how-to-version-control-jupyter
 **** https://towardsdatascience.com/advanced-jupyter-notebooks-a-tutorial-3569d8153057
@@ -415,9 +417,9 @@ but also why they are so sensitive to adversial networks
 **** https://medium.com/datadriveninvestor/deploy-your-pytorch-model-to-production-f69460192217 :PyTorch:
 **** https://medium.com/@colinshaw_36798/fully-utilizing-your-deep-learning-gpus-61ee7acd3e57
 
-
 ** DevOps / Security
 *** Misc
+**** https://gruntwork.io/devops-checklist/  - Production Readiness Checklist
 **** https://medium.com/s/story/technical-debt-is-like-tetris-168f64d8b700
 **** https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/
 **** https://blog.thepete.net/blog/2019/10/04/hello-production/  - Deploying something useless into production, as soon as you can, is the right way to start a new project
@@ -438,6 +440,16 @@ but also why they are so sensitive to adversial networks
 **** https://medium.com/anton-on-security/retaining-logs-for-a-year-boring-or-useful-70ea21fa3dda
 **** https://arslan.io/2019/07/03/how-to-write-idempotent-bash-scripts/
 *** Site Reliability
+**** https://medium.com/@rahatshaikh/cloud-design-patterns-explained-simply-113c788b33ff  - Cloud Design Patterns
+
+including:
+- Asynchronous Request and Reply :: polling or event notification
+- Command and Query Responsibility Segregation (CQRS) :: seperate read and write models
+- Event Sourcing :: event store (audit trail)
+- Retry :: Try and try again (later)
+- Circuit Breaker :: Fail fast
+- Sidecar :: Co-locate Monitoring, Logging, ...
+
 **** https://www.oreilly.com/ideas/how-to-get-started-with-site-reliability-engineering-sre
 **** https://medium.com/kudos-engineering/faking-fires-get-better-incident-management-with-practise-e61a5d66578d
 **** https://shubheksha.com/posts/2019/04/re-framing-how-we-think-about-production-incidents/
@@ -482,5 +494,6 @@ but also why they are so sensitive to adversial networks
 zusätzliche Handlungsoption unter der Annahme rationaler Einzelentscheidungen zu einer
 Verschlechterung der Situation für alle führen kann
 
+*** https://towardsdatascience.com/simpsons-paradox-d2f4d8f08d42
 *** https://towardsdatascience.com/the-inspection-paradox-is-everywhere-2ef1c2e9d709 :Statistical:
 *** https://towardsdatascience.com/a-b-testing-is-there-a-better-way-an-exploration-of-multi-armed-bandits-98ca927b357d  - Overview of different algorithms for Multi Armed Bandits
