@@ -53,6 +53,7 @@ Inklusive detaillierte Wagenreihung und Anfahrtspläne für einen Bahnhof
 - https://www.infoq.com/presentations/pid-loops/  - PID Loops and the Art of Keeping Systems Stable (Control Theory inside)
 - https://www.infoq.com/presentations/state-serverless-computing/  - Serverless = lots of latency, only hard to get consistency without very significant latency
 - https://www.youtube.com/watch?v=r-TLSBdHe1A  - Performance matters (about how difficult it is to really get correct measures and causal profiling [for parallel/distributed programs])
+**** https://levelup.gitconnected.com/why-rewriting-applications-from-scratch-is-almost-always-a-bad-idea-5402d1715006
 *** YAML
 **** https://blog.atomist.com/in-defense-of-yaml/
 **** https://noyaml.com/
@@ -308,6 +309,7 @@ they help you guard against upstream data changes and monitor data quality.
 ***** https://towardsdatascience.com/data-augmentation-for-natural-language-processing-6ae928313a3f
 ***** https://towardsdatascience.com/these-are-the-easiest-data-augmentation-techniques-in-natural-language-processing-you-can-think-of-88e393fd610
 **** Tools
+***** https://towardsdatascience.com/the-best-nlp-tools-of-early-2020-live-demos-b6f507b17b0a
 ***** http://www.nlpbuddy.io/  - Open Source Text Analysis Tool (Website w/ Spacy Analysis)
 
  - Language
@@ -420,6 +422,10 @@ but also why they are so sensitive to adversial networks
 ** DevOps / Security
 *** Misc
 **** https://gruntwork.io/devops-checklist/  - Production Readiness Checklist
+
+Read also: https://blog.gruntwork.io/5-lessons-learned-from-writing-over-300-000-lines-of-infrastructure-code-36ba7fadeac1
+including the video of an impressive talk: https://www.youtube.com/watch?v=RTEgE2lcyk4
+
 **** https://medium.com/s/story/technical-debt-is-like-tetris-168f64d8b700
 **** https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/
 **** https://blog.thepete.net/blog/2019/10/04/hello-production/  - Deploying something useless into production, as soon as you can, is the right way to start a new project
