@@ -32,7 +32,6 @@ Inklusive detaillierte Wagenreihung und Anfahrtspläne für einen Bahnhof
 *** https://www.bento.de/gefuehle/badeunfall-mein-freund-waere-fast-ertrunken-was-ich-daraus-gelernt-habe-a-1517a3af-5571-483b-af01-4e25d9600927
 ** Software-Development                                :Software_Development:
 *** Misc
-**** http://www.webpagetest.org/  - checks speed of a web page from different locations, browsers, with auth, protocols ...
 **** https://www.youtube.com/watch?v=ecIWPzGEbFc&feature=youtu.be  - "Uncle" Bob Martin - "The Future of Programming"
 **** https://www.usecue.com/blog/code-warriors/
 
@@ -41,19 +40,31 @@ Inklusive detaillierte Wagenreihung und Anfahrtspläne für einen Bahnhof
  off you go. Mastering the system that makes your software function, however, can take a
  lifetime.
 
-**** https://hackernoon.com/a-documentation-crash-course-45006a85c15c
-**** https://github.com/timqian/star-history
-
- (1.0.0 -> 1.0.1 bugfix -> 1.1.0 new functionality -> ... -> 2.0.0 backward incompatible breaking change)
-
 **** https://hackernoon.com/the-fine-art-of-fast-development-f3b1abb509da
 **** https://testing.googleblog.com/2015/04/just-say-no-to-more-end-to-end-tests.html
 **** https://medium.com/@cscalfani/goodbye-object-oriented-programming-a59cda4c0e53
-**** https://semver.org/spec/v2.0.0.html  - Semantic versioning
-**** https://github.com/github/semantic/blob/master/docs/examples.md  - Haskell library and command line tool for parsing, analyzing, and comparing source code
 **** https://medium.com/@liman.rom/f-spoiled-me-or-why-i-dont-enjoy-c-anymore-39e025035a98  - nice examples of advantages of a well designed functional language
 **** https://www.youtube.com/watch?v=UANN2Eu6ZnM  - Mental game of python -> how to reduce cognitive load and implement incrementally even OOP
 **** https://www.youtube.com/watch?v=KGaFcI2UNrI  - States and Nomads: Handling Software Complexity - Why something like Software Patterns Gamma et al fail
+**** https://medium.com/@copyconstruct/best-of-2019-in-tech-talks-bac697c3ee13
+
+- https://www.infoq.com/presentations/go-locks/  - Let’s Talk Locks:
+- https://www.infoq.com/presentations/ebtree-design/?utm_source=presentations&utm_medium=ny&utm_campaign=qcon  - Design for a Scheduler and Use (Almost) Everywhere
+- https://www.infoq.com/presentations/pid-loops/  - PID Loops and the Art of Keeping Systems Stable (Control Theory inside)
+- https://www.infoq.com/presentations/state-serverless-computing/  - Serverless = lots of latency, only hard to get consistency without very significant latency
+- https://www.youtube.com/watch?v=r-TLSBdHe1A  - Performance matters (about how difficult it is to really get correct measures and causal profiling [for parallel/distributed programs])
+- https://www.infoq.com/presentations/moore-law-expiring/
+
+**** https://levelup.gitconnected.com/why-rewriting-applications-from-scratch-is-almost-always-a-bad-idea-5402d1715006
+**** https://towardsdatascience.com/9-time-saving-tricks-for-your-command-line-c7535f1aa648
+
+- !! :: reexecutes last command
+- !foo :: reexecute last command with foo
+- !$ :: access arguments of last command
+- Ctrl+a :: hop to beginning of line
+- Ctrl+e :: hop to end of line
+- Ctrl+k :: delete everything from cursor to end of line
+
 *** YAML
 **** https://blog.atomist.com/in-defense-of-yaml/
 **** https://noyaml.com/
@@ -102,12 +113,48 @@ One of the subprojects is a seamless pandas scaling framework [[https://github.c
 **** Debugging
 ***** https://github.com/benfred/py-spy
 *** Django
+**** https://github.com/pydanny/cookiecutter-django -- Cookiecutter Django is a framework for jumpstarting production-ready Django projects quickly.
+
+Documentation: https://cookiecutter-django.readthedocs.io/en/latest/
+
+**** https://medium.com/@jwdobken/python-django-with-docker-and-gitlab-ci-b83cc4e7e2e  - based on cookiecutter django
 **** https://www.youtube.com/watch?v=FPfBhqL-uek  - Django for Admins
 **** https://djangosuit.com/  - Modern theme for Django admin interface
 
  There also alternatives w/ different pricing or open source models and different looks.
  Note, it's not a good idea to give customers access to django admin panels (it's really only for internal purposes).
  For externals, just give a REST API and HyperlinkedModelSerializer view.
+
+**** https://docs.djangoproject.com/en/3.0/topics/performance/  - Optimizing Django
+**** http://intercoolerjs.org/docs.html  - Use familiar, declarative HTML attributes to add AJAX to your application. Use web standards like CSS, REST and Javascript events to enhance your app.
+
+- Blog :: https://engineering.instawork.com/iterating-with-simplicity-evolving-a-django-app-with-intercooler-js-8ed8e69d8a52
+
+**** https://medium.com/better-programming/how-to-use-drf-serializers-effectively-dc58edc73998  - How to use django rest framework serializers
+**** https://vsupalov.com/vue-js-in-django-template/
+*** Javascript
+**** https://medium.com/@michael.karen/learning-modern-javascript-with-tetris-92d532bcd057
+*** REST APIs / Web Development / HTML
+**** http://www.webpagetest.org/  - checks speed of a web page from different locations, browsers, with auth, protocols ...
+**** https://hackernoon.com/a-documentation-crash--45006a85c15c
+**** https://medium.com/better-programming/best-practices-for-versioning-an-api-for-rest-apis-530a9398f311
+**** https://itnext.io/html-underrated-tags-119ef3e45b94
+
+- <picture> :: to have alternative imgs depending on media without all the css/js mash
+- <progress> :: progressbars just in plain html
+- <base> :: don't forget it :-)
+- <input type="..."> :: we have plain html date, datetime-local, month, week, time, color, range input types
+- <details> :: includes <summary> and only clicking on details shows all, again pure html
+- <mark> :: use it instead of <span class="..."> to mark something
+- <abbr> :: easy to forget, but very useful
+- <div contenteditable> :: to create an editable field (and get rid of textarea)
+*** Git / GitHub / Versioning
+**** https://github.com/timqian/star-history
+
+ (1.0.0 -> 1.0.1 bugfix -> 1.1.0 new functionality -> ... -> 2.0.0 backward incompatible breaking change)
+
+**** https://semver.org/spec/v2.0.0.html  - Semantic versioning
+**** https://github.com/github/semantic/blob/master/docs/examples.md  - Haskell library and command line tool for parsing, analyzing, and comparing source code
 
 ** Data Science / ML / NLP                                      :DataScience:
 *** Misc
@@ -138,6 +185,7 @@ Introductionary, but very well written text
 **** https://towardsdatascience.com/making-the-mueller-report-searchable-with-ocr-and-elasticsearch-4e73e55de341 :ElasticSearch:OCR:
 **** https://towardsdatascience.com/how-does-news-coverage-differ-between-media-outlets-20aa7be1c96a  - WordClouds for CNN, NBC, ... + TopWords + SentimentAnalysis of Headlines 
 **** https://www.youtube.com/watch?v=DpXy041BIlA&t=2s  - 30 weird chess algorithms - Data Science at its best I'd say completely out of usual domains :Chess:
+**** https://towardsdatascience.com/march-madness-analyze-video-to-detect-players-teams-and-who-attempted-the-basket-8cad67745b88
 *** Kaggle                                                           :Kaggle:
 **** https://medium.com/@andrew.picart/using-kaggle-for-your-data-science-work-a2e78d692395 :Jupyter_Notebook:Kaggle:Collaboration:
 **** https://towardsdatascience.com/a-story-of-my-first-gold-medal-in-one-kaggle-competition-things-done-and-lessons-learned-c269d9c233d1
@@ -155,6 +203,7 @@ Introductionary, but very well written text
 *** Optimizers / Learn Rates
 **** https://towardsdatascience.com/finding-good-learning-rate-and-the-one-cycle-policy-7159fe1db5d6 :fastai:
 **** https://medium.com/@lessw/new-deep-learning-optimizer-ranger-synergistic-combination-of-radam-lookahead-for-the-best-of-2dc83f79a48d :fastai:
+**** https://towardsdatascience.com/self-paced-learning-for-machine-learning-f1c489316c61
 *** Jupyter Notebooks
 **** https://nextjournal.com/schmudde/how-to-version-control-jupyter
 **** https://towardsdatascience.com/advanced-jupyter-notebooks-a-tutorial-3569d8153057
@@ -162,11 +211,42 @@ Introductionary, but very well written text
 **** https://github.com/fastai/fastprogress  - Simple and flexible progress bar for Jupyter Notebook and console
 **** https://towardsdatascience.com/jupyter-is-the-new-excel-but-not-for-your-boss-d24340ebf314  - ways to export/give other easy access to notebooks (hiding cells etc)
 
+**** https://towardsdatascience.com/introduction-to-papermill-2c61f66bea30  - How to transform your Jupyter Notebook into a workflow tool
+*** Streamlit
+**** https://towardsdatascience.com/how-to-deploy-a-streamlit-app-using-an-amazon-free-ec2-instance-416a41f69dc3
 *** Pytorch/fastai
 **** https://towardsdatascience.com/multi-layer-perceptron-usingfastai-and-pytorch-9e401dd288b8 :PyTorch:fastai:
 **** https://towardsdatascience.com/deep-learning-for-diagnosis-of-skin-images-with-fastai-792160ab5495 :fastai:
 **** https://medium.com/huggingface/from-tensorflow-to-pytorch-265f40ef2a28 :PyTorch:tensorflow:
 *** Datasets
+**** https://github.com/awesomedata/awesome-public-datasets  - repository on GitHub of high quality topic-centric public data sources.
+
+They are collected and tidied from blogs, answers, and user responses. Almost all of these are
+free with a few exceptions here and there
+
+**** https://tinyletter.com/data-is-plural  - weekly newsletter of useful/curious datasets. Y
+
+you can find a huge archive of datasets on their google doc. Just hit ctrl + f for a topic you’d
+like to look into and see the dozens of results that pop up.
+
+**** https://data.world/datasets/open-data  - Data World is an open data repository containing data contributed by thousands of users and organizations all across the world.
+
+ it contains really hard to find data from. In particular, the healthcare field is one of the
+ more difficult industries to get publicly available data from(due to privacy concerns). But
+ luckily, Data World has 3667 free health datasets you can use for your next project.
+
+**** https://archive.ics.uci.edu/ml/index.php  - UCI Machine Learning Repository is a collection of databases, domain theories, and data generators
+
+used by the machine learning community for the empirical analysis of machine learning
+algorithms. The archive was created as an ftp archive in 1987 by David Aha and fellow graduate
+students at UC Irvine. Since that time, it has been widely used by students, educators, and
+researchers all over the world as a primary source of machine learning data sets. As an
+indication of the impact of the archive, it has been cited over 1000 times, making it one of the
+top 100 most cited “papers” in all of computer science.
+
+**** https://www.data.gov/
+**** https://github.com/neutraltone/awesome-stock-resources - A curated list of awesome stock photography, video and illustration websites.
+**** https://datasetsearch.research.google.com
 **** https://www.europeandataportal.eu/de/homepage
 **** http://kitab-project.org/2019/06/08/first-open-access-release-of-our-arabic-corpus/
 **** https://tfhub.dev/  - Pretrained Models from Google & DeepMind
@@ -184,6 +264,11 @@ Introductionary, but very well written text
 **** 
 **** https://towardsdatascience.com/analyzing-time-series-data-in-pandas-be3887fdd621 :TimeSeries:
 **** https://towardsdatascience.com/geopandas-101-plot-any-data-with-a-latitude-and-longitude-on-a-map-98e01944b972 :Visualization:
+
+*** Data Annotation
+**** https://towardsdatascience.com/introducing-label-studio-a-swiss-army-knife-of-data-labeling-140c1be92881
+
+- Github :: https://github.com/heartexlabs/label-studio
 
 *** Data Exploration / Feature Engineering
 **** https://towardsdatascience.com/annotated-heatmaps-in-5-simple-steps-cc2a0660a27d
@@ -235,6 +320,7 @@ they help you guard against upstream data changes and monitor data quality.
 ***** https://towardsdatascience.com/data-augmentation-for-natural-language-processing-6ae928313a3f
 ***** https://towardsdatascience.com/these-are-the-easiest-data-augmentation-techniques-in-natural-language-processing-you-can-think-of-88e393fd610
 **** Tools
+***** https://towardsdatascience.com/the-best-nlp-tools-of-early-2020-live-demos-b6f507b17b0a
 ***** http://www.nlpbuddy.io/  - Open Source Text Analysis Tool (Website w/ Spacy Analysis)
 
  - Language
@@ -308,7 +394,14 @@ In all use cases, the information extraction is based on analysing the semantic 
 
 ***** Good list of architectures on https://keras.io/applications including default image sizes
 ***** https://www.youtube.com/watch?v=fcnjHmBcLNQ  - Short video showing Style transfer in Videos, super impressive
+***** https://medium.com/bethgelab/neural-networks-seem-to-follow-a-puzzlingly-simple-strategy-to-classify-images-f4229317261f - ResNet are not much better: 
+
+than looking to tiny patches and sum up sum propabilities
+that's why shuffling pictures is robust for resnet
+but also why they are so sensitive to adversial networks
+
 **** Tools
+***** https://medium.com/better-programming/beginners-guide-to-tesseract-ocr-using-python-10ecbb426c3d  - Complete first tutorial including setting it up
 ***** https://github.com/albu/albumentations  - Library for fast and convenient image augmentations :Augmentations:
 ***** https://towardsdatascience.com/clean-up-your-own-model-data-without-leaving-jupyter-bdbcc9001734  - Annotator tool **Innotator** for images inside jupyter
 ***** https://github.com/tzutalin/labelImg  - a graphical image annotation tool which saves in Pascal VOG or YOLO Format
@@ -327,28 +420,56 @@ In all use cases, the information extraction is based on analysing the semantic 
 ***** https://towardsdatascience.com/getting-started-with-bounding-box-regression-in-tensorflow-743e22d0ccb3
 ***** https://towardsdatascience.com/implementation-of-mean-average-precision-map-with-non-maximum-suppression-f9311eb92522
 ***** https://towardsdatascience.com/review-yolov3-you-only-look-once-object-detection-eab75d7a1ba6
-      
+
 *** Time Series
 **** Forecasting at scale: https://facebook.github.io/prophet/
 **** https://towardsdatascience.com/on-the-automation-of-time-series-forecasting-models-technical-and-organizational-considerations-286db3120c8e
+**** https://towardsdatascience.com/anomaly-detection-time-series-4c661f6f165f - Detect anomaly in time series with facebook Prophet
 *** Deployments                                                      :DevOps:
 **** https://towardsdatascience.com/chapter-1-intro-to-aws-sagemaker-a1ecf00ec761 :AWS:
 **** https://medium.com/datadriveninvestor/deploy-your-pytorch-model-to-production-f69460192217 :PyTorch:
 **** https://medium.com/@colinshaw_36798/fully-utilizing-your-deep-learning-gpus-61ee7acd3e57
 
-
 ** DevOps / Security
 *** Misc
+**** https://gruntwork.io/devops-checklist/  - Production Readiness Checklist
+
+Read also: https://blog.gruntwork.io/5-lessons-learned-from-writing-over-300-000-lines-of-infrastructure-code-36ba7fadeac1
+including the video of an impressive talk: https://www.youtube.com/watch?v=RTEgE2lcyk4
+
 **** https://medium.com/s/story/technical-debt-is-like-tetris-168f64d8b700
 **** https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/
 **** https://blog.thepete.net/blog/2019/10/04/hello-production/  - Deploying something useless into production, as soon as you can, is the right way to start a new project
+**** https://medium.com/@paulosman/production-oriented-development-8ae05f8cc7ea  - code in production is the only code that matters.
+
+1. Engineers should operate their code.
+2. Buy Almost Always Beats Build
+3. Make Deploys Easy
+4. Trust the People Closest to the Knives
+5. QA Gates Make Quality Worse
+6. Boring Technology is Great.
+7. Simple Always Wins
+8. Non-Production Environments Have Diminishing Returns
+9. Things Will Always Break
+
 **** http://onemogin.com/observability/dashboards/practitioners-guide-to-system-dashboard-design.html
 **** https://www.rookout.com/cant-git-no-satisfaction-why-we-need-a-new-gen-source-control/  - Advantages/Disadvantages of Monorepo vs Multirepo
 **** https://medium.com/anton-on-security/retaining-logs-for-a-year-boring-or-useful-70ea21fa3dda
 **** https://arslan.io/2019/07/03/how-to-write-idempotent-bash-scripts/
 *** Site Reliability
+**** https://medium.com/@rahatshaikh/cloud-design-patterns-explained-simply-113c788b33ff  - Cloud Design Patterns
+
+including:
+- Asynchronous Request and Reply :: polling or event notification
+- Command and Query Responsibility Segregation (CQRS) :: seperate read and write models
+- Event Sourcing :: event store (audit trail)
+- Retry :: Try and try again (later)
+- Circuit Breaker :: Fail fast
+- Sidecar :: Co-locate Monitoring, Logging, ...
+
 **** https://www.oreilly.com/ideas/how-to-get-started-with-site-reliability-engineering-sre
 **** https://medium.com/kudos-engineering/faking-fires-get-better-incident-management-with-practise-e61a5d66578d
+**** https://uptime.com/blog/got-game-secrets-of-great-incident-management
 **** https://shubheksha.com/posts/2019/04/re-framing-how-we-think-about-production-incidents/
 **** https://developers.soundcloud.com/blog/alerting-on-slos
 **** https://charity.wtf/2019/05/01/friday-deploy-freezes-are-exactly-like-murdering-puppies/
@@ -376,16 +497,21 @@ In all use cases, the information extraction is based on analysing the semantic 
 *** SSH
 **** https://yanaiela.github.io/post/remote-servers/  - Make SSH great again (config, tunnelling, ...)
 *** Security
+**** https://www.youtube.com/watch?v=BreKdM7CKnY&list=PL_IxoDz1Nq2YjnEpUMSqeqVUXgyEcsJdu&index=2&t=0s  - Hirne hacken, Sicherheit aus psychologischer Sicht
+**** https://medium.com/viithiisys/10-steps-to-secure-linux-server-for-production-environment-a135109a57c5  - <-- do this on a production server
 **** Tool https://github.com/hannob/snallygaster  - scan for secret files on HTTP Servers
 **** Video https://www.youtube.com/watch?v=Bppr9rbmwz4  - Attacking with HTTP Requests
 **** https://medium.freecodecamp.org/discovering-the-hidden-mine-of-credentials-and-sensitive-information-8e5ccfef2724
 **** https://medium.freecodecamp.org/hash-table-attack-8e4371fc5261  - The moment when you realize every server in the world is vulnerable
 **** https://blog.usejournal.com/how-to-avoid-ruining-lives-front-end-security-matters-26d4f906c7a6  - XSS and CSRF tokens
 
+**** https://onezero.medium.com/how-to-totally-secure-your-smartphone-48b7a85a5ed8
 ** Math                                                                :Math:
 *** https://de.wikipedia.org/wiki/Braess-Paradoxon
 
 zusätzliche Handlungsoption unter der Annahme rationaler Einzelentscheidungen zu einer
 Verschlechterung der Situation für alle führen kann
 
+*** https://towardsdatascience.com/simpsons-paradox-d2f4d8f08d42
 *** https://towardsdatascience.com/the-inspection-paradox-is-everywhere-2ef1c2e9d709 :Statistical:
+*** https://towardsdatascience.com/a-b-testing-is-there-a-better-way-an-exploration-of-multi-armed-bandits-98ca927b357d  - Overview of different algorithms for Multi Armed Bandits
