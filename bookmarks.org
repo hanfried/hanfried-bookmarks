@@ -1,7 +1,8 @@
-#+TAGS: AWS(A) Analysis(a) Augmentations(æ) Collaboration(C) DataScience(D) DevOps(d) Math(M) NLP(N)
+#+TAGS: AWS(A) Analysis(a) Augmentations(æ) Collaboration(C) DataScience(D) DevOps(d)
+#+TAGS: Docker(ð) Math(M) NLP(N)
 #+TAGS: Software_Development(S) Society(s) Pandas(þ)
 #+TAGS: Philosophical(P) PyTorch(p) fastai (f) TimeSeries(T) tensorflow(t) Statistical(ſ)
-#+TAGS: Jupyter_Notebook(J) Kaggle(K) Visualization(V)
+#+TAGS: Security(§) Jupyter_Notebook(J) Kaggle(K) Kubernetes(k) Visualization(V)
 
 * Bookmarks
 ** Misc
@@ -54,6 +55,7 @@ Inklusive detaillierte Wagenreihung und Anfahrtspläne für einen Bahnhof
 - https://www.infoq.com/presentations/state-serverless-computing/  - Serverless = lots of latency, only hard to get consistency without very significant latency
 - https://www.youtube.com/watch?v=r-TLSBdHe1A  - Performance matters (about how difficult it is to really get correct measures and causal profiling [for parallel/distributed programs])
 - https://www.infoq.com/presentations/moore-law-expiring/
+- https://www.youtube.com/watch?v=Mj5P47F6nJg  - Structured concurrency
 
 **** https://levelup.gitconnected.com/why-rewriting-applications-from-scratch-is-almost-always-a-bad-idea-5402d1715006
 **** https://towardsdatascience.com/9-time-saving-tricks-for-your-command-line-c7535f1aa648
@@ -481,22 +483,26 @@ including:
 **** https://cloudncode.blog/2017/03/02/best-practices-aws-lambda-function/?fbclid=IwAR2t2c23c1VM21GNPIh0yHHGRhV9LoWYm0QOEofZ-youUYtDRLdR_UOj5Vs
 **** http://leebriggs.co.uk/blog/2019/04/13/the-fargate-illusion.html  - severless not being infrastructureless
 **** https://theburningmonk.com/2019/04/comparing-nuclio-and-aws-lambda/
-*** Containers (Docker / Kubernetes)
-**** https://pythonspeed.com/articles/base-image-python-docker-images/
-**** https://pythonspeed.com/articles/dockerizing-python-is-hard/
-**** https://semaphoreci.com/blog/docker-benefits
-**** https://matthias-endler.de/2019/maybe-you-dont-need-kubernetes/
-**** https://zwischenzugs.com/2019/03/25/aws-vs-k8s-is-the-new-windows-vs-linux/
-**** https://towardsdatascience.com/key-kubernetes-commands-741fe61fde8
-**** https://towardsdatascience.com/top-20-docker-security-tips-81c41dd06f57
-**** https://prefetch.net/blog/2019/10/16/the-beginners-guide-to-creating-kubernetes-manifests/
-**** https://medium.com/ssense-tech/my-docker-support-stack-58b1e67f5f4f  - Portainer to manage containers, WeaveScope to display network connections, Log-Io to pull logs from docker containers
+*** Docker/Containers                                                :Docker:
+**** https://pythonspeed.com/articles/base-image-python-docker-images/ :Docker:
+**** https://pythonspeed.com/articles/dockerizing-python-is-hard/    :Docker:
+**** https://semaphoreci.com/blog/docker-benefits                    :Docker:
+**** https://towardsdatascience.com/top-20-docker-security-tips-81c41dd06f57 :Docker:
+**** https://medium.com/ssense-tech/my-docker-support-stack-58b1e67f5f4f  - Portainer to manage containers, WeaveScope to display network connections, Log-Io to pull logs from docker containers :Docker:
+*** Kubernetes                                                   :Kubernetes:
+**** https://matthias-endler.de/2019/maybe-you-dont-need-kubernetes/ :Kubernetes:
+**** https://zwischenzugs.com/2019/03/25/aws-vs-k8s-is-the-new-windows-vs-linux/ :Kubernetes:
+**** https://towardsdatascience.com/key-kubernetes-commands-741fe61fde8 :Kubernetes:
+**** https://medium.com/90seconds/lessons-learned-with-gitlab-runner-on-kubernetes-d547c30ad5fb :Kubernetes:
+**** https://prefetch.net/blog/2019/10/16/the-beginners-guide-to-creating-kubernetes-manifests/ :Kubernetes:
+**** https://devops.com/how-to-secure-your-kubernetes-cluster-on-gke/
+**** https://medium.com/@dyachuk/why-do-kubernetes-clusters-in-aws-cost-more-than-they-should-fa510c1964c6
+**** https://www.microsoft.com/security/blog/2020/04/02/attack-matrix-kubernetes/ :Security:
 *** Monitoring
 **** https://tech.showmax.com/2019/10/prometheus-introduction/
-**** https://medium.com/@dyachuk/why-do-kubernetes-clusters-in-aws-cost-more-than-they-should-fa510c1964c6
 *** SSH
 **** https://yanaiela.github.io/post/remote-servers/  - Make SSH great again (config, tunnelling, ...)
-*** Security
+*** Security                                                       :Security:
 **** https://www.youtube.com/watch?v=BreKdM7CKnY&list=PL_IxoDz1Nq2YjnEpUMSqeqVUXgyEcsJdu&index=2&t=0s  - Hirne hacken, Sicherheit aus psychologischer Sicht
 **** https://medium.com/viithiisys/10-steps-to-secure-linux-server-for-production-environment-a135109a57c5  - <-- do this on a production server
 **** Tool https://github.com/hannob/snallygaster  - scan for secret files on HTTP Servers
@@ -506,6 +512,11 @@ including:
 **** https://blog.usejournal.com/how-to-avoid-ruining-lives-front-end-security-matters-26d4f906c7a6  - XSS and CSRF tokens
 
 **** https://onezero.medium.com/how-to-totally-secure-your-smartphone-48b7a85a5ed8
+*** Databases
+**** https://medium.com/@rbranson/10-things-i-hate-about-postgresql-20dbab8c2791
+
+A list with items where you need a skilled DBA to understand, but written good enough to understand to use a managed service where ever possible :-)
+
 ** Math                                                                :Math:
 *** https://de.wikipedia.org/wiki/Braess-Paradoxon
 
