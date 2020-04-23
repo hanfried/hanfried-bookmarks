@@ -6,6 +6,7 @@
 
 * Bookmarks
 ** Misc
+*** https://covid19.datanomiq.de/#section-cases  - Covid 19 Dashboard
 *** Anzeige von Bahn API Daten https://marudor.de/
 
 Inklusive detaillierte Wagenreihung und Anfahrtspläne für einen Bahnhof
@@ -151,6 +152,7 @@ Documentation: https://cookiecutter-django.readthedocs.io/en/latest/
 - <mark> :: use it instead of <span class="..."> to mark something
 - <abbr> :: easy to forget, but very useful
 - <div contenteditable> :: to create an editable field (and get rid of textarea)
+**** https://www.freecodecamp.org/news/rest-is-the-new-soap-97ff6c09896d/
 *** Git / GitHub / Versioning
 **** https://github.com/timqian/star-history
 
@@ -501,6 +503,7 @@ including:
 **** https://medium.com/@dyachuk/why-do-kubernetes-clusters-in-aws-cost-more-than-they-should-fa510c1964c6
 **** https://www.microsoft.com/security/blog/2020/04/02/attack-matrix-kubernetes/ :Security:
 **** https://learnk8s.io/cloud-resources-kubernetes  - Provisioning
+**** https://octetz.com/docs/2020/2020-01-06-vim-k8s-yaml-support/  - Kubernetes (completion) support for vim
 *** Monitoring
 **** https://tech.showmax.com/2019/10/prometheus-introduction/
 *** SSH
@@ -520,6 +523,7 @@ including:
 
 A list with items where you need a skilled DBA to understand, but written good enough to understand to use a managed service where ever possible :-)
 
+**** http://asvignesh.in/3-2-1-backup-strategy/
 ** Math                                                                :Math:
 *** https://de.wikipedia.org/wiki/Braess-Paradoxon
 
