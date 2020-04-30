@@ -32,6 +32,7 @@ Inklusive detaillierte Wagenreihung und Anfahrtspläne für einen Bahnhof
 *** https://www.heise.de/ct/artikel/Die-Psycho-Tricks-der-App-Entwickler-4547123.html
 *** https://onezero.medium.com/relentless-com-life-as-a-cog-in-amazons-e-tail-machine-d46b3ef05eb8
 *** https://www.bento.de/gefuehle/badeunfall-mein-freund-waere-fast-ertrunken-was-ich-daraus-gelernt-habe-a-1517a3af-5571-483b-af01-4e25d9600927
+*** https://fragdenstaat.de
 ** Software-Development                                :Software_Development:
 *** Misc
 **** https://www.youtube.com/watch?v=ecIWPzGEbFc&feature=youtu.be  - "Uncle" Bob Martin - "The Future of Programming"
@@ -161,6 +162,8 @@ Documentation: https://cookiecutter-django.readthedocs.io/en/latest/
 **** https://semver.org/spec/v2.0.0.html  - Semantic versioning
 **** https://github.com/github/semantic/blob/master/docs/examples.md  - Haskell library and command line tool for parsing, analyzing, and comparing source code
 
+*** Shell/Bash/Zsh
+**** https://kvz.io/bash-best-practices.html
 ** Data Science / ML / NLP                                      :DataScience:
 *** Misc
 **** http://www.arxiv-sanity.com/
@@ -483,6 +486,10 @@ including:
 **** https://blog.turbinelabs.io/deploy-not-equal-release-part-one-4724bc1e726b
 **** https://medium.com/@copyconstruct/testing-in-production-the-safe-way-18ca102d0ef1
 *** Microservices / Serverless
+**** https://rapidapi.com/  - to buy or sell pure APIs
+
+Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sell-your-work-when-all-you-know-is-a-back-end-bd78b1449119
+
 **** https://www.vinaysahni.com/best-practices-for-building-a-microservice-architecture?fbclid=IwAR1LEKYyJ6p1N2v8sf7HpxkCjgj_MQaDL6t7OizR4FWGma-hzWeFSQfHjJg#platform
 **** https://cloudncode.blog/2017/03/02/best-practices-aws-lambda-function/?fbclid=IwAR2t2c23c1VM21GNPIh0yHHGRhV9LoWYm0QOEofZ-youUYtDRLdR_UOj5Vs
 **** http://leebriggs.co.uk/blog/2019/04/13/the-fargate-illusion.html  - severless not being infrastructureless
@@ -499,6 +506,7 @@ including:
 **** https://towardsdatascience.com/key-kubernetes-commands-741fe61fde8 :Kubernetes:
 **** https://medium.com/90seconds/lessons-learned-with-gitlab-runner-on-kubernetes-d547c30ad5fb :Kubernetes:
 **** https://prefetch.net/blog/2019/10/16/the-beginners-guide-to-creating-kubernetes-manifests/ :Kubernetes:
+**** https://kubernetes-security.info/                             :Security:
 **** https://devops.com/how-to-secure-your-kubernetes-cluster-on-gke/ :Security:
 **** https://medium.com/@dyachuk/why-do-kubernetes-clusters-in-aws-cost-more-than-they-should-fa510c1964c6
 **** https://www.microsoft.com/security/blog/2020/04/02/attack-matrix-kubernetes/ :Security:
@@ -519,11 +527,22 @@ including:
 
 **** https://onezero.medium.com/how-to-totally-secure-your-smartphone-48b7a85a5ed8
 *** Databases
+**** https://medium.com/@rakyll/things-i-wished-more-developers-knew-about-databases-2d0178464f78
+**** https://stripe.com/en-de/blog/online-migrations  - steps to migrate a huge production database while running in production
+
+- Dual Writing: Write to both versions
+- Copy offline snapshot data that was not updated while in the write to both sync process
+- Change read paths: Read from new version
+- Change write paths: Write only to new version, make sure that it only writes to new version, stop syncing
+- Remove old data
+  
 **** https://medium.com/@rbranson/10-things-i-hate-about-postgresql-20dbab8c2791
 
 A list with items where you need a skilled DBA to understand, but written good enough to understand to use a managed service where ever possible :-)
 
 **** http://asvignesh.in/3-2-1-backup-strategy/
+**** https://medium.com/scopedev/introduction-to-profiling-and-optimizing-sql-queries-for-software-engineers-3cf376ecc712
+**** https://explain.depesz.com/  - Tool: PostgreSQL's explain analyze made readable
 ** Math                                                                :Math:
 *** https://de.wikipedia.org/wiki/Braess-Paradoxon
 
