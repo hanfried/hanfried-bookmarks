@@ -36,6 +36,7 @@ Inklusive detaillierte Wagenreihung und Anfahrtspläne für einen Bahnhof
 ** Software-Development                                :Software_Development:
 *** Misc
 **** https://www.youtube.com/watch?v=ecIWPzGEbFc&feature=youtu.be  - "Uncle" Bob Martin - "The Future of Programming"
+**** https://www.youtube.com/watch?v=28S4CVkYhWA&list=WL&index=2  - Mob Programming and the Power of Flow
 **** https://www.usecue.com/blog/code-warriors/
 
  A true warrior masters his sword and his mind. A ‘code warrior’ masters his software and his
@@ -501,6 +502,7 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
 **** https://towardsdatascience.com/top-20-docker-security-tips-81c41dd06f57 :Docker:
 **** https://medium.com/ssense-tech/my-docker-support-stack-58b1e67f5f4f  - Portainer to manage containers, WeaveScope to display network connections, Log-Io to pull logs from docker containers :Docker:
 *** Kubernetes                                                   :Kubernetes:
+**** https://github.com/jamiehannaford/what-happens-when-k8s
 **** https://matthias-endler.de/2019/maybe-you-dont-need-kubernetes/ :Kubernetes:
 **** https://zwischenzugs.com/2019/03/25/aws-vs-k8s-is-the-new-windows-vs-linux/ :Kubernetes:
 **** https://towardsdatascience.com/key-kubernetes-commands-741fe61fde8 :Kubernetes:
