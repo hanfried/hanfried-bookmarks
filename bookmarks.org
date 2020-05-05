@@ -164,7 +164,10 @@ Documentation: https://cookiecutter-django.readthedocs.io/en/latest/
 **** https://github.com/github/semantic/blob/master/docs/examples.md  - Haskell library and command line tool for parsing, analyzing, and comparing source code
 
 *** Shell/Bash/Zsh
+**** https://www.shellcheck.net/  - a static analysis tool for shell scripts
 **** https://kvz.io/bash-best-practices.html
+**** https://blog.yossarian.net/2020/01/23/Anybody-can-write-good-bash-with-a-little-effort
+**** https://arslan.io/2019/07/03/how-to-write-idempotent-bash-scripts/
 ** Data Science / ML / NLP                                      :DataScience:
 *** Misc
 **** http://www.arxiv-sanity.com/
@@ -447,6 +450,7 @@ Read also: https://blog.gruntwork.io/5-lessons-learned-from-writing-over-300-000
 including the video of an impressive talk: https://www.youtube.com/watch?v=RTEgE2lcyk4
 
 **** https://medium.com/s/story/technical-debt-is-like-tetris-168f64d8b700
+**** https://ferd.ca/complexity-has-to-live-somewhere.html
 **** https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/
 **** https://blog.thepete.net/blog/2019/10/04/hello-production/  - Deploying something useless into production, as soon as you can, is the right way to start a new project
 **** https://medium.com/@paulosman/production-oriented-development-8ae05f8cc7ea  - code in production is the only code that matters.
@@ -464,8 +468,6 @@ including the video of an impressive talk: https://www.youtube.com/watch?v=RTEgE
 **** http://onemogin.com/observability/dashboards/practitioners-guide-to-system-dashboard-design.html
 **** https://www.rookout.com/cant-git-no-satisfaction-why-we-need-a-new-gen-source-control/  - Advantages/Disadvantages of Monorepo vs Multirepo
 **** https://medium.com/anton-on-security/retaining-logs-for-a-year-boring-or-useful-70ea21fa3dda
-**** https://arslan.io/2019/07/03/how-to-write-idempotent-bash-scripts/
-**** https://www.youtube.com/watch?v=k8FIDGmmYvs  - How to break PDFs
 *** Site Reliability
 **** https://medium.com/@rahatshaikh/cloud-design-patterns-explained-simply-113c788b33ff  - Cloud Design Patterns
 
@@ -520,6 +522,7 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
 **** https://yanaiela.github.io/post/remote-servers/  - Make SSH great again (config, tunnelling, ...)
 *** Security                                                       :Security:
 **** https://www.youtube.com/watch?v=BreKdM7CKnY&list=PL_IxoDz1Nq2YjnEpUMSqeqVUXgyEcsJdu&index=2&t=0s  - Hirne hacken, Sicherheit aus psychologischer Sicht
+**** https://www.ncsc.gov.uk/whitepaper/security-architecture-anti-patterns
 **** https://medium.com/viithiisys/10-steps-to-secure-linux-server-for-production-environment-a135109a57c5  - <-- do this on a production server
 **** Tool https://github.com/hannob/snallygaster  - scan for secret files on HTTP Servers
 **** Video https://www.youtube.com/watch?v=Bppr9rbmwz4  - Attacking with HTTP Requests
@@ -528,6 +531,7 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
 **** https://blog.usejournal.com/how-to-avoid-ruining-lives-front-end-security-matters-26d4f906c7a6  - XSS and CSRF tokens
 
 **** https://onezero.medium.com/how-to-totally-secure-your-smartphone-48b7a85a5ed8
+**** https://www.youtube.com/watch?v=k8FIDGmmYvs  - How to break PDFs
 *** Databases
 **** https://medium.com/@rakyll/things-i-wished-more-developers-knew-about-databases-2d0178464f78
 **** https://stripe.com/en-de/blog/online-migrations  - steps to migrate a huge production database while running in production
