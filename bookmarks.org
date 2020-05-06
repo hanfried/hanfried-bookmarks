@@ -500,22 +500,26 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
 *** Docker/Containers                                                :Docker:
 **** https://pythonspeed.com/articles/base-image-python-docker-images/ :Docker:
 **** https://pythonspeed.com/articles/dockerizing-python-is-hard/    :Docker:
+**** https://pythonspeed.com/articles/alpine-docker-python/  - why not to use alpine as docker image for python
 **** https://semaphoreci.com/blog/docker-benefits                    :Docker:
 **** https://towardsdatascience.com/top-20-docker-security-tips-81c41dd06f57 :Docker:
 **** https://medium.com/ssense-tech/my-docker-support-stack-58b1e67f5f4f  - Portainer to manage containers, WeaveScope to display network connections, Log-Io to pull logs from docker containers :Docker:
 *** Kubernetes                                                   :Kubernetes:
-**** https://github.com/jamiehannaford/what-happens-when-k8s
-**** https://matthias-endler.de/2019/maybe-you-dont-need-kubernetes/ :Kubernetes:
-**** https://zwischenzugs.com/2019/03/25/aws-vs-k8s-is-the-new-windows-vs-linux/ :Kubernetes:
-**** https://towardsdatascience.com/key-kubernetes-commands-741fe61fde8 :Kubernetes:
-**** https://medium.com/90seconds/lessons-learned-with-gitlab-runner-on-kubernetes-d547c30ad5fb :Kubernetes:
-**** https://prefetch.net/blog/2019/10/16/the-beginners-guide-to-creating-kubernetes-manifests/ :Kubernetes:
-**** https://kubernetes-security.info/                             :Security:
-**** https://devops.com/how-to-secure-your-kubernetes-cluster-on-gke/ :Security:
-**** https://medium.com/@dyachuk/why-do-kubernetes-clusters-in-aws-cost-more-than-they-should-fa510c1964c6
-**** https://www.microsoft.com/security/blog/2020/04/02/attack-matrix-kubernetes/ :Security:
-**** https://learnk8s.io/cloud-resources-kubernetes  - Provisioning
-**** https://octetz.com/docs/2020/2020-01-06-vim-k8s-yaml-support/  - Kubernetes (completion) support for vim
+**** Misc
+***** https://github.com/jamiehannaford/what-happens-when-k8s
+***** https://matthias-endler.de/2019/maybe-you-dont-need-kubernetes/ :Kubernetes:
+***** https://zwischenzugs.com/2019/03/25/aws-vs-k8s-is-the-new-windows-vs-linux/ :Kubernetes:
+***** https://towardsdatascience.com/key-kubernetes-commands-741fe61fde8 :Kubernetes:
+***** https://medium.com/90seconds/lessons-learned-with-gitlab-runner-on-kubernetes-d547c30ad5fb :Kubernetes:
+***** https://prefetch.net/blog/2019/10/16/the-beginners-guide-to-creating-kubernetes-manifests/ :Kubernetes:
+***** https://medium.com/@dyachuk/why-do-kubernetes-clusters-in-aws-cost-more-than-they-should-fa510c1964c6
+***** https://learnk8s.io/cloud-resources-kubernetes  - Provisioning
+***** https://octetz.com/docs/2020/2020-01-06-vim-k8s-yaml-support/  - Kubernetes (completion) support for vim
+**** Security                                                      :Security:
+***** https://kubernetes-security.info/                            :Security:
+***** https://devops.com/how-to-secure-your-kubernetes-cluster-on-gke/ :Security:
+***** https://kubernetes.io/blog/2018/07/18/11-ways-not-to-get-hacked/ :Security:
+***** https://www.microsoft.com/security/blog/2020/04/02/attack-matrix-kubernetes/ :Security:
 *** Monitoring
 **** https://tech.showmax.com/2019/10/prometheus-introduction/
 *** SSH
@@ -523,6 +527,36 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
 *** Security                                                       :Security:
 **** https://www.youtube.com/watch?v=BreKdM7CKnY&list=PL_IxoDz1Nq2YjnEpUMSqeqVUXgyEcsJdu&index=2&t=0s  - Hirne hacken, Sicherheit aus psychologischer Sicht
 **** https://www.ncsc.gov.uk/whitepaper/security-architecture-anti-patterns
+**** https://www.ncsc.gov.uk/blog-post/protect-your-management-interfaces
+
+1. Protecting devices used for administration
+   - Ensure privileged users carry out their administrative duties in a ‘clean’ (more trusted)
+     environment.
+   - Ensure privileged users handle their email and web browsing in a separate ‘dirty’ (less
+     trusted) environment.
+   - Consider the ‘dirty’ environment to be sacrificial, and design it in a way that anticipates
+     compromise. When it is compromised, you’d like to be able to find out when and how (and be
+     able to easily recover it into a good state), but the breach shouldn't have a big impact on
+     your important systems.
+   - Use strong authentication mechanisms, such as 2-factor authentication.
+2. Reducing the exposure of management interfaces
+   - Expose management interfaces to dedicated management networks where you can. At the very
+     least, limit authorised inbound IP addresses to those used by dedicated management devices.
+   - Deploy jump servers where you need to expose management interfaces to less trusted networks.
+     Ensure these are very well configured and maintained.
+   - Use only the latest versions of secure protocols and configure them to use strong
+     authentication mechanisms. For example, use the latest version of SSH rather than Telnet,
+     and use public-key authentication to secure access.
+   - Create similar tiers in your management networks to those in the systems being managed.
+   - Collect and automatically alert on security-relevant events against your management
+     infrastructure.
+3. Ensuring there's a trail of breadcrumbs
+   - Record the commands issued by users on jump servers, and store them securely.
+   - Ensure all network and server infrastructure audit records are also kept securely.
+   - Send these records to a service that administrators don't have readily available access to,
+     and would need multiple people to modify.
+   - Automate the analysis of logs to identify suspicious behaviour.
+
 **** https://medium.com/viithiisys/10-steps-to-secure-linux-server-for-production-environment-a135109a57c5  - <-- do this on a production server
 **** Tool https://github.com/hannob/snallygaster  - scan for secret files on HTTP Servers
 **** Video https://www.youtube.com/watch?v=Bppr9rbmwz4  - Attacking with HTTP Requests
