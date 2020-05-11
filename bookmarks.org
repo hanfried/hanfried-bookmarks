@@ -143,6 +143,13 @@ Documentation: https://cookiecutter-django.readthedocs.io/en/latest/
 *** REST APIs / Web Development / HTML
 **** http://www.webpagetest.org/  - checks speed of a web page from different locations, browsers, with auth, protocols ...
 **** https://hackernoon.com/a-documentation-crash--45006a85c15c
+**** https://documentation.divio.com/  - What nobody tells you about documentation
+
+- Tutorials
+- How-To-Guides
+- Discussions
+- Reference
+
 **** https://medium.com/better-programming/best-practices-for-versioning-an-api-for-rest-apis-530a9398f311
 **** https://itnext.io/html-underrated-tags-119ef3e45b94
 
@@ -267,6 +274,7 @@ top 100 most cited “papers” in all of computer science.
 - Image (Classification, Feature Vector, Generator, Other)
 - Video (Classification)
 
+**** https://www.si.edu/openaccess  -  enthält 2D- und 3D-Darstellungen von kulturellen, wissenschaftlichen, historischen, künstlerischen, technischen und Design-Exponaten aus seinen 19 Museen, 9 Forschungszentren, Bibliotheken, Archiven und dem National Zoo. Hinzu kommen Forschungsdaten und Daten zu Sammlungen
 *** Pandas                                                           :Pandas:
 
 **** https://towardsdatascience.com/7-useful-pandas-tips-for-data-management-8b23a85bf41f  - read_html and read_pdf, use .xs method for multi-indexing
@@ -527,6 +535,33 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
 *** Security                                                       :Security:
 **** https://www.youtube.com/watch?v=BreKdM7CKnY&list=PL_IxoDz1Nq2YjnEpUMSqeqVUXgyEcsJdu&index=2&t=0s  - Hirne hacken, Sicherheit aus psychologischer Sicht
 **** https://www.ncsc.gov.uk/whitepaper/security-architecture-anti-patterns
+
+1. 'Browse-up’ for administration
+   - When administration of a system is performed from a device which is less trusted than the
+     system being administered. ​
+   - A better approach: ‘browse-down’
+2. Management bypass
+   - When layered defences in a network data plane can be short-cut via the management plane.​
+   - A better approach: layered defences in management planes
+3. Back-to-back firewalls
+   - When the same controls are implemented by two firewalls in series, sometimes from different
+     manufacturers.
+   - A better approach: do it once, and do it well
+   - The one exception: There is one example of using two firewalls back-to-back that makes more
+     sense; to act as a contract enforcement point between two entities that are connecting to
+     each other.
+4. Building an ‘on-prem’ solution in the cloud
+   - When you build - in the public cloud - the solution you would have built in your own data
+     centres.
+   - A better approach: use higher order functions
+5. Uncontrolled and unobserved third party access
+   - When a third party has unfettered remote access for administrative or operational purposes,
+     without any constraints or monitoring in place.
+   - A better approach: a good contract, constrained access and a thorough audit trail
+6. The un-patchable system
+   - When a system cannot be patched due to it needing to remain operational 24/7.
+   - A better approach: design for 'easy' maintenance, little and often
+
 **** https://www.ncsc.gov.uk/blog-post/protect-your-management-interfaces
 
 1. Protecting devices used for administration
@@ -556,6 +591,26 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
    - Send these records to a service that administrators don't have readily available access to,
      and would need multiple people to modify.
    - Automate the analysis of logs to identify suspicious behaviour.
+
+**** https://www.ncsc.gov.uk/blog-post/debunking-cloud-security-myths
+
+> On balance we think well-engineered SaaS is better for security than the alternatives.
+
+> Consider whether your IT security engineering team is going to be better or worse at security
+  management for a major commodity product, offered - as a service - by the major vendor who
+  developed it.
+
+> SaaS offerings may feel at times like an uncontrolled and uncontrollable space where your
+  staff will share private data in an unconstrained fashion. Our experience is that this can be
+  true, but that it’s better to provide them with easy to understand guidance on which tools are
+  appropriate to use, and where to seek help, rather than to ban them altogether.
+
+> I assert it is better to spend our local security effort on problems unique to our
+  organisations, rather than worrying about patching, maintaining, and monitoring services that
+  others can do better than us.
+
+> In summary, I would like to leave you with the message that whilst SaaS is not a silver bullet
+  for cyber security, in many situations the security benefits outweigh the risks.
 
 **** https://medium.com/viithiisys/10-steps-to-secure-linux-server-for-production-environment-a135109a57c5  - <-- do this on a production server
 **** Tool https://github.com/hannob/snallygaster  - scan for secret files on HTTP Servers
