@@ -163,6 +163,7 @@ Documentation: https://cookiecutter-django.readthedocs.io/en/latest/
 - <div contenteditable> :: to create an editable field (and get rid of textarea)
 **** https://www.freecodecamp.org/news/rest-is-the-new-soap-97ff6c09896d/
 *** Git / GitHub / Versioning
+**** https://ohshitgit.com/
 **** https://github.com/timqian/star-history
 
  (1.0.0 -> 1.0.1 bugfix -> 1.1.0 new functionality -> ... -> 2.0.0 backward incompatible breaking change)
@@ -476,6 +477,29 @@ including the video of an impressive talk: https://www.youtube.com/watch?v=RTEgE
 **** http://onemogin.com/observability/dashboards/practitioners-guide-to-system-dashboard-design.html
 **** https://www.rookout.com/cant-git-no-satisfaction-why-we-need-a-new-gen-source-control/  - Advantages/Disadvantages of Monorepo vs Multirepo
 **** https://medium.com/anton-on-security/retaining-logs-for-a-year-boring-or-useful-70ea21fa3dda
+*** Cloud Provisioners
+**** For all platforms
+- https://github.com/gruntwork-io/cloud-nuke  - get rid of all allocated resources, finally!
+**** AWS
+- https://medium.com/swlh/so-you-inherited-an-aws-account-e5fe6550607d  - Secure an existing AWS Account (more or less complete checklist)
+- https://medium.com/teamzerolabs/5-aws-services-you-should-avoid-f45111cc10cd
+  
+  1. Cognito (User Management/Mobile Login)
+     - No Mobile
+     - Use one of the competitors OAuth2 from Google/Facebook/w/e
+  2. CloudFormation
+     - Obviously a huge mess -> use Terraform instead
+  3. ElasticCache
+     - just very expensive for a simple redis server (that intents to hold ephemoral data anywhere)
+     - just deploy it to an ec2 or similar and if HA is needed setup a load balancer in front
+  4. Kinesis
+     - difficult to setup (some java foo stuff with explicit dependencies to bundle into python stuff and more creepy actions)
+     - just use one of the messaging queue alternatives like celery, rabbitmq, kafka, ...
+  5. Lambda
+     - great to handle triggers (like update to s3 or w/e)
+     - terrible to run http rest endpoints (no solid monitoring, logging, unclear environment it's running and so on)
+       -> just use a real framework like flask, fastapi, django w/e or kubeless
+
 *** Site Reliability
 **** https://medium.com/@rahatshaikh/cloud-design-patterns-explained-simply-113c788b33ff  - Cloud Design Patterns
 
@@ -511,6 +535,7 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
 **** https://pythonspeed.com/articles/alpine-docker-python/  - why not to use alpine as docker image for python
 **** https://semaphoreci.com/blog/docker-benefits                    :Docker:
 **** https://towardsdatascience.com/top-20-docker-security-tips-81c41dd06f57 :Docker:
+**** https://codeopolis.com/posts/6-docker-utilities-everyone-should-try/
 **** https://medium.com/ssense-tech/my-docker-support-stack-58b1e67f5f4f  - Portainer to manage containers, WeaveScope to display network connections, Log-Io to pull logs from docker containers :Docker:
 *** Kubernetes                                                   :Kubernetes:
 **** Misc
@@ -528,6 +553,8 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
 ***** https://devops.com/how-to-secure-your-kubernetes-cluster-on-gke/ :Security:
 ***** https://kubernetes.io/blog/2018/07/18/11-ways-not-to-get-hacked/ :Security:
 ***** https://www.microsoft.com/security/blog/2020/04/02/attack-matrix-kubernetes/ :Security:
+**** HowTo-Guides
+***** https://itnext.io/utilize-jenkins-in-an-auto-scaling-kubernetes-deployment-on-amazon-eks-with-spot-instances-f9159df00aee
 *** Monitoring
 **** https://tech.showmax.com/2019/10/prometheus-introduction/
 *** SSH
