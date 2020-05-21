@@ -613,6 +613,7 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
 - https://itnext.io/utilize-jenkins-in-an-auto-scaling-kubernetes-deployment-on-amazon-eks-with-spot-instances-f9159df00aee
 - https://medium.com/faun/application-deployment-using-gitlab-ci-cd-on-managed-kubernetes-cluster-at-gcp-72b59496979c
 - https://medium.com/@jmrobles/how-to-create-a-kubernetes-cluster-with-rancher-on-hetzner-3b2f7f0c037a
+- https://itnext.io/aws-elastic-kubernetes-service-running-alb-ingress-controller-8d0d457615fa
 **** Monitoring
 - https://tech.showmax.com/2019/10/prometheus-introduction/
 - https://github.com/hjacobs/kube-ops-view
