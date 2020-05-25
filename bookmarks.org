@@ -461,9 +461,10 @@ including the video of an impressive talk: https://www.youtube.com/watch?v=RTEgE
        -> just use a real framework like flask, fastapi, django w/e or kubeless
 - https://github.com/rebuy-de/aws-nuke
 **** Terraform
+- https://medium.com/swlh/design-principles-and-practices-for-terraform-276b2c463563
 - https://github.com/terraform-linters/tflint  - linter for terraform, e.g. catch wrong machine type before deploying
 *** Site Reliability
-**** https://medium.com/@rahatshaikh/cloud-design-patterns-explained-simply-113c788b33ff  - Cloud Design Patterns
+- https://medium.com/@rahatshaikh/cloud-design-patterns-explained-simply-113c788b33ff  - Cloud Design Patterns
 
 including:
 - Asynchronous Request and Reply :: polling or event notification
@@ -473,15 +474,15 @@ including:
 - Circuit Breaker :: Fail fast
 - Sidecar :: Co-locate Monitoring, Logging, ...
 
-**** https://www.oreilly.com/ideas/how-to-get-started-with-site-reliability-engineering-sre
-**** https://medium.com/kudos-engineering/faking-fires-get-better-incident-management-with-practise-e61a5d66578d
-**** https://uptime.com/blog/got-game-secrets-of-great-incident-management
-**** https://shubheksha.com/posts/2019/04/re-framing-how-we-think-about-production-incidents/
-**** https://developers.soundcloud.com/blog/alerting-on-slos
-**** https://charity.wtf/2019/05/01/friday-deploy-freezes-are-exactly-like-murdering-puppies/
-**** https://hackernoon.com/deploy-on-fridays-or-dont-qg2y32jk
-**** https://blog.turbinelabs.io/deploy-not-equal-release-part-one-4724bc1e726b
-**** https://medium.com/@copyconstruct/testing-in-production-the-safe-way-18ca102d0ef1
+- https://www.oreilly.com/ideas/how-to-get-started-with-site-reliability-engineering-sre
+- https://medium.com/kudos-engineering/faking-fires-get-better-incident-management-with-practise-e61a5d66578d
+- https://uptime.com/blog/got-game-secrets-of-great-incident-management
+- https://shubheksha.com/posts/2019/04/re-framing-how-we-think-about-production-incidents/
+- https://developers.soundcloud.com/blog/alerting-on-slos
+- https://charity.wtf/2019/05/01/friday-deploy-freezes-are-exactly-like-murdering-puppies/
+- https://hackernoon.com/deploy-on-fridays-or-dont-qg2y32jk
+- https://blog.turbinelabs.io/deploy-not-equal-release-part-one-4724bc1e726b
+- https://medium.com/@copyconstruct/testing-in-production-the-safe-way-18ca102d0ef1
 *** Microservices / Serverless
 - https://rapidapi.com/  - to buy or sell pure APIs
 
@@ -530,17 +531,22 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
 **** Tools
 - https://codeopolis.com/posts/6-docker-utilities-everyone-should-try/
 - https://medium.com/ssense-tech/my-docker-support-stack-58b1e67f5f4f  - Portainer to manage containers, WeaveScope to display network connections, Log-Io to pull logs from docker containers :Docker:
+- https://github.com/containrrr/watchtower 
+  * With watchtower you can update the running version of your containerized app
+    simply by pushing a new image to the Docker Hub or your own image registry.
+    Watchtower will pull down your new image, gracefully shut down your existing
+    container and restart it with the same options that were used when it was
+    deployed initially.
 *** Kubernetes                                                   :Kubernetes:
 **** Misc
-***** https://github.com/jamiehannaford/what-happens-when-k8s
-***** https://matthias-endler.de/2019/maybe-you-dont-need-kubernetes/ :Kubernetes:
-***** https://zwischenzugs.com/2019/03/25/aws-vs-k8s-is-the-new-windows-vs-linux/ :Kubernetes:
-***** https://towardsdatascience.com/key-kubernetes-commands-741fe61fde8 :Kubernetes:
-***** https://medium.com/90seconds/lessons-learned-with-gitlab-runner-on-kubernetes-d547c30ad5fb :Kubernetes:
-***** https://prefetch.net/blog/2019/10/16/the-beginners-guide-to-creating-kubernetes-manifests/ :Kubernetes:
-***** https://medium.com/@dyachuk/why-do-kubernetes-clusters-in-aws-cost-more-than-they-should-fa510c1964c6
-***** https://learnk8s.io/cloud-resources-kubernetes  - Provisioning
-***** https://octetz.com/docs/2020/2020-01-06-vim-k8s-yaml-support/  - Kubernetes (completion) support for vim
+- https://blog.pipetail.io/posts/2020-05-04-most-common-mistakes-k8s/
+- https://github.com/jamiehannaford/what-happens-when-k8s
+- https://matthias-endler.de/2019/maybe-you-dont-need-kubernetes/ :Kubernetes:
+- https://towardsdatascience.com/key-kubernetes-commands-741fe61fde8 :Kubernetes:
+- https://medium.com/90seconds/lessons-learned-with-gitlab-runner-on-kubernetes-d547c30ad5fb :Kubernetes:
+- https://prefetch.net/blog/2019/10/16/the-beginners-guide-to-creating-kubernetes-manifests/ :Kubernetes:
+- https://learnk8s.io/cloud-resources-kubernetes  - Provisioning
+- https://octetz.com/docs/2020/2020-01-06-vim-k8s-yaml-support/  - Kubernetes (completion) support for vim
 **** Linters
 - https://github.com/instrumenta/kubeval/
 - https://helm.sh/docs/helm/helm_lint/
@@ -551,7 +557,6 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
 - https://kubernetes.io/blog/2018/07/18/11-ways-not-to-get-hacked/ :Security:
 - https://www.microsoft.com/security/blog/2020/04/02/attack-matrix-kubernetes/ :Security:
 - https://itnext.io/seccomp-in-kubernetes-part-i-7-things-you-should-know-before-you-even-start-97502ad6b6d6
-
   1. Run your containers with AllowPrivilegeEscaltion=false. It will make your
     seccomp profiles smaller and less likely to be impacted by container
     runtime changes.
@@ -567,9 +572,14 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
   6. Allow the system calls you know you need, block everything else
   7. Be comprehensive and make sure all the basic system calls have been whitelisted
 
-**** HowTo-Guides
+**** AWS/EKS
 - https://eksworkshop.com/
+- https://zwischenzugs.com/2019/03/25/aws-vs-k8s-is-the-new-windows-vs-linux/ :Kubernetes:
+- https://medium.com/@dyachuk/why-do-kubernetes-clusters-in-aws-cost-more-than-they-should-fa510c1964c6
+- https://medium.com/faun/aws-best-practice-rules-for-amazon-elastic-kubernetes-service-eks-29408a96cb1d
 - https://itnext.io/utilize-jenkins-in-an-auto-scaling-kubernetes-deployment-on-amazon-eks-with-spot-instances-f9159df00aee
+**** HowTo-Guides
+- https://ahmet.im/blog/mastering-kubeconfig/
 - https://medium.com/faun/application-deployment-using-gitlab-ci-cd-on-managed-kubernetes-cluster-at-gcp-72b59496979c
 - https://medium.com/@jmrobles/how-to-create-a-kubernetes-cluster-with-rancher-on-hetzner-3b2f7f0c037a
 - https://itnext.io/aws-elastic-kubernetes-service-running-alb-ingress-controller-8d0d457615fa
