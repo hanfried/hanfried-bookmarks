@@ -702,11 +702,9 @@ A list with items where you need a skilled DBA to understand, but written good e
 **** https://medium.com/scopedev/introduction-to-profiling-and-optimizing-sql-queries-for-software-engineers-3cf376ecc712
 **** https://explain.depesz.com/  - Tool: PostgreSQL's explain analyze made readable
 ** Math                                                                :Math:
-*** https://de.wikipedia.org/wiki/Braess-Paradoxon
-
-zusätzliche Handlungsoption unter der Annahme rationaler Einzelentscheidungen zu einer
-Verschlechterung der Situation für alle führen kann
-
-*** https://towardsdatascience.com/simpsons-paradox-d2f4d8f08d42
-*** https://towardsdatascience.com/the-inspection-paradox-is-everywhere-2ef1c2e9d709 :Statistical:
-*** https://towardsdatascience.com/a-b-testing-is-there-a-better-way-an-exploration-of-multi-armed-bandits-98ca927b357d  - Overview of different algorithms for Multi Armed Bandits
+- https://de.wikipedia.org/wiki/Braess-Paradoxon
+    zusätzliche Handlungsoption unter der Annahme rationaler Einzelentscheidungen zu einer
+    Verschlechterung der Situation für alle führen kann
+- https://towardsdatascience.com/simpsons-paradox-d2f4d8f08d42
+- https://towardsdatascience.com/the-inspection-paradox-is-everywhere-2ef1c2e9d709 :Statistical:
+- https://towardsdatascience.com/a-b-testing-is-there-a-better-way-an-exploration-of-multi-armed-bandits-98ca927b357d  - Overview of different algorithms for Multi Armed Bandits

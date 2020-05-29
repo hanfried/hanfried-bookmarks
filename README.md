@@ -1,62 +1,58 @@
 
 # Table of Contents
 
-1.  [Bookmarks](#org6324ca7)
-    1.  [Misc](#org98bd1be)
-    2.  [Personal Development](#org7924c49)
-    3.  [Gesellschaftliches](#org7b0db9c)
-    4.  [Software-Development](#orgfe492ce):Software_Development:
-        1.  [Misc](#org5153e7c)
-        2.  [YAML](#orgbf78dfa)
-        3.  [Python](#org54eed4e)
-        4.  [Django](#orgea4c095)
-        5.  [Javascript](#orgf22217a)
-        6.  [REST APIs / Web Development / HTML](#org787505f)
-        7.  [Git / GitHub / Versioning](#org1b7bc68)
-        8.  [Shell/Bash/Zsh](#org9a71d3e)
-    5.  [Data Science / ML / NLP](#orgcf9da6b):DataScience:
-        1.  [Misc](#orgd4d707b)
-        2.  [Interesting Analysis](#org8f4d373):Analysis:
-        3.  [Kaggle](#org6c753cc):Kaggle:
-        4.  [Team (Management, Hiring, Organization, &#x2026;)](#org1618d78)
-        5.  [Optimizers / Learn Rates](#org6a28036)
-        6.  [Jupyter Notebooks](#orgc0d71ea)
-        7.  [Streamlit](#orgeeae6f2)
-        8.  [Pytorch/fastai](#orgb9a591a)
-        9.  [Datasets](#org884d9b1)
-        10. [Pandas](#org1cbd698):Pandas:
-        11. [Data Annotation](#orge73e8cf)
-        12. [Data Exploration / Feature Engineering](#org339922a)
-        13. [Data Testing](#org014a548)
-        14. [Data Visualization](#org6eaaa5a):Visualization:
-        15. [NLP](#org2c75785):NLP:
-        16. [Computer Vision](#orgcb0bda2)
-        17. [Time Series](#org3efa9ad)
-        18. [Deployments](#org3b785d8):DevOps:
-    6.  [DevOps / Security](#org94bcc4e)
-        1.  [Misc](#org2cd344a)
-        2.  [Cloud Provisioners](#org14edeb3)
-        3.  [Site Reliability](#org81d159b)
-        4.  [Microservices / Serverless](#orgfcb97de)
-        5.  [Docker/Containers](#org60d62a3):Docker:
-        6.  [Kubernetes](#org07ee404):Kubernetes:
-        7.  [SSH](#orgf6f87c2)
-        8.  [General Computer/Networking/&#x2026; Security](#orga977606):Security:
-        9.  [Databases](#orga5fecdc)
-    7.  [Math](#org85c7fa2):Math:
-        1.  [https://de.wikipedia.org/wiki/Braess-Paradoxon](#org05e91dd)
-        2.  [https://towardsdatascience.com/simpsons-paradox-d2f4d8f08d42](#org871cf12)
-        3.  [https://towardsdatascience.com/the-inspection-paradox-is-everywhere-2ef1c2e9d709](#orge2ccd25):Statistical:
-        4.  [https://towardsdatascience.com/a-b-testing-is-there-a-better-way-an-exploration-of-multi-armed-bandits-98ca927b357d  - Overview of different algorithms for Multi Armed Bandits](#org120132d)
+1.  [Bookmarks](#org272ce35)
+    1.  [Misc](#orgc0d0cd7)
+    2.  [Personal Development](#org6af75ad)
+    3.  [Gesellschaftliches](#orgc88afea)
+    4.  [Software-Development](#orgd447fd6):Software_Development:
+        1.  [Misc](#orgd88af96)
+        2.  [YAML](#org44a2541)
+        3.  [Python](#org1d6069c)
+        4.  [Django](#orgc707394)
+        5.  [Javascript](#org94e9db7)
+        6.  [REST APIs / Web Development / HTML](#org24520bf)
+        7.  [Git / GitHub / Versioning](#orgb1c9e7c)
+        8.  [Shell/Bash/Zsh](#org2f0d11f)
+    5.  [Data Science / ML / NLP](#org6bc0d26):DataScience:
+        1.  [Misc](#orgd90bc22)
+        2.  [Interesting Analysis](#org800c743):Analysis:
+        3.  [Kaggle](#orgdb6f5a6):Kaggle:
+        4.  [Team (Management, Hiring, Organization, &#x2026;)](#org78e1d42)
+        5.  [Optimizers / Learn Rates](#orgf43226a)
+        6.  [Jupyter Notebooks](#org2bce619)
+        7.  [Streamlit](#orgaa87fe7)
+        8.  [Pytorch/fastai](#org6d2bbf5)
+        9.  [Datasets](#orgd7b6bbe)
+        10. [Pandas](#org180fbac):Pandas:
+        11. [Data Annotation](#orgdefb526)
+        12. [Data Exploration / Feature Engineering](#org976845d)
+        13. [Data Testing](#org0782377)
+        14. [Data Visualization](#org0d5b098):Visualization:
+        15. [NLP](#org2ed79c6):NLP:
+        16. [Computer Vision](#org58fdd8b)
+        17. [Time Series](#org0608db0)
+        18. [Deployments](#org1dd6043):DevOps:
+    6.  [DevOps / Security](#orgabd658e)
+        1.  [Misc](#org4c0229d)
+        2.  [Cloud Provisioners](#orgfec9abe)
+        3.  [Site Reliability](#org4fad747)
+        4.  [Microservices / Serverless](#orgde0cccf)
+        5.  [Docker/Containers](#org3abdfd1):Docker:
+        6.  [Kubernetes](#org888f884):Kubernetes:
+        7.  [SSH](#org14b3d74)
+        8.  [General Computer/Networking/&#x2026; Security](#org7574928):Security:
+        9.  [Databases](#orgc188f36)
+    7.  [Math](#org8934ed8):Math:
 
 
 
-<a id="org6324ca7"></a>
+<a id="org272ce35"></a>
 
 # Bookmarks
 
 
-<a id="org98bd1be"></a>
+<a id="orgc0d0cd7"></a>
 
 ## Misc
 
@@ -73,7 +69,7 @@
 -   <https://www.gulp.de/knowledge-base/19/iii/neue-checkliste-fuer-freelancer-bin-ich-scheinselbststaendig.html>
 
 
-<a id="org7924c49"></a>
+<a id="org6af75ad"></a>
 
 ## Personal Development
 
@@ -84,7 +80,7 @@
 -   <https://medium.com/better-programming/why-do-incompetent-managers-get-promoted-815165a03bee>
 
 
-<a id="org7b0db9c"></a>
+<a id="orgc88afea"></a>
 
 ## Gesellschaftliches
 
@@ -99,12 +95,12 @@
 -   <https://fragdenstaat.de>
 
 
-<a id="orgfe492ce"></a>
+<a id="orgd447fd6"></a>
 
 ## Software-Development     :Software_Development:
 
 
-<a id="org5153e7c"></a>
+<a id="orgd88af96"></a>
 
 ### Misc
 
@@ -140,7 +136,7 @@
 -   <https://github.com/18F/technology-budgeting/blob/master/handbook.md>  - De-risking custom technology projects (wie Behörden IT-Projekte am besten ausschreiben/planen/usw.)
 
 
-<a id="orgbf78dfa"></a>
+<a id="org44a2541"></a>
 
 ### YAML
 
@@ -150,7 +146,7 @@
 -   <https://arp242.net/weblog/yaml_probably_not_so_great_after_all.html>
 
 
-<a id="org54eed4e"></a>
+<a id="org1d6069c"></a>
 
 ### Python
 
@@ -213,7 +209,7 @@
         -   <https://github.com/Erotemic/xdoctest>  - testing the examples in the docstrings
 
 
-<a id="orgea4c095"></a>
+<a id="orgc707394"></a>
 
 ### Django
 
@@ -232,14 +228,14 @@
 -   <https://vsupalov.com/vue-js-in-django-template/>
 
 
-<a id="orgf22217a"></a>
+<a id="org94e9db7"></a>
 
 ### Javascript
 
 -   <https://medium.com/@michael.karen/learning-modern-javascript-with-tetris-92d532bcd057>
 
 
-<a id="org787505f"></a>
+<a id="org24520bf"></a>
 
 ### REST APIs / Web Development / HTML
 
@@ -263,7 +259,7 @@
 -   <https://www.freecodecamp.org/news/rest-is-the-new-soap-97ff6c09896d/>
 
 
-<a id="org1b7bc68"></a>
+<a id="orgb1c9e7c"></a>
 
 ### Git / GitHub / Versioning
 
@@ -274,7 +270,7 @@
 -   <https://github.com/github/semantic/blob/master/docs/examples.md>  - Haskell library and command line tool for parsing, analyzing, and comparing source code
 
 
-<a id="org9a71d3e"></a>
+<a id="org2f0d11f"></a>
 
 ### Shell/Bash/Zsh
 
@@ -284,12 +280,12 @@
 -   <https://arslan.io/2019/07/03/how-to-write-idempotent-bash-scripts/>
 
 
-<a id="orgcf9da6b"></a>
+<a id="org6bc0d26"></a>
 
 ## Data Science / ML / NLP     :DataScience:
 
 
-<a id="orgd4d707b"></a>
+<a id="orgd90bc22"></a>
 
 ### Misc
 
@@ -313,7 +309,7 @@
     Introductionary, but very well written text
 
 
-<a id="org8f4d373"></a>
+<a id="org800c743"></a>
 
 ### Interesting Analysis     :Analysis:
 
@@ -324,7 +320,7 @@
 -   <https://towardsdatascience.com/march-madness-analyze-video-to-detect-players-teams-and-who-attempted-the-basket-8cad67745b88>
 
 
-<a id="org6c753cc"></a>
+<a id="orgdb6f5a6"></a>
 
 ### Kaggle     :Kaggle:
 
@@ -332,7 +328,7 @@
 -   <https://towardsdatascience.com/a-story-of-my-first-gold-medal-in-one-kaggle-competition-things-done-and-lessons-learned-c269d9c233d1>
 
 
-<a id="org1618d78"></a>
+<a id="org78e1d42"></a>
 
 ### Team (Management, Hiring, Organization, &#x2026;)
 
@@ -347,7 +343,7 @@
 -   <https://towardsdatascience.com/how-to-screw-up-a-computer-vision-project-166dfcc44a5f>
 
 
-<a id="org6a28036"></a>
+<a id="orgf43226a"></a>
 
 ### Optimizers / Learn Rates
 
@@ -356,7 +352,7 @@
 -   <https://towardsdatascience.com/self-paced-learning-for-machine-learning-f1c489316c61>
 
 
-<a id="orgc0d71ea"></a>
+<a id="org2bce619"></a>
 
 ### Jupyter Notebooks
 
@@ -368,14 +364,14 @@
 -   <https://towardsdatascience.com/introduction-to-papermill-2c61f66bea30>  - How to transform your Jupyter Notebook into a workflow tool
 
 
-<a id="orgeeae6f2"></a>
+<a id="orgaa87fe7"></a>
 
 ### Streamlit
 
 -   <https://towardsdatascience.com/how-to-deploy-a-streamlit-app-using-an-amazon-free-ec2-instance-416a41f69dc3>
 
 
-<a id="orgb9a591a"></a>
+<a id="org6d2bbf5"></a>
 
 ### Pytorch/fastai
 
@@ -384,7 +380,7 @@
 -   <https://medium.com/huggingface/from-tensorflow-to-pytorch-265f40ef2a28> :PyTorch:tensorflow:
 
 
-<a id="org884d9b1"></a>
+<a id="orgd7b6bbe"></a>
 
 ### Datasets
 
@@ -418,7 +414,7 @@
 -   <https://www.si.edu/openaccess>  -  enthält 2D- und 3D-Darstellungen von kulturellen, wissenschaftlichen, historischen, künstlerischen, technischen und Design-Exponaten aus seinen 19 Museen, 9 Forschungszentren, Bibliotheken, Archiven und dem National Zoo. Hinzu kommen Forschungsdaten und Daten zu Sammlungen
 
 
-<a id="org1cbd698"></a>
+<a id="org180fbac"></a>
 
 ### Pandas     :Pandas:
 
@@ -430,7 +426,7 @@
 -   <https://towardsdatascience.com/geopandas-101-plot-any-data-with-a-latitude-and-longitude-on-a-map-98e01944b972> :Visualization:
 
 
-<a id="orge73e8cf"></a>
+<a id="orgdefb526"></a>
 
 ### Data Annotation
 
@@ -438,7 +434,7 @@
     -   **Github:** <https://github.com/heartexlabs/label-studio>
 
 
-<a id="org339922a"></a>
+<a id="org976845d"></a>
 
 ### Data Exploration / Feature Engineering
 
@@ -453,7 +449,7 @@
 -   <https://de.wikipedia.org/wiki/Shapiro-Wilk-Test>  -  Signifikanztest, der die Hypothese überprüft, dass die zugrunde liegende Grundgesamtheit einer Stichprobe normalverteilt
 
 
-<a id="org014a548"></a>
+<a id="org0782377"></a>
 
 ### Data Testing
 
@@ -463,7 +459,7 @@
     they help you guard against upstream data changes and monitor data quality.
 
 
-<a id="org6eaaa5a"></a>
+<a id="org0d5b098"></a>
 
 ### Data Visualization     :Visualization:
 
@@ -481,7 +477,7 @@
 -   <https://towardsdatascience.com/vis-amz-83dea6fcb059>  - Visualizing 100,000 Products Fast sentence embeddings (fse) for millions of reviews in only a few minutes. :NLP:
 
 
-<a id="org2c75785"></a>
+<a id="org2ed79c6"></a>
 
 ### NLP     :NLP:
 
@@ -614,7 +610,7 @@
     3.  <https://medium.com/dair-ai/xlnet-outperforms-bert-on-several-nlp-tasks-9ec867bb563b>
 
 
-<a id="orgcb0bda2"></a>
+<a id="org58fdd8b"></a>
 
 ### Computer Vision
 
@@ -677,7 +673,7 @@
     3.  <https://towardsdatascience.com/review-yolov3-you-only-look-once-object-detection-eab75d7a1ba6>
 
 
-<a id="org3efa9ad"></a>
+<a id="org0608db0"></a>
 
 ### Time Series
 
@@ -688,7 +684,7 @@
 3.  <https://towardsdatascience.com/anomaly-detection-time-series-4c661f6f165f> - Detect anomaly in time series with facebook Prophet
 
 
-<a id="org3b785d8"></a>
+<a id="org1dd6043"></a>
 
 ### Deployments     :DevOps:
 
@@ -699,12 +695,12 @@
 3.  <https://medium.com/@colinshaw_36798/fully-utilizing-your-deep-learning-gpus-61ee7acd3e57>
 
 
-<a id="org94bcc4e"></a>
+<a id="orgabd658e"></a>
 
 ## DevOps / Security
 
 
-<a id="org2cd344a"></a>
+<a id="org4c0229d"></a>
 
 ### Misc
 
@@ -734,7 +730,7 @@ including the video of an impressive talk: <https://www.youtube.com/watch?v=RTEg
 -   <https://medium.com/anton-on-security/retaining-logs-for-a-year-boring-or-useful-70ea21fa3dda>
 
 
-<a id="org14edeb3"></a>
+<a id="orgfec9abe"></a>
 
 ### Cloud Provisioners
 
@@ -771,7 +767,7 @@ including the video of an impressive talk: <https://www.youtube.com/watch?v=RTEg
     -   <https://github.com/terraform-linters/tflint>  - linter for terraform, e.g. catch wrong machine type before deploying
 
 
-<a id="org81d159b"></a>
+<a id="org4fad747"></a>
 
 ### Site Reliability
 
@@ -797,7 +793,7 @@ including:
 -   <https://medium.com/@copyconstruct/testing-in-production-the-safe-way-18ca102d0ef1>
 
 
-<a id="orgfcb97de"></a>
+<a id="orgde0cccf"></a>
 
 ### Microservices / Serverless
 
@@ -811,7 +807,7 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
 -   <https://theburningmonk.com/2019/04/comparing-nuclio-and-aws-lambda/>
 
 
-<a id="org60d62a3"></a>
+<a id="org3abdfd1"></a>
 
 ### Docker/Containers     :Docker:
 
@@ -986,7 +982,7 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
             deployed initially.
 
 
-<a id="org07ee404"></a>
+<a id="org888f884"></a>
 
 ### Kubernetes     :Kubernetes:
 
@@ -1050,14 +1046,14 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
     -   <https://github.com/hjacobs/kube-ops-view>
 
 
-<a id="orgf6f87c2"></a>
+<a id="org14b3d74"></a>
 
 ### SSH
 
 -   <https://yanaiela.github.io/post/remote-servers/>  - Make SSH great again (config, tunnelling, &#x2026;)
 
 
-<a id="orga977606"></a>
+<a id="org7574928"></a>
 
 ### General Computer/Networking/&#x2026; Security     :Security:
 
@@ -1144,7 +1140,7 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
 -   <https://www.youtube.com/watch?v=k8FIDGmmYvs>  - How to break PDFs
 
 
-<a id="orga5fecdc"></a>
+<a id="orgc188f36"></a>
 
 ### Databases
 
@@ -1169,30 +1165,14 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
 6.  <https://explain.depesz.com/>  - Tool: PostgreSQL&rsquo;s explain analyze made readable
 
 
-<a id="org85c7fa2"></a>
+<a id="org8934ed8"></a>
 
 ## Math     :Math:
 
-
-<a id="org05e91dd"></a>
-
-### <https://de.wikipedia.org/wiki/Braess-Paradoxon>
-
-zusätzliche Handlungsoption unter der Annahme rationaler Einzelentscheidungen zu einer
-Verschlechterung der Situation für alle führen kann
-
-
-<a id="org871cf12"></a>
-
-### <https://towardsdatascience.com/simpsons-paradox-d2f4d8f08d42>
-
-
-<a id="orge2ccd25"></a>
-
-### <https://towardsdatascience.com/the-inspection-paradox-is-everywhere-2ef1c2e9d709>     :Statistical:
-
-
-<a id="org120132d"></a>
-
-### <https://towardsdatascience.com/a-b-testing-is-there-a-better-way-an-exploration-of-multi-armed-bandits-98ca927b357d>  - Overview of different algorithms for Multi Armed Bandits
+-   <https://de.wikipedia.org/wiki/Braess-Paradoxon>
+    zusätzliche Handlungsoption unter der Annahme rationaler Einzelentscheidungen zu einer
+    Verschlechterung der Situation für alle führen kann
+-   <https://towardsdatascience.com/simpsons-paradox-d2f4d8f08d42>
+-   <https://towardsdatascience.com/the-inspection-paradox-is-everywhere-2ef1c2e9d709> :Statistical:
+-   <https://towardsdatascience.com/a-b-testing-is-there-a-better-way-an-exploration-of-multi-armed-bandits-98ca927b357d>  - Overview of different algorithms for Multi Armed Bandits
 
