@@ -6,24 +6,36 @@
 
 * Bookmarks
 ** Misc
+
+- https://github.com/sherlock-project/sherlock  - find different social media accounts across the internet by username
+- http://scienceandpublic.com/  - DeJargonizer
+- https://www.nature.com/articles/d41586-019-02918-5  - how to write a great science paper
+- https://www.fast.ai/2019/05/13/blogging-advice/  - Advice for Better Blog Posts
+- https://techblog.commercetools.com/easy-steps-to-get-obs-running-for-high-quality-demo-and-presentation-recordings-a6eef311e56e
+
+** Bahn fahren
+
 - https://covid19.datanomiq.de/#section-cases  - Covid 19 Dashboard
 - Anzeige von Bahn API Daten https://marudor.de/
   Inklusive detaillierte Wagenreihung und Anfahrtspläne für einen Bahnhof
 - https://bahn.guru  - Sparpreis-Finder
-- https://github.com/sherlock-project/sherlock  - find different social media accounts across the internet by username
-- http://scienceandpublic.com/  - DeJargonizer
-- https://www.nature.com/articles/d41586-019-02918-5
-- https://www.fast.ai/2019/05/13/blogging-advice/  - Advice for Better Blog Posts
+
+** Business
+
 - https://clutch.co/app-developers/resources/what-is-riskiest-assumption-test  - RAT vs MVP
 - https://entrepreneurshandbook.co/the-real-reasons-why-a-vc-passed-on-your-startup-917c30103ecb  - pretty complete check list
 - https://www.gulp.de/knowledge-base/19/iii/neue-checkliste-fuer-freelancer-bin-ich-scheinselbststaendig.html
+
 ** Personal Development
+
 - https://forge.medium.com/10-habits-of-unsuccessful-people-you-dont-want-to-copy-d401ac677c91
 - https://onezero.medium.com/the-efficiency-delusion-f6a97241e1e1
 - https://medium.com/the-post-grad-survival-guide/transform-your-terrible-networking-skills-with-this-psychology-trick-d61625e1d1d2
 - https://elemental.medium.com/why-you-should-try-micromastery-90b080b3befa
 - https://medium.com/better-programming/why-do-incompetent-managers-get-promoted-815165a03bee
+
 ** Gesellschaftliches
+
 - https://www.youtube.com/watch?v=pKymOx9UDoM  - Harald Lesch: wenn nicht jetzt, wann dann? Vortrag (Klima)
 - https://medium.com/fast-company/start-taking-back-your-online-privacy-by-making-these-4-easy-changes-def3668bf69b
 - https://onezero.medium.com/i-got-my-file-from-clearview-ai-and-it-freaked-me-out-33ca28b5d6d4
@@ -33,8 +45,10 @@
 - https://onezero.medium.com/relentless-com-life-as-a-cog-in-amazons-e-tail-machine-d46b3ef05eb8
 - https://www.bento.de/gefuehle/badeunfall-mein-freund-waere-fast-ertrunken-was-ich-daraus-gelernt-habe-a-1517a3af-5571-483b-af01-4e25d9600927
 - https://fragdenstaat.de
-** Software-Development                                :Software_Development:
+
+** Software-Development :Software_Development:
 *** Misc
+
 - https://www.youtube.com/watch?v=ecIWPzGEbFc&feature=youtu.be  - "Uncle" Bob Martin - "The Future of Programming"
 - https://www.youtube.com/watch?v=28S4CVkYhWA&list=WL&index=2  - Mob Programming and the Power of Flow
 - https://www.usecue.com/blog/code-warriors/
@@ -65,18 +79,24 @@
   - Ctrl+e :: hop to end of line
   - Ctrl+k :: delete everything from cursor to end of line
 - https://github.com/18F/technology-budgeting/blob/master/handbook.md  - De-risking custom technology projects (wie Behörden IT-Projekte am besten ausschreiben/planen/usw.)
+
 *** YAML
+
 - https://yamllint.readthedocs.io/en/stable/
 - https://blog.atomist.com/in-defense-of-yaml/
 - https://noyaml.com/
 - https://arp242.net/weblog/yaml_probably_not_so_great_after_all.html
+
 *** Python
 **** Best Practices
+
 - https://docs.quantifiedcode.com/python-anti-patterns/index.html
 - https://gist.github.com/sloria/7001839  - The Best of the Best Practices (BOBP) Guide for Python
 - https://towardsdatascience.com/whats-init-for-me-d70a312da583  - Designing for Python package import patterns
 - https://instagram-engineering.com/static-analysis-at-scale-an-instagram-story-8f498ab71a0c  - Linters, Codemods, ...
+
 **** Modules
+
 - https://www.youtube.com/watch?v=GIF3LaRqgXo  - Publishing (Perfect) Python Packages on PyPi
 - https://github.com/vinta/awesome-python  - A curated list of awesome Python frameworks, libraries, software and resources.
 - https://towardsdatascience.com/the-most-underrated-python-packages-e22bf6049b5e
@@ -115,14 +135,19 @@ One of the subprojects is a seamless pandas scaling framework [[https://github.c
 - https://github.com/modin-project/modin  - scale your pandas workflows by changing one line of code
 
 **** Debugging
+
 - https://github.com/benfred/py-spy
+
 **** Documentation
+
 - https://medium.com/@cjolowicz/hypermodern-python-5-documentation-13219991028c
   Tools:
   - https://gitlab.com/pycqa/flake8-docstrings - adds an extension for the fantastic pydocstyle tool to flake8.
   - https://github.com/terrencepreilly/darglint  - linter which checks that the docstring description matches the definition.
   - https://github.com/Erotemic/xdoctest  - testing the examples in the docstrings
+
 *** Django
+
 - https://github.com/pydanny/cookiecutter-django -- Cookiecutter Django is a framework for jumpstarting production-ready Django projects quickly.
   Documentation: https://cookiecutter-django.readthedocs.io/en/latest/
 - https://medium.com/@jwdobken/python-django-with-docker-and-gitlab-ci-b83cc4e7e2e  - based on cookiecutter django
@@ -136,9 +161,13 @@ One of the subprojects is a seamless pandas scaling framework [[https://github.c
   - Blog :: https://engineering.instawork.com/iterating-with-simplicity-evolving-a-django-app-with-intercooler-js-8ed8e69d8a52
 - https://medium.com/better-programming/how-to-use-drf-serializers-effectively-dc58edc73998  - How to use django rest framework serializers
 - https://vsupalov.com/vue-js-in-django-template/
+
 *** Javascript
+
 - https://medium.com/@michael.karen/learning-modern-javascript-with-tetris-92d532bcd057
+
 *** REST APIs / Web Development / HTML
+
 - http://www.webpagetest.org/  - checks speed of a web page from different locations, browsers, with auth, protocols ...
 - https://hackernoon.com/a-documentation-crash--45006a85c15c
 - https://documentation.divio.com/  - What nobody tells you about documentation
@@ -157,19 +186,43 @@ One of the subprojects is a seamless pandas scaling framework [[https://github.c
   - <abbr> :: easy to forget, but very useful
   - <div contenteditable> :: to create an editable field (and get rid of textarea)
 - https://www.freecodecamp.org/news/rest-is-the-new-soap-97ff6c09896d/
+- https://medium.com/dailyjs/what-every-software-engineer-should-know-about-oauth-2-0-10f0ef4998e5
+
 *** Git / GitHub / Versioning
+
 - https://ohshitgit.com/
 - https://github.com/timqian/star-history
  (1.0.0 -> 1.0.1 bugfix -> 1.1.0 new functionality -> ... -> 2.0.0 backward incompatible breaking change)
 - https://semver.org/spec/v2.0.0.html  - Semantic versioning
 - https://github.com/github/semantic/blob/master/docs/examples.md  - Haskell library and command line tool for parsing, analyzing, and comparing source code
+
 *** Shell/Bash/Zsh
+
 - https://www.shellcheck.net/  - a static analysis tool for shell scripts
 - https://kvz.io/bash-best-practices.html
 - https://blog.yossarian.net/2020/01/23/Anybody-can-write-good-bash-with-a-little-effort
 - https://arslan.io/2019/07/03/how-to-write-idempotent-bash-scripts/
-** Data Science / ML / NLP                                      :DataScience:
+
+*** Databases
+**** https://medium.com/@rakyll/things-i-wished-more-developers-knew-about-databases-2d0178464f78
+**** https://stripe.com/en-de/blog/online-migrations  - steps to migrate a huge production database while running in production
+
+- Dual Writing: Write to both versions
+- Copy offline snapshot data that was not updated while in the write to both sync process
+- Change read paths: Read from new version
+- Change write paths: Write only to new version, make sure that it only writes to new version, stop syncing
+- Remove old data
+
+**** https://medium.com/@rbranson/10-things-i-hate-about-postgresql-20dbab8c2791
+
+A list with items where you need a skilled DBA to understand, but written good enough to understand to use a managed service where ever possible :-)
+
+**** http://asvignesh.in/3-2-1-backup-strategy/
+**** https://medium.com/scopedev/introduction-to-profiling-and-optimizing-sql-queries-for-software-engineers-3cf376ecc712
+**** https://explain.depesz.com/  - Tool: PostgreSQL's explain analyze made readable
+** Data Science / ML / NLP :DataScience:
 *** Misc
+
 - http://www.arxiv-sanity.com/
 - https://tech.trello.com/ice-scoring/  - Prioritize A/B Test Ideas
 - https://lilianweng.github.io/lil-log/2019/03/14/are-deep-neural-networks-dramatically-overfitted.html
@@ -188,16 +241,22 @@ One of the subprojects is a seamless pandas scaling framework [[https://github.c
   Split it up into at least 2 data sizes
 
   Introductionary, but very well written text
-*** Interesting Analysis                                           :Analysis:
+
+*** Interesting Analysis :Analysis:
+
 - https://towardsdatascience.com/whos-tweeting-from-the-oval-office-96ea5b60c03  - Guess the author with NLP and (classic) ML techniques :NLP:Society:
 - https://towardsdatascience.com/making-the-mueller-report-searchable-with-ocr-and-elasticsearch-4e73e55de341 :ElasticSearch:OCR:
 - https://towardsdatascience.com/how-does-news-coverage-differ-between-media-outlets-20aa7be1c96a  - WordClouds for CNN, NBC, ... + TopWords + SentimentAnalysis of Headlines 
 - https://www.youtube.com/watch?v=DpXy041BIlA&t=2s  - 30 weird chess algorithms - Data Science at its best I'd say completely out of usual domains :Chess:
 - https://towardsdatascience.com/march-madness-analyze-video-to-detect-players-teams-and-who-attempted-the-basket-8cad67745b88
-*** Kaggle                                                           :Kaggle:
+
+*** Kaggle :Kaggle:
+
 - https://medium.com/@andrew.picart/using-kaggle-for-your-data-science-work-a2e78d692395 :Jupyter_Notebook:Kaggle:Collaboration:
 - https://towardsdatascience.com/a-story-of-my-first-gold-medal-in-one-kaggle-competition-things-done-and-lessons-learned-c269d9c233d1
+
 *** Team (Management, Hiring, Organization, ...)
+
 - https://medium.com/predict/five-interview-questions-to-predict-a-good-data-scientist-40d310cdcd68
 - https://hbr.org/2019/02/how-to-choose-your-first-ai-project
 - https://techblog.commercetools.com/building-up-a-data-science-team-from-scratch-7a7b24ba9f2d
@@ -207,24 +266,34 @@ One of the subprojects is a seamless pandas scaling framework [[https://github.c
 - https://towardsdatascience.com/six-challenges-every-data-scientist-will-face-and-how-to-overcome-them-2d7ccd6e88c4
 - https://towardsdatascience.com/data-science-is-boring-1d43473e353e
 - https://towardsdatascience.com/how-to-screw-up-a-computer-vision-project-166dfcc44a5f
+
 *** Optimizers / Learn Rates
+
 - https://towardsdatascience.com/finding-good-learning-rate-and-the-one-cycle-policy-7159fe1db5d6 :fastai:
 - https://medium.com/@lessw/new-deep-learning-optimizer-ranger-synergistic-combination-of-radam-lookahead-for-the-best-of-2dc83f79a48d :fastai:
 - https://towardsdatascience.com/self-paced-learning-for-machine-learning-f1c489316c61
+
 *** Jupyter Notebooks
+
 - https://nextjournal.com/schmudde/how-to-version-control-jupyter
 - https://towardsdatascience.com/advanced-jupyter-notebooks-a-tutorial-3569d8153057
 - https://towardsdatascience.com/how-to-effortlessly-optimize-jupyter-notebooks-e864162a06ee
 - https://github.com/fastai/fastprogress  - Simple and flexible progress bar for Jupyter Notebook and console
 - https://towardsdatascience.com/jupyter-is-the-new-excel-but-not-for-your-boss-d24340ebf314  - ways to export/give other easy access to notebooks (hiding cells etc)
 - https://towardsdatascience.com/introduction-to-papermill-2c61f66bea30  - How to transform your Jupyter Notebook into a workflow tool
+
 *** Streamlit
+
 - https://towardsdatascience.com/how-to-deploy-a-streamlit-app-using-an-amazon-free-ec2-instance-416a41f69dc3
+
 *** Pytorch/fastai
+
 - https://towardsdatascience.com/multi-layer-perceptron-usingfastai-and-pytorch-9e401dd288b8 :PyTorch:fastai:
 - https://towardsdatascience.com/deep-learning-for-diagnosis-of-skin-images-with-fastai-792160ab5495 :fastai:
 - https://medium.com/huggingface/from-tensorflow-to-pytorch-265f40ef2a28 :PyTorch:tensorflow:
+
 *** Datasets
+
 - https://github.com/awesomedata/awesome-public-datasets  - repository on GitHub of high quality topic-centric public data sources.
   They are collected and tidied from blogs, answers, and user responses. Almost all of these are
   free with a few exceptions here and there
@@ -253,7 +322,9 @@ One of the subprojects is a seamless pandas scaling framework [[https://github.c
   - Image (Classification, Feature Vector, Generator, Other)
   - Video (Classification)
 - https://www.si.edu/openaccess  -  enthält 2D- und 3D-Darstellungen von kulturellen, wissenschaftlichen, historischen, künstlerischen, technischen und Design-Exponaten aus seinen 19 Museen, 9 Forschungszentren, Bibliotheken, Archiven und dem National Zoo. Hinzu kommen Forschungsdaten und Daten zu Sammlungen
-*** Pandas                                                           :Pandas:
+
+*** Pandas :Pandas:
+
 - https://towardsdatascience.com/7-useful-pandas-tips-for-data-management-8b23a85bf41f  - read_html and read_pdf, use .xs method for multi-indexing
 - https://hackersandslackers.com/intro-to-data-analysis-in-python-using-pandas/  - Really deep and good information (interesting for beginners and advanced readers) in 12 Parts ...
 - https://hackersandslackers.com/using-hierarchical-indexes-with-pandas/   - That's part 12 of it
@@ -262,10 +333,12 @@ One of the subprojects is a seamless pandas scaling framework [[https://github.c
 - https://towardsdatascience.com/geopandas-101-plot-any-data-with-a-latitude-and-longitude-on-a-map-98e01944b972 :Visualization:
 
 *** Data Annotation
+
 - https://towardsdatascience.com/introducing-label-studio-a-swiss-army-knife-of-data-labeling-140c1be92881
   - Github :: https://github.com/heartexlabs/label-studio
 
 *** Data Exploration / Feature Engineering
+
 - https://towardsdatascience.com/annotated-heatmaps-in-5-simple-steps-cc2a0660a27d
 - https://github.com/pandas-profiling/pandas-profiling  - Generates profile reports from a pandas DataFrame. :Pandas:
   The pandas df.describe() function is great but a little basic for serious exploratory data analysis.
@@ -275,12 +348,16 @@ One of the subprojects is a seamless pandas scaling framework [[https://github.c
 - https://towardsdatascience.com/five-command-line-tools-for-data-science-29f04e5b9c16  - especially csvkit and csvquery
 - https://medium.com/@ODSC/transforming-skewed-data-for-machine-learning-90e6cc364b0
 - https://de.wikipedia.org/wiki/Shapiro-Wilk-Test  -  Signifikanztest, der die Hypothese überprüft, dass die zugrunde liegende Grundgesamtheit einer Stichprobe normalverteilt
+
 *** Data Testing
+
 - https://great-expectations.readthedocs.io/en/latest/index.html - helps teams save time and promote analytic integrity by offering pipeline tests.
   Pipeline tests are applied to data (instead of code) and at batch time (instead
   of compile or deploy time). Pipeline tests are like unit tests for datasets:
   they help you guard against upstream data changes and monitor data quality.
-*** Data Visualization                                        :Visualization:
+
+*** Data Visualization :Visualization:
+
 - [[https://pudding.cool/2018/10/city_3d/?fbclid=IwAR3YX_t3CyRYCMKhuqXcQ4Xxy-eg1gGJpmsK8AA8_GpPfzmfcTwWmaMk2bw][Human Terrain - Visualizing World Population in 3D]]
 - https://www.youtube.com/watch?time_continue=283&v=jbkSRLYSojo  - Hans Rosling's 200 Countries, 200 Years, 4 Minutes - The Joy of Stats
 - https://link.medium.com/xL0hrHaJSV  - Data visualizations “Mistakes, we’ve drawn a few” by Sarah Leo
@@ -293,7 +370,8 @@ One of the subprojects is a seamless pandas scaling framework [[https://github.c
 - https://modus.medium.com/how-to-not-suck-at-color-b3980ee8084a
 - https://www.freecodecamp.org/news/fundamental-design-principles-for-non-designers-ad34c30caa7
 - https://towardsdatascience.com/vis-amz-83dea6fcb059  - Visualizing 100,000 Products Fast sentence embeddings (fse) for millions of reviews in only a few minutes. :NLP:
-*** NLP                                                                 :NLP:
+
+*** NLP :NLP:
 **** Misc
 ***** https://towardsdatascience.com/state-of-the-art-multilingual-lemmatization-f303e8ff1a8  - State-of-the-art Multilingual Lemmatization
 ***** https://link.medium.com/kQI6IF7p5V  - “HMTL: Multi-task learning for state of the art NLP” by Elvis
@@ -307,7 +385,7 @@ One of the subprojects is a seamless pandas scaling framework [[https://github.c
 **** Chatbots
 ***** https://www.slideshare.net/farizbashirov  - 8 do's and don't of chatbots
 ***** https://medium.com/huggingface/how-to-build-a-state-of-the-art-conversational-ai-with-transfer-learning-2d818ac26313
-**** Data Augmentation                                        :Augmentations:
+**** Data Augmentation :Augmentations:
 ***** https://towardsdatascience.com/data-augmentation-for-natural-language-processing-6ae928313a3f
 ***** https://towardsdatascience.com/these-are-the-easiest-data-augmentation-techniques-in-natural-language-processing-you-can-think-of-88e393fd610
 **** Tools
@@ -385,7 +463,7 @@ In all use cases, the information extraction is based on analysing the semantic 
 
 ***** Good list of architectures on https://keras.io/applications including default image sizes
 ***** https://www.youtube.com/watch?v=fcnjHmBcLNQ  - Short video showing Style transfer in Videos, super impressive
-***** https://medium.com/bethgelab/neural-networks-seem-to-follow-a-puzzlingly-simple-strategy-to-classify-images-f4229317261f - ResNet are not much better: 
+***** https://medium.com/bethgelab/neural-networks-seem-to-follow-a-puzzlingly-simple-strategy-to-classify-images-f4229317261f - ResNet are not much better:
 
 than looking to tiny patches and sum up sum propabilities
 that's why shuffling pictures is robust for resnet
@@ -411,18 +489,17 @@ but also why they are so sensitive to adversial networks
 ***** https://towardsdatascience.com/getting-started-with-bounding-box-regression-in-tensorflow-743e22d0ccb3
 ***** https://towardsdatascience.com/implementation-of-mean-average-precision-map-with-non-maximum-suppression-f9311eb92522
 ***** https://towardsdatascience.com/review-yolov3-you-only-look-once-object-detection-eab75d7a1ba6
-
 *** Time Series
 **** Forecasting at scale: https://facebook.github.io/prophet/
 **** https://towardsdatascience.com/on-the-automation-of-time-series-forecasting-models-technical-and-organizational-considerations-286db3120c8e
 **** https://towardsdatascience.com/anomaly-detection-time-series-4c661f6f165f - Detect anomaly in time series with facebook Prophet
-*** Deployments                                                      :DevOps:
+*** Deployments :DevOps:
 **** https://towardsdatascience.com/chapter-1-intro-to-aws-sagemaker-a1ecf00ec761 :AWS:
 **** https://medium.com/datadriveninvestor/deploy-your-pytorch-model-to-production-f69460192217 :PyTorch:
 **** https://medium.com/@colinshaw_36798/fully-utilizing-your-deep-learning-gpus-61ee7acd3e57
-
 ** DevOps / Security
 *** Misc
+
 - https://gruntwork.io/devops-checklist/  - Production Readiness Checklist
 
 Read also: https://blog.gruntwork.io/5-lessons-learned-from-writing-over-300-000-lines-of-infrastructure-code-36ba7fadeac1
@@ -447,11 +524,15 @@ including the video of an impressive talk: https://www.youtube.com/watch?v=RTEgE
 - http://onemogin.com/observability/dashboards/practitioners-guide-to-system-dashboard-design.html
 - https://www.rookout.com/cant-git-no-satisfaction-why-we-need-a-new-gen-source-control/  - Advantages/Disadvantages of Monorepo vs Multirepo
 - https://medium.com/anton-on-security/retaining-logs-for-a-year-boring-or-useful-70ea21fa3dda
+
 *** Cloud Provisioners
 **** For all platforms
+
 - https://github.com/gruntwork-io/cloud-nuke  - get rid of all allocated resources, finally!
 - https://medium.com/@nandovillalba/why-i-think-gcp-is-better-than-aws-ea78f9975bda
+
 **** AWS
+
 - https://medium.com/swlh/so-you-inherited-an-aws-account-e5fe6550607d  - Secure an existing AWS Account (more or less complete checklist)
 - https://medium.com/teamzerolabs/5-aws-services-you-should-avoid-f45111cc10cd
   1. Cognito (User Management/Mobile Login)
@@ -471,10 +552,14 @@ including the video of an impressive talk: https://www.youtube.com/watch?v=RTEgE
        -> just use a real framework like flask, fastapi, django w/e or kubeless
 - https://github.com/rebuy-de/aws-nuke
 - https://ncona.com/2020/05/setting-up-a-bastion-host-on-aws/
+
 **** Terraform
+
 - https://medium.com/swlh/design-principles-and-practices-for-terraform-276b2c463563
 - https://github.com/terraform-linters/tflint  - linter for terraform, e.g. catch wrong machine type before deploying
+
 *** Site Reliability
+
 - https://medium.com/@rahatshaikh/cloud-design-patterns-explained-simply-113c788b33ff  - Cloud Design Patterns
 
 including:
@@ -494,7 +579,9 @@ including:
 - https://hackernoon.com/deploy-on-fridays-or-dont-qg2y32jk
 - https://blog.turbinelabs.io/deploy-not-equal-release-part-one-4724bc1e726b
 - https://medium.com/@copyconstruct/testing-in-production-the-safe-way-18ca102d0ef1
+
 *** Microservices / Serverless
+
 - https://rapidapi.com/  - to buy or sell pure APIs
 
 Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sell-your-work-when-all-you-know-is-a-back-end-bd78b1449119
@@ -503,13 +590,16 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
 - https://cloudncode.blog/2017/03/02/best-practices-aws-lambda-function/?fbclid=IwAR2t2c23c1VM21GNPIh0yHHGRhV9LoWYm0QOEofZ-youUYtDRLdR_UOj5Vs
 - http://leebriggs.co.uk/blog/2019/04/13/the-fargate-illusion.html  - severless not being infrastructureless
 - https://theburningmonk.com/2019/04/comparing-nuclio-and-aws-lambda/
-*** Docker/Containers                                                :Docker:
+
+*** Docker/Containers :Docker:
 **** Misc
+
 - https://pythonspeed.com/articles/base-image-python-docker-images/ :Docker:
 - https://pythonspeed.com/articles/dockerizing-python-is-hard/    :Docker:
 - https://pythonspeed.com/articles/alpine-docker-python/  - why not to use alpine as docker image for python
 - https://semaphoreci.com/blog/docker-benefits                    :Docker:
 - https://towardsdatascience.com/docker-tensorflow-google-cloud-platform-love-87c026f08cc7
+
 **** Linters
 
 |---------------+-----------------+-----------------+-----------------------------+----------------------+-----------+---------|
@@ -535,13 +625,17 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
 - https://github.com/docker/docker-bench-security
 - https://github.com/goodwithtech/dockle
 - https://github.com/aquasecurity/trivy
+
 **** Docker Best Practices & Docker Security
+
 - https://medium.com/better-programming/docker-best-practices-and-anti-patterns-e7cbccba4f19
 - https://sec.sr2k.info/?p=211&lang=en  - Docker Security Tools overview
 - https://towardsdatascience.com/top-20-docker-security-tips-81c41dd06f57 :Docker:
 - https://medium.com/faun/container-security-101-scanning-images-for-vulnerabilities-8030af2441ba
 - https://boxboat.com/2020/04/24/image-scanning-tech-compared/
+
 **** Tools
+
 - https://codeopolis.com/posts/6-docker-utilities-everyone-should-try/
 - https://medium.com/ssense-tech/my-docker-support-stack-58b1e67f5f4f  - Portainer to manage containers, WeaveScope to display network connections, Log-Io to pull logs from docker containers :Docker:
 - https://github.com/containrrr/watchtower 
@@ -550,8 +644,10 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
     Watchtower will pull down your new image, gracefully shut down your existing
     container and restart it with the same options that were used when it was
     deployed initially.
-*** Kubernetes                                                   :Kubernetes:
+
+*** Kubernetes :Kubernetes:
 **** Misc
+
 - https://blog.pipetail.io/posts/2020-05-04-most-common-mistakes-k8s/
 - https://github.com/jamiehannaford/what-happens-when-k8s
 - https://matthias-endler.de/2019/maybe-you-dont-need-kubernetes/ :Kubernetes:
@@ -560,10 +656,13 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
 - https://prefetch.net/blog/2019/10/16/the-beginners-guide-to-creating-kubernetes-manifests/ :Kubernetes:
 - https://learnk8s.io/cloud-resources-kubernetes  - Provisioning
 - https://octetz.com/docs/2020/2020-01-06-vim-k8s-yaml-support/  - Kubernetes (completion) support for vim
+
 **** Linters
+
 - https://github.com/instrumenta/kubeval/
 - https://helm.sh/docs/helm/helm_lint/
-**** Kubernetes Security                                           :Security:
+
+**** Kubernetes Security :Security:
 
 - https://kubernetes-security.info/                            :Security:
 - https://devops.com/how-to-secure-your-kubernetes-cluster-on-gke/ :Security:
@@ -586,23 +685,42 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
   7. Be comprehensive and make sure all the basic system calls have been whitelisted
 
 **** AWS/EKS
-- https://eksworkshop.com/
+***** Misc
+
 - https://zwischenzugs.com/2019/03/25/aws-vs-k8s-is-the-new-windows-vs-linux/ :Kubernetes:
 - https://medium.com/@dyachuk/why-do-kubernetes-clusters-in-aws-cost-more-than-they-should-fa510c1964c6
+
+***** EKS / Deployment
+
+- https://eksworkshop.com/
+- https://medium.com/risertech/production-eks-with-terraform-5ad9e76db425
+  Regard https://www.terraform.io/docs/providers/aws/r/eks_node_group.html (so don't copy everything from the tutorial)
 - https://medium.com/faun/aws-best-practice-rules-for-amazon-elastic-kubernetes-service-eks-29408a96cb1d
+- https://itnext.io/aws-elastic-kubernetes-service-running-alb-ingress-controller-8d0d457615fa
+
+***** CI/CD
+
 - https://itnext.io/utilize-jenkins-in-an-auto-scaling-kubernetes-deployment-on-amazon-eks-with-spot-instances-f9159df00aee
-**** HowTo-Guides
+- https://itnext.io/building-a-kubernetes-ci-cd-pipeline-on-aws-with-codepipeline-codebuild-shopgun-43ccf76277b5
+
+**** HowTo-Guides (Kubeconfig, GCP, Rancher, KIND)
+
 - https://ahmet.im/blog/mastering-kubeconfig/
 - https://medium.com/faun/application-deployment-using-gitlab-ci-cd-on-managed-kubernetes-cluster-at-gcp-72b59496979c
 - https://medium.com/@jmrobles/how-to-create-a-kubernetes-cluster-with-rancher-on-hetzner-3b2f7f0c037a
-- https://itnext.io/aws-elastic-kubernetes-service-running-alb-ingress-controller-8d0d457615fa
 - https://medium.com/@kgamanji/customise-your-kind-clusters-networking-layer-1249e7916100
+
 **** Monitoring
+
 - https://tech.showmax.com/2019/10/prometheus-introduction/
 - https://github.com/hjacobs/kube-ops-view
+
 *** SSH
+
 - https://yanaiela.github.io/post/remote-servers/  - Make SSH great again (config, tunnelling, ...)
-*** General Computer/Networking/... Security                       :Security:
+
+*** General Computer/Networking/... Security :Security:
+
 - https://www.youtube.com/watch?v=BreKdM7CKnY&list=PL_IxoDz1Nq2YjnEpUMSqeqVUXgyEcsJdu&index=2&t=0s  - Hirne hacken, Sicherheit aus psychologischer Sicht
 - https://www.ncsc.gov.uk/whitepaper/security-architecture-anti-patterns
   1. 'Browse-up’ for administration
@@ -684,27 +802,13 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
 - https://blog.usejournal.com/how-to-avoid-ruining-lives-front-end-security-matters-26d4f906c7a6  - XSS and CSRF tokens
 - https://onezero.medium.com/how-to-totally-secure-your-smartphone-48b7a85a5ed8
 - https://www.youtube.com/watch?v=k8FIDGmmYvs  - How to break PDFs
-*** Databases
-**** https://medium.com/@rakyll/things-i-wished-more-developers-knew-about-databases-2d0178464f78
-**** https://stripe.com/en-de/blog/online-migrations  - steps to migrate a huge production database while running in production
 
-- Dual Writing: Write to both versions
-- Copy offline snapshot data that was not updated while in the write to both sync process
-- Change read paths: Read from new version
-- Change write paths: Write only to new version, make sure that it only writes to new version, stop syncing
-- Remove old data
-  
-**** https://medium.com/@rbranson/10-things-i-hate-about-postgresql-20dbab8c2791
+** Math :Math:
 
-A list with items where you need a skilled DBA to understand, but written good enough to understand to use a managed service where ever possible :-)
-
-**** http://asvignesh.in/3-2-1-backup-strategy/
-**** https://medium.com/scopedev/introduction-to-profiling-and-optimizing-sql-queries-for-software-engineers-3cf376ecc712
-**** https://explain.depesz.com/  - Tool: PostgreSQL's explain analyze made readable
-** Math                                                                :Math:
 - https://de.wikipedia.org/wiki/Braess-Paradoxon
     zusätzliche Handlungsoption unter der Annahme rationaler Einzelentscheidungen zu einer
     Verschlechterung der Situation für alle führen kann
 - https://towardsdatascience.com/simpsons-paradox-d2f4d8f08d42
 - https://towardsdatascience.com/the-inspection-paradox-is-everywhere-2ef1c2e9d709 :Statistical:
 - https://towardsdatascience.com/a-b-testing-is-there-a-better-way-an-exploration-of-multi-armed-bandits-98ca927b357d  - Overview of different algorithms for Multi Armed Bandits
+

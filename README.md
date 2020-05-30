@@ -1,75 +1,90 @@
 
 # Table of Contents
 
-1.  [Bookmarks](#org272ce35)
-    1.  [Misc](#orgc0d0cd7)
-    2.  [Personal Development](#org6af75ad)
-    3.  [Gesellschaftliches](#orgc88afea)
-    4.  [Software-Development](#orgd447fd6):Software_Development:
-        1.  [Misc](#orgd88af96)
-        2.  [YAML](#org44a2541)
-        3.  [Python](#org1d6069c)
-        4.  [Django](#orgc707394)
-        5.  [Javascript](#org94e9db7)
-        6.  [REST APIs / Web Development / HTML](#org24520bf)
-        7.  [Git / GitHub / Versioning](#orgb1c9e7c)
-        8.  [Shell/Bash/Zsh](#org2f0d11f)
-    5.  [Data Science / ML / NLP](#org6bc0d26):DataScience:
-        1.  [Misc](#orgd90bc22)
-        2.  [Interesting Analysis](#org800c743):Analysis:
-        3.  [Kaggle](#orgdb6f5a6):Kaggle:
-        4.  [Team (Management, Hiring, Organization, &#x2026;)](#org78e1d42)
-        5.  [Optimizers / Learn Rates](#orgf43226a)
-        6.  [Jupyter Notebooks](#org2bce619)
-        7.  [Streamlit](#orgaa87fe7)
-        8.  [Pytorch/fastai](#org6d2bbf5)
-        9.  [Datasets](#orgd7b6bbe)
-        10. [Pandas](#org180fbac):Pandas:
-        11. [Data Annotation](#orgdefb526)
-        12. [Data Exploration / Feature Engineering](#org976845d)
-        13. [Data Testing](#org0782377)
-        14. [Data Visualization](#org0d5b098):Visualization:
-        15. [NLP](#org2ed79c6):NLP:
-        16. [Computer Vision](#org58fdd8b)
-        17. [Time Series](#org0608db0)
-        18. [Deployments](#org1dd6043):DevOps:
-    6.  [DevOps / Security](#orgabd658e)
-        1.  [Misc](#org4c0229d)
-        2.  [Cloud Provisioners](#orgfec9abe)
-        3.  [Site Reliability](#org4fad747)
-        4.  [Microservices / Serverless](#orgde0cccf)
-        5.  [Docker/Containers](#org3abdfd1):Docker:
-        6.  [Kubernetes](#org888f884):Kubernetes:
-        7.  [SSH](#org14b3d74)
-        8.  [General Computer/Networking/&#x2026; Security](#org7574928):Security:
-        9.  [Databases](#orgc188f36)
-    7.  [Math](#org8934ed8):Math:
+1.  [Bookmarks](#org5381545)
+    1.  [Misc](#org51011bc)
+    2.  [Bahn fahren](#org53a11fc)
+    3.  [Business](#orgd380fd0)
+    4.  [Personal Development](#orgf7e5af9)
+    5.  [Gesellschaftliches](#org6d95dcc)
+    6.  [Software-Development](#org774b698):Software_Development:
+        1.  [Misc](#org6f6d2c1)
+        2.  [YAML](#orgd3771bc)
+        3.  [Python](#org045d7e6)
+        4.  [Django](#org283361a)
+        5.  [Javascript](#org2c47d40)
+        6.  [REST APIs / Web Development / HTML](#org55951b9)
+        7.  [Git / GitHub / Versioning](#orgefd3475)
+        8.  [Shell/Bash/Zsh](#org3ce832e)
+        9.  [Databases](#org2467e23)
+    7.  [Data Science / ML / NLP](#orgf204380):DataScience:
+        1.  [Misc](#orgd118a00)
+        2.  [Interesting Analysis](#orga64188b):Analysis:
+        3.  [Kaggle](#org8e499ec):Kaggle:
+        4.  [Team (Management, Hiring, Organization, &#x2026;)](#org5397ab3)
+        5.  [Optimizers / Learn Rates](#orge3fc48b)
+        6.  [Jupyter Notebooks](#org0cf3d94)
+        7.  [Streamlit](#org079233e)
+        8.  [Pytorch/fastai](#org6c9c65c)
+        9.  [Datasets](#orgae3a841)
+        10. [Pandas](#org802d2d6):Pandas:
+        11. [Data Annotation](#orgb77d00c)
+        12. [Data Exploration / Feature Engineering](#org4a3c46b)
+        13. [Data Testing](#org9c4a1c6)
+        14. [Data Visualization](#orga4d6017):Visualization:
+        15. [NLP](#orgd761a53):NLP:
+        16. [Computer Vision](#org2e0bd62)
+        17. [Time Series](#orga547580)
+        18. [Deployments](#org8ede7aa):DevOps:
+    8.  [DevOps / Security](#org007635d)
+        1.  [Misc](#org22156a3)
+        2.  [Cloud Provisioners](#orgf87646f)
+        3.  [Site Reliability](#org5647953)
+        4.  [Microservices / Serverless](#orge849937)
+        5.  [Docker/Containers](#org5b0bbec):Docker:
+        6.  [Kubernetes](#org1f5f730):Kubernetes:
+        7.  [SSH](#org139d2d0)
+        8.  [General Computer/Networking/&#x2026; Security](#org0fd2a78):Security:
+    9.  [Math](#orge0ee880):Math:
 
 
 
-<a id="org272ce35"></a>
+<a id="org5381545"></a>
 
 # Bookmarks
 
 
-<a id="orgc0d0cd7"></a>
+<a id="org51011bc"></a>
 
 ## Misc
+
+-   <https://github.com/sherlock-project/sherlock>  - find different social media accounts across the internet by username
+-   <http://scienceandpublic.com/>  - DeJargonizer
+-   <https://www.nature.com/articles/d41586-019-02918-5>  - how to write a great science paper
+-   <https://www.fast.ai/2019/05/13/blogging-advice/>  - Advice for Better Blog Posts
+-   <https://techblog.commercetools.com/easy-steps-to-get-obs-running-for-high-quality-demo-and-presentation-recordings-a6eef311e56e>
+
+
+<a id="org53a11fc"></a>
+
+## Bahn fahren
 
 -   <https://covid19.datanomiq.de/#section-cases>  - Covid 19 Dashboard
 -   Anzeige von Bahn API Daten <https://marudor.de/>
     Inklusive detaillierte Wagenreihung und Anfahrtspläne für einen Bahnhof
 -   <https://bahn.guru>  - Sparpreis-Finder
--   <https://github.com/sherlock-project/sherlock>  - find different social media accounts across the internet by username
--   <http://scienceandpublic.com/>  - DeJargonizer
--   <https://www.nature.com/articles/d41586-019-02918-5>
--   <https://www.fast.ai/2019/05/13/blogging-advice/>  - Advice for Better Blog Posts
+
+
+<a id="orgd380fd0"></a>
+
+## Business
+
 -   <https://clutch.co/app-developers/resources/what-is-riskiest-assumption-test>  - RAT vs MVP
 -   <https://entrepreneurshandbook.co/the-real-reasons-why-a-vc-passed-on-your-startup-917c30103ecb>  - pretty complete check list
 -   <https://www.gulp.de/knowledge-base/19/iii/neue-checkliste-fuer-freelancer-bin-ich-scheinselbststaendig.html>
 
 
-<a id="org6af75ad"></a>
+<a id="orgf7e5af9"></a>
 
 ## Personal Development
 
@@ -80,7 +95,7 @@
 -   <https://medium.com/better-programming/why-do-incompetent-managers-get-promoted-815165a03bee>
 
 
-<a id="orgc88afea"></a>
+<a id="org6d95dcc"></a>
 
 ## Gesellschaftliches
 
@@ -95,12 +110,12 @@
 -   <https://fragdenstaat.de>
 
 
-<a id="orgd447fd6"></a>
+<a id="org774b698"></a>
 
 ## Software-Development     :Software_Development:
 
 
-<a id="orgd88af96"></a>
+<a id="org6f6d2c1"></a>
 
 ### Misc
 
@@ -136,7 +151,7 @@
 -   <https://github.com/18F/technology-budgeting/blob/master/handbook.md>  - De-risking custom technology projects (wie Behörden IT-Projekte am besten ausschreiben/planen/usw.)
 
 
-<a id="org44a2541"></a>
+<a id="orgd3771bc"></a>
 
 ### YAML
 
@@ -146,7 +161,7 @@
 -   <https://arp242.net/weblog/yaml_probably_not_so_great_after_all.html>
 
 
-<a id="org1d6069c"></a>
+<a id="org045d7e6"></a>
 
 ### Python
 
@@ -209,7 +224,7 @@
         -   <https://github.com/Erotemic/xdoctest>  - testing the examples in the docstrings
 
 
-<a id="orgc707394"></a>
+<a id="org283361a"></a>
 
 ### Django
 
@@ -228,14 +243,14 @@
 -   <https://vsupalov.com/vue-js-in-django-template/>
 
 
-<a id="org94e9db7"></a>
+<a id="org2c47d40"></a>
 
 ### Javascript
 
 -   <https://medium.com/@michael.karen/learning-modern-javascript-with-tetris-92d532bcd057>
 
 
-<a id="org24520bf"></a>
+<a id="org55951b9"></a>
 
 ### REST APIs / Web Development / HTML
 
@@ -257,9 +272,10 @@
     -   **<abbr>:** easy to forget, but very useful
     -   **<div contenteditable>:** to create an editable field (and get rid of textarea)
 -   <https://www.freecodecamp.org/news/rest-is-the-new-soap-97ff6c09896d/>
+-   <https://medium.com/dailyjs/what-every-software-engineer-should-know-about-oauth-2-0-10f0ef4998e5>
 
 
-<a id="orgb1c9e7c"></a>
+<a id="orgefd3475"></a>
 
 ### Git / GitHub / Versioning
 
@@ -270,7 +286,7 @@
 -   <https://github.com/github/semantic/blob/master/docs/examples.md>  - Haskell library and command line tool for parsing, analyzing, and comparing source code
 
 
-<a id="org2f0d11f"></a>
+<a id="org3ce832e"></a>
 
 ### Shell/Bash/Zsh
 
@@ -280,12 +296,37 @@
 -   <https://arslan.io/2019/07/03/how-to-write-idempotent-bash-scripts/>
 
 
-<a id="org6bc0d26"></a>
+<a id="org2467e23"></a>
+
+### Databases
+
+1.  <https://medium.com/@rakyll/things-i-wished-more-developers-knew-about-databases-2d0178464f78>
+
+2.  <https://stripe.com/en-de/blog/online-migrations>  - steps to migrate a huge production database while running in production
+
+    -   Dual Writing: Write to both versions
+    -   Copy offline snapshot data that was not updated while in the write to both sync process
+    -   Change read paths: Read from new version
+    -   Change write paths: Write only to new version, make sure that it only writes to new version, stop syncing
+    -   Remove old data
+
+3.  <https://medium.com/@rbranson/10-things-i-hate-about-postgresql-20dbab8c2791>
+
+    A list with items where you need a skilled DBA to understand, but written good enough to understand to use a managed service where ever possible :-)
+
+4.  <http://asvignesh.in/3-2-1-backup-strategy/>
+
+5.  <https://medium.com/scopedev/introduction-to-profiling-and-optimizing-sql-queries-for-software-engineers-3cf376ecc712>
+
+6.  <https://explain.depesz.com/>  - Tool: PostgreSQL&rsquo;s explain analyze made readable
+
+
+<a id="orgf204380"></a>
 
 ## Data Science / ML / NLP     :DataScience:
 
 
-<a id="orgd90bc22"></a>
+<a id="orgd118a00"></a>
 
 ### Misc
 
@@ -309,7 +350,7 @@
     Introductionary, but very well written text
 
 
-<a id="org800c743"></a>
+<a id="orga64188b"></a>
 
 ### Interesting Analysis     :Analysis:
 
@@ -320,7 +361,7 @@
 -   <https://towardsdatascience.com/march-madness-analyze-video-to-detect-players-teams-and-who-attempted-the-basket-8cad67745b88>
 
 
-<a id="orgdb6f5a6"></a>
+<a id="org8e499ec"></a>
 
 ### Kaggle     :Kaggle:
 
@@ -328,7 +369,7 @@
 -   <https://towardsdatascience.com/a-story-of-my-first-gold-medal-in-one-kaggle-competition-things-done-and-lessons-learned-c269d9c233d1>
 
 
-<a id="org78e1d42"></a>
+<a id="org5397ab3"></a>
 
 ### Team (Management, Hiring, Organization, &#x2026;)
 
@@ -343,7 +384,7 @@
 -   <https://towardsdatascience.com/how-to-screw-up-a-computer-vision-project-166dfcc44a5f>
 
 
-<a id="orgf43226a"></a>
+<a id="orge3fc48b"></a>
 
 ### Optimizers / Learn Rates
 
@@ -352,7 +393,7 @@
 -   <https://towardsdatascience.com/self-paced-learning-for-machine-learning-f1c489316c61>
 
 
-<a id="org2bce619"></a>
+<a id="org0cf3d94"></a>
 
 ### Jupyter Notebooks
 
@@ -364,14 +405,14 @@
 -   <https://towardsdatascience.com/introduction-to-papermill-2c61f66bea30>  - How to transform your Jupyter Notebook into a workflow tool
 
 
-<a id="orgaa87fe7"></a>
+<a id="org079233e"></a>
 
 ### Streamlit
 
 -   <https://towardsdatascience.com/how-to-deploy-a-streamlit-app-using-an-amazon-free-ec2-instance-416a41f69dc3>
 
 
-<a id="org6d2bbf5"></a>
+<a id="org6c9c65c"></a>
 
 ### Pytorch/fastai
 
@@ -380,7 +421,7 @@
 -   <https://medium.com/huggingface/from-tensorflow-to-pytorch-265f40ef2a28> :PyTorch:tensorflow:
 
 
-<a id="orgd7b6bbe"></a>
+<a id="orgae3a841"></a>
 
 ### Datasets
 
@@ -414,7 +455,7 @@
 -   <https://www.si.edu/openaccess>  -  enthält 2D- und 3D-Darstellungen von kulturellen, wissenschaftlichen, historischen, künstlerischen, technischen und Design-Exponaten aus seinen 19 Museen, 9 Forschungszentren, Bibliotheken, Archiven und dem National Zoo. Hinzu kommen Forschungsdaten und Daten zu Sammlungen
 
 
-<a id="org180fbac"></a>
+<a id="org802d2d6"></a>
 
 ### Pandas     :Pandas:
 
@@ -426,7 +467,7 @@
 -   <https://towardsdatascience.com/geopandas-101-plot-any-data-with-a-latitude-and-longitude-on-a-map-98e01944b972> :Visualization:
 
 
-<a id="orgdefb526"></a>
+<a id="orgb77d00c"></a>
 
 ### Data Annotation
 
@@ -434,7 +475,7 @@
     -   **Github:** <https://github.com/heartexlabs/label-studio>
 
 
-<a id="org976845d"></a>
+<a id="org4a3c46b"></a>
 
 ### Data Exploration / Feature Engineering
 
@@ -449,7 +490,7 @@
 -   <https://de.wikipedia.org/wiki/Shapiro-Wilk-Test>  -  Signifikanztest, der die Hypothese überprüft, dass die zugrunde liegende Grundgesamtheit einer Stichprobe normalverteilt
 
 
-<a id="org0782377"></a>
+<a id="org9c4a1c6"></a>
 
 ### Data Testing
 
@@ -459,7 +500,7 @@
     they help you guard against upstream data changes and monitor data quality.
 
 
-<a id="org0d5b098"></a>
+<a id="orga4d6017"></a>
 
 ### Data Visualization     :Visualization:
 
@@ -477,7 +518,7 @@
 -   <https://towardsdatascience.com/vis-amz-83dea6fcb059>  - Visualizing 100,000 Products Fast sentence embeddings (fse) for millions of reviews in only a few minutes. :NLP:
 
 
-<a id="org2ed79c6"></a>
+<a id="orgd761a53"></a>
 
 ### NLP     :NLP:
 
@@ -610,7 +651,7 @@
     3.  <https://medium.com/dair-ai/xlnet-outperforms-bert-on-several-nlp-tasks-9ec867bb563b>
 
 
-<a id="org58fdd8b"></a>
+<a id="org2e0bd62"></a>
 
 ### Computer Vision
 
@@ -673,7 +714,7 @@
     3.  <https://towardsdatascience.com/review-yolov3-you-only-look-once-object-detection-eab75d7a1ba6>
 
 
-<a id="org0608db0"></a>
+<a id="orga547580"></a>
 
 ### Time Series
 
@@ -684,7 +725,7 @@
 3.  <https://towardsdatascience.com/anomaly-detection-time-series-4c661f6f165f> - Detect anomaly in time series with facebook Prophet
 
 
-<a id="org1dd6043"></a>
+<a id="org8ede7aa"></a>
 
 ### Deployments     :DevOps:
 
@@ -695,12 +736,12 @@
 3.  <https://medium.com/@colinshaw_36798/fully-utilizing-your-deep-learning-gpus-61ee7acd3e57>
 
 
-<a id="orgabd658e"></a>
+<a id="org007635d"></a>
 
 ## DevOps / Security
 
 
-<a id="org4c0229d"></a>
+<a id="org22156a3"></a>
 
 ### Misc
 
@@ -730,7 +771,7 @@ including the video of an impressive talk: <https://www.youtube.com/watch?v=RTEg
 -   <https://medium.com/anton-on-security/retaining-logs-for-a-year-boring-or-useful-70ea21fa3dda>
 
 
-<a id="orgfec9abe"></a>
+<a id="orgf87646f"></a>
 
 ### Cloud Provisioners
 
@@ -767,7 +808,7 @@ including the video of an impressive talk: <https://www.youtube.com/watch?v=RTEg
     -   <https://github.com/terraform-linters/tflint>  - linter for terraform, e.g. catch wrong machine type before deploying
 
 
-<a id="org4fad747"></a>
+<a id="org5647953"></a>
 
 ### Site Reliability
 
@@ -793,7 +834,7 @@ including:
 -   <https://medium.com/@copyconstruct/testing-in-production-the-safe-way-18ca102d0ef1>
 
 
-<a id="orgde0cccf"></a>
+<a id="orge849937"></a>
 
 ### Microservices / Serverless
 
@@ -807,7 +848,7 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
 -   <https://theburningmonk.com/2019/04/comparing-nuclio-and-aws-lambda/>
 
 
-<a id="org3abdfd1"></a>
+<a id="org5b0bbec"></a>
 
 ### Docker/Containers     :Docker:
 
@@ -982,7 +1023,7 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
             deployed initially.
 
 
-<a id="org888f884"></a>
+<a id="org1f5f730"></a>
 
 ### Kubernetes     :Kubernetes:
 
@@ -1026,18 +1067,29 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
 
 4.  AWS/EKS
 
-    -   <https://eksworkshop.com/>
-    -   <https://zwischenzugs.com/2019/03/25/aws-vs-k8s-is-the-new-windows-vs-linux/> :Kubernetes:
-    -   <https://medium.com/@dyachuk/why-do-kubernetes-clusters-in-aws-cost-more-than-they-should-fa510c1964c6>
-    -   <https://medium.com/faun/aws-best-practice-rules-for-amazon-elastic-kubernetes-service-eks-29408a96cb1d>
-    -   <https://itnext.io/utilize-jenkins-in-an-auto-scaling-kubernetes-deployment-on-amazon-eks-with-spot-instances-f9159df00aee>
+    1.  Misc
+    
+        -   <https://zwischenzugs.com/2019/03/25/aws-vs-k8s-is-the-new-windows-vs-linux/> :Kubernetes:
+        -   <https://medium.com/@dyachuk/why-do-kubernetes-clusters-in-aws-cost-more-than-they-should-fa510c1964c6>
+    
+    2.  EKS / Deployment
+    
+        -   <https://eksworkshop.com/>
+        -   <https://medium.com/risertech/production-eks-with-terraform-5ad9e76db425>
+            Regard <https://www.terraform.io/docs/providers/aws/r/eks_node_group.html> (so don&rsquo;t copy everything from the tutorial)
+        -   <https://medium.com/faun/aws-best-practice-rules-for-amazon-elastic-kubernetes-service-eks-29408a96cb1d>
+        -   <https://itnext.io/aws-elastic-kubernetes-service-running-alb-ingress-controller-8d0d457615fa>
+    
+    3.  CI/CD
+    
+        -   <https://itnext.io/utilize-jenkins-in-an-auto-scaling-kubernetes-deployment-on-amazon-eks-with-spot-instances-f9159df00aee>
+        -   <https://itnext.io/building-a-kubernetes-ci-cd-pipeline-on-aws-with-codepipeline-codebuild-shopgun-43ccf76277b5>
 
-5.  HowTo-Guides
+5.  HowTo-Guides (Kubeconfig, GCP, Rancher, KIND)
 
     -   <https://ahmet.im/blog/mastering-kubeconfig/>
     -   <https://medium.com/faun/application-deployment-using-gitlab-ci-cd-on-managed-kubernetes-cluster-at-gcp-72b59496979c>
     -   <https://medium.com/@jmrobles/how-to-create-a-kubernetes-cluster-with-rancher-on-hetzner-3b2f7f0c037a>
-    -   <https://itnext.io/aws-elastic-kubernetes-service-running-alb-ingress-controller-8d0d457615fa>
     -   <https://medium.com/@kgamanji/customise-your-kind-clusters-networking-layer-1249e7916100>
 
 6.  Monitoring
@@ -1046,14 +1098,14 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
     -   <https://github.com/hjacobs/kube-ops-view>
 
 
-<a id="org14b3d74"></a>
+<a id="org139d2d0"></a>
 
 ### SSH
 
 -   <https://yanaiela.github.io/post/remote-servers/>  - Make SSH great again (config, tunnelling, &#x2026;)
 
 
-<a id="org7574928"></a>
+<a id="org0fd2a78"></a>
 
 ### General Computer/Networking/&#x2026; Security     :Security:
 
@@ -1140,32 +1192,7 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
 -   <https://www.youtube.com/watch?v=k8FIDGmmYvs>  - How to break PDFs
 
 
-<a id="orgc188f36"></a>
-
-### Databases
-
-1.  <https://medium.com/@rakyll/things-i-wished-more-developers-knew-about-databases-2d0178464f78>
-
-2.  <https://stripe.com/en-de/blog/online-migrations>  - steps to migrate a huge production database while running in production
-
-    -   Dual Writing: Write to both versions
-    -   Copy offline snapshot data that was not updated while in the write to both sync process
-    -   Change read paths: Read from new version
-    -   Change write paths: Write only to new version, make sure that it only writes to new version, stop syncing
-    -   Remove old data
-
-3.  <https://medium.com/@rbranson/10-things-i-hate-about-postgresql-20dbab8c2791>
-
-    A list with items where you need a skilled DBA to understand, but written good enough to understand to use a managed service where ever possible :-)
-
-4.  <http://asvignesh.in/3-2-1-backup-strategy/>
-
-5.  <https://medium.com/scopedev/introduction-to-profiling-and-optimizing-sql-queries-for-software-engineers-3cf376ecc712>
-
-6.  <https://explain.depesz.com/>  - Tool: PostgreSQL&rsquo;s explain analyze made readable
-
-
-<a id="org8934ed8"></a>
+<a id="orge0ee880"></a>
 
 ## Math     :Math:
 
