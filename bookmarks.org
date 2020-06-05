@@ -168,6 +168,7 @@ One of the subprojects is a seamless pandas scaling framework [[https://github.c
 
 *** REST APIs / Web Development / HTML
 
+- https://medium.com/@aleksei.kornev/production-readiness-checklist-for-backend-applications-8d2b0c57ccec
 - http://www.webpagetest.org/  - checks speed of a web page from different locations, browsers, with auth, protocols ...
 - https://hackernoon.com/a-documentation-crash--45006a85c15c
 - https://documentation.divio.com/  - What nobody tells you about documentation
@@ -621,7 +622,10 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
 |---------------+-----------------+-----------------+-----------------------------+----------------------+-----------+---------|
 
 - https://github.com/quay/clair
-- https://github.com/hadolint/hadolint
+- https://github.com/hadolint/hadolint - A smarter Dockerfile linter that helps
+  you build best practice Docker images. The linter is parsing the Dockerfile
+  into an AST and performs rules on top of the AST. It is standing on the
+  shoulders of ShellCheck to lint the Bash code inside RUN instructions.
 - https://github.com/docker/docker-bench-security
 - https://github.com/goodwithtech/dockle
 - https://github.com/aquasecurity/trivy
@@ -660,7 +664,7 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
 **** Linters
 
 - https://github.com/instrumenta/kubeval/
-- https://helm.sh/docs/helm/helm_lint/
+- https://helm.sh/docs/helm/helm_lint
 
 **** Kubernetes Security :Security:
 
@@ -683,6 +687,12 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
      a whitelist and logging all exceptions.
   6. Allow the system calls you know you need, block everything else
   7. Be comprehensive and make sure all the basic system calls have been whitelisted
+- https://github.com/aquasecurity/kube-bench
+- https://github.com/cyberark/KubiScan
+- https://github.com/kinvolk/lokomotive - open source Kubernetes distribution
+  that ships pure upstream Kubernetes. It focuses on being minimal, easy to use,
+  and secure by default.
+
 
 **** AWS/EKS
 ***** Misc
@@ -703,12 +713,13 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
 - https://itnext.io/utilize-jenkins-in-an-auto-scaling-kubernetes-deployment-on-amazon-eks-with-spot-instances-f9159df00aee
 - https://itnext.io/building-a-kubernetes-ci-cd-pipeline-on-aws-with-codepipeline-codebuild-shopgun-43ccf76277b5
 
-**** HowTo-Guides (Kubeconfig, GCP, Rancher, KIND)
+**** HowTo-Guides (Kubeconfig, GCP, Rancher, KIND, Private Container Registry)
 
 - https://ahmet.im/blog/mastering-kubeconfig/
 - https://medium.com/faun/application-deployment-using-gitlab-ci-cd-on-managed-kubernetes-cluster-at-gcp-72b59496979c
 - https://medium.com/@jmrobles/how-to-create-a-kubernetes-cluster-with-rancher-on-hetzner-3b2f7f0c037a
 - https://medium.com/@kgamanji/customise-your-kind-clusters-networking-layer-1249e7916100
+- https://medium.com/faun/private-container-registry-on-kubernetes-78118a62a9c8  - backed by S3
 
 **** Monitoring
 
@@ -795,13 +806,18 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
   > In summary, I would like to leave you with the message that whilst SaaS is not a silver bullet
     for cyber security, in many situations the security benefits outweigh the risks.
 - https://medium.com/viithiisys/10-steps-to-secure-linux-server-for-production-environment-a135109a57c5  - <-- do this on a production server
-- Tool https://github.com/hannob/snallygaster  - scan for secret files on HTTP Servers
-- Video https://www.youtube.com/watch?v=Bppr9rbmwz4  - Attacking with HTTP Requests
 - https://medium.freecodecamp.org/discovering-the-hidden-mine-of-credentials-and-sensitive-information-8e5ccfef2724
 - https://medium.freecodecamp.org/hash-table-attack-8e4371fc5261  - The moment when you realize every server in the world is vulnerable
 - https://blog.usejournal.com/how-to-avoid-ruining-lives-front-end-security-matters-26d4f906c7a6  - XSS and CSRF tokens
 - https://onezero.medium.com/how-to-totally-secure-your-smartphone-48b7a85a5ed8
 - https://www.youtube.com/watch?v=k8FIDGmmYvs  - How to break PDFs
+
+*** Security Tools
+- https://github.com/dev-sec/ansible-os-hardening - This role provides numerous
+  security-related configurations, providing all-round base protection. It is
+  intended to be compliant with the DevSec Linux Baseline.
+- Tool https://github.com/hannob/snallygaster  - scan for secret files on HTTP Servers
+  Video https://www.youtube.com/watch?v=Bppr9rbmwz4  - Attacking with HTTP Requests
 
 ** Math :Math:
 

@@ -1,60 +1,61 @@
 
 # Table of Contents
 
-1.  [Bookmarks](#org5381545)
-    1.  [Misc](#org51011bc)
-    2.  [Bahn fahren](#org53a11fc)
-    3.  [Business](#orgd380fd0)
-    4.  [Personal Development](#orgf7e5af9)
-    5.  [Gesellschaftliches](#org6d95dcc)
-    6.  [Software-Development](#org774b698):Software_Development:
-        1.  [Misc](#org6f6d2c1)
-        2.  [YAML](#orgd3771bc)
-        3.  [Python](#org045d7e6)
-        4.  [Django](#org283361a)
-        5.  [Javascript](#org2c47d40)
-        6.  [REST APIs / Web Development / HTML](#org55951b9)
-        7.  [Git / GitHub / Versioning](#orgefd3475)
-        8.  [Shell/Bash/Zsh](#org3ce832e)
-        9.  [Databases](#org2467e23)
-    7.  [Data Science / ML / NLP](#orgf204380):DataScience:
-        1.  [Misc](#orgd118a00)
-        2.  [Interesting Analysis](#orga64188b):Analysis:
-        3.  [Kaggle](#org8e499ec):Kaggle:
-        4.  [Team (Management, Hiring, Organization, &#x2026;)](#org5397ab3)
-        5.  [Optimizers / Learn Rates](#orge3fc48b)
-        6.  [Jupyter Notebooks](#org0cf3d94)
-        7.  [Streamlit](#org079233e)
-        8.  [Pytorch/fastai](#org6c9c65c)
-        9.  [Datasets](#orgae3a841)
-        10. [Pandas](#org802d2d6):Pandas:
-        11. [Data Annotation](#orgb77d00c)
-        12. [Data Exploration / Feature Engineering](#org4a3c46b)
-        13. [Data Testing](#org9c4a1c6)
-        14. [Data Visualization](#orga4d6017):Visualization:
-        15. [NLP](#orgd761a53):NLP:
-        16. [Computer Vision](#org2e0bd62)
-        17. [Time Series](#orga547580)
-        18. [Deployments](#org8ede7aa):DevOps:
-    8.  [DevOps / Security](#org007635d)
-        1.  [Misc](#org22156a3)
-        2.  [Cloud Provisioners](#orgf87646f)
-        3.  [Site Reliability](#org5647953)
-        4.  [Microservices / Serverless](#orge849937)
-        5.  [Docker/Containers](#org5b0bbec):Docker:
-        6.  [Kubernetes](#org1f5f730):Kubernetes:
-        7.  [SSH](#org139d2d0)
-        8.  [General Computer/Networking/&#x2026; Security](#org0fd2a78):Security:
-    9.  [Math](#orge0ee880):Math:
+1.  [Bookmarks](#orgbb06539)
+    1.  [Misc](#orgb5d2cce)
+    2.  [Bahn fahren](#orgbba400a)
+    3.  [Business](#org308750a)
+    4.  [Personal Development](#org6f67a9a)
+    5.  [Gesellschaftliches](#orgd89eaf4)
+    6.  [Software-Development](#org9f2183a):Software_Development:
+        1.  [Misc](#orgdaefd3c)
+        2.  [YAML](#org25eeb3c)
+        3.  [Python](#orga655e53)
+        4.  [Django](#org999c132)
+        5.  [Javascript](#orgf4e3ac2)
+        6.  [REST APIs / Web Development / HTML](#org42b0e2f)
+        7.  [Git / GitHub / Versioning](#org9ad6a98)
+        8.  [Shell/Bash/Zsh](#org11a59e6)
+        9.  [Databases](#org27b2013)
+    7.  [Data Science / ML / NLP](#org930d18e):DataScience:
+        1.  [Misc](#org2dbc6d4)
+        2.  [Interesting Analysis](#orgc43b98f):Analysis:
+        3.  [Kaggle](#org771d56d):Kaggle:
+        4.  [Team (Management, Hiring, Organization, &#x2026;)](#org6a29444)
+        5.  [Optimizers / Learn Rates](#orgc044ad6)
+        6.  [Jupyter Notebooks](#orgf81ca88)
+        7.  [Streamlit](#orgdc21198)
+        8.  [Pytorch/fastai](#org10ceff3)
+        9.  [Datasets](#org6b8f497)
+        10. [Pandas](#orgf1c566b):Pandas:
+        11. [Data Annotation](#org6b206b9)
+        12. [Data Exploration / Feature Engineering](#org15b4ea7)
+        13. [Data Testing](#orga727a51)
+        14. [Data Visualization](#org665950a):Visualization:
+        15. [NLP](#org5b33822):NLP:
+        16. [Computer Vision](#org09a3083)
+        17. [Time Series](#org1dbab6f)
+        18. [Deployments](#orgcb6f5d2):DevOps:
+    8.  [DevOps / Security](#orga41a529)
+        1.  [Misc](#orgfbe7ac7)
+        2.  [Cloud Provisioners](#org76ef1bb)
+        3.  [Site Reliability](#orga9b3902)
+        4.  [Microservices / Serverless](#orga53029e)
+        5.  [Docker/Containers](#orga42760a):Docker:
+        6.  [Kubernetes](#org154a0b5):Kubernetes:
+        7.  [SSH](#org44351d1)
+        8.  [General Computer/Networking/&#x2026; Security](#org45127ab):Security:
+        9.  [Security Tools](#org2ddf716)
+    9.  [Math](#org9da9039):Math:
 
 
 
-<a id="org5381545"></a>
+<a id="orgbb06539"></a>
 
 # Bookmarks
 
 
-<a id="org51011bc"></a>
+<a id="orgb5d2cce"></a>
 
 ## Misc
 
@@ -65,7 +66,7 @@
 -   <https://techblog.commercetools.com/easy-steps-to-get-obs-running-for-high-quality-demo-and-presentation-recordings-a6eef311e56e>
 
 
-<a id="org53a11fc"></a>
+<a id="orgbba400a"></a>
 
 ## Bahn fahren
 
@@ -75,7 +76,7 @@
 -   <https://bahn.guru>  - Sparpreis-Finder
 
 
-<a id="orgd380fd0"></a>
+<a id="org308750a"></a>
 
 ## Business
 
@@ -84,7 +85,7 @@
 -   <https://www.gulp.de/knowledge-base/19/iii/neue-checkliste-fuer-freelancer-bin-ich-scheinselbststaendig.html>
 
 
-<a id="orgf7e5af9"></a>
+<a id="org6f67a9a"></a>
 
 ## Personal Development
 
@@ -95,7 +96,7 @@
 -   <https://medium.com/better-programming/why-do-incompetent-managers-get-promoted-815165a03bee>
 
 
-<a id="org6d95dcc"></a>
+<a id="orgd89eaf4"></a>
 
 ## Gesellschaftliches
 
@@ -110,12 +111,12 @@
 -   <https://fragdenstaat.de>
 
 
-<a id="org774b698"></a>
+<a id="org9f2183a"></a>
 
 ## Software-Development     :Software_Development:
 
 
-<a id="org6f6d2c1"></a>
+<a id="orgdaefd3c"></a>
 
 ### Misc
 
@@ -151,7 +152,7 @@
 -   <https://github.com/18F/technology-budgeting/blob/master/handbook.md>  - De-risking custom technology projects (wie Behörden IT-Projekte am besten ausschreiben/planen/usw.)
 
 
-<a id="orgd3771bc"></a>
+<a id="org25eeb3c"></a>
 
 ### YAML
 
@@ -161,7 +162,7 @@
 -   <https://arp242.net/weblog/yaml_probably_not_so_great_after_all.html>
 
 
-<a id="org045d7e6"></a>
+<a id="orga655e53"></a>
 
 ### Python
 
@@ -224,7 +225,7 @@
         -   <https://github.com/Erotemic/xdoctest>  - testing the examples in the docstrings
 
 
-<a id="org283361a"></a>
+<a id="org999c132"></a>
 
 ### Django
 
@@ -243,17 +244,18 @@
 -   <https://vsupalov.com/vue-js-in-django-template/>
 
 
-<a id="org2c47d40"></a>
+<a id="orgf4e3ac2"></a>
 
 ### Javascript
 
 -   <https://medium.com/@michael.karen/learning-modern-javascript-with-tetris-92d532bcd057>
 
 
-<a id="org55951b9"></a>
+<a id="org42b0e2f"></a>
 
 ### REST APIs / Web Development / HTML
 
+-   <https://medium.com/@aleksei.kornev/production-readiness-checklist-for-backend-applications-8d2b0c57ccec>
 -   <http://www.webpagetest.org/>  - checks speed of a web page from different locations, browsers, with auth, protocols &#x2026;
 -   <https://hackernoon.com/a-documentation-crash--45006a85c15c>
 -   <https://documentation.divio.com/>  - What nobody tells you about documentation
@@ -275,7 +277,7 @@
 -   <https://medium.com/dailyjs/what-every-software-engineer-should-know-about-oauth-2-0-10f0ef4998e5>
 
 
-<a id="orgefd3475"></a>
+<a id="org9ad6a98"></a>
 
 ### Git / GitHub / Versioning
 
@@ -286,7 +288,7 @@
 -   <https://github.com/github/semantic/blob/master/docs/examples.md>  - Haskell library and command line tool for parsing, analyzing, and comparing source code
 
 
-<a id="org3ce832e"></a>
+<a id="org11a59e6"></a>
 
 ### Shell/Bash/Zsh
 
@@ -296,7 +298,7 @@
 -   <https://arslan.io/2019/07/03/how-to-write-idempotent-bash-scripts/>
 
 
-<a id="org2467e23"></a>
+<a id="org27b2013"></a>
 
 ### Databases
 
@@ -321,12 +323,12 @@
 6.  <https://explain.depesz.com/>  - Tool: PostgreSQL&rsquo;s explain analyze made readable
 
 
-<a id="orgf204380"></a>
+<a id="org930d18e"></a>
 
 ## Data Science / ML / NLP     :DataScience:
 
 
-<a id="orgd118a00"></a>
+<a id="org2dbc6d4"></a>
 
 ### Misc
 
@@ -350,7 +352,7 @@
     Introductionary, but very well written text
 
 
-<a id="orga64188b"></a>
+<a id="orgc43b98f"></a>
 
 ### Interesting Analysis     :Analysis:
 
@@ -361,7 +363,7 @@
 -   <https://towardsdatascience.com/march-madness-analyze-video-to-detect-players-teams-and-who-attempted-the-basket-8cad67745b88>
 
 
-<a id="org8e499ec"></a>
+<a id="org771d56d"></a>
 
 ### Kaggle     :Kaggle:
 
@@ -369,7 +371,7 @@
 -   <https://towardsdatascience.com/a-story-of-my-first-gold-medal-in-one-kaggle-competition-things-done-and-lessons-learned-c269d9c233d1>
 
 
-<a id="org5397ab3"></a>
+<a id="org6a29444"></a>
 
 ### Team (Management, Hiring, Organization, &#x2026;)
 
@@ -384,7 +386,7 @@
 -   <https://towardsdatascience.com/how-to-screw-up-a-computer-vision-project-166dfcc44a5f>
 
 
-<a id="orge3fc48b"></a>
+<a id="orgc044ad6"></a>
 
 ### Optimizers / Learn Rates
 
@@ -393,7 +395,7 @@
 -   <https://towardsdatascience.com/self-paced-learning-for-machine-learning-f1c489316c61>
 
 
-<a id="org0cf3d94"></a>
+<a id="orgf81ca88"></a>
 
 ### Jupyter Notebooks
 
@@ -405,14 +407,14 @@
 -   <https://towardsdatascience.com/introduction-to-papermill-2c61f66bea30>  - How to transform your Jupyter Notebook into a workflow tool
 
 
-<a id="org079233e"></a>
+<a id="orgdc21198"></a>
 
 ### Streamlit
 
 -   <https://towardsdatascience.com/how-to-deploy-a-streamlit-app-using-an-amazon-free-ec2-instance-416a41f69dc3>
 
 
-<a id="org6c9c65c"></a>
+<a id="org10ceff3"></a>
 
 ### Pytorch/fastai
 
@@ -421,7 +423,7 @@
 -   <https://medium.com/huggingface/from-tensorflow-to-pytorch-265f40ef2a28> :PyTorch:tensorflow:
 
 
-<a id="orgae3a841"></a>
+<a id="org6b8f497"></a>
 
 ### Datasets
 
@@ -455,7 +457,7 @@
 -   <https://www.si.edu/openaccess>  -  enthält 2D- und 3D-Darstellungen von kulturellen, wissenschaftlichen, historischen, künstlerischen, technischen und Design-Exponaten aus seinen 19 Museen, 9 Forschungszentren, Bibliotheken, Archiven und dem National Zoo. Hinzu kommen Forschungsdaten und Daten zu Sammlungen
 
 
-<a id="org802d2d6"></a>
+<a id="orgf1c566b"></a>
 
 ### Pandas     :Pandas:
 
@@ -467,7 +469,7 @@
 -   <https://towardsdatascience.com/geopandas-101-plot-any-data-with-a-latitude-and-longitude-on-a-map-98e01944b972> :Visualization:
 
 
-<a id="orgb77d00c"></a>
+<a id="org6b206b9"></a>
 
 ### Data Annotation
 
@@ -475,7 +477,7 @@
     -   **Github:** <https://github.com/heartexlabs/label-studio>
 
 
-<a id="org4a3c46b"></a>
+<a id="org15b4ea7"></a>
 
 ### Data Exploration / Feature Engineering
 
@@ -490,7 +492,7 @@
 -   <https://de.wikipedia.org/wiki/Shapiro-Wilk-Test>  -  Signifikanztest, der die Hypothese überprüft, dass die zugrunde liegende Grundgesamtheit einer Stichprobe normalverteilt
 
 
-<a id="org9c4a1c6"></a>
+<a id="orga727a51"></a>
 
 ### Data Testing
 
@@ -500,7 +502,7 @@
     they help you guard against upstream data changes and monitor data quality.
 
 
-<a id="orga4d6017"></a>
+<a id="org665950a"></a>
 
 ### Data Visualization     :Visualization:
 
@@ -518,7 +520,7 @@
 -   <https://towardsdatascience.com/vis-amz-83dea6fcb059>  - Visualizing 100,000 Products Fast sentence embeddings (fse) for millions of reviews in only a few minutes. :NLP:
 
 
-<a id="orgd761a53"></a>
+<a id="org5b33822"></a>
 
 ### NLP     :NLP:
 
@@ -651,7 +653,7 @@
     3.  <https://medium.com/dair-ai/xlnet-outperforms-bert-on-several-nlp-tasks-9ec867bb563b>
 
 
-<a id="org2e0bd62"></a>
+<a id="org09a3083"></a>
 
 ### Computer Vision
 
@@ -714,7 +716,7 @@
     3.  <https://towardsdatascience.com/review-yolov3-you-only-look-once-object-detection-eab75d7a1ba6>
 
 
-<a id="orga547580"></a>
+<a id="org1dbab6f"></a>
 
 ### Time Series
 
@@ -725,7 +727,7 @@
 3.  <https://towardsdatascience.com/anomaly-detection-time-series-4c661f6f165f> - Detect anomaly in time series with facebook Prophet
 
 
-<a id="org8ede7aa"></a>
+<a id="orgcb6f5d2"></a>
 
 ### Deployments     :DevOps:
 
@@ -736,12 +738,12 @@
 3.  <https://medium.com/@colinshaw_36798/fully-utilizing-your-deep-learning-gpus-61ee7acd3e57>
 
 
-<a id="org007635d"></a>
+<a id="orga41a529"></a>
 
 ## DevOps / Security
 
 
-<a id="org22156a3"></a>
+<a id="orgfbe7ac7"></a>
 
 ### Misc
 
@@ -771,7 +773,7 @@ including the video of an impressive talk: <https://www.youtube.com/watch?v=RTEg
 -   <https://medium.com/anton-on-security/retaining-logs-for-a-year-boring-or-useful-70ea21fa3dda>
 
 
-<a id="orgf87646f"></a>
+<a id="org76ef1bb"></a>
 
 ### Cloud Provisioners
 
@@ -808,7 +810,7 @@ including the video of an impressive talk: <https://www.youtube.com/watch?v=RTEg
     -   <https://github.com/terraform-linters/tflint>  - linter for terraform, e.g. catch wrong machine type before deploying
 
 
-<a id="org5647953"></a>
+<a id="orga9b3902"></a>
 
 ### Site Reliability
 
@@ -834,7 +836,7 @@ including:
 -   <https://medium.com/@copyconstruct/testing-in-production-the-safe-way-18ca102d0ef1>
 
 
-<a id="orge849937"></a>
+<a id="orga53029e"></a>
 
 ### Microservices / Serverless
 
@@ -848,7 +850,7 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
 -   <https://theburningmonk.com/2019/04/comparing-nuclio-and-aws-lambda/>
 
 
-<a id="org5b0bbec"></a>
+<a id="orga42760a"></a>
 
 ### Docker/Containers     :Docker:
 
@@ -998,7 +1000,10 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
     </table>
     
     -   <https://github.com/quay/clair>
-    -   <https://github.com/hadolint/hadolint>
+    -   <https://github.com/hadolint/hadolint> - A smarter Dockerfile linter that helps
+        you build best practice Docker images. The linter is parsing the Dockerfile
+        into an AST and performs rules on top of the AST. It is standing on the
+        shoulders of ShellCheck to lint the Bash code inside RUN instructions.
     -   <https://github.com/docker/docker-bench-security>
     -   <https://github.com/goodwithtech/dockle>
     -   <https://github.com/aquasecurity/trivy>
@@ -1023,7 +1028,7 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
             deployed initially.
 
 
-<a id="org1f5f730"></a>
+<a id="org154a0b5"></a>
 
 ### Kubernetes     :Kubernetes:
 
@@ -1041,7 +1046,7 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
 2.  Linters
 
     -   <https://github.com/instrumenta/kubeval/>
-    -   <https://helm.sh/docs/helm/helm_lint/>
+    -   <https://helm.sh/docs/helm/helm_lint>
 
 3.  Kubernetes Security     :Security:
 
@@ -1064,6 +1069,11 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
             a whitelist and logging all exceptions.
         6.  Allow the system calls you know you need, block everything else
         7.  Be comprehensive and make sure all the basic system calls have been whitelisted
+    -   <https://github.com/aquasecurity/kube-bench>
+    -   <https://github.com/cyberark/KubiScan>
+    -   <https://github.com/kinvolk/lokomotive> - open source Kubernetes distribution
+        that ships pure upstream Kubernetes. It focuses on being minimal, easy to use,
+        and secure by default.
 
 4.  AWS/EKS
 
@@ -1085,12 +1095,13 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
         -   <https://itnext.io/utilize-jenkins-in-an-auto-scaling-kubernetes-deployment-on-amazon-eks-with-spot-instances-f9159df00aee>
         -   <https://itnext.io/building-a-kubernetes-ci-cd-pipeline-on-aws-with-codepipeline-codebuild-shopgun-43ccf76277b5>
 
-5.  HowTo-Guides (Kubeconfig, GCP, Rancher, KIND)
+5.  HowTo-Guides (Kubeconfig, GCP, Rancher, KIND, Private Container Registry)
 
     -   <https://ahmet.im/blog/mastering-kubeconfig/>
     -   <https://medium.com/faun/application-deployment-using-gitlab-ci-cd-on-managed-kubernetes-cluster-at-gcp-72b59496979c>
     -   <https://medium.com/@jmrobles/how-to-create-a-kubernetes-cluster-with-rancher-on-hetzner-3b2f7f0c037a>
     -   <https://medium.com/@kgamanji/customise-your-kind-clusters-networking-layer-1249e7916100>
+    -   <https://medium.com/faun/private-container-registry-on-kubernetes-78118a62a9c8>  - backed by S3
 
 6.  Monitoring
 
@@ -1098,14 +1109,14 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
     -   <https://github.com/hjacobs/kube-ops-view>
 
 
-<a id="org139d2d0"></a>
+<a id="org44351d1"></a>
 
 ### SSH
 
 -   <https://yanaiela.github.io/post/remote-servers/>  - Make SSH great again (config, tunnelling, &#x2026;)
 
 
-<a id="org0fd2a78"></a>
+<a id="org45127ab"></a>
 
 ### General Computer/Networking/&#x2026; Security     :Security:
 
@@ -1183,8 +1194,6 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
     > In summary, I would like to leave you with the message that whilst SaaS is not a silver bullet
       for cyber security, in many situations the security benefits outweigh the risks.
 -   <https://medium.com/viithiisys/10-steps-to-secure-linux-server-for-production-environment-a135109a57c5>  - <&#x2013; do this on a production server
--   Tool <https://github.com/hannob/snallygaster>  - scan for secret files on HTTP Servers
--   Video <https://www.youtube.com/watch?v=Bppr9rbmwz4>  - Attacking with HTTP Requests
 -   <https://medium.freecodecamp.org/discovering-the-hidden-mine-of-credentials-and-sensitive-information-8e5ccfef2724>
 -   <https://medium.freecodecamp.org/hash-table-attack-8e4371fc5261>  - The moment when you realize every server in the world is vulnerable
 -   <https://blog.usejournal.com/how-to-avoid-ruining-lives-front-end-security-matters-26d4f906c7a6>  - XSS and CSRF tokens
@@ -1192,7 +1201,18 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
 -   <https://www.youtube.com/watch?v=k8FIDGmmYvs>  - How to break PDFs
 
 
-<a id="orge0ee880"></a>
+<a id="org2ddf716"></a>
+
+### Security Tools
+
+-   <https://github.com/dev-sec/ansible-os-hardening> - This role provides numerous
+    security-related configurations, providing all-round base protection. It is
+    intended to be compliant with the DevSec Linux Baseline.
+-   Tool <https://github.com/hannob/snallygaster>  - scan for secret files on HTTP Servers
+    Video <https://www.youtube.com/watch?v=Bppr9rbmwz4>  - Attacking with HTTP Requests
+
+
+<a id="org9da9039"></a>
 
 ## Math     :Math:
 
