@@ -150,6 +150,7 @@ One of the subprojects is a seamless pandas scaling framework [[https://github.c
 
 - https://github.com/pydanny/cookiecutter-django -- Cookiecutter Django is a framework for jumpstarting production-ready Django projects quickly.
   Documentation: https://cookiecutter-django.readthedocs.io/en/latest/
+- https://mattsegal.dev/django-prod-architectures.html
 - https://medium.com/@jwdobken/python-django-with-docker-and-gitlab-ci-b83cc4e7e2e  - based on cookiecutter django
 - https://www.youtube.com/watch?v=FPfBhqL-uek  - Django for Admins
 - https://djangosuit.com/  - Modern theme for Django admin interface
@@ -502,30 +503,37 @@ but also why they are so sensitive to adversial networks
 *** Misc
 
 - https://gruntwork.io/devops-checklist/  - Production Readiness Checklist
-
-Read also: https://blog.gruntwork.io/5-lessons-learned-from-writing-over-300-000-lines-of-infrastructure-code-36ba7fadeac1
-including the video of an impressive talk: https://www.youtube.com/watch?v=RTEgE2lcyk4
-
+    Read also: https://blog.gruntwork.io/5-lessons-learned-from-writing-over-300-000-lines-of-infrastructure-code-36ba7fadeac1
+    including the video of an impressive talk: https://www.youtube.com/watch?v=RTEgE2lcyk4
 - https://medium.com/s/story/technical-debt-is-like-tetris-168f64d8b700
 - https://ferd.ca/complexity-has-to-live-somewhere.html
 - https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/
 - https://blog.thepete.net/blog/2019/10/04/hello-production/  - Deploying something useless into production, as soon as you can, is the right way to start a new project
 - https://medium.com/@paulosman/production-oriented-development-8ae05f8cc7ea  - code in production is the only code that matters.
-
-1. Engineers should operate their code.
-2. Buy Almost Always Beats Build
-3. Make Deploys Easy
-4. Trust the People Closest to the Knives
-5. QA Gates Make Quality Worse
-6. Boring Technology is Great.
-7. Simple Always Wins
-8. Non-Production Environments Have Diminishing Returns
-9. Things Will Always Break
-
+  1. Engineers should operate their code.
+  2. Buy Almost Always Beats Build
+  3. Make Deploys Easy
+  4. Trust the People Closest to the Knives
+  5. QA Gates Make Quality Worse
+  6. Boring Technology is Great.
+  7. Simple Always Wins
+  8. Non-Production Environments Have Diminishing Returns
+  9. Things Will Always Break
 - http://onemogin.com/observability/dashboards/practitioners-guide-to-system-dashboard-design.html
 - https://www.rookout.com/cant-git-no-satisfaction-why-we-need-a-new-gen-source-control/  - Advantages/Disadvantages of Monorepo vs Multirepo
 - https://medium.com/anton-on-security/retaining-logs-for-a-year-boring-or-useful-70ea21fa3dda
-
+- https://thechief.io/c/blameless/5-best-practices-nailing-incident-retrospectives/
+  1. Use visuals in your postmortems
+     Graphs like when the incidents happened
+     - Better to understand for newcomers what's going on
+     - In future engineers have something they already have seen before and can compare
+  2. Be a historian
+     - Show timelines
+  3. Publish promptly (aim <= 48h)
+     - More accurate (who can remember anything weeks or months old)
+     - Otherwise people thing everything is out of control and fill the gap with (miserable) products you don't want
+  4. Be blameless
+  5. Tell a (complete) story (not only for insiders)
 *** Cloud Provisioners
 **** For all platforms
 
@@ -648,10 +656,10 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
     Watchtower will pull down your new image, gracefully shut down your existing
     container and restart it with the same options that were used when it was
     deployed initially.
+- https://github.com/coord-e/magicpak  - Build minimal docker images without static linking
 
 *** Kubernetes :Kubernetes:
 **** Misc
-
 - https://blog.pipetail.io/posts/2020-05-04-most-common-mistakes-k8s/
 - https://github.com/jamiehannaford/what-happens-when-k8s
 - https://matthias-endler.de/2019/maybe-you-dont-need-kubernetes/ :Kubernetes:
@@ -660,14 +668,20 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
 - https://prefetch.net/blog/2019/10/16/the-beginners-guide-to-creating-kubernetes-manifests/ :Kubernetes:
 - https://learnk8s.io/cloud-resources-kubernetes  - Provisioning
 - https://octetz.com/docs/2020/2020-01-06-vim-k8s-yaml-support/  - Kubernetes (completion) support for vim
-
+- https://piotrminkowski.com/2020/03/10/best-practices-for-microservices-on-kubernetes/ with examples from Spring Boot
+  1. Allow platform to collect metrics
+  2. Prepare logs in right format
+  3. Implement both readiness and liveness health check
+  4. Consider your integrations (timeout for database connections and similar)
+  5. Use service mesh
+  6. Be open for framework specific solutions
+  7. Be prepared for rollback
 **** Linters
 
 - https://github.com/instrumenta/kubeval/
 - https://helm.sh/docs/helm/helm_lint
 
 **** Kubernetes Security :Security:
-
 - https://kubernetes-security.info/                            :Security:
 - https://devops.com/how-to-secure-your-kubernetes-cluster-on-gke/ :Security:
 - https://kubernetes.io/blog/2018/07/18/11-ways-not-to-get-hacked/ :Security:
@@ -692,8 +706,6 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
 - https://github.com/kinvolk/lokomotive - open source Kubernetes distribution
   that ships pure upstream Kubernetes. It focuses on being minimal, easy to use,
   and secure by default.
-
-
 **** AWS/EKS
 ***** Misc
 
@@ -714,13 +726,11 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
 - https://itnext.io/building-a-kubernetes-ci-cd-pipeline-on-aws-with-codepipeline-codebuild-shopgun-43ccf76277b5
 
 **** HowTo-Guides (Kubeconfig, GCP, Rancher, KIND, Private Container Registry)
-
 - https://ahmet.im/blog/mastering-kubeconfig/
 - https://medium.com/faun/application-deployment-using-gitlab-ci-cd-on-managed-kubernetes-cluster-at-gcp-72b59496979c
 - https://medium.com/@jmrobles/how-to-create-a-kubernetes-cluster-with-rancher-on-hetzner-3b2f7f0c037a
 - https://medium.com/@kgamanji/customise-your-kind-clusters-networking-layer-1249e7916100
 - https://medium.com/faun/private-container-registry-on-kubernetes-78118a62a9c8  - backed by S3
-
 **** Monitoring
 
 - https://tech.showmax.com/2019/10/prometheus-introduction/
@@ -806,6 +816,8 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
   > In summary, I would like to leave you with the message that whilst SaaS is not a silver bullet
     for cyber security, in many situations the security benefits outweigh the risks.
 - https://medium.com/viithiisys/10-steps-to-secure-linux-server-for-production-environment-a135109a57c5  - <-- do this on a production server
+- https://www.digitalocean.com/community/tools/nginx  - The easiest way to configure a performant, secure, and stable NGINX server.
+  A web page to generate the nginx.conf as starting point following best practices (and still configurable)
 - https://medium.freecodecamp.org/discovering-the-hidden-mine-of-credentials-and-sensitive-information-8e5ccfef2724
 - https://medium.freecodecamp.org/hash-table-attack-8e4371fc5261  - The moment when you realize every server in the world is vulnerable
 - https://blog.usejournal.com/how-to-avoid-ruining-lives-front-end-security-matters-26d4f906c7a6  - XSS and CSRF tokens
