@@ -50,7 +50,6 @@
 *** Misc
 
 - https://www.youtube.com/watch?v=ecIWPzGEbFc&feature=youtu.be  - "Uncle" Bob Martin - "The Future of Programming"
-- https://www.youtube.com/watch?v=28S4CVkYhWA&list=WL&index=2  - Mob Programming and the Power of Flow
 - https://www.usecue.com/blog/code-warriors/
   A true warrior masters his sword and his mind. A ‘code warrior’ masters his software and his
   system. Mastering your software is not the most difficult part, just read the quick-start and
@@ -78,6 +77,11 @@
   - Ctrl+a :: hop to beginning of line
   - Ctrl+e :: hop to end of line
   - Ctrl+k :: delete everything from cursor to end of line
+   
+*** Team Management
+
+- https://towardsdatascience.com/leading-a-software-development-team-be13b3f6b0f
+- https://www.youtube.com/watch?v=28S4CVkYhWA&list=WL&index=2  - Mob Programming and the Power of Flow
 - https://github.com/18F/technology-budgeting/blob/master/handbook.md  - De-risking custom technology projects (wie Behörden IT-Projekte am besten ausschreiben/planen/usw.)
 
 *** YAML
@@ -171,6 +175,9 @@ One of the subprojects is a seamless pandas scaling framework [[https://github.c
 
 - https://medium.com/@aleksei.kornev/production-readiness-checklist-for-backend-applications-8d2b0c57ccec
 - http://www.webpagetest.org/  - checks speed of a web page from different locations, browsers, with auth, protocols ...
+- https://developers.google.com/web/tools/lighthouse - run it against any web
+  page, public or requiring authentication. It has audits for performance,
+  accessibility, progressive web apps, SEO and more.
 - https://hackernoon.com/a-documentation-crash--45006a85c15c
 - https://documentation.divio.com/  - What nobody tells you about documentation
   - Tutorials
@@ -197,6 +204,12 @@ One of the subprojects is a seamless pandas scaling framework [[https://github.c
  (1.0.0 -> 1.0.1 bugfix -> 1.1.0 new functionality -> ... -> 2.0.0 backward incompatible breaking change)
 - https://semver.org/spec/v2.0.0.html  - Semantic versioning
 - https://github.com/github/semantic/blob/master/docs/examples.md  - Haskell library and command line tool for parsing, analyzing, and comparing source code
+- https://github.com/thoughtworks/talisman - By hooking into the pre-push hook
+  provided by Git, Talisman validates the outgoing changeset for things that
+  look suspicious - such as authorization tokens and private keys.
+  See also https://thoughtworks.github.io/talisman/
+- https://github.com/awslabs/git-secrets - Prevents you from committing
+  passwords and other sensitive information to a git repository
 
 *** Shell/Bash/Zsh
 
@@ -559,13 +572,16 @@ but also why they are so sensitive to adversial networks
      - great to handle triggers (like update to s3 or w/e)
      - terrible to run http rest endpoints (no solid monitoring, logging, unclear environment it's running and so on)
        -> just use a real framework like flask, fastapi, django w/e or kubeless
+- https://towardsdatascience.com/best-practices-for-securing-aws-ec2-instances-4bd656e22462
 - https://github.com/rebuy-de/aws-nuke
 - https://ncona.com/2020/05/setting-up-a-bastion-host-on-aws/
+- https://medium.com/@kapalesachin/all-about-aws-vpc-47faf4114240
 
 **** Terraform
 
 - https://medium.com/swlh/design-principles-and-practices-for-terraform-276b2c463563
 - https://github.com/terraform-linters/tflint  - linter for terraform, e.g. catch wrong machine type before deploying
+- https://medium.com/faun/invoking-the-aws-cli-with-terraform-4ae5fd9de277
 
 *** Site Reliability
 
@@ -588,6 +604,7 @@ including:
 - https://hackernoon.com/deploy-on-fridays-or-dont-qg2y32jk
 - https://blog.turbinelabs.io/deploy-not-equal-release-part-one-4724bc1e726b
 - https://medium.com/@copyconstruct/testing-in-production-the-safe-way-18ca102d0ef1
+- https://hackernoon.com/introduction-into-chaos-engineering-from-an-architects-perspective-kh5x3wkw
 
 *** Microservices / Serverless
 
@@ -735,6 +752,24 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
 
 - https://tech.showmax.com/2019/10/prometheus-introduction/
 - https://github.com/hjacobs/kube-ops-view
+**** Service Meshs
+- https://zwischenzugs.com/2020/05/05/riding-the-tiger-lessons-learned-implementing-istio/
+  1. The Number Of People Doing This Feels Really Small
+     - [[https://discuss.istio.io/][Istio Forum]]
+     -[[https://discuss.istio.io/t/istio-slack-channel/1527][ Istio Slack Channel]]
+  2. If You Go Off The Beaten Path, Prepare For Pain
+     Defaults work fine. Off-Defaults will need serious development and debugging time
+  3. Build Up A Good Mental Glossary Istio has its own vocabulary: Cluster,
+     registry, even ingress is subtle different to what it is used commonly and
+     also used in Kubernetes
+     Documentation is a bit git-like, it's compact and understandable once you understand it.
+  4. It Changes Fast
+     Watch for releases
+  5. Focus On Working On Your Debug Muscles
+     - [[https://istio.io/docs/ops/diagnostic-tools/]]
+     - https://github.com/istio/istio/wiki/Troubleshooting-Istio
+     - https://github.com/istio/istio/wiki/Analyzing-Istio-Performance
+  6. When It All Works, It’s Great
 
 *** SSH
 
