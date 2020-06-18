@@ -204,12 +204,14 @@ One of the subprojects is a seamless pandas scaling framework [[https://github.c
  (1.0.0 -> 1.0.1 bugfix -> 1.1.0 new functionality -> ... -> 2.0.0 backward incompatible breaking change)
 - https://semver.org/spec/v2.0.0.html  - Semantic versioning
 - https://github.com/github/semantic/blob/master/docs/examples.md  - Haskell library and command line tool for parsing, analyzing, and comparing source code
+- https://levelup.gitconnected.com/5-best-practices-to-prevent-git-leaks-4997b96c1cbe
 - https://github.com/thoughtworks/talisman - By hooking into the pre-push hook
   provided by Git, Talisman validates the outgoing changeset for things that
   look suspicious - such as authorization tokens and private keys.
   See also https://thoughtworks.github.io/talisman/
 - https://github.com/awslabs/git-secrets - Prevents you from committing
   passwords and other sensitive information to a git repository
+- https://github.com/zricethezav/gitleaks  - Scan git repos for secrets using regex and entropy
 
 *** Shell/Bash/Zsh
 
@@ -582,6 +584,7 @@ but also why they are so sensitive to adversial networks
 - https://medium.com/swlh/design-principles-and-practices-for-terraform-276b2c463563
 - https://github.com/terraform-linters/tflint  - linter for terraform, e.g. catch wrong machine type before deploying
 - https://medium.com/faun/invoking-the-aws-cli-with-terraform-4ae5fd9de277
+- https://medium.com/swlh/setting-up-auth0-with-terraform-c93ae25cf2f9
 
 *** Site Reliability
 
@@ -736,6 +739,7 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
   Regard https://www.terraform.io/docs/providers/aws/r/eks_node_group.html (so don't copy everything from the tutorial)
 - https://medium.com/faun/aws-best-practice-rules-for-amazon-elastic-kubernetes-service-eks-29408a96cb1d
 - https://itnext.io/aws-elastic-kubernetes-service-running-alb-ingress-controller-8d0d457615fa
+- https://medium.com/swlh/deploy-rshiny-with-kubernetes-using-aws-eks-and-terraform-655921d9e13c
 
 ***** CI/CD
 
