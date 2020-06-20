@@ -1,62 +1,63 @@
 
 # Table of Contents
 
-1.  [Bookmarks](#org906d782)
-    1.  [Misc](#orgb68e234)
-    2.  [Bahn fahren](#orge51f56d)
-    3.  [Business](#org508d112)
-    4.  [Personal Development](#org329468f)
-    5.  [Gesellschaftliches](#org7d8c415)
-    6.  [Software-Development](#org503cbf7):Software_Development:
-        1.  [Misc](#org1fa7648)
-        2.  [Team Management](#orgd6e7bdc)
-        3.  [YAML](#org472b788)
-        4.  [Python](#org923ae77)
-        5.  [Django](#org7ed744d)
-        6.  [Javascript](#org31e6f80)
-        7.  [REST APIs / Web Development / HTML](#org8b50b95)
-        8.  [Git / GitHub / Versioning](#orgd142d57)
-        9.  [Shell/Bash/Zsh](#org25b96cf)
-        10. [Databases](#org79a2d2e)
-    7.  [Data Science / ML / NLP](#org90f46da):DataScience:
-        1.  [Misc](#orgffd874f)
-        2.  [Interesting Analysis](#orgd88701e):Analysis:
-        3.  [Kaggle](#org6fdb93a):Kaggle:
-        4.  [Team (Management, Hiring, Organization, &#x2026;)](#orgc661e51)
-        5.  [Optimizers / Learn Rates](#org4beb4ea)
-        6.  [Jupyter Notebooks](#org10579fa)
-        7.  [Streamlit](#org1daec43)
-        8.  [Pytorch/fastai](#org09a55f3)
-        9.  [Datasets](#orga6cfac2)
-        10. [Pandas](#orgbff7a57):Pandas:
-        11. [Data Annotation](#orge421b6e)
-        12. [Data Exploration / Feature Engineering](#org74a6b07)
-        13. [Data Testing](#orgefc0018)
-        14. [Data Visualization](#org1a27db8):Visualization:
-        15. [NLP](#org62a9a79):NLP:
-        16. [Computer Vision](#orgd20b811)
-        17. [Time Series](#org0be0b39)
-        18. [Deployments](#orgc24c77a):DevOps:
-    8.  [DevOps / Security](#orgad56d8c)
-        1.  [Misc](#org8d34b28)
-        2.  [Cloud Provisioners](#org6d772b6)
-        3.  [Site Reliability](#orgcfca4b1)
-        4.  [Microservices / Serverless](#org9dec7c5)
-        5.  [Docker/Containers](#org526ace1):Docker:
-        6.  [Kubernetes](#orgb357128):Kubernetes:
-        7.  [SSH](#orgfd3794a)
-        8.  [General Computer/Networking/&#x2026; Security](#org908a3cf):Security:
-        9.  [Security Tools](#orgcc5a061)
-    9.  [Math](#org6cedeed):Math:
+1.  [Bookmarks](#org07bdecf)
+    1.  [Misc](#org2186b4e)
+    2.  [Bahn](#org525c4ec)
+    3.  [Business](#orgb0ac4ce)
+    4.  [Personal Development](#org2a6ee98)
+    5.  [Gesellschaftliches](#orgd07b24d)
+    6.  [Software-Development](#orgc4f4298):Software_Development:
+        1.  [Misc](#org7bb6501)
+        2.  [Team Management](#org1c87040)
+        3.  [YAML](#org5e2752e)
+        4.  [Python](#orgbf6c931)
+        5.  [Django](#org064e9f9)
+        6.  [Javascript](#org1af6903)
+        7.  [REST APIs / Web Development / HTML](#orgf5b6ac5)
+        8.  [Git / GitHub / Versioning](#org5ebcc42)
+        9.  [Shell/Bash/Zsh](#orgf3ed108)
+        10. [Databases](#org843de71)
+    7.  [Data Science / ML / NLP](#orgb2c5d01):DataScience:
+        1.  [Misc](#org4b4e867)
+        2.  [Interesting Analysis](#org3099690):Analysis:
+        3.  [Kaggle](#orgf19291e):Kaggle:
+        4.  [Team (Management, Hiring, Organization, &#x2026;)](#orgb2b0459)
+        5.  [Optimizers / Learn Rates](#orgda73949)
+        6.  [Jupyter Notebooks](#org9f35998)
+        7.  [Streamlit](#org46db1b8)
+        8.  [Pytorch/fastai](#orgf078f48)
+        9.  [Datasets](#org4372809)
+        10. [Pandas](#org66c38a7):Pandas:
+        11. [Data Annotation](#orga390f6c)
+        12. [Data Exploration / Feature Engineering](#org4fe42a3)
+        13. [Data Testing](#orgc536e3c)
+        14. [Data Visualization](#orga84fbc9):Visualization:
+        15. [NLP](#orgeb14b9b):NLP:
+        16. [Computer Vision](#orgf4c1968)
+        17. [Time Series](#org415ee0c)
+        18. [Deployments](#orgb91fd3b):DevOps:
+    8.  [DevOps / Security](#org26eb598)
+        1.  [Misc](#orgfca8ee5)
+        2.  [CI/CD-Pipeline](#org329cedb)
+        3.  [Cloud Provisioners](#org2ea5fd0)
+        4.  [Site Reliability](#org18735d2)
+        5.  [Microservices / Serverless](#org140d418)
+        6.  [Docker/Containers](#org98b0c4a):Docker:
+        7.  [Kubernetes](#org847eb4e):Kubernetes:
+        8.  [SSH](#orge71e7f0)
+        9.  [General Computer/Networking/&#x2026; Security](#org9b05bd1):Security:
+        10. [Security Tools](#org8d45f3c)
+    9.  [Math](#org8defec9):Math:
 
 
 
-<a id="org906d782"></a>
+<a id="org07bdecf"></a>
 
 # Bookmarks
 
 
-<a id="orgb68e234"></a>
+<a id="org2186b4e"></a>
 
 ## Misc
 
@@ -67,9 +68,9 @@
 -   <https://techblog.commercetools.com/easy-steps-to-get-obs-running-for-high-quality-demo-and-presentation-recordings-a6eef311e56e>
 
 
-<a id="orge51f56d"></a>
+<a id="org525c4ec"></a>
 
-## Bahn fahren
+## Bahn
 
 -   <https://covid19.datanomiq.de/#section-cases>  - Covid 19 Dashboard
 -   Anzeige von Bahn API Daten <https://marudor.de/>
@@ -77,7 +78,7 @@
 -   <https://bahn.guru>  - Sparpreis-Finder
 
 
-<a id="org508d112"></a>
+<a id="orgb0ac4ce"></a>
 
 ## Business
 
@@ -86,7 +87,7 @@
 -   <https://www.gulp.de/knowledge-base/19/iii/neue-checkliste-fuer-freelancer-bin-ich-scheinselbststaendig.html>
 
 
-<a id="org329468f"></a>
+<a id="org2a6ee98"></a>
 
 ## Personal Development
 
@@ -97,7 +98,7 @@
 -   <https://medium.com/better-programming/why-do-incompetent-managers-get-promoted-815165a03bee>
 
 
-<a id="org7d8c415"></a>
+<a id="orgd07b24d"></a>
 
 ## Gesellschaftliches
 
@@ -112,12 +113,12 @@
 -   <https://fragdenstaat.de>
 
 
-<a id="org503cbf7"></a>
+<a id="orgc4f4298"></a>
 
 ## Software-Development     :Software_Development:
 
 
-<a id="org1fa7648"></a>
+<a id="org7bb6501"></a>
 
 ### Misc
 
@@ -151,7 +152,7 @@
     -   **Ctrl+k:** delete everything from cursor to end of line
 
 
-<a id="orgd6e7bdc"></a>
+<a id="org1c87040"></a>
 
 ### Team Management
 
@@ -160,7 +161,7 @@
 -   <https://github.com/18F/technology-budgeting/blob/master/handbook.md>  - De-risking custom technology projects (wie Behörden IT-Projekte am besten ausschreiben/planen/usw.)
 
 
-<a id="org472b788"></a>
+<a id="org5e2752e"></a>
 
 ### YAML
 
@@ -170,7 +171,7 @@
 -   <https://arp242.net/weblog/yaml_probably_not_so_great_after_all.html>
 
 
-<a id="org923ae77"></a>
+<a id="orgbf6c931"></a>
 
 ### Python
 
@@ -233,7 +234,7 @@
         -   <https://github.com/Erotemic/xdoctest>  - testing the examples in the docstrings
 
 
-<a id="org7ed744d"></a>
+<a id="org064e9f9"></a>
 
 ### Django
 
@@ -253,14 +254,14 @@
 -   <https://vsupalov.com/vue-js-in-django-template/>
 
 
-<a id="org31e6f80"></a>
+<a id="org1af6903"></a>
 
 ### Javascript
 
 -   <https://medium.com/@michael.karen/learning-modern-javascript-with-tetris-92d532bcd057>
 
 
-<a id="org8b50b95"></a>
+<a id="orgf5b6ac5"></a>
 
 ### REST APIs / Web Development / HTML
 
@@ -289,7 +290,7 @@
 -   <https://medium.com/dailyjs/what-every-software-engineer-should-know-about-oauth-2-0-10f0ef4998e5>
 
 
-<a id="orgd142d57"></a>
+<a id="org5ebcc42"></a>
 
 ### Git / GitHub / Versioning
 
@@ -308,7 +309,7 @@
 -   <https://github.com/zricethezav/gitleaks>  - Scan git repos for secrets using regex and entropy
 
 
-<a id="org25b96cf"></a>
+<a id="orgf3ed108"></a>
 
 ### Shell/Bash/Zsh
 
@@ -316,39 +317,55 @@
 -   <https://kvz.io/bash-best-practices.html>
 -   <https://blog.yossarian.net/2020/01/23/Anybody-can-write-good-bash-with-a-little-effort>
 -   <https://arslan.io/2019/07/03/how-to-write-idempotent-bash-scripts/>
+-   <https://medium.com/better-programming/top-tips-for-writing-unsurprising-bash-scripts-9b9f4f0cc30e>
+    1.  Tell Bash to Run in Safe Mode
+        
+            # start your script with
+            #!/bin/bash -eu
+            
+            # Or
+            
+            #!/usr/bin/env bash
+            set -o errexit
+            set -o nounset
+    
+    2.  Try to use the long form of options
+    
+    3.  Use Quotes around the variables
+    
+    4.  Don&rsquo;t write Programs (more than 100 lines of code => use python instead)
+    
+    5.  Give helpful error messages (<https://levelup.gitconnected.com/helpful-errors-in-bash-scripts-c1e3c2c50bf8>)
 
 
-<a id="org79a2d2e"></a>
+<a id="org843de71"></a>
 
 ### Databases
 
-1.  <https://medium.com/@rakyll/things-i-wished-more-developers-knew-about-databases-2d0178464f78>
+-   <https://medium.com/@rakyll/things-i-wished-more-developers-knew-about-databases-2d0178464f78>
+-   <https://stripe.com/en-de/blog/online-migrations>  - steps to migrate a huge production database while running in production
 
-2.  <https://stripe.com/en-de/blog/online-migrations>  - steps to migrate a huge production database while running in production
+-   Dual Writing: Write to both versions
+-   Copy offline snapshot data that was not updated while in the write to both sync process
+-   Change read paths: Read from new version
+-   Change write paths: Write only to new version, make sure that it only writes to new version, stop syncing
+-   Remove old data
 
-    -   Dual Writing: Write to both versions
-    -   Copy offline snapshot data that was not updated while in the write to both sync process
-    -   Change read paths: Read from new version
-    -   Change write paths: Write only to new version, make sure that it only writes to new version, stop syncing
-    -   Remove old data
+-   <https://medium.com/@rbranson/10-things-i-hate-about-postgresql-20dbab8c2791>
 
-3.  <https://medium.com/@rbranson/10-things-i-hate-about-postgresql-20dbab8c2791>
+A list with items where you need a skilled DBA to understand, but written good enough to understand to use a managed service where ever possible :-)
 
-    A list with items where you need a skilled DBA to understand, but written good enough to understand to use a managed service where ever possible :-)
-
-4.  <http://asvignesh.in/3-2-1-backup-strategy/>
-
-5.  <https://medium.com/scopedev/introduction-to-profiling-and-optimizing-sql-queries-for-software-engineers-3cf376ecc712>
-
-6.  <https://explain.depesz.com/>  - Tool: PostgreSQL&rsquo;s explain analyze made readable
+-   <http://asvignesh.in/3-2-1-backup-strategy/>
+-   <https://medium.com/scopedev/introduction-to-profiling-and-optimizing-sql-queries-for-software-engineers-3cf376ecc712>
+-   <https://explain.depesz.com/>  - Tool: PostgreSQL&rsquo;s explain analyze made readable
 
 
-<a id="org90f46da"></a>
+<a id="orgb2c5d01"></a>
 
 ## Data Science / ML / NLP     :DataScience:
 
 
-<a id="orgffd874f"></a>
+<a id="org4b4e867"></a>
 
 ### Misc
 
@@ -372,7 +389,7 @@
     Introductionary, but very well written text
 
 
-<a id="orgd88701e"></a>
+<a id="org3099690"></a>
 
 ### Interesting Analysis     :Analysis:
 
@@ -383,7 +400,7 @@
 -   <https://towardsdatascience.com/march-madness-analyze-video-to-detect-players-teams-and-who-attempted-the-basket-8cad67745b88>
 
 
-<a id="org6fdb93a"></a>
+<a id="orgf19291e"></a>
 
 ### Kaggle     :Kaggle:
 
@@ -391,7 +408,7 @@
 -   <https://towardsdatascience.com/a-story-of-my-first-gold-medal-in-one-kaggle-competition-things-done-and-lessons-learned-c269d9c233d1>
 
 
-<a id="orgc661e51"></a>
+<a id="orgb2b0459"></a>
 
 ### Team (Management, Hiring, Organization, &#x2026;)
 
@@ -406,7 +423,7 @@
 -   <https://towardsdatascience.com/how-to-screw-up-a-computer-vision-project-166dfcc44a5f>
 
 
-<a id="org4beb4ea"></a>
+<a id="orgda73949"></a>
 
 ### Optimizers / Learn Rates
 
@@ -415,7 +432,7 @@
 -   <https://towardsdatascience.com/self-paced-learning-for-machine-learning-f1c489316c61>
 
 
-<a id="org10579fa"></a>
+<a id="org9f35998"></a>
 
 ### Jupyter Notebooks
 
@@ -427,14 +444,14 @@
 -   <https://towardsdatascience.com/introduction-to-papermill-2c61f66bea30>  - How to transform your Jupyter Notebook into a workflow tool
 
 
-<a id="org1daec43"></a>
+<a id="org46db1b8"></a>
 
 ### Streamlit
 
 -   <https://towardsdatascience.com/how-to-deploy-a-streamlit-app-using-an-amazon-free-ec2-instance-416a41f69dc3>
 
 
-<a id="org09a55f3"></a>
+<a id="orgf078f48"></a>
 
 ### Pytorch/fastai
 
@@ -443,7 +460,7 @@
 -   <https://medium.com/huggingface/from-tensorflow-to-pytorch-265f40ef2a28> :PyTorch:tensorflow:
 
 
-<a id="orga6cfac2"></a>
+<a id="org4372809"></a>
 
 ### Datasets
 
@@ -477,7 +494,7 @@
 -   <https://www.si.edu/openaccess>  -  enthält 2D- und 3D-Darstellungen von kulturellen, wissenschaftlichen, historischen, künstlerischen, technischen und Design-Exponaten aus seinen 19 Museen, 9 Forschungszentren, Bibliotheken, Archiven und dem National Zoo. Hinzu kommen Forschungsdaten und Daten zu Sammlungen
 
 
-<a id="orgbff7a57"></a>
+<a id="org66c38a7"></a>
 
 ### Pandas     :Pandas:
 
@@ -489,7 +506,7 @@
 -   <https://towardsdatascience.com/geopandas-101-plot-any-data-with-a-latitude-and-longitude-on-a-map-98e01944b972> :Visualization:
 
 
-<a id="orge421b6e"></a>
+<a id="orga390f6c"></a>
 
 ### Data Annotation
 
@@ -497,7 +514,7 @@
     -   **Github:** <https://github.com/heartexlabs/label-studio>
 
 
-<a id="org74a6b07"></a>
+<a id="org4fe42a3"></a>
 
 ### Data Exploration / Feature Engineering
 
@@ -512,7 +529,7 @@
 -   <https://de.wikipedia.org/wiki/Shapiro-Wilk-Test>  -  Signifikanztest, der die Hypothese überprüft, dass die zugrunde liegende Grundgesamtheit einer Stichprobe normalverteilt
 
 
-<a id="orgefc0018"></a>
+<a id="orgc536e3c"></a>
 
 ### Data Testing
 
@@ -522,7 +539,7 @@
     they help you guard against upstream data changes and monitor data quality.
 
 
-<a id="org1a27db8"></a>
+<a id="orga84fbc9"></a>
 
 ### Data Visualization     :Visualization:
 
@@ -540,44 +557,36 @@
 -   <https://towardsdatascience.com/vis-amz-83dea6fcb059>  - Visualizing 100,000 Products Fast sentence embeddings (fse) for millions of reviews in only a few minutes. :NLP:
 
 
-<a id="org62a9a79"></a>
+<a id="orgeb14b9b"></a>
 
 ### NLP     :NLP:
 
 1.  Misc
 
-    1.  <https://towardsdatascience.com/state-of-the-art-multilingual-lemmatization-f303e8ff1a8>  - State-of-the-art Multilingual Lemmatization
-    
-    2.  <https://link.medium.com/kQI6IF7p5V>  - “HMTL: Multi-task learning for state of the art NLP” by Elvis
-    
+    -   <https://towardsdatascience.com/state-of-the-art-multilingual-lemmatization-f303e8ff1a8>  - State-of-the-art Multilingual Lemmatization
+    -   <https://link.medium.com/kQI6IF7p5V>  - “HMTL: Multi-task learning for state of the art NLP” by Elvis
+        
         including ELMO etc
     
-    3.  <https://www.analyticsvidhya.com/blog/2019/03/pretrained-models-get-started-nlp/>
-    
-    4.  <https://towardsdatascience.com/reliving-avengers-infinity-war-with-spacy-and-natural-language-processing-2abcb48e4ba1>  - Discovering the top nouns, verbs, entities and text similarity
-    
-    5.  <https://towardsdatascience.com/a-technique-for-building-nlp-classifiers-efficiently-with-transfer-learning-and-weak-supervision-a8e2f21ca9c8>
-    
-    6.  <https://towardsdatascience.com/fuzzy-matching-at-scale-84f2bfd0c536>  - Use tf-idf on substrings to make very, very fast fuzzy matching - clever trick
+    -   <https://www.analyticsvidhya.com/blog/2019/03/pretrained-models-get-started-nlp/>
+    -   <https://towardsdatascience.com/reliving-avengers-infinity-war-with-spacy-and-natural-language-processing-2abcb48e4ba1>  - Discovering the top nouns, verbs, entities and text similarity
+    -   <https://towardsdatascience.com/a-technique-for-building-nlp-classifiers-efficiently-with-transfer-learning-and-weak-supervision-a8e2f21ca9c8>
+    -   <https://towardsdatascience.com/fuzzy-matching-at-scale-84f2bfd0c536>  - Use tf-idf on substrings to make very, very fast fuzzy matching - clever trick
 
 2.  Chatbots
 
-    1.  <https://www.slideshare.net/farizbashirov>  - 8 do&rsquo;s and don&rsquo;t of chatbots
-    
-    2.  <https://medium.com/huggingface/how-to-build-a-state-of-the-art-conversational-ai-with-transfer-learning-2d818ac26313>
+    -   <https://www.slideshare.net/farizbashirov>  - 8 do&rsquo;s and don&rsquo;t of chatbots
+    -   <https://medium.com/huggingface/how-to-build-a-state-of-the-art-conversational-ai-with-transfer-learning-2d818ac26313>
 
 3.  Data Augmentation     :Augmentations:
 
-    1.  <https://towardsdatascience.com/data-augmentation-for-natural-language-processing-6ae928313a3f>
-    
-    2.  <https://towardsdatascience.com/these-are-the-easiest-data-augmentation-techniques-in-natural-language-processing-you-can-think-of-88e393fd610>
+    -   <https://towardsdatascience.com/data-augmentation-for-natural-language-processing-6ae928313a3f>
+    -   <https://towardsdatascience.com/these-are-the-easiest-data-augmentation-techniques-in-natural-language-processing-you-can-think-of-88e393fd610>
 
 4.  Tools
 
-    1.  <https://towardsdatascience.com/the-best-nlp-tools-of-early-2020-live-demos-b6f507b17b0a>
-    
-    2.  <http://www.nlpbuddy.io/>  - Open Source Text Analysis Tool (Website w/ Spacy Analysis)
-    
+    -   <https://towardsdatascience.com/the-best-nlp-tools-of-early-2020-live-demos-b6f507b17b0a>
+    -   <http://www.nlpbuddy.io/>  - Open Source Text Analysis Tool (Website w/ Spacy Analysis)
         -   Language
         -   Keywords
         -   Summary
@@ -590,180 +599,140 @@
         -   Noun chunks
         -   Sentences
     
-    3.  <http://gltr.io/dist/index.html>  - Giant Language model Test Room: detect whether a text could be real or fake
-    
+    -   <http://gltr.io/dist/index.html>  - Giant Language model Test Room: detect whether a text could be real or fake
+        
         Read also explanation about usage in <http://gltr.io/>
     
-    4.  <https://github.com/msg-systems/holmes-extractor>  - information extraction from English and German texts.
+    -   <https://github.com/msg-systems/holmes-extractor>  - information extraction from English and German texts.
     
-        In all use cases, the information extraction is based on analysing the semantic relationships expressed by the component parts of each sentence:
+    In all use cases, the information extraction is based on analysing the semantic relationships expressed by the component parts of each sentence:
     
-    5.  <https://talktotransformer.com/>  - See how a modern neural network completes your text.
+    -   <https://talktotransformer.com/>  - See how a modern neural network completes your text.
+    -   <https://towardsdatascience.com/text-classification-with-state-of-the-art-nlp-library-flair-b541d7add21f>
     
-    6.  <https://towardsdatascience.com/text-classification-with-state-of-the-art-nlp-library-flair-b541d7add21f>
+    -   <https://github.com/zalandoresearch/flair/>
     
-        -   <https://github.com/zalandoresearch/flair/>
-    
-    7.  <https://github.com/pytorch/fairseq>
+    -   <https://github.com/pytorch/fairseq>
 
 5.  Embeddings
 
-    1.  <https://towardsdatascience.com/document-embedding-techniques-fed3e7a6a25d>  - A review of notable literature on the topic
-    
-    2.  <https://nlp.stanford.edu/projects/glove/>  Global Vectors for Word Representation
-    
-    3.  <https://towardsdatascience.com/use-cases-of-googles-universal-sentence-encoder-in-production-dd5aaab4fc15>
-    
-    4.  <https://towardsdatascience.com/fse-2b1ffa791cf9>  - Sentence Embeddings. Fast, please!
+    -   <https://towardsdatascience.com/document-embedding-techniques-fed3e7a6a25d>  - A review of notable literature on the topic
+    -   <https://nlp.stanford.edu/projects/glove/>  Global Vectors for Word Representation
+    -   <https://towardsdatascience.com/use-cases-of-googles-universal-sentence-encoder-in-production-dd5aaab4fc15>
+    -   <https://towardsdatascience.com/fse-2b1ffa791cf9>  - Sentence Embeddings. Fast, please!
 
 6.  Metrics
 
-    1.  <https://towardsdatascience.com/evaluating-text-output-in-nlp-bleu-at-your-own-risk-e8609665a213>
-    
-    2.  <https://gluebenchmark.com/>  - General Language Understanding Evaluation (GLUE)
-    
+    -   <https://towardsdatascience.com/evaluating-text-output-in-nlp-bleu-at-your-own-risk-e8609665a213>
+    -   <https://gluebenchmark.com/>  - General Language Understanding Evaluation (GLUE)
+        
         nine sentence- or sentence-pair language understanding tasks built on established existing
         datasets and selected to cover a diverse range of dataset sizes, text genres, and degrees of
         difficulty
     
-    3.  <http://sjmielke.com/comparing-perplexities.htm>
-    
-    4.  <https://towardsdatascience.com/how-to-find-shortest-dependency-path-with-spacy-and-stanfordnlp-539d45d28239>
+    -   <http://sjmielke.com/comparing-perplexities.htm>
+    -   <https://towardsdatascience.com/how-to-find-shortest-dependency-path-with-spacy-and-stanfordnlp-539d45d28239>
 
 7.  Attention / Transformers / &#x2026;
 
-    1.  <https://github.com/sannykim/transformers>  - a collection of resources to study Transformers in depth
-    
-    2.  <https://medium.com/inside-machine-learning/what-is-a-transformer-d07dd1fbec04>
-    
-    3.  <http://nlp.seas.harvard.edu/2018/04/03/attention.html>  - annotated implementation of a transformer
-    
-    4.  <http://mostafadehghani.com/2019/05/05/universal-transformers/>
-    
-    5.  <https://medium.com/tensorflow/lingvo-a-tensorflow-framework-for-sequence-modeling-8b1d6ffba5bb>
-    
-    6.  <https://slator.com/technology/is-googles-new-lingvo-framework-a-big-deal-for-machine-translation/>
+    -   <https://github.com/sannykim/transformers>  - a collection of resources to study Transformers in depth
+    -   <https://medium.com/inside-machine-learning/what-is-a-transformer-d07dd1fbec04>
+    -   <http://nlp.seas.harvard.edu/2018/04/03/attention.html>  - annotated implementation of a transformer
+    -   <http://mostafadehghani.com/2019/05/05/universal-transformers/>
+    -   <https://medium.com/tensorflow/lingvo-a-tensorflow-framework-for-sequence-modeling-8b1d6ffba5bb>
+    -   <https://slator.com/technology/is-googles-new-lingvo-framework-a-big-deal-for-machine-translation/>
 
 8.  BERT
 
-    1.  <https://medium.com/synapse-dev/understanding-bert-transformer-attention-isnt-all-you-need-5839ebd396db>
-    
-    2.  <https://medium.com/@_init_/why-bert-has-3-embedding-layers-and-their-implementation-details-9c261108e28a>
-    
-    3.  <https://towardsdatascience.com/deconstructing-bert-distilling-6-patterns-from-100-million-parameters-b49113672f77>
-    
-    4.  <https://medium.com/hiredscore-engineering/introducing-octoml-73bd527491b1>  - makes it easy to use BERT
-    
-    5.  <https://towardsdatascience.com/xlm-enhancing-bert-for-cross-lingual-language-model-5aeed9e6f14b>
-    
-    6.  <https://towardsdatascience.com/a-review-of-bert-based-models-4ffdc0f15d58>
-    
-    7.  <https://x.ai/blog/the-unreasonable-effectiveness-of-neural-machine-translation-a-breakthrough-in-temporal-expression-understanding>  - Parse date times with NLP / Bert instead of traditional stacking
-    
-    8.  <https://towardsdatascience.com/train-and-deploy-mighty-transformer-nlp-models-using-fastbert-and-aws-sagemaker-cc4303c51cf3>     :AWS:DevOps:
-    
-    9.  <https://towardsdatascience.com/bert-for-dummies-step-by-step-tutorial-fb90890ffe03>
+    -   <https://medium.com/synapse-dev/understanding-bert-transformer-attention-isnt-all-you-need-5839ebd396db>
+    -   <https://medium.com/@_init_/why-bert-has-3-embedding-layers-and-their-implementation-details-9c261108e28a>
+    -   <https://towardsdatascience.com/deconstructing-bert-distilling-6-patterns-from-100-million-parameters-b49113672f77>
+    -   <https://medium.com/hiredscore-engineering/introducing-octoml-73bd527491b1>  - makes it easy to use BERT
+    -   <https://towardsdatascience.com/xlm-enhancing-bert-for-cross-lingual-language-model-5aeed9e6f14b>
+    -   <https://towardsdatascience.com/a-review-of-bert-based-models-4ffdc0f15d58>
+    -   <https://x.ai/blog/the-unreasonable-effectiveness-of-neural-machine-translation-a-breakthrough-in-temporal-expression-understanding>  - Parse date times with NLP / Bert instead of traditional stacking
+    -   <https://towardsdatascience.com/train-and-deploy-mighty-transformer-nlp-models-using-fastbert-and-aws-sagemaker-cc4303c51cf3> :AWS:DevOps:
+    -   <https://towardsdatascience.com/bert-for-dummies-step-by-step-tutorial-fb90890ffe03>
 
 9.  XLNet
 
-    1.  <https://towardsdatascience.com/what-is-xlnet-and-why-it-outperforms-bert-8d8fce710335>
-    
-    2.  <https://towardsdatascience.com/xlnet-a-clever-language-modeling-solution-ab41e87798b0>
-    
-    3.  <https://medium.com/dair-ai/xlnet-outperforms-bert-on-several-nlp-tasks-9ec867bb563b>
+    -   <https://towardsdatascience.com/what-is-xlnet-and-why-it-outperforms-bert-8d8fce710335>
+    -   <https://towardsdatascience.com/xlnet-a-clever-language-modeling-solution-ab41e87798b0>
+    -   <https://medium.com/dair-ai/xlnet-outperforms-bert-on-several-nlp-tasks-9ec867bb563b>
 
 
-<a id="orgd20b811"></a>
+<a id="orgf4c1968"></a>
 
 ### Computer Vision
 
 1.  Misc
 
-    1.  <https://medium.com/@CharlesOllion/whats-easy-hard-in-ai-computer-vision-these-days-e7679b9f7db7>
-    
-    2.  Good overview <https://towardsdatascience.com/deep-learning-for-image-classification-why-its-challenging-where-we-ve-been-and-what-s-next-93b56948fcef>
-    
+    -   <https://medium.com/@CharlesOllion/whats-easy-hard-in-ai-computer-vision-these-days-e7679b9f7db7>
+    -   Good overview <https://towardsdatascience.com/deep-learning-for-image-classification-why-its-challenging-where-we-ve-been-and-what-s-next-93b56948fcef>
+        
         Good overview
     
-    3.  Good list of architectures on <https://keras.io/applications> including default image sizes
+    -   Good list of architectures on <https://keras.io/applications> including default image sizes
+    -   <https://www.youtube.com/watch?v=fcnjHmBcLNQ>  - Short video showing Style transfer in Videos, super impressive
+    -   <https://medium.com/bethgelab/neural-networks-seem-to-follow-a-puzzlingly-simple-strategy-to-classify-images-f4229317261f> - ResNet are not much better:
     
-    4.  <https://www.youtube.com/watch?v=fcnjHmBcLNQ>  - Short video showing Style transfer in Videos, super impressive
-    
-    5.  <https://medium.com/bethgelab/neural-networks-seem-to-follow-a-puzzlingly-simple-strategy-to-classify-images-f4229317261f> - ResNet are not much better:
-    
-        than looking to tiny patches and sum up sum propabilities
-        that&rsquo;s why shuffling pictures is robust for resnet
-        but also why they are so sensitive to adversial networks
+    than looking to tiny patches and sum up sum propabilities
+    that&rsquo;s why shuffling pictures is robust for resnet
+    but also why they are so sensitive to adversial networks
 
 2.  Tools
 
-    1.  <https://medium.com/better-programming/beginners-guide-to-tesseract-ocr-using-python-10ecbb426c3d>  - Complete first tutorial including setting it up
-    
-    2.  <https://github.com/albu/albumentations>  - Library for fast and convenient image augmentations     :Augmentations:
-    
-    3.  <https://towardsdatascience.com/clean-up-your-own-model-data-without-leaving-jupyter-bdbcc9001734>  - Annotator tool ****Innotator**** for images inside jupyter
-    
-    4.  <https://github.com/tzutalin/labelImg>  - a graphical image annotation tool which saves in Pascal VOG or YOLO Format
-    
-    5.  <https://towardsdatascience.com/feature-visualisation-in-pytorch-saliency-maps-a3f99d08f78a>
-    
-    6.  <https://github.com/idealo/imagededup>  - python package that simplifies the task of finding exact and near duplicates in an image collection.
+    -   <https://medium.com/better-programming/beginners-guide-to-tesseract-ocr-using-python-10ecbb426c3d>  - Complete first tutorial including setting it up
+    -   <https://github.com/albu/albumentations>  - Library for fast and convenient image augmentations :Augmentations:
+    -   <https://towardsdatascience.com/clean-up-your-own-model-data-without-leaving-jupyter-bdbcc9001734>  - Annotator tool ****Innotator**** for images inside jupyter
+    -   <https://github.com/tzutalin/labelImg>  - a graphical image annotation tool which saves in Pascal VOG or YOLO Format
+    -   <https://towardsdatascience.com/feature-visualisation-in-pytorch-saliency-maps-a3f99d08f78a>
+    -   <https://github.com/idealo/imagededup>  - python package that simplifies the task of finding exact and near duplicates in an image collection.
 
 3.  Architectures
 
-    1.  Inception<sub>v4</sub> and predecessors: <https://towardsdatascience.com/review-inception-v4-evolved-from-googlenet-merged-with-resnet-idea-image-classification-5e8c339d18bc>
-    
-    2.  ResNext: <https://towardsdatascience.com/review-inception-v4-evolved-from-googlenet-merged-with-resnet-idea-image-classification-5e8c339d18bc>
-    
-    3.  Res2Net: <https://medium.com/@lessw/res2net-new-deep-learning-multi-scale-architecture-for-improved-object-detection-with-existing-de13095c9654>
+    -   Inception<sub>v4</sub> and predecessors: <https://towardsdatascience.com/review-inception-v4-evolved-from-googlenet-merged-with-resnet-idea-image-classification-5e8c339d18bc>
+    -   ResNext: <https://towardsdatascience.com/review-inception-v4-evolved-from-googlenet-merged-with-resnet-idea-image-classification-5e8c339d18bc>
+    -   Res2Net: <https://medium.com/@lessw/res2net-new-deep-learning-multi-scale-architecture-for-improved-object-detection-with-existing-de13095c9654>
 
 4.  U-Nets / Colorizing / Super-Resolution
 
-    1.  <https://blog.floydhub.com/colorizing-and-restoring-old-images-with-deep-learning/>  - with Self Attention GANs, has a github link included
-    
-    2.  <https://towardsdatascience.com/u-nets-with-resnet-encoders-and-cross-connections-d8ba94125a2c>
-    
-    3.  <https://towardsdatascience.com/deep-learning-based-super-resolution-without-using-a-gan-11c9bb5b6cd5>  - Super resolution with just a U-Net (trained from small images starting) and an impressive blog with lots of examples
-    
-    4.  <https://towardsdatascience.com/image-segmentation-kaggle-experience-9a41cb8924f0>     :Kaggle:
+    -   <https://blog.floydhub.com/colorizing-and-restoring-old-images-with-deep-learning/>  - with Self Attention GANs, has a github link included
+    -   <https://towardsdatascience.com/u-nets-with-resnet-encoders-and-cross-connections-d8ba94125a2c>
+    -   <https://towardsdatascience.com/deep-learning-based-super-resolution-without-using-a-gan-11c9bb5b6cd5>  - Super resolution with just a U-Net (trained from small images starting) and an impressive blog with lots of examples
+    -   <https://towardsdatascience.com/image-segmentation-kaggle-experience-9a41cb8924f0> :Kaggle:
 
 5.  Bounding Boxes
 
-    1.  <https://towardsdatascience.com/getting-started-with-bounding-box-regression-in-tensorflow-743e22d0ccb3>
-    
-    2.  <https://towardsdatascience.com/implementation-of-mean-average-precision-map-with-non-maximum-suppression-f9311eb92522>
-    
-    3.  <https://towardsdatascience.com/review-yolov3-you-only-look-once-object-detection-eab75d7a1ba6>
+    -   <https://towardsdatascience.com/getting-started-with-bounding-box-regression-in-tensorflow-743e22d0ccb3>
+    -   <https://towardsdatascience.com/implementation-of-mean-average-precision-map-with-non-maximum-suppression-f9311eb92522>
+    -   <https://towardsdatascience.com/review-yolov3-you-only-look-once-object-detection-eab75d7a1ba6>
 
 
-<a id="org0be0b39"></a>
+<a id="org415ee0c"></a>
 
 ### Time Series
 
-1.  Forecasting at scale: <https://facebook.github.io/prophet/>
-
-2.  <https://towardsdatascience.com/on-the-automation-of-time-series-forecasting-models-technical-and-organizational-considerations-286db3120c8e>
-
-3.  <https://towardsdatascience.com/anomaly-detection-time-series-4c661f6f165f> - Detect anomaly in time series with facebook Prophet
+-   Forecasting at scale: <https://facebook.github.io/prophet/>
+-   <https://towardsdatascience.com/on-the-automation-of-time-series-forecasting-models-technical-and-organizational-considerations-286db3120c8e>
+-   <https://towardsdatascience.com/anomaly-detection-time-series-4c661f6f165f> - Detect anomaly in time series with facebook Prophet
 
 
-<a id="orgc24c77a"></a>
+<a id="orgb91fd3b"></a>
 
 ### Deployments     :DevOps:
 
-1.  <https://towardsdatascience.com/chapter-1-intro-to-aws-sagemaker-a1ecf00ec761>     :AWS:
-
-2.  <https://medium.com/datadriveninvestor/deploy-your-pytorch-model-to-production-f69460192217>     :PyTorch:
-
-3.  <https://medium.com/@colinshaw_36798/fully-utilizing-your-deep-learning-gpus-61ee7acd3e57>
+-   <https://towardsdatascience.com/chapter-1-intro-to-aws-sagemaker-a1ecf00ec761> :AWS:
+-   <https://medium.com/datadriveninvestor/deploy-your-pytorch-model-to-production-f69460192217> :PyTorch:
+-   <https://medium.com/@colinshaw_36798/fully-utilizing-your-deep-learning-gpus-61ee7acd3e57>
 
 
-<a id="orgad56d8c"></a>
+<a id="org26eb598"></a>
 
 ## DevOps / Security
 
 
-<a id="org8d34b28"></a>
+<a id="orgfca8ee5"></a>
 
 ### Misc
 
@@ -801,7 +770,16 @@
     5.  Tell a (complete) story (not only for insiders)
 
 
-<a id="org6d772b6"></a>
+<a id="org329cedb"></a>
+
+### CI/CD-Pipeline
+
+-   <https://medium.com/swlh/gitlab-ci-docker-an-unorthodox-but-hopefully-useful-workflow-29a4149c8acb> -
+    builder docker image to compile, test and create artefacts and also to
+    generate an application container
+
+
+<a id="org2ea5fd0"></a>
 
 ### Cloud Provisioners
 
@@ -842,7 +820,7 @@
     -   <https://medium.com/swlh/setting-up-auth0-with-terraform-c93ae25cf2f9>
 
 
-<a id="orgcfca4b1"></a>
+<a id="org18735d2"></a>
 
 ### Site Reliability
 
@@ -869,7 +847,7 @@ including:
 -   <https://hackernoon.com/introduction-into-chaos-engineering-from-an-architects-perspective-kh5x3wkw>
 
 
-<a id="org9dec7c5"></a>
+<a id="org140d418"></a>
 
 ### Microservices / Serverless
 
@@ -883,7 +861,7 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
 -   <https://theburningmonk.com/2019/04/comparing-nuclio-and-aws-lambda/>
 
 
-<a id="org526ace1"></a>
+<a id="org98b0c4a"></a>
 
 ### Docker/Containers     :Docker:
 
@@ -1044,6 +1022,22 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
 3.  Docker Best Practices & Docker Security
 
     -   <https://medium.com/better-programming/docker-best-practices-and-anti-patterns-e7cbccba4f19>
+    -   <https://medium.com/@cwgem/thoughts-about-docker-security-8e0df4b43650>
+        -   Usage Of Official Images
+        -   Pull Signed Images
+        -   Docker Trusted Registry
+        -   Dockerd With User Namespaces (no privileged running)
+        -   Hyper-V Isolation (docker run -it &#x2013;isolation=hyperv &#x2026;)
+        -   Dockerfile Verification (docker history, dive, &#x2026;)
+        -   Basic Virus Scan (Create docker container without running, export it and scan the image)
+        -   Low Level Running Container Analysis (sysdig tool, let container for some
+            time and check what expected system and network calls and do the same in the
+            CI/CD pipeline)
+        -   Seccomp Profiles and Capabilities
+        -   CVE Scanning (e.g. via Clair)
+        -   CIS Benchmarks (CIS = Center for Internet Security) &#x2013;> look for tools similiar to docker-bench-security/kube-bench
+        -   Language Specific Package Scanning
+        -   Static Code Analysis
     -   <https://sec.sr2k.info/?p=211&lang=en>  - Docker Security Tools overview
     -   <https://towardsdatascience.com/top-20-docker-security-tips-81c41dd06f57> :Docker:
     -   <https://medium.com/faun/container-security-101-scanning-images-for-vulnerabilities-8030af2441ba>
@@ -1062,7 +1056,7 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
     -   <https://github.com/coord-e/magicpak>  - Build minimal docker images without static linking
 
 
-<a id="orgb357128"></a>
+<a id="org847eb4e"></a>
 
 ### Kubernetes     :Kubernetes:
 
@@ -1174,14 +1168,14 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
         6.  When It All Works, It’s Great
 
 
-<a id="orgfd3794a"></a>
+<a id="orge71e7f0"></a>
 
 ### SSH
 
 -   <https://yanaiela.github.io/post/remote-servers/>  - Make SSH great again (config, tunnelling, &#x2026;)
 
 
-<a id="org908a3cf"></a>
+<a id="org9b05bd1"></a>
 
 ### General Computer/Networking/&#x2026; Security     :Security:
 
@@ -1258,6 +1252,7 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
     
     > In summary, I would like to leave you with the message that whilst SaaS is not a silver bullet
       for cyber security, in many situations the security benefits outweigh the risks.
+-   <https://medium.com/@stestagg/stealing-secrets-from-developers-using-websockets-254f98d577a0>  - A browse up example: scanning localhost ports in the frontend
 -   <https://medium.com/viithiisys/10-steps-to-secure-linux-server-for-production-environment-a135109a57c5>  - <&#x2013; do this on a production server
 -   <https://www.digitalocean.com/community/tools/nginx>  - The easiest way to configure a performant, secure, and stable NGINX server.
     A web page to generate the nginx.conf as starting point following best practices (and still configurable)
@@ -1266,9 +1261,10 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
 -   <https://blog.usejournal.com/how-to-avoid-ruining-lives-front-end-security-matters-26d4f906c7a6>  - XSS and CSRF tokens
 -   <https://onezero.medium.com/how-to-totally-secure-your-smartphone-48b7a85a5ed8>
 -   <https://www.youtube.com/watch?v=k8FIDGmmYvs>  - How to break PDFs
+-   <https://medium.com/@joelgsamuel/ip-address-access-control-lists-are-not-as-great-as-you-think-they-are-4176b7d68f20>
 
 
-<a id="orgcc5a061"></a>
+<a id="org8d45f3c"></a>
 
 ### Security Tools
 
@@ -1279,7 +1275,7 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
     Video <https://www.youtube.com/watch?v=Bppr9rbmwz4>  - Attacking with HTTP Requests
 
 
-<a id="org6cedeed"></a>
+<a id="org8defec9"></a>
 
 ## Math     :Math:
 
