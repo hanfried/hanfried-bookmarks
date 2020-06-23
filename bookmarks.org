@@ -186,14 +186,14 @@ One of the subprojects is a seamless pandas scaling framework [[https://github.c
   - Reference
 - https://medium.com/better-programming/best-practices-for-versioning-an-api-for-rest-apis-530a9398f311
 - https://itnext.io/html-underrated-tags-119ef3e45b94
-  - <picture> :: to have alternative imgs depending on media without all the css/js mash
-  - <progress> :: progressbars just in plain html
-  - <base> :: don't forget it :-)
-  - <input type="..."> :: we have plain html date, datetime-local, month, week, time, color, range input types
-  - <details> :: includes <summary> and only clicking on details shows all, again pure html
-  - <mark> :: use it instead of <span class="..."> to mark something
-  - <abbr> :: easy to forget, but very useful
-  - <div contenteditable> :: to create an editable field (and get rid of textarea)
+  - picture :: to have alternative imgs depending on media without all the css/js mash
+  - progress :: progressbars just in plain html
+  - base :: don't forget it :-)
+  - input type="..." :: we have plain html date, datetime-local, month, week, time, color, range input types
+  - details :: includes <summary> and only clicking on details shows all, again pure html
+  - mark :: use it instead of <span class="..."> to mark something
+  - abbr :: easy to forget, but very useful
+  - div contenteditable :: to create an editable field (and get rid of textarea)
 - https://www.freecodecamp.org/news/rest-is-the-new-soap-97ff6c09896d/
 - https://medium.com/dailyjs/what-every-software-engineer-should-know-about-oauth-2-0-10f0ef4998e5
 
@@ -443,6 +443,7 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
     container and restart it with the same options that were used when it was
     deployed initially.
 - https://github.com/coord-e/magicpak  - Build minimal docker images without static linking
+- https://domm.plix.at/perl/2020_06_docker_prune_volumes_by_label.html
 
 *** Kubernetes :Kubernetes:
 **** Misc
