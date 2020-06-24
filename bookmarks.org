@@ -96,6 +96,7 @@
 
 - https://docs.quantifiedcode.com/python-anti-patterns/index.html
 - https://gist.github.com/sloria/7001839  - The Best of the Best Practices (BOBP) Guide for Python
+- https://medium.com/@cjolowicz/hypermodern-python-d44485d9d769
 - https://towardsdatascience.com/whats-init-for-me-d70a312da583  - Designing for Python package import patterns
 - https://instagram-engineering.com/static-analysis-at-scale-an-instagram-story-8f498ab71a0c  - Linters, Codemods, ...
 
@@ -293,6 +294,7 @@ A list with items where you need a skilled DBA to understand, but written good e
   4. Be blameless
   5. Tell a (complete) story (not only for insiders)
 *** CI/CD-Pipeline
+- https://aws.amazon.com/builders-library/automating-safe-hands-off-deployments/  - very detailed report from an amazon employee
 - https://medium.com/swlh/gitlab-ci-docker-an-unorthodox-but-hopefully-useful-workflow-29a4149c8acb -
   builder docker image to compile, test and create artefacts and also to
   generate an application container
