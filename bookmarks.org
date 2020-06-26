@@ -96,9 +96,9 @@
 
 - https://docs.quantifiedcode.com/python-anti-patterns/index.html
 - https://gist.github.com/sloria/7001839  - The Best of the Best Practices (BOBP) Guide for Python
-- 1. https://medium.com/@cjolowicz/hypermodern-python-d44485d9d769
-  1. https://medium.com/@cjolowicz/hypermodern-python-2-testing-ae907a920260
-  2.
+- https://medium.com/@cjolowicz/hypermodern-python-d44485d9d769
+  - https://medium.com/@cjolowicz/hypermodern-python-2-testing-ae907a920260
+  - https://medium.com/@cjolowicz/hypermodern-python-3-linting-e2f15708da80
 - https://towardsdatascience.com/whats-init-for-me-d70a312da583  - Designing for Python package import patterns
 - https://instagram-engineering.com/static-analysis-at-scale-an-instagram-story-8f498ab71a0c  - Linters, Codemods, ...
 
