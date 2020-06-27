@@ -104,6 +104,8 @@
 
 **** Modules
 
+***** Misc
+
 - https://www.youtube.com/watch?v=GIF3LaRqgXo  - Publishing (Perfect) Python Packages on PyPi
 - https://github.com/vinta/awesome-python  - A curated list of awesome Python frameworks, libraries, software and resources.
 - https://towardsdatascience.com/the-most-underrated-python-packages-e22bf6049b5e
@@ -123,24 +125,30 @@
   Also, this library is intended to make Python logging less painful by adding a bunch of useful
   functionalities that solve caveats of the standard loggers. Using logs in your application
   should be an automatism, Loguru tries to make it both pleasant and powerful.
+- https://github.com/tiangolo/fastapi  - framework, high performance, easy to learn, fast to code, ready for production
+- https://medium.com/better-programming/python-celery-best-practices-ae182730bb81
+
+***** Code Quality/CI
 - https://tox.readthedocs.io/en/latest/  - standardize testing in Python
 - https://github.com/rubik/radon and https://github.com/rubik/xenon  - measure and test program complexity
-- https://github.com/tiangolo/fastapi  - framework, high performance, easy to learn, fast to code, ready for production
+- https://github.com/asottile/reorder_python_imports
+***** Typing
+- https://google.github.io/pytype/  - checks and infers types for your Python code - without requiring type annotations
+- https://github.com/agronholm/typeguard  - Run-time type checker for Python
+- https://github.com/python-discord/flake8-annotations  - Flake8 Type Annotation Checking
+- https://github.com/samuelcolvin/pydantic/  - Data validation and settings management using Python type hinting
+- https://github.com/python-desert/desert  - generates serialization schemas for dataclasses and attrs classes
+***** Data Science
 - https://towardsdatascience.com/an-overview-of-pythons-datatable-package-5d3a97394ee9
 - https://github.com/ray-project/ray  - seems to be an elegant alternative to celery
-
 - Blog https://towardsdatascience.com/modern-parallel-and-distributed-python-a-quick-tutorial-on-ray-99f8d70369b8
 - Documentation https://ray.readthedocs.io/en/latest/index.html
+    I'm not completely sure about the differences,
+    but it looks it's much easier to setup and maintain.
+    Also, the DAG handling is nicer on first look.
 
-I'm not completely sure about the differences,
-but it looks it's much easier to setup and maintain.
-Also, the DAG handling is nicer on first look.
-
-One of the subprojects is a seamless pandas scaling framework [[https://github.com/modin-project/modin][modin]]!
-
-- https://medium.com/better-programming/python-celery-best-practices-ae182730bb81
+    One of the subprojects is a seamless pandas scaling framework [[https://github.com/modin-project/modin][modin]]!
 - https://github.com/modin-project/modin  - scale your pandas workflows by changing one line of code
-
 **** Debugging
 
 - https://github.com/benfred/py-spy
@@ -467,11 +475,18 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
   5. Use service mesh
   6. Be open for framework specific solutions
   7. Be prepared for rollback
+- https://itnext.io/before-you-use-kustomize-eaa9529cdd19  - Advantages/Disadvantages of Kustomize vs Helm
 **** Linters
 
 - https://github.com/instrumenta/kubeval/
 - https://helm.sh/docs/helm/helm_lint
+- https://sonobuoy.io/ - diagnostic tool that makes it easier to understand the
+  state of a Kubernetes cluster by running a choice of configuration tests in an
+  accessible and non-destructive manner
 
+  - Conformance Testing
+  - Workload Debugging
+  - Custom Tests and Data Collection
 **** Kubernetes Security :Security:
 - https://kubernetes-security.info/                            :Security:
 - https://devops.com/how-to-secure-your-kubernetes-cluster-on-gke/ :Security:
@@ -516,6 +531,7 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
 
 - https://itnext.io/utilize-jenkins-in-an-auto-scaling-kubernetes-deployment-on-amazon-eks-with-spot-instances-f9159df00aee
 - https://itnext.io/building-a-kubernetes-ci-cd-pipeline-on-aws-with-codepipeline-codebuild-shopgun-43ccf76277b5
+- https://medium.com/swlh/universal-cicd-pipeline-on-aws-and-k8s-7b4129fac5d4
 
 **** HowTo-Guides (Kubeconfig, GCP, Rancher, KIND, Private Container Registry)
 - https://ahmet.im/blog/mastering-kubeconfig/
@@ -523,6 +539,7 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
 - https://medium.com/@jmrobles/how-to-create-a-kubernetes-cluster-with-rancher-on-hetzner-3b2f7f0c037a
 - https://medium.com/@kgamanji/customise-your-kind-clusters-networking-layer-1249e7916100
 - https://medium.com/faun/private-container-registry-on-kubernetes-78118a62a9c8  - backed by S3
+- https://insights.project-a.com/using-github-actions-to-deploy-to-kubernetes-122c653c0b09
 **** Monitoring
 
 - https://tech.showmax.com/2019/10/prometheus-introduction/
@@ -770,6 +787,7 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
 
 *** Data Exploration / Feature Engineering
 
+- https://towardsdatascience.com/25-hot-new-data-tools-and-what-they-dont-do-31bf23bd8e56
 - https://towardsdatascience.com/annotated-heatmaps-in-5-simple-steps-cc2a0660a27d
 - https://github.com/pandas-profiling/pandas-profiling  - Generates profile reports from a pandas DataFrame. :Pandas:
   The pandas df.describe() function is great but a little basic for serious exploratory data analysis.
@@ -881,6 +899,13 @@ In all use cases, the information extraction is based on analysing the semantic 
 - https://x.ai/blog/the-unreasonable-effectiveness-of-neural-machine-translation-a-breakthrough-in-temporal-expression-understanding  - Parse date times with NLP / Bert instead of traditional stacking
 - https://towardsdatascience.com/train-and-deploy-mighty-transformer-nlp-models-using-fastbert-and-aws-sagemaker-cc4303c51cf3 :AWS:DevOps:
 - https://towardsdatascience.com/bert-for-dummies-step-by-step-tutorial-fb90890ffe03
+- https://medium.com/roblox-tech-blog/how-we-scaled-bert-to-serve-1-billion-daily-requests-on-cpus-d99be090db26
+  Using CPUs for Production Inference obviously
+  - Thread Tuning :: torch.set_num_threads(1), so multiple workers in the framework don't fight for different CPU cores
+  - Smaller Model :: DistilBert
+  - Smaller Inputs :: Dynamic Shapes, no zero paddings needed if batch size for inference is just 1
+  - Smaller Weights :: Dynamic Quantization (down to 8bit ints!!)
+  - Smaller Nr of Requests :: by caching (they got 40% cache hit!)
 **** XLNet
 - https://towardsdatascience.com/what-is-xlnet-and-why-it-outperforms-bert-8d8fce710335
 - https://towardsdatascience.com/xlnet-a-clever-language-modeling-solution-ab41e87798b0
