@@ -99,6 +99,8 @@
 - https://medium.com/@cjolowicz/hypermodern-python-d44485d9d769
   - https://medium.com/@cjolowicz/hypermodern-python-2-testing-ae907a920260
   - https://medium.com/@cjolowicz/hypermodern-python-3-linting-e2f15708da80
+  - https://medium.com/@cjolowicz/hypermodern-python-4-typing-31bcf12314ff
+  - https://medium.com/@cjolowicz/hypermodern-python-5-documentation-13219991028c
 - https://towardsdatascience.com/whats-init-for-me-d70a312da583  - Designing for Python package import patterns
 - https://instagram-engineering.com/static-analysis-at-scale-an-instagram-story-8f498ab71a0c  - Linters, Codemods, ...
 
@@ -127,11 +129,18 @@
   should be an automatism, Loguru tries to make it both pleasant and powerful.
 - https://github.com/tiangolo/fastapi  - framework, high performance, easy to learn, fast to code, ready for production
 - https://medium.com/better-programming/python-celery-best-practices-ae182730bb81
+- https://github.com/seatgeek/fuzzywuzzy  -  Fuzzy String Matching in Python (useful for CLI help and similar)
 
 ***** Code Quality/CI
 - https://tox.readthedocs.io/en/latest/  - standardize testing in Python
 - https://github.com/rubik/radon and https://github.com/rubik/xenon  - measure and test program complexity
 - https://github.com/asottile/reorder_python_imports
+- https://github.com/PyCQA/flake8-bugbear
+- https://github.com/PyCQA/bandit
+- https://gitlab.com/pycqa/flake8-docstrings
+- https://github.com/terrencepreilly/darglint  - checks that the docstring description matches the definition
+- https://github.com/Erotemic/xdoctest - runs the examples in your docstrings
+  and compares the actual output to the expected output as per the docstring
 ***** Typing
 - https://google.github.io/pytype/  - checks and infers types for your Python code - without requiring type annotations
 - https://github.com/agronholm/typeguard  - Run-time type checker for Python
@@ -149,6 +158,7 @@
 
     One of the subprojects is a seamless pandas scaling framework [[https://github.com/modin-project/modin][modin]]!
 - https://github.com/modin-project/modin  - scale your pandas workflows by changing one line of code
+- https://github.com/8080labs/ppscore  - Predictive Power Score (PPS) instead of correlation matrices
 **** Debugging
 
 - https://github.com/benfred/py-spy
@@ -209,12 +219,17 @@
 - https://medium.com/dailyjs/what-every-software-engineer-should-know-about-oauth-2-0-10f0ef4998e5
 
 *** Git / GitHub / Versioning
+**** Misc
 
 - https://ohshitgit.com/
-- https://github.com/timqian/star-history
- (1.0.0 -> 1.0.1 bugfix -> 1.1.0 new functionality -> ... -> 2.0.0 backward incompatible breaking change)
 - https://semver.org/spec/v2.0.0.html  - Semantic versioning
 - https://github.com/github/semantic/blob/master/docs/examples.md  - Haskell library and command line tool for parsing, analyzing, and comparing source code
+- https://github.com/timqian/star-history
+ (1.0.0 -> 1.0.1 bugfix -> 1.1.0 new functionality -> ... -> 2.0.0 backward incompatible breaking change)
+- https://mogron.github.io/blog/github-star-analysis/
+
+**** Best Practices / Linters
+
 - https://levelup.gitconnected.com/5-best-practices-to-prevent-git-leaks-4997b96c1cbe
 - https://github.com/thoughtworks/talisman - By hooking into the pre-push hook
   provided by Git, Talisman validates the outgoing changeset for things that
@@ -316,7 +331,7 @@ A list with items where you need a skilled DBA to understand, but written good e
 
 **** AWS
 
-- https://medium.com/swlh/so-you-inherited-an-aws-account-e5fe6550607d  - Secure an existing AWS Account (more or less complete checklist)
+- https://adayinthelifeof.nl/2020/05/20/aws.html  - Nice, simple list of all AWS Web Services (May 2020)
 - https://medium.com/teamzerolabs/5-aws-services-you-should-avoid-f45111cc10cd
   1. Cognito (User Management/Mobile Login)
      - No Mobile
@@ -333,22 +348,40 @@ A list with items where you need a skilled DBA to understand, but written good e
      - great to handle triggers (like update to s3 or w/e)
      - terrible to run http rest endpoints (no solid monitoring, logging, unclear environment it's running and so on)
        -> just use a real framework like flask, fastapi, django w/e or kubeless
+- https://medium.com/swlh/so-you-inherited-an-aws-account-e5fe6550607d  - Secure an existing AWS Account (more or less complete checklist)
 - https://towardsdatascience.com/best-practices-for-securing-aws-ec2-instances-4bd656e22462
 - https://github.com/rebuy-de/aws-nuke
 - https://ncona.com/2020/05/setting-up-a-bastion-host-on-aws/
 - https://medium.com/@kapalesachin/all-about-aws-vpc-47faf4114240
 
 **** Terraform
+***** Misc
 
 - https://medium.com/swlh/design-principles-and-practices-for-terraform-276b2c463563
-- https://github.com/terraform-linters/tflint  - linter for terraform, e.g. catch wrong machine type before deploying
 - https://medium.com/faun/invoking-the-aws-cli-with-terraform-4ae5fd9de277
 - https://medium.com/swlh/setting-up-auth0-with-terraform-c93ae25cf2f9
 - https://github.com/cycloidio/terracognita - Reads from existing Cloud
   Providers (reverse Terraform) and generates your infrastructure as code on
   Terraform configuration
 
+***** Linters / Code quality
+- https://medium.com/faun/terraform-code-quality-66e6468f50f3
+- https://github.com/terraform-linters/tflint  - linter for terraform, e.g. catch wrong machine type before deploying
+- https://github.com/liamg/tfsec  - Static analysis powered security scanner for your terraform code
+- https://github.com/eerkunt/terraform-compliance  - a lightweight, security focused, BDD test framework against terraform
+  - mainly focuses on negative testing instead of having fully-fledged
+    functional tests
+
+  - E.g. a sample policy could be, if you are working with AWS, you should not
+    create an S3 bucket, without having any encryption. Of course, this is just
+    an example which may or not be applicable for your case.
+- https://github.com/inspec/inspec  - Auditing and Testing Framework (is compliance as code)
+  - focusing on positive auditing rules in a ruby like test spec format
+  - works also for other infrastructure elements, not only terraform
+- https://github.com/gruntwork-io/terratest  - write integration tests for the cloud in unit test style
+
 *** Site Reliability
+**** Misc
 
 - https://medium.com/@rahatshaikh/cloud-design-patterns-explained-simply-113c788b33ff  - Cloud Design Patterns
 
@@ -361,15 +394,21 @@ including:
 - Sidecar :: Co-locate Monitoring, Logging, ...
 
 - https://www.oreilly.com/ideas/how-to-get-started-with-site-reliability-engineering-sre
+- https://hackernoon.com/introduction-into-chaos-engineering-from-an-architects-perspective-kh5x3wkw
+ 
+**** Incident Management / Alerting
+
 - https://medium.com/kudos-engineering/faking-fires-get-better-incident-management-with-practise-e61a5d66578d
 - https://uptime.com/blog/got-game-secrets-of-great-incident-management
 - https://shubheksha.com/posts/2019/04/re-framing-how-we-think-about-production-incidents/
+- https://thechief.io/c/blameless/best-practices-effective-incident-management/
 - https://developers.soundcloud.com/blog/alerting-on-slos
+
+**** Deployment Strategies
 - https://charity.wtf/2019/05/01/friday-deploy-freezes-are-exactly-like-murdering-puppies/
 - https://hackernoon.com/deploy-on-fridays-or-dont-qg2y32jk
 - https://blog.turbinelabs.io/deploy-not-equal-release-part-one-4724bc1e726b
 - https://medium.com/@copyconstruct/testing-in-production-the-safe-way-18ca102d0ef1
-- https://hackernoon.com/introduction-into-chaos-engineering-from-an-architects-perspective-kh5x3wkw
 
 *** Microservices / Serverless
 
@@ -419,6 +458,7 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
 - https://github.com/docker/docker-bench-security
 - https://github.com/goodwithtech/dockle
 - https://github.com/aquasecurity/trivy
+- https://github.com/anchore/anchore-engine
 
 **** Docker Best Practices & Docker Security
 
@@ -443,7 +483,7 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
 - https://towardsdatascience.com/top-20-docker-security-tips-81c41dd06f57 :Docker:
 - https://medium.com/faun/container-security-101-scanning-images-for-vulnerabilities-8030af2441ba
 - https://boxboat.com/2020/04/24/image-scanning-tech-compared/
-
+  tldr; When in doubt, use trivy (comparing Clair vs Anchore vs Trivy)
 **** Tools
 
 - https://codeopolis.com/posts/6-docker-utilities-everyone-should-try/
@@ -566,6 +606,7 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
 *** SSH
 
 - https://yanaiela.github.io/post/remote-servers/  - Make SSH great again (config, tunnelling, ...)
+- https://medium.com/maverislabs/proxyjump-the-ssh-option-you-probably-never-heard-of-2d7e41d43464
 
 *** General Computer/Networking/... Security :Security:
 **** Misc
@@ -961,4 +1002,5 @@ but also why they are so sensitive to adversial networks
 - https://towardsdatascience.com/simpsons-paradox-d2f4d8f08d42
 - https://towardsdatascience.com/the-inspection-paradox-is-everywhere-2ef1c2e9d709 :Statistical:
 - https://towardsdatascience.com/a-b-testing-is-there-a-better-way-an-exploration-of-multi-armed-bandits-98ca927b357d  - Overview of different algorithms for Multi Armed Bandits
-
+- https://towardsdatascience.com/rip-correlation-introducing-the-predictive-power-score-3d90808b9598  - Better way to find correlation instead of correlation matrices
+  Main advantage to something like Mutual Information Score is that it can also applied to categorical variables
