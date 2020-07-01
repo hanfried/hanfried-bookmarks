@@ -101,6 +101,7 @@
   - https://medium.com/@cjolowicz/hypermodern-python-3-linting-e2f15708da80
   - https://medium.com/@cjolowicz/hypermodern-python-4-typing-31bcf12314ff
   - https://medium.com/@cjolowicz/hypermodern-python-5-documentation-13219991028c
+  - https://medium.com/@cjolowicz/hypermodern-python-6-ci-cd-b233accfa2f6
 - https://towardsdatascience.com/whats-init-for-me-d70a312da583  - Designing for Python package import patterns
 - https://instagram-engineering.com/static-analysis-at-scale-an-instagram-story-8f498ab71a0c  - Linters, Codemods, ...
 
@@ -872,6 +873,11 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
 - https://towardsdatascience.com/reliving-avengers-infinity-war-with-spacy-and-natural-language-processing-2abcb48e4ba1  - Discovering the top nouns, verbs, entities and text similarity
 - https://towardsdatascience.com/a-technique-for-building-nlp-classifiers-efficiently-with-transfer-learning-and-weak-supervision-a8e2f21ca9c8
 - https://towardsdatascience.com/fuzzy-matching-at-scale-84f2bfd0c536  - Use tf-idf on substrings to make very, very fast fuzzy matching - clever trick
+**** Summarisation
+- https://towardsdatascience.com/automatic-text-summarisation-ccc98d2b323f  - Condensing with TextRank
+  TextRank works similar to PageRank with the idea of:
+  - Sentences instead of Pages
+  - TextSimilarity instead of Links
 **** Chatbots
 - https://www.slideshare.net/farizbashirov  - 8 do's and don't of chatbots
 - https://medium.com/huggingface/how-to-build-a-state-of-the-art-conversational-ai-with-transfer-learning-2d818ac26313
@@ -994,6 +1000,8 @@ but also why they are so sensitive to adversial networks
 - https://towardsdatascience.com/chapter-1-intro-to-aws-sagemaker-a1ecf00ec761 :AWS:
 - https://medium.com/datadriveninvestor/deploy-your-pytorch-model-to-production-f69460192217 :PyTorch:
 - https://medium.com/@colinshaw_36798/fully-utilizing-your-deep-learning-gpus-61ee7acd3e57
+** Data Engineering
+- [[https://docs.google.com/spreadsheets/d/1VcIk_enQ5wefkbRWAoSpy3ZZux5-WgSPipqVLuNsjcA/edit#gid=0][The Awesome Kafka Resources]]
 ** Math :Math:
 
 - https://de.wikipedia.org/wiki/Braess-Paradoxon
