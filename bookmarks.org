@@ -70,13 +70,7 @@
   - https://www.infoq.com/presentations/moore-law-expiring/
   - https://www.youtube.com/watch?v=Mj5P47F6nJg  - Structured concurrency
 - https://levelup.gitconnected.com/why-rewriting-applications-from-scratch-is-almost-always-a-bad-idea-5402d1715006
-- https://towardsdatascience.com/9-time-saving-tricks-for-your-command-line-c7535f1aa648
-  - !! :: reexecutes last command
-  - !foo :: reexecute last command with foo
-  - !$ :: access arguments of last command
-  - Ctrl+a :: hop to beginning of line
-  - Ctrl+e :: hop to end of line
-  - Ctrl+k :: delete everything from cursor to end of line
+- https://glitch.com/  - Coding together in a collaborative way
    
 *** Team Management
 
@@ -218,6 +212,7 @@
   - div contenteditable :: to create an editable field (and get rid of textarea)
 - https://www.freecodecamp.org/news/rest-is-the-new-soap-97ff6c09896d/
 - https://medium.com/dailyjs/what-every-software-engineer-should-know-about-oauth-2-0-10f0ef4998e5
+- https://medium.com/100-days-of-linux/10-curl-commands-that-you-should-know-ee3d032eb351
 
 *** Git / GitHub / Versioning
 **** Misc
@@ -242,11 +237,11 @@
 
 *** Shell/Bash/Zsh
 
-+ https://www.shellcheck.net/  - a static analysis tool for shell scripts
-+ https://kvz.io/bash-best-practices.html
-+ https://blog.yossarian.net/2020/01/23/Anybody-can-write-good-bash-with-a-little-effort
-+ https://arslan.io/2019/07/03/how-to-write-idempotent-bash-scripts/
-+ https://medium.com/better-programming/top-tips-for-writing-unsurprising-bash-scripts-9b9f4f0cc30e
+- https://www.shellcheck.net/  - a static analysis tool for shell scripts
+- https://kvz.io/bash-best-practices.html
+- https://blog.yossarian.net/2020/01/23/Anybody-can-write-good-bash-with-a-little-effort
+- https://arslan.io/2019/07/03/how-to-write-idempotent-bash-scripts/
+- https://medium.com/better-programming/top-tips-for-writing-unsurprising-bash-scripts-9b9f4f0cc30e
   1. Tell Bash to Run in Safe Mode
      #+BEGIN_SRC sh
 # start your script with
@@ -266,6 +261,13 @@ set -o nounset
   4. Don't write Programs (more than 100 lines of code => use python instead)
 
   5. Give helpful error messages (https://levelup.gitconnected.com/helpful-errors-in-bash-scripts-c1e3c2c50bf8)
+- https://towardsdatascience.com/9-time-saving-tricks-for-your-command-line-c7535f1aa648
+  - !! :: reexecutes last command
+  - !foo :: reexecute last command with foo
+  - !$ :: access arguments of last command
+  - Ctrl+a :: hop to beginning of line
+  - Ctrl+e :: hop to end of line
+  - Ctrl+k :: delete everything from cursor to end of line
 
 *** Databases
 - https://medium.com/@rakyll/things-i-wished-more-developers-knew-about-databases-2d0178464f78
