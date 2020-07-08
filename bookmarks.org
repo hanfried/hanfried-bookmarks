@@ -129,6 +129,7 @@ Nowhere complete, nowhere top selected per se, but some are interesting, so let'
   functionalities that solve caveats of the standard loggers. Using logs in your application
   should be an automatism, Loguru tries to make it both pleasant and powerful.
 - https://github.com/tiangolo/fastapi  - framework, high performance, easy to learn, fast to code, ready for production
+- https://github.com/tiangolo/typer  - build great CLIs. Easy to code. Based on Python type hints.
 - https://medium.com/better-programming/python-celery-best-practices-ae182730bb81
 - https://github.com/seatgeek/fuzzywuzzy  -  Fuzzy String Matching in Python (useful for CLI help and similar)
 
@@ -344,6 +345,7 @@ A list with items where you need a skilled DBA to understand, but written good e
 - https://medium.com/swlh/gitlab-ci-docker-an-unorthodox-but-hopefully-useful-workflow-29a4149c8acb -
   builder docker image to compile, test and create artefacts and also to
   generate an application container
+- https://github.com/nektos/act  - Run your GitHub Actions locally
 *** Cloud Provisioners
 **** For all platforms
 
