@@ -316,7 +316,6 @@ A list with items where you need a skilled DBA to understand, but written good e
   8. Non-Production Environments Have Diminishing Returns
   9. Things Will Always Break
 - http://onemogin.com/observability/dashboards/practitioners-guide-to-system-dashboard-design.html
-- https://medium.com/anton-on-security/retaining-logs-for-a-year-boring-or-useful-70ea21fa3dda
 - https://thechief.io/c/blameless/5-best-practices-nailing-incident-retrospectives/
   1. Use visuals in your postmortems
      Graphs like when the incidents happened
@@ -329,6 +328,16 @@ A list with items where you need a skilled DBA to understand, but written good e
      - Otherwise people thing everything is out of control and fill the gap with (miserable) products you don't want
   4. Be blameless
   5. Tell a (complete) story (not only for insiders)
+
+*** Logging
+
+- https://medium.com/anton-on-security/retaining-logs-for-a-year-boring-or-useful-70ea21fa3dda
+- https://github.com/timberio/vector  - lightweight, ultra-fast, open-source tool for building observability pipelines
+  - to replace Logstash, Fluent*, Telegraf, Beats, or similar tools
+  - as a daemon or sidecar.
+  - as a Kafka consumer/producer for observability data.
+  - in resource constrained environments (such as devices)
+
 *** Monorepo vs Multirepo
 
 - https://www.rookout.com/cant-git-no-satisfaction-why-we-need-a-new-gen-source-control/  - Advantages/Disadvantages of Monorepo vs Multirepo
