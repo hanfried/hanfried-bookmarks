@@ -50,6 +50,42 @@
 *** Misc
 
 - https://medium.com/swlh/62-lessons-from-50-years-of-software-experience-2db0f400f706  - *READ AND APPLY THEM*
+- https://medium.com/@karlwiegers/growing-a-culture-of-software-quality-eb39a090e76b  - Interview about code reviews
+  Excerpt:
+  - One obvious indicator is a lack of customer satisfaction. But you don’t want
+    to wait until after delivery to discover quality problems. That’s one
+    advantage of agile approaches. Some working software is delivered
+    periodically so you can begin collecting that feedback and make appropriate
+    course corrections.
+  - Few organizations measure how much of their total effort is spent on rework,
+    both during development and post-delivery. If you do measure that, you could
+    get a pretty scary number.
+  - In a healthy software engineering culture, quality is a priority for all
+    team members and managers. One cultural principle of a group I led was that
+    we prefer to have a peer, rather than a customer, find a defect.
+  - “You can pay me now, or you can pay me a lot more later.”
+  - The best software engineer I ever knew got nervous if he couldn’t find
+    people to review his code.
+  - I would never want to work in an organization in which peer reviews were not
+    a standard part of the culture.
+  - Invite people to review your work early and often, formally and informally.
+  - If someone reviews 1000 lines of your code and suggests some better
+    approaches, you’re probably not going to go back and incorporate all those
+    changes.
+  - The other reason for reviewing before you think you’re done is
+    psychological. When you think something is finished, you really don’t want
+    someone to tell you that it’s not. You can have a lot of psychological
+    resistance to review input at that point, because you’re ready to move on to
+    the next task. It’s easy to push back against any suggestions for changes.
+    This is not a constructive attitude toward peer reviews or a good use of a
+    reviewer’s time.
+  - If someone walks out of a review feeling beat up and swears that they’re
+    never going to go through that again, that’s definitely not a sign of a good
+    review process in a healthy culture.
+  - Each of us must reach a point where not only are we comfortable soliciting
+    input on our work, but we actually become uncomfortable if we haven’t had
+    others examine what we’ve created before we inflict it on an unsuspecting
+    world.
 - https://www.usecue.com/blog/code-warriors/
   A true warrior masters his sword and his mind. A ‘code warrior’ masters his software and his
   system. Mastering your software is not the most difficult part, just read the quick-start and
@@ -221,6 +257,9 @@ Nowhere complete, nowhere top selected per se, but some are interesting, so let'
 - https://www.freecodecamp.org/news/rest-is-the-new-soap-97ff6c09896d/
 - https://medium.com/dailyjs/what-every-software-engineer-should-know-about-oauth-2-0-10f0ef4998e5
 - https://medium.com/100-days-of-linux/10-curl-commands-that-you-should-know-ee3d032eb351
+*** Golang
+
+- https://towardsdatascience.com/ultimate-setup-for-your-next-golang-project-1cc989ad2a96
 
 *** Git / GitHub / Versioning
 **** Misc
@@ -396,6 +435,7 @@ A list with items where you need a skilled DBA to understand, but written good e
 - https://medium.com/swlh/design-principles-and-practices-for-terraform-276b2c463563
 - https://medium.com/faun/invoking-the-aws-cli-with-terraform-4ae5fd9de277
 - https://medium.com/swlh/setting-up-auth0-with-terraform-c93ae25cf2f9
+- https://blog.gruntwork.io/a-comprehensive-guide-to-managing-secrets-in-your-terraform-code-1d586955ace1
 - https://github.com/cycloidio/terracognita - Reads from existing Cloud
   Providers (reverse Terraform) and generates your infrastructure as code on
   Terraform configuration
