@@ -371,6 +371,17 @@ A list with items where you need a skilled DBA to understand, but written good e
 *** Logging
 
 - https://medium.com/anton-on-security/retaining-logs-for-a-year-boring-or-useful-70ea21fa3dda
+- https://medium.com/faun/12-critical-linux-log-files-to-monitor-bd4a20f91a55
+  - /var/log/messages
+  - /var/log/auth.log
+  - /var/log/secure  # on RHEL/CentOS
+  - /var/log/boot.log
+  - /var/log/dmesg  - core ring buffer messages
+  - /var/log/kern.log
+  - /var/log/faillog  - failed login attempts
+  - /var/log/yum.log  # on RHEL/CentOS
+  - /var/log/httpd
+  - mentioned in the article also, but somehow obsolete (maillog and mysql logs)
 - https://github.com/timberio/vector  - lightweight, ultra-fast, open-source tool for building observability pipelines
   - to replace Logstash, Fluent*, Telegraf, Beats, or similar tools
   - as a daemon or sidecar.
@@ -397,6 +408,10 @@ A list with items where you need a skilled DBA to understand, but written good e
 *** Cloud Provisioners
 **** For all platforms
 
+- http://blog.drgriffin.com.au/posts/2020-06-21-the-three-fs-of-cloud-pricing.html
+  - Free Tier
+  - F-you zone: minimize costs as early as possible
+  - F-off zone: dunno, but don't expect much help from AWS/... or the size of your own company
 - https://github.com/gruntwork-io/cloud-nuke  - get rid of all allocated resources, finally!
 - https://medium.com/@nandovillalba/why-i-think-gcp-is-better-than-aws-ea78f9975bda
 
