@@ -387,6 +387,7 @@ A list with items where you need a skilled DBA to understand, but written good e
   - as a daemon or sidecar.
   - as a Kafka consumer/producer for observability data.
   - in resource constrained environments (such as devices)
+  - see also: https://www.kartar.net/2020/05/a-bit-of-a-vector/
 
 *** Monorepo vs Multirepo
 
