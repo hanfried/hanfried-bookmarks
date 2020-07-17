@@ -49,6 +49,20 @@
 ** Software-Development :Software_Development:
 *** Misc
 
+- https://www.usecue.com/blog/code-warriors/
+  A true warrior masters his sword and his mind. A ‘code warrior’ masters his software and his
+  system. Mastering your software is not the most difficult part, just read the quick-start and
+  off you go. Mastering the system that makes your software function, however, can take a
+  lifetime.
+- https://hackernoon.com/the-fine-art-of-fast-development-f3b1abb509da
+- https://testing.googleblog.com/2015/04/just-say-no-to-more-end-to-end-tests.html
+- https://medium.com/@cscalfani/goodbye-object-oriented-programming-a59cda4c0e53
+- https://medium.com/@liman.rom/f-spoiled-me-or-why-i-dont-enjoy-c-anymore-39e025035a98  - nice examples of advantages of a well designed functional language
+- https://levelup.gitconnected.com/why-rewriting-applications-from-scratch-is-almost-always-a-bad-idea-5402d1715006
+- https://glitch.com/  - Coding together in a collaborative way
+ 
+*** Lessons from 50 years experience ...
+
 - https://medium.com/swlh/62-lessons-from-50-years-of-software-experience-2db0f400f706  - *READ AND APPLY THEM*
 - https://medium.com/@karlwiegers/growing-a-culture-of-software-quality-eb39a090e76b  - Interview about code reviews
   Excerpt:
@@ -86,17 +100,45 @@
     input on our work, but we actually become uncomfortable if we haven’t had
     others examine what we’ve created before we inflict it on an unsuspecting
     world.
-- https://www.usecue.com/blog/code-warriors/
-  A true warrior masters his sword and his mind. A ‘code warrior’ masters his software and his
-  system. Mastering your software is not the most difficult part, just read the quick-start and
-  off you go. Mastering the system that makes your software function, however, can take a
-  lifetime.
-- https://hackernoon.com/the-fine-art-of-fast-development-f3b1abb509da
-- https://testing.googleblog.com/2015/04/just-say-no-to-more-end-to-end-tests.html
-- https://medium.com/@cscalfani/goodbye-object-oriented-programming-a59cda4c0e53
-- https://medium.com/@liman.rom/f-spoiled-me-or-why-i-dont-enjoy-c-anymore-39e025035a98  - nice examples of advantages of a well designed functional language
-- https://levelup.gitconnected.com/why-rewriting-applications-from-scratch-is-almost-always-a-bad-idea-5402d1715006
-- https://glitch.com/  - Coding together in a collaborative way
+- https://medium.com/swlh/building-a-healthy-software-engineering-culture-59183b93389d
+  Excerpt:
+  - Quality is the top priority; long-term productivity is a natural consequence
+    of high quality.
+  - But discussing just what principles, values, and attitudes are important
+    will help align the team members so they can make decisions and take actions
+    that are consistent with that shared philosophy.
+  - Of course, culture evolves over time. You just hope it doesn’t devolve. I’ve
+    seen that happen too, like when a new manager came in to take over my group
+    after I stepped down as the manager. He didn’t share our commitment to a
+    quality-driven culture and continuous improvement, and some of what we had
+    achieved gradually eroded away. That was discouraging.
+  - Suppose a manager claims that quality is a top priority. But then he doesn’t
+    want to give project teams the time to perform peer reviews, or he penalizes
+    people if bugs are found in their work during a review.
+  - Managers — and enthusiastic team members — must recognize that people and
+    organizations can only absorb change at a certain rate.
+- https://medium.com/@karlwiegers/mind-the-crap-gap-61f314fe9678
+  Excerpt:
+  - Hold your hand up in front of you with your thumb and index finger about one
+    inch apart. In many situations, that short distance represents the
+    difference between quality and crap. Most of the time, all it takes to
+    bridge that “crap gap” is to do a little more questioning, listening,
+    thinking, measuring, or testing before delivering the product or declaring
+    the job complete. Ignoring the crap gap can be expensive for the workers and
+    annoying for their victims.
+  - A sign in my college chemistry laboratory asked: “If you don’t have time to
+    do it right, when will you have time to do it over?”
+  - Okay, but personally, I like to verify correctness before declaring victory.
+  - It’s up to management to shape a company culture in which individual
+    employees feel both empowered and expected to do the job well.
+  - One good way to handle situations like this is to point out to the provider
+    that the defective work does not appear to be up to their standards.
+  - Moreover, when I see something obviously done wrong like this, it makes me
+    wonder how many other problems there were that I just can’t see. I don’t
+    fully trust the provider anymore.
+  - Companies that do measure what they spend on rework — both internal and
+    external failure — often are shocked at the numbers. Reducing rework
+    increases your profit; it’s that simple.
 
 *** Some Collection of Best of Talks
 
@@ -659,6 +701,7 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
 - https://medium.com/faun/aws-best-practice-rules-for-amazon-elastic-kubernetes-service-eks-29408a96cb1d
 - https://itnext.io/aws-elastic-kubernetes-service-running-alb-ingress-controller-8d0d457615fa
 - https://medium.com/swlh/deploy-rshiny-with-kubernetes-using-aws-eks-and-terraform-655921d9e13c
+- https://itnext.io/bootstrapping-kubernetes-clusters-on-aws-with-terraform-b7c0371aaea0  - including a general overview of bootstrapping tools
 
 ***** CI/CD
 
