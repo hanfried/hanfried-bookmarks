@@ -139,6 +139,32 @@
   - Companies that do measure what they spend on rework — both internal and
     external failure — often are shocked at the numbers. Reducing rework
     increases your profit; it’s that simple.
+- https://medium.com/swlh/six-estimation-safety-tips-6832b8f8c42a
+  1. A goal is not an estimate
+     - Commitments should be based on plausible estimates, not just desired
+       targets.
+     - work should not be considered overdue if there was never any realistic
+       likelihood of completing it by the dictated target date
+  2. The estimate you produce should be unrelated to what you think the requester wants to hear
+     - don’t change your estimate simply because someone doesn’t care for it
+     - There’s no reason to reduce a thoughtfully crafted estimate simply
+       because someone isn’t happy with it.
+     - You can examine assumptions, try different estimation methods, explore
+       risks, or negotiate scope, resources, or quality. But don’t just cave to
+       make someone smile.
+  3. The correct answer to any request for an estimate is “Let me get back to you on that.”
+     - So before you say, “Sure, no problem,” make sure you know what you’re getting into.
+  4. Avoid giving single-point estimates
+     - present an estimate as a range instead of a single value. Identify the
+       minimum possible duration (or some other measurable factor) for the work,
+       the most likely or expected value, and the maximum expected duration
+       barring some catastrophic event
+  5. Incorporate contingency buffers into estimates
+  6. Record actual outcomes and compare them to the estimates
+     - if you record what you did today, then tomorrow that is historical data.
+       It’s not more complicated than that
+     - In fact, if you don’t do that, then the next time you’re not estimating,
+       you are guessing — again.
 
 *** Some Collection of Best of Talks
 
@@ -738,6 +764,7 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
      - https://github.com/istio/istio/wiki/Troubleshooting-Istio
      - https://github.com/istio/istio/wiki/Analyzing-Istio-Performance
   6. When It All Works, It’s Great
+- https://medium.com/@pklinker/performance-impacts-of-an-istio-service-mesh-63957a0000b  - tldr; significant, but not very much
 
 *** SSH
 
