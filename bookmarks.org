@@ -61,7 +61,7 @@
 - https://levelup.gitconnected.com/why-rewriting-applications-from-scratch-is-almost-always-a-bad-idea-5402d1715006
 - https://glitch.com/  - Coding together in a collaborative way
  
-*** Lessons from 50 years experience ...
+*** Lessons from 50 years experience (Project-Management etc)...
 
 - https://medium.com/swlh/62-lessons-from-50-years-of-software-experience-2db0f400f706  - *READ AND APPLY THEM*
 - https://medium.com/@karlwiegers/growing-a-culture-of-software-quality-eb39a090e76b  - Interview about code reviews
@@ -140,6 +140,7 @@
     external failure — often are shocked at the numbers. Reducing rework
     increases your profit; it’s that simple.
 - https://medium.com/swlh/six-estimation-safety-tips-6832b8f8c42a
+  Excerpt:
   1. A goal is not an estimate
      - Commitments should be based on plausible estimates, not just desired
        targets.
@@ -165,6 +166,49 @@
        It’s not more complicated than that
      - In fact, if you don’t do that, then the next time you’re not estimating,
        you are guessing — again.
+- https://medium.com/swlh/negotiating-achievable-commitments-6575b3d73b20
+  Excerpt:
+
+  Successful projects — and successful relationships — are based on
+  realistic commitments, not on fantasies and empty promises.
+
+  1. We must make commitments freely
+  2. Commitments must be explicitly stated and clearly understood by all parties
+     involved
+     - Consider writing a brief summary of each major commitment you exchange
+       with someone else. This confirms the communication and establishes a
+       shared expectation of accountability.
+     - I keep two running lists in my daily life: To Do, and Waiting For.
+
+  *Negotiating Commitments*
+  - Separate the people from the problem
+  - Focus on interests, not positions
+  - Invent options for mutual gain
+  - Insist on using objective criteria
+    - And remember that an estimate is not the same as a promise.
+    - A common cause of commitment failure is making “best case” commitments
+      rather than “expected case” commitments.
+
+  *Modifying Commitments*
+  - If it becomes apparent that you team won’t meet a commitment, tell those
+    affected promptly. Don’t pretend you’re on schedule until it’s too late to
+    make adjustments. Letting someone know early on that you can’t fulfill a
+    commitment builds credibility and respect for your integrity, even if the
+    stakeholders aren’t thrilled that you can’t deliver on the original promise
+
+  *Commitment Ethics*
+  - A meaningful commitment ethic includes the ability to say “no.”
+    e.g.:
+    - “Sure, I can do that by Friday. What would you like me to not do instead?”
+    - “We can’t get that feature into this iteration and still finish on
+      schedule. Can it wait until the next iteration, or would you rather defer
+      something else?”
+    - “I can do that, but it’s not as high on the priority list as my other
+      obligations. Let me suggest someone else who might be able to help you
+      more quickly than I can.”
+
+  - Never make a commitment that you know you can’t keep.
+  - our morale will be higher if we’re not set up for certain failure.”
 
 *** Some Collection of Best of Talks
 
