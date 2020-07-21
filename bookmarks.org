@@ -209,6 +209,52 @@
 
   - Never make a commitment that you know you can’t keep.
   - our morale will be higher if we’re not set up for certain failure.”
+- https://medium.com/swlh/hearing-the-voice-of-the-customer-the-product-champion-approach-24c61b526131
+  Excerpt:
+
+  - Only knowledgeable and empowered customer representatives can answer
+    questions and flesh out high-level requirements.
+  - My concern about the phrase on-site customer is simply that it is singular.
+  - Most products have multiple distinct user classes, who have largely
+    different needs. Certain groups — the favored user classes — will be more
+    important than others to the project’s business success. Sometimes user
+    classes aren’t even people: they’re other information systems or hardware
+    components that derive services from the system you’re building.
+  - A more realistic approach is to enlist a small number of product champions
+    to serve as key user representatives.
+  - If this group couldn’t all agree on some issue, Don made the call. Someone
+    has to make these kinds of decisions; it’s better if a knowledgeable and
+    respected user rep does it than if the BA or developers choose.
+  - They weren’t co-located with the development team, although they were
+    accessible enough to provide quick feedback when needed.
+  - Each champion has the time available to do the job.
+  - Each champion has the authority to make binding decisions at the user
+    requirements level.
+  - The moral of the story is that your customer reps must commit to making the
+    project contributions you need from them, and then they need to do the job.
+  - The ideal product champion is an actual member of the user class he or she
+    represents. This isn’t always possible, particularly when building
+    commercial products for a faceless market. You might need to use surrogates
+    in place of real user representatives.
+  - When your product champions are former — not current — users, ask yourself
+    whether a disconnect has grown over time between their experiences and the
+    needs today’s users have. Their understanding could be obsolete.
+  - Managers sometimes are uncomfortable delegating decision-making authority to
+    ordinary users.
+  - First, those managers probably aren’t current members of the user class.
+    Second, busy managers rarely have the time to devote to a serious
+    requirements development effort. It’s better to have managers provide input
+    to the business requirements
+  - Software developers who think they can speak for the users. Rarely, this
+    situation can work. More commonly, even developers with considerable domain
+    experience will find that actual users of the new product will bring a
+    different — and more reliable — perspective.
+  - Your stakeholders might hesitate to have knowledgeable users spend time
+    working with BAs or through developers on requirements. Here’s how I see it.
+    You’re going to get the customer input eventually. It’s a lot less painful
+    to get it early and on an ongoing basis during development.
+  - If your customers won’t collaborate in making sure the product meets their
+    needs, I question their commitment to the project’s success.
 
 *** Some Collection of Best of Talks
 
@@ -429,6 +475,7 @@ set -o nounset
   - Ctrl+k :: delete everything from cursor to end of line
 
 *** Databases
+
 - https://medium.com/@rakyll/things-i-wished-more-developers-knew-about-databases-2d0178464f78
 - https://stripe.com/en-de/blog/online-migrations  - steps to migrate a huge production database while running in production
 
@@ -445,6 +492,17 @@ A list with items where you need a skilled DBA to understand, but written good e
 - http://asvignesh.in/3-2-1-backup-strategy/
 - https://medium.com/scopedev/introduction-to-profiling-and-optimizing-sql-queries-for-software-engineers-3cf376ecc712
 - https://explain.depesz.com/  - Tool: PostgreSQL's explain analyze made readable
+- https://medium.com/faun/how-are-passwords-securely-stored-in-databases-be883241959f
+  tldr; The first method considered safe as of 2017 is Password-Based Key
+  Derivation Functions (PBKDF2):
+
+  #+BEGIN_SRC python
+  intermediate = salt
+  for (_ in range(N)):  # typical value for N might be 100
+      intermediate = hash(password + intermediate)
+  result_hash := intermediate
+  #+END_SRC
+
 ** DevOps / Security
 *** Misc
 
@@ -623,6 +681,7 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
 
 - https://www.vinaysahni.com/best-practices-for-building-a-microservice-architecture?fbclid=IwAR1LEKYyJ6p1N2v8sf7HpxkCjgj_MQaDL6t7OizR4FWGma-hzWeFSQfHjJg#platform
 - https://cloudncode.blog/2017/03/02/best-practices-aws-lambda-function/?fbclid=IwAR2t2c23c1VM21GNPIh0yHHGRhV9LoWYm0QOEofZ-youUYtDRLdR_UOj5Vs
+- https://theburningmonk.com/2020/07/are-lambda-to-lambda-calls-really-so-bad/
 - http://leebriggs.co.uk/blog/2019/04/13/the-fargate-illusion.html  - severless not being infrastructureless
 - https://theburningmonk.com/2019/04/comparing-nuclio-and-aws-lambda/
 
