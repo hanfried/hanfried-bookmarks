@@ -255,6 +255,41 @@
     to get it early and on an ongoing basis during development.
   - If your customers won’t collaborate in making sure the product meets their
     needs, I question their commitment to the project’s success.
+- https://medium.com/swlh/requirements-review-challenges-e3ffe3ad60ef
+  Excerpt:
+
+  - If someone said you could only perform a single quality practice on a
+    software project, what would you choose? I’d pick peer reviews of
+    requirements.
+  - Several companies reported that they avoided up to ten hours of labor for
+    every hour they invested in inspecting requirements documents and other
+    software deliverables. Who wouldn’t want to try a technique that might offer
+    a 1,000 percent return on investment?
+  - The prospect of thoroughly examining a long requirements document is
+    daunting.
+  - Even given a document of moderate size, all reviewers might carefully
+    examine the first part and a few stalwarts will study the middle, but
+    probably no one will look at the last part.
+  - perform incremental reviews throughout requirements development
+  - large review teams increase the cost of the review, make it hard to schedule
+    meetings, and have difficulty reaching agreement on issues
+    - Fourteen people cannot agree to leave a burning room, let alone agree on
+      whether or not a particular requirement is correct.
+    - Make sure each participant is there to find defects, not to be educated or
+      to protect a political position.
+    - Understand which perspective (such as user, developer, or tester) each
+      inspector represents. (+ send just one representative to the inspection meeting)
+    - Establish several small teams to inspect the requirements in parallel and
+      combine their defect lists, removing any duplicates.
+    - supply the requirements set to the other interested stakeholders in
+      advance so they have an opportunity to contribute their input
+  - don’t let debates in the form of written comments substitute for talking to each other
+  - A prerequisite for a formal review meeting is that the participants have
+    examined the material being reviewed ahead of time.
+  - In fact, if you’re invited to participate in a requirements review and don’t
+    have adequate time to go over the material in advance on your own, don’t
+    even bother attending the meeting. It’s a waste of everyone’s time.
+  - My general rule is: “Review early and often, formally and informally.”
 
 *** Some Collection of Best of Talks
 
