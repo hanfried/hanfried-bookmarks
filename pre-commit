@@ -1,0 +1,3 @@
+emacsclient -e '(progn (find-file "~/org/bookmarks.org") (org-html-export-to-html))' \
+&& mv ~/org/bookmarks.html /tmp/bookmarks.html \
+&& docker run --rm -it -u $(id -u):$(id -g) -v "$PWD":/mnt linkchecker/linkchecker --check-extern /tmp/bookmarks.html
