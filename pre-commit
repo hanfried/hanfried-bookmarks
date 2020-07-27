@@ -1,4 +1,11 @@
-emacsclient -e '(progn (find-file "~/org/bookmarks.org") (org-html-export-to-html))' \
+#!/usr/bin/bash
+
+# Converts the bookmarks to an html file
+# and the run a linkchecker (https://github.com/linkchecker/linkchecker) on this local html file
+# Note: set nr of threads to 1 (is slower, but we don't run into a throttling and get false positives)
+
+shellcheck pre-commit \
+&& emacsclient -e '(progn (find-file "~/org/bookmarks.org") (org-html-export-to-html))' \
 && mkdir -p ~/.linkchecker \
 && mv ~/org/bookmarks.html ~/.linkchecker/bookmarks.html \
-&& docker run --rm -t -u $(id -u):$(id -g) -v ~/.linkchecker:/mnt linkchecker/linkchecker --threads 1 --check-extern bookmarks.html
+&& docker run --rm -t -u "$(id -u)":"$(id -g)" -v ~/.linkchecker:/mnt linkchecker/linkchecker --threads 1 --check-extern bookmarks.html
