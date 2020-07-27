@@ -30,7 +30,6 @@
 
 - https://forge.medium.com/10-habits-of-unsuccessful-people-you-dont-want-to-copy-d401ac677c91
 - https://onezero.medium.com/the-efficiency-delusion-f6a97241e1e1
-- https://medium.com/the-post-grad-survival-guide/transform-your-terrible-networking-skills-with-this-psychology-trick-d61625e1d1d2
 - https://elemental.medium.com/why-you-should-try-micromastery-90b080b3befa
 - https://medium.com/better-programming/why-do-incompetent-managers-get-promoted-815165a03bee
 
@@ -290,6 +289,10 @@
     have adequate time to go over the material in advance on your own, don’t
     even bother attending the meeting. It’s a waste of everyone’s time.
   - My general rule is: “Review early and often, formally and informally.”
+*** Essays on Programming
+
+- https://www.benkuhn.net/progessays/
+- https://blog.nelhage.com/post/computers-can-be-understood/
 
 *** Some Collection of Best of Talks
 
@@ -317,7 +320,6 @@ Nowhere complete, nowhere top selected per se, but some are interesting, so let'
 
 - https://yamllint.readthedocs.io/en/stable/
 - https://blog.atomist.com/in-defense-of-yaml/
-- https://noyaml.com/
 - https://arp242.net/weblog/yaml_probably_not_so_great_after_all.html
 
 *** Python
@@ -657,10 +659,18 @@ A list with items where you need a skilled DBA to understand, but written good e
 - https://medium.com/faun/invoking-the-aws-cli-with-terraform-4ae5fd9de277
 - https://medium.com/swlh/setting-up-auth0-with-terraform-c93ae25cf2f9
 - https://blog.gruntwork.io/a-comprehensive-guide-to-managing-secrets-in-your-terraform-code-1d586955ace1
+- https://medium.com/faun/terraform-remote-backend-demystified-cb4132b95057  - very similar to Terraform Up & Running
+ 
+***** Tools
+
+- https://github.com/GoogleCloudPlatform/terraformer - CLI tool to generate
+  terraform files from existing infrastructure (reverse Terraform).
 - https://github.com/cycloidio/terracognita - Reads from existing Cloud
   Providers (reverse Terraform) and generates your infrastructure as code on
   Terraform configuration
-- https://medium.com/faun/terraform-remote-backend-demystified-cb4132b95057  - very similar to Terraform Up & Running
+- https://github.com/cycloidio/inframap - Read your tfstate or HCL to generate a
+  graph specific for each provider, showing only the resources that are most
+  important/relevant.
 
 ***** Linters / Code quality
 - https://medium.com/faun/terraform-code-quality-66e6468f50f3
@@ -677,6 +687,10 @@ A list with items where you need a skilled DBA to understand, but written good e
   - focusing on positive auditing rules in a ruby like test spec format
   - works also for other infrastructure elements, not only terraform
 - https://github.com/gruntwork-io/terratest  - write integration tests for the cloud in unit test style
+**** Ansible & Co
+
+- https://pyinfra.com/  - More pythonic and *faster* Ansible alternative
+  - github :: https://github.com/Fizzadar/pyinfra
 
 *** Site Reliability
 **** Misc
@@ -862,7 +876,6 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
 - https://eksworkshop.com/
 - https://medium.com/risertech/production-eks-with-terraform-5ad9e76db425
   Regard https://www.terraform.io/docs/providers/aws/r/eks_node_group.html (so don't copy everything from the tutorial)
-- https://medium.com/faun/aws-best-practice-rules-for-amazon-elastic-kubernetes-service-eks-29408a96cb1d
 - https://itnext.io/aws-elastic-kubernetes-service-running-alb-ingress-controller-8d0d457615fa
 - https://medium.com/swlh/deploy-rshiny-with-kubernetes-using-aws-eks-and-terraform-655921d9e13c
 - https://itnext.io/bootstrapping-kubernetes-clusters-on-aws-with-terraform-b7c0371aaea0  - including a general overview of bootstrapping tools
@@ -917,7 +930,6 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
 - https://www.digitalocean.com/community/tools/nginx  - The easiest way to configure a performant, secure, and stable NGINX server.
   A web page to generate the nginx.conf as starting point following best practices (and still configurable)
 - https://medium.freecodecamp.org/discovering-the-hidden-mine-of-credentials-and-sensitive-information-8e5ccfef2724
-- https://medium.freecodecamp.org/hash-table-attack-8e4371fc5261  - The moment when you realize every server in the world is vulnerable
 - https://www.youtube.com/watch?v=k8FIDGmmYvs  - How to break PDFs
  
 **** Anti-Patterns
@@ -1106,7 +1118,6 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
 - https://github.com/neutraltone/awesome-stock-resources - A curated list of awesome stock photography, video and illustration websites.
 - https://datasetsearch.research.google.com
 - https://www.europeandataportal.eu/de/homepage
-- http://kitab-project.org/2019/06/08/first-open-access-release-of-our-arabic-corpus/
 - https://tfhub.dev/  - Pretrained Models from Google & DeepMind
   - Text (Embeddings)
   - Image (Classification, Feature Vector, Generator, Other)
@@ -1182,24 +1193,9 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
 - https://www.slideshare.net/farizbashirov  - 8 do's and don't of chatbots
 - https://medium.com/huggingface/how-to-build-a-state-of-the-art-conversational-ai-with-transfer-learning-2d818ac26313
 **** Data Augmentation :Augmentations:
-- https://towardsdatascience.com/data-augmentation-for-natural-language-processing-6ae928313a3f
 - https://towardsdatascience.com/these-are-the-easiest-data-augmentation-techniques-in-natural-language-processing-you-can-think-of-88e393fd610
 **** Tools
 - https://towardsdatascience.com/the-best-nlp-tools-of-early-2020-live-demos-b6f507b17b0a
-- http://www.nlpbuddy.io/  - Open Source Text Analysis Tool (Website w/ Spacy Analysis)
-
- - Language
- - Keywords
- - Summary
- - Entities
- - Location
- - Organization
- - Part Of Speech
- - Lexical (like Numerals)
- - Tokens
- - Noun chunks
- - Sentences
-
 - http://gltr.io/dist/index.html  - Giant Language model Test Room: detect whether a text could be real or fake
 
   Read also explanation about usage in http://gltr.io/
@@ -1289,7 +1285,6 @@ but also why they are so sensitive to adversial networks
 - https://towardsdatascience.com/deep-learning-based-super-resolution-without-using-a-gan-11c9bb5b6cd5  - Super resolution with just a U-Net (trained from small images starting) and an impressive blog with lots of examples
 - https://towardsdatascience.com/image-segmentation-kaggle-experience-9a41cb8924f0 :Kaggle:
 **** Bounding Boxes
-- https://towardsdatascience.com/getting-started-with-bounding-box-regression-in-tensorflow-743e22d0ccb3
 - https://towardsdatascience.com/implementation-of-mean-average-precision-map-with-non-maximum-suppression-f9311eb92522
 - https://towardsdatascience.com/review-yolov3-you-only-look-once-object-detection-eab75d7a1ba6
 *** Time Series
@@ -1297,7 +1292,6 @@ but also why they are so sensitive to adversial networks
 - https://towardsdatascience.com/on-the-automation-of-time-series-forecasting-models-technical-and-organizational-considerations-286db3120c8e
 - https://towardsdatascience.com/anomaly-detection-time-series-4c661f6f165f - Detect anomaly in time series with facebook Prophet
 *** Deployments :DevOps:
-- https://towardsdatascience.com/chapter-1-intro-to-aws-sagemaker-a1ecf00ec761 :AWS:
 - https://medium.com/datadriveninvestor/deploy-your-pytorch-model-to-production-f69460192217 :PyTorch:
 - https://medium.com/@colinshaw_36798/fully-utilizing-your-deep-learning-gpus-61ee7acd3e57
 ** Data Engineering
@@ -1305,6 +1299,8 @@ but also why they are so sensitive to adversial networks
 - https://medium.com/better-programming/kafka-vs-rabbitmq-why-use-kafka-8401b2863b8b
   - Kafka :: Pull Model (and very well suited for really high throughput situations)
   - RabbitMQ :: Push Model, probably a bit easier to work with (following article and "Messaging the just works" self advertisment of RabbitMQ)
+- https://www.youtube.com/watch?v=Io1x6mQlh1E  - Connected Components in MapReduce and Beyond
+  Discusses the Alternating Algorithm (LargeStar, SmallStar) to have a fast and local working connection graph algorithm working up to huge data scale
 ** Math :Math:
 
 - https://de.wikipedia.org/wiki/Braess-Paradoxon
@@ -1315,3 +1311,7 @@ but also why they are so sensitive to adversial networks
 - https://towardsdatascience.com/a-b-testing-is-there-a-better-way-an-exploration-of-multi-armed-bandits-98ca927b357d  - Overview of different algorithms for Multi Armed Bandits
 - https://towardsdatascience.com/rip-correlation-introducing-the-predictive-power-score-3d90808b9598  - Better way to find correlation instead of correlation matrices
   Main advantage to something like Mutual Information Score is that it can also applied to categorical variables
+** Physics
+
+- https://www.youtube.com/watch?v=Ps5wovm3OQ4 - Wolfram Physics Harvard Black Hole Initiative: A
+  Surprisingly Promising Approach to a Fundamental Theory of Physics
