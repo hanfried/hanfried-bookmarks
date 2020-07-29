@@ -25,6 +25,33 @@
 - https://clutch.co/app-developers/resources/what-is-riskiest-assumption-test  - RAT vs MVP
 - https://entrepreneurshandbook.co/the-real-reasons-why-a-vc-passed-on-your-startup-917c30103ecb  - pretty complete check list
 - https://www.gulp.de/knowledge-base/19/iii/neue-checkliste-fuer-freelancer-bin-ich-scheinselbststaendig.html
+- https://medium.com/swlh/5-more-stupid-things-entrepreneurs-should-never-say-when-fundraising-67121dee1c1b
+  - _"If we capture X% of the market…"_ ::  Instead, marketing sizing estimates
+    show how much money is already being spent, which means capturing market
+    share requires taking customers from an entrenched player. It’s going to
+    cost a lot more time and money than this founder thinks.
+  - _"Before we start, would you mind signing this NDA?"_ :: This founder thinks
+    ideas are more valuable than execution. ... care about whether or not the
+    founder can create a highly scalable business around it.
+  - _"Our team is led by technical founders"_ :: instead of validating the
+    market opportunity to check for actual demand, they immediately started
+    building it. That’s not going to end well. ... learn that entrepreneurship
+    isn’t like Field of Dreams, and “If you build it, they will come” doesn’t
+    work
+  - _"We’re not just co-founders. We’re also best friends."_ :: instead of
+    identifying an important market opportunity, researching it rigorously, and
+    then building the best team possible to capture it, they sat around for
+    hours trying to come up with a “great idea.” ... they’re building a company
+    and they think it’s going well because a few of their friends/family/frat
+    brothers agreed to download the beta version of their app
+  - _"We’re growing organically!"_ ::  founder doesn’t realize that, for
+    venture-backed companies, organic growth is functionally equivalent to
+    magical growth. Yes, it looks cool on a chart, but it doesn’t represent
+    anything compelling about the underlying fundamentals of the business ...
+    founder doesn’t realize that, for venture-backed companies, organic growth
+    is functionally equivalent to magical growth. Yes, it looks cool on a chart,
+    but it doesn’t represent anything compelling about the underlying
+    fundamentals of the business
 
 ** Personal Development
 
@@ -293,6 +320,32 @@
 
 - https://www.benkuhn.net/progessays/
 - https://blog.nelhage.com/post/computers-can-be-understood/
+- https://mcfunley.com/choose-boring-technology
+  This is controversial. There are also many examples where choosing boring
+  technology ended up in terrible technology that needed much earlier
+  maintainance (like choosing PHP in 2010 or the quoted MySQL from the article
+  -- most of the time a PostgreSQL ends up with less problems, and you still
+  need to be able to migrate to Spanner/Hive/Spark/CockroachDB if you are
+  successful)
+
+  IMHO, the main problem is the conception of shipping without planned
+  maintainance (development). That's absurd in every other engineering
+  discipline. When we build a house, car, plane, ... - we know from the start
+  when we need to do maintainance and which parts should be replaced after what
+  time of usage (and most of the time, we won't replace it with outdated
+  technology). Updating the software at least once in a quarter and working on
+  at least some issues (with the benefit of keeping knowledge about the internal
+  processes), should be the minimum and planned by start. But usually in
+  software, after shipping we expect to minimize following costs and call it
+  operations. And then we end up with a whole deprecated stack that somehow
+  works, but nobody really can work on or improve any longer.
+- https://sandimetz.com/blog/2016/1/20/the-wrong-abstraction
+  - duplication is far cheaper than the wrong abstraction
+  - prefer duplication over the wrong abstraction
+  - IMHO, a good hint is coming from Go Best Practices: Don't write =common=,
+    =util= or other generic classes, and if you can't assign an abstraction to
+    one topic, I think it's a good sign of a bad abstraction or an abstraction
+    that should be only internally used in a bit fatter package
 
 *** Some Collection of Best of Talks
 
@@ -455,6 +508,12 @@ Nowhere complete, nowhere top selected per se, but some are interesting, so let'
 *** Golang
 
 - https://towardsdatascience.com/ultimate-setup-for-your-next-golang-project-1cc989ad2a96
+- https://medium.com/swlh/ultimate-golang-string-formatting-cheat-sheet-234ec92c97da#
+  - "%+v" :: print struct with field names
+  - "%#v" :: print struct with type and field names
+  - "%q"  :: print string with quotes
+  - "%t"  :: print boolean
+  - "%e"/"%E" :: print float in scientific notation
 
 *** Git / GitHub / Versioning
 **** Misc
@@ -1025,7 +1084,6 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
 ** Data Science / ML / NLP :DataScience:
 *** Misc
 
-- http://www.arxiv-sanity.com/
 - https://tech.trello.com/ice-scoring/  - Prioritize A/B Test Ideas
 - https://lilianweng.github.io/lil-log/2019/03/14/are-deep-neural-networks-dramatically-overfitted.html
  Give the idea to re-randomize layers or re-initialize top-layers and measure re-randomization or
@@ -1210,6 +1268,9 @@ In all use cases, the information extraction is based on analysing the semantic 
 - https://github.com/zalandoresearch/flair/
 
 - https://github.com/pytorch/fairseq
+- https://github.com/jbesomi/texthero - python toolkit to work with text-based
+  dataset quickly and effortlessly. Texthero is very simple to learn and
+  designed to be used on top of Pandas.
 **** Embeddings
 - https://towardsdatascience.com/document-embedding-techniques-fed3e7a6a25d  - A review of notable literature on the topic
 - https://nlp.stanford.edu/projects/glove/  Global Vectors for Word Representation
@@ -1311,6 +1372,7 @@ but also why they are so sensitive to adversial networks
 - https://towardsdatascience.com/a-b-testing-is-there-a-better-way-an-exploration-of-multi-armed-bandits-98ca927b357d  - Overview of different algorithms for Multi Armed Bandits
 - https://towardsdatascience.com/rip-correlation-introducing-the-predictive-power-score-3d90808b9598  - Better way to find correlation instead of correlation matrices
   Main advantage to something like Mutual Information Score is that it can also applied to categorical variables
+- https://towardsdatascience.com/how-floating-point-numbers-work-1429907b6d1d
 ** Physics
 
 - https://www.youtube.com/watch?v=Ps5wovm3OQ4 - Wolfram Physics Harvard Black Hole Initiative: A

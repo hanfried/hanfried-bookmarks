@@ -1,71 +1,71 @@
 
 # Table of Contents
 
-1.  [Bookmarks](#orgf6bc0bb)
-    1.  [Misc](#org9fa7100)
-    2.  [Bahn](#org6eadb54)
-    3.  [Business](#org7be75cf)
-    4.  [Personal Development](#orgcc21cc5)
-    5.  [Gesellschaftliches](#org43998b1)
-    6.  [Software-Development](#org03ba6ce):Software_Development:
-        1.  [Misc](#org8239c9e)
-        2.  [Lessons from 50 years experience (Project-Management etc)&#x2026;](#org05d472f)
-        3.  [Essays on Programming](#orgb38c07b)
-        4.  [Some Collection of Best of Talks](#org7822767)
-        5.  [Team Management](#org0ba3e6d)
-        6.  [YAML](#org78d4358)
-        7.  [Python](#orgcca02ed)
-        8.  [Django](#orgad632b8)
-        9.  [Javascript](#orgf073605)
-        10. [REST APIs / Web Development / HTML](#org25f0b19)
-        11. [Golang](#org1af25de)
-        12. [Git / GitHub / Versioning](#org7a445e3)
-        13. [Shell/Bash/Zsh](#org623fbbb)
-        14. [Databases](#orgce468b1)
-    7.  [DevOps / Security](#orgdb06be8)
-        1.  [Misc](#orgfbaf97b)
-        2.  [Logging](#org703155e)
-        3.  [Monorepo vs Multirepo](#org72b9c42)
-        4.  [CI/CD-Pipeline](#org58f071a)
-        5.  [Cloud Provisioners](#orga38bd99)
-        6.  [Site Reliability](#org024ad85)
-        7.  [Microservices / Serverless](#org996299b)
-        8.  [Docker/Containers](#org08a0bf4):Docker:
-        9.  [Kubernetes](#org2dcab52):Kubernetes:
-        10. [SSH](#org238cc73)
-        11. [General Computer/Networking/&#x2026; Security](#orgc91eec0):Security:
-        12. [Security Tools](#orgb640ac7)
-    8.  [Data Science / ML / NLP](#org1e7717f):DataScience:
-        1.  [Misc](#org85a8544)
-        2.  [Interesting Analysis](#org7e09d7b):Analysis:
-        3.  [Kaggle](#org7e2d609):Kaggle:
-        4.  [Team (Management, Hiring, Organization, &#x2026;)](#org007b7f7)
-        5.  [Optimizers / Learn Rates](#orgce7b6a3)
-        6.  [Jupyter Notebooks](#orgcfabd78)
-        7.  [Streamlit](#org6d2a3f4)
-        8.  [Pytorch/fastai](#orga1f45a8)
-        9.  [Datasets](#orgf5682a3)
-        10. [Pandas](#org65f4bf2):Pandas:
-        11. [Data Annotation](#org5f1591d)
-        12. [Data Exploration / Feature Engineering](#orgff7fcb8)
-        13. [Data Testing](#org37f0cc9)
-        14. [Data Visualization](#orga3b81f3):Visualization:
-        15. [NLP](#org4d19ea9):NLP:
-        16. [Computer Vision](#org57c42f3)
-        17. [Time Series](#org8ac2690)
-        18. [Deployments](#org79f1aee):DevOps:
-    9.  [Data Engineering](#org03672a4)
-    10. [Math](#orgf844942):Math:
-    11. [Physics](#orgda7eb7b)
+1.  [Bookmarks](#orgc2294eb)
+    1.  [Misc](#org8dca9d9)
+    2.  [Bahn](#orgd4e3c29)
+    3.  [Business](#org44e3b44)
+    4.  [Personal Development](#orgd3422fa)
+    5.  [Gesellschaftliches](#org4e940e3)
+    6.  [Software-Development](#org7de1e5d):Software_Development:
+        1.  [Misc](#orge592d38)
+        2.  [Lessons from 50 years experience (Project-Management etc)&#x2026;](#org79139d1)
+        3.  [Essays on Programming](#orgfe30cba)
+        4.  [Some Collection of Best of Talks](#orgc69b989)
+        5.  [Team Management](#org0317cfa)
+        6.  [YAML](#org5966583)
+        7.  [Python](#orgbaa0761)
+        8.  [Django](#org9012955)
+        9.  [Javascript](#org25ae302)
+        10. [REST APIs / Web Development / HTML](#org6795085)
+        11. [Golang](#org4c5c4d6)
+        12. [Git / GitHub / Versioning](#orgb30a10e)
+        13. [Shell/Bash/Zsh](#org299547f)
+        14. [Databases](#orgcd946fe)
+    7.  [DevOps / Security](#org6ebfad7)
+        1.  [Misc](#org38daa48)
+        2.  [Logging](#org0b3a42f)
+        3.  [Monorepo vs Multirepo](#orgfa90c15)
+        4.  [CI/CD-Pipeline](#orga514f8f)
+        5.  [Cloud Provisioners](#orge5a1738)
+        6.  [Site Reliability](#orgd0ce46a)
+        7.  [Microservices / Serverless](#orgebc79b2)
+        8.  [Docker/Containers](#org4c82c12):Docker:
+        9.  [Kubernetes](#orgddaf093):Kubernetes:
+        10. [SSH](#org5f156fa)
+        11. [General Computer/Networking/&#x2026; Security](#orgdffd02e):Security:
+        12. [Security Tools](#org80cf840)
+    8.  [Data Science / ML / NLP](#org17dd30f):DataScience:
+        1.  [Misc](#orgd0d84d5)
+        2.  [Interesting Analysis](#orga7b67ba):Analysis:
+        3.  [Kaggle](#org5ecd409):Kaggle:
+        4.  [Team (Management, Hiring, Organization, &#x2026;)](#org24aa213)
+        5.  [Optimizers / Learn Rates](#org0818a74)
+        6.  [Jupyter Notebooks](#orgf7d2860)
+        7.  [Streamlit](#org05430a7)
+        8.  [Pytorch/fastai](#orgc1441f0)
+        9.  [Datasets](#org344bb92)
+        10. [Pandas](#org12d32fe):Pandas:
+        11. [Data Annotation](#org8744d00)
+        12. [Data Exploration / Feature Engineering](#orgaf6a574)
+        13. [Data Testing](#org0fdcfab)
+        14. [Data Visualization](#orgecb73ce):Visualization:
+        15. [NLP](#orgba9a683):NLP:
+        16. [Computer Vision](#org33d384e)
+        17. [Time Series](#orge19b67c)
+        18. [Deployments](#org629ef73):DevOps:
+    9.  [Data Engineering](#org873766c)
+    10. [Math](#orgdcdbec1):Math:
+    11. [Physics](#orgc839c68)
 
 
 
-<a id="orgf6bc0bb"></a>
+<a id="orgc2294eb"></a>
 
 # Bookmarks
 
 
-<a id="org9fa7100"></a>
+<a id="org8dca9d9"></a>
 
 ## Misc
 
@@ -76,7 +76,7 @@
 -   <https://techblog.commercetools.com/easy-steps-to-get-obs-running-for-high-quality-demo-and-presentation-recordings-a6eef311e56e>
 
 
-<a id="org6eadb54"></a>
+<a id="orgd4e3c29"></a>
 
 ## Bahn
 
@@ -86,16 +86,43 @@
 -   <https://bahn.guru>  - Sparpreis-Finder
 
 
-<a id="org7be75cf"></a>
+<a id="org44e3b44"></a>
 
 ## Business
 
 -   <https://clutch.co/app-developers/resources/what-is-riskiest-assumption-test>  - RAT vs MVP
 -   <https://entrepreneurshandbook.co/the-real-reasons-why-a-vc-passed-on-your-startup-917c30103ecb>  - pretty complete check list
 -   <https://www.gulp.de/knowledge-base/19/iii/neue-checkliste-fuer-freelancer-bin-ich-scheinselbststaendig.html>
+-   <https://medium.com/swlh/5-more-stupid-things-entrepreneurs-should-never-say-when-fundraising-67121dee1c1b>
+    -   **<span class="underline">&ldquo;If we capture X% of the market…&rdquo;</span>:** Instead, marketing sizing estimates
+        show how much money is already being spent, which means capturing market
+        share requires taking customers from an entrenched player. It’s going to
+        cost a lot more time and money than this founder thinks.
+    -   **<span class="underline">&ldquo;Before we start, would you mind signing this NDA?&rdquo;</span>:** This founder thinks
+        ideas are more valuable than execution. &#x2026; care about whether or not the
+        founder can create a highly scalable business around it.
+    -   **<span class="underline">&ldquo;Our team is led by technical founders&rdquo;</span>:** instead of validating the
+        market opportunity to check for actual demand, they immediately started
+        building it. That’s not going to end well. &#x2026; learn that entrepreneurship
+        isn’t like Field of Dreams, and “If you build it, they will come” doesn’t
+        work
+    -   **<span class="underline">&ldquo;We’re not just co-founders. We’re also best friends.&rdquo;</span>:** instead of
+        identifying an important market opportunity, researching it rigorously, and
+        then building the best team possible to capture it, they sat around for
+        hours trying to come up with a “great idea.” &#x2026; they’re building a company
+        and they think it’s going well because a few of their friends/family/frat
+        brothers agreed to download the beta version of their app
+    -   **<span class="underline">&ldquo;We’re growing organically!&rdquo;</span>:** founder doesn’t realize that, for
+        venture-backed companies, organic growth is functionally equivalent to
+        magical growth. Yes, it looks cool on a chart, but it doesn’t represent
+        anything compelling about the underlying fundamentals of the business &#x2026;
+        founder doesn’t realize that, for venture-backed companies, organic growth
+        is functionally equivalent to magical growth. Yes, it looks cool on a chart,
+        but it doesn’t represent anything compelling about the underlying
+        fundamentals of the business
 
 
-<a id="orgcc21cc5"></a>
+<a id="orgd3422fa"></a>
 
 ## Personal Development
 
@@ -105,7 +132,7 @@
 -   <https://medium.com/better-programming/why-do-incompetent-managers-get-promoted-815165a03bee>
 
 
-<a id="org43998b1"></a>
+<a id="org4e940e3"></a>
 
 ## Gesellschaftliches
 
@@ -120,12 +147,12 @@
 -   <https://fragdenstaat.de>
 
 
-<a id="org03ba6ce"></a>
+<a id="org7de1e5d"></a>
 
 ## Software-Development     :Software_Development:
 
 
-<a id="org8239c9e"></a>
+<a id="orge592d38"></a>
 
 ### Misc
 
@@ -142,7 +169,7 @@
 -   <https://glitch.com/>  - Coding together in a collaborative way
 
 
-<a id="org05d472f"></a>
+<a id="org79139d1"></a>
 
 ### Lessons from 50 years experience (Project-Management etc)&#x2026;
 
@@ -376,15 +403,41 @@
     -   My general rule is: “Review early and often, formally and informally.”
 
 
-<a id="orgb38c07b"></a>
+<a id="orgfe30cba"></a>
 
 ### Essays on Programming
 
 -   <https://www.benkuhn.net/progessays/>
 -   <https://blog.nelhage.com/post/computers-can-be-understood/>
+-   <https://mcfunley.com/choose-boring-technology>
+    This is controversial. There are also many examples where choosing boring
+    technology ended up in terrible technology that needed much earlier
+    maintainance (like choosing PHP in 2010 or the quoted MySQL from the article
+    &#x2013; most of the time a PostgreSQL ends up with less problems, and you still
+    need to be able to migrate to Spanner/Hive/Spark/CockroachDB if you are
+    successful)
+    
+    IMHO, the main problem is the conception of shipping without planned
+    maintainance (development). That&rsquo;s absurd in every other engineering
+    discipline. When we build a house, car, plane, &#x2026; - we know from the start
+    when we need to do maintainance and which parts should be replaced after what
+    time of usage (and most of the time, we won&rsquo;t replace it with outdated
+    technology). Updating the software at least once in a quarter and working on
+    at least some issues (with the benefit of keeping knowledge about the internal
+    processes), should be the minimum and planned by start. But usually in
+    software, after shipping we expect to minimize following costs and call it
+    operations. And then we end up with a whole deprecated stack that somehow
+    works, but nobody really can work on or improve any longer.
+-   <https://sandimetz.com/blog/2016/1/20/the-wrong-abstraction>
+    -   duplication is far cheaper than the wrong abstraction
+    -   prefer duplication over the wrong abstraction
+    -   IMHO, a good hint is coming from Go Best Practices: Don&rsquo;t write `common`,
+        `util` or other generic classes, and if you can&rsquo;t assign an abstraction to
+        one topic, I think it&rsquo;s a good sign of a bad abstraction or an abstraction
+        that should be only internally used in a bit fatter package
 
 
-<a id="org7822767"></a>
+<a id="orgc69b989"></a>
 
 ### Some Collection of Best of Talks
 
@@ -403,7 +456,7 @@ Nowhere complete, nowhere top selected per se, but some are interesting, so let&
     -   <https://www.youtube.com/watch?v=Mj5P47F6nJg>  - Structured concurrency
 
 
-<a id="org0ba3e6d"></a>
+<a id="org0317cfa"></a>
 
 ### Team Management
 
@@ -412,7 +465,7 @@ Nowhere complete, nowhere top selected per se, but some are interesting, so let&
 -   <https://github.com/18F/technology-budgeting/blob/master/handbook.md>  - De-risking custom technology projects (wie Behörden IT-Projekte am besten ausschreiben/planen/usw.)
 
 
-<a id="org78d4358"></a>
+<a id="org5966583"></a>
 
 ### YAML
 
@@ -421,7 +474,7 @@ Nowhere complete, nowhere top selected per se, but some are interesting, so let&
 -   <https://arp242.net/weblog/yaml_probably_not_so_great_after_all.html>
 
 
-<a id="orgcca02ed"></a>
+<a id="orgbaa0761"></a>
 
 ### Python
 
@@ -514,7 +567,7 @@ Nowhere complete, nowhere top selected per se, but some are interesting, so let&
     -   <https://towardsdatascience.com/how-to-set-up-your-python-project-docs-for-success-aab613f79626>
 
 
-<a id="orgad632b8"></a>
+<a id="org9012955"></a>
 
 ### Django
 
@@ -534,14 +587,14 @@ Nowhere complete, nowhere top selected per se, but some are interesting, so let&
 -   <https://vsupalov.com/vue-js-in-django-template/>
 
 
-<a id="orgf073605"></a>
+<a id="org25ae302"></a>
 
 ### Javascript
 
 -   <https://medium.com/@michael.karen/learning-modern-javascript-with-tetris-92d532bcd057>
 
 
-<a id="org25f0b19"></a>
+<a id="org6795085"></a>
 
 ### REST APIs / Web Development / HTML
 
@@ -571,14 +624,20 @@ Nowhere complete, nowhere top selected per se, but some are interesting, so let&
 -   <https://medium.com/100-days-of-linux/10-curl-commands-that-you-should-know-ee3d032eb351>
 
 
-<a id="org1af25de"></a>
+<a id="org4c5c4d6"></a>
 
 ### Golang
 
 -   <https://towardsdatascience.com/ultimate-setup-for-your-next-golang-project-1cc989ad2a96>
+-   <https://medium.com/swlh/ultimate-golang-string-formatting-cheat-sheet-234ec92c97da>#
+    -   **&ldquo;%+v&rdquo;:** print struct with field names
+    -   **&ldquo;%#v&rdquo;:** print struct with type and field names
+    -   **&ldquo;%q&rdquo; :** print string with quotes
+    -   **&ldquo;%t&rdquo; :** print boolean
+    -   **&ldquo;%e&rdquo;/&ldquo;%E&rdquo;:** print float in scientific notation
 
 
-<a id="org7a445e3"></a>
+<a id="orgb30a10e"></a>
 
 ### Git / GitHub / Versioning
 
@@ -603,7 +662,7 @@ Nowhere complete, nowhere top selected per se, but some are interesting, so let&
     -   <https://github.com/zricethezav/gitleaks>  - Scan git repos for secrets using regex and entropy
 
 
-<a id="org623fbbb"></a>
+<a id="org299547f"></a>
 
 ### Shell/Bash/Zsh
 
@@ -639,7 +698,7 @@ Nowhere complete, nowhere top selected per se, but some are interesting, so let&
     -   **Ctrl+k:** delete everything from cursor to end of line
 
 
-<a id="orgce468b1"></a>
+<a id="orgcd946fe"></a>
 
 ### Databases
 
@@ -669,12 +728,12 @@ A list with items where you need a skilled DBA to understand, but written good e
         result_hash := intermediate
 
 
-<a id="orgdb06be8"></a>
+<a id="org6ebfad7"></a>
 
 ## DevOps / Security
 
 
-<a id="orgfbaf97b"></a>
+<a id="org38daa48"></a>
 
 ### Misc
 
@@ -711,7 +770,7 @@ A list with items where you need a skilled DBA to understand, but written good e
     5.  Tell a (complete) story (not only for insiders)
 
 
-<a id="org703155e"></a>
+<a id="org0b3a42f"></a>
 
 ### Logging
 
@@ -735,7 +794,7 @@ A list with items where you need a skilled DBA to understand, but written good e
     -   see also: <https://www.kartar.net/2020/05/a-bit-of-a-vector/>
 
 
-<a id="org72b9c42"></a>
+<a id="orgfa90c15"></a>
 
 ### Monorepo vs Multirepo
 
@@ -749,7 +808,7 @@ A list with items where you need a skilled DBA to understand, but written good e
     -   group of Python reviewers for shared code (**really a best practice IMHO**)
 
 
-<a id="org58f071a"></a>
+<a id="orga514f8f"></a>
 
 ### CI/CD-Pipeline
 
@@ -760,7 +819,7 @@ A list with items where you need a skilled DBA to understand, but written good e
 -   <https://github.com/nektos/act>  - Run your GitHub Actions locally
 
 
-<a id="orga38bd99"></a>
+<a id="orge5a1738"></a>
 
 ### Cloud Provisioners
 
@@ -846,7 +905,7 @@ A list with items where you need a skilled DBA to understand, but written good e
         -   **github:** <https://github.com/Fizzadar/pyinfra>
 
 
-<a id="org024ad85"></a>
+<a id="orgd0ce46a"></a>
 
 ### Site Reliability
 
@@ -882,7 +941,7 @@ A list with items where you need a skilled DBA to understand, but written good e
     -   <https://medium.com/@copyconstruct/testing-in-production-the-safe-way-18ca102d0ef1>
 
 
-<a id="org996299b"></a>
+<a id="orgebc79b2"></a>
 
 ### Microservices / Serverless
 
@@ -897,7 +956,7 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
 -   <https://theburningmonk.com/2019/04/comparing-nuclio-and-aws-lambda/>
 
 
-<a id="org08a0bf4"></a>
+<a id="org4c82c12"></a>
 
 ### Docker/Containers     :Docker:
 
@@ -1095,7 +1154,7 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
     -   <https://domm.plix.at/perl/2020_06_docker_prune_volumes_by_label.html>
 
 
-<a id="org2dcab52"></a>
+<a id="orgddaf093"></a>
 
 ### Kubernetes     :Kubernetes:
 
@@ -1217,7 +1276,7 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
     -   <https://medium.com/@pklinker/performance-impacts-of-an-istio-service-mesh-63957a0000b>  - tldr; significant, but not very much
 
 
-<a id="org238cc73"></a>
+<a id="org5f156fa"></a>
 
 ### SSH
 
@@ -1225,7 +1284,7 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
 -   <https://medium.com/maverislabs/proxyjump-the-ssh-option-you-probably-never-heard-of-2d7e41d43464>
 
 
-<a id="orgc91eec0"></a>
+<a id="orgdffd02e"></a>
 
 ### General Computer/Networking/&#x2026; Security     :Security:
 
@@ -1322,7 +1381,7 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
     -   <https://onezero.medium.com/how-to-totally-secure-your-smartphone-48b7a85a5ed8>
 
 
-<a id="orgb640ac7"></a>
+<a id="org80cf840"></a>
 
 ### Security Tools
 
@@ -1333,16 +1392,15 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
     Video <https://www.youtube.com/watch?v=Bppr9rbmwz4>  - Attacking with HTTP Requests
 
 
-<a id="org1e7717f"></a>
+<a id="org17dd30f"></a>
 
 ## Data Science / ML / NLP     :DataScience:
 
 
-<a id="org85a8544"></a>
+<a id="orgd0d84d5"></a>
 
 ### Misc
 
--   <http://www.arxiv-sanity.com/>
 -   <https://tech.trello.com/ice-scoring/>  - Prioritize A/B Test Ideas
 -   <https://lilianweng.github.io/lil-log/2019/03/14/are-deep-neural-networks-dramatically-overfitted.html>
     Give the idea to re-randomize layers or re-initialize top-layers and measure re-randomization or
@@ -1362,7 +1420,7 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
     Introductionary, but very well written text
 
 
-<a id="org7e09d7b"></a>
+<a id="orga7b67ba"></a>
 
 ### Interesting Analysis     :Analysis:
 
@@ -1373,7 +1431,7 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
 -   <https://towardsdatascience.com/march-madness-analyze-video-to-detect-players-teams-and-who-attempted-the-basket-8cad67745b88>
 
 
-<a id="org7e2d609"></a>
+<a id="org5ecd409"></a>
 
 ### Kaggle     :Kaggle:
 
@@ -1381,7 +1439,7 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
 -   <https://towardsdatascience.com/a-story-of-my-first-gold-medal-in-one-kaggle-competition-things-done-and-lessons-learned-c269d9c233d1>
 
 
-<a id="org007b7f7"></a>
+<a id="org24aa213"></a>
 
 ### Team (Management, Hiring, Organization, &#x2026;)
 
@@ -1396,7 +1454,7 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
 -   <https://towardsdatascience.com/how-to-screw-up-a-computer-vision-project-166dfcc44a5f>
 
 
-<a id="orgce7b6a3"></a>
+<a id="org0818a74"></a>
 
 ### Optimizers / Learn Rates
 
@@ -1405,7 +1463,7 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
 -   <https://towardsdatascience.com/self-paced-learning-for-machine-learning-f1c489316c61>
 
 
-<a id="orgcfabd78"></a>
+<a id="orgf7d2860"></a>
 
 ### Jupyter Notebooks
 
@@ -1417,14 +1475,14 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
 -   <https://towardsdatascience.com/introduction-to-papermill-2c61f66bea30>  - How to transform your Jupyter Notebook into a workflow tool
 
 
-<a id="org6d2a3f4"></a>
+<a id="org05430a7"></a>
 
 ### Streamlit
 
 -   <https://towardsdatascience.com/how-to-deploy-a-streamlit-app-using-an-amazon-free-ec2-instance-416a41f69dc3>
 
 
-<a id="orga1f45a8"></a>
+<a id="orgc1441f0"></a>
 
 ### Pytorch/fastai
 
@@ -1433,7 +1491,7 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
 -   <https://medium.com/huggingface/from-tensorflow-to-pytorch-265f40ef2a28> :PyTorch:tensorflow:
 
 
-<a id="orgf5682a3"></a>
+<a id="org344bb92"></a>
 
 ### Datasets
 
@@ -1466,7 +1524,7 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
 -   <https://www.si.edu/openaccess>  -  enthält 2D- und 3D-Darstellungen von kulturellen, wissenschaftlichen, historischen, künstlerischen, technischen und Design-Exponaten aus seinen 19 Museen, 9 Forschungszentren, Bibliotheken, Archiven und dem National Zoo. Hinzu kommen Forschungsdaten und Daten zu Sammlungen
 
 
-<a id="org65f4bf2"></a>
+<a id="org12d32fe"></a>
 
 ### Pandas     :Pandas:
 
@@ -1478,7 +1536,7 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
 -   <https://towardsdatascience.com/geopandas-101-plot-any-data-with-a-latitude-and-longitude-on-a-map-98e01944b972> :Visualization:
 
 
-<a id="org5f1591d"></a>
+<a id="org8744d00"></a>
 
 ### Data Annotation
 
@@ -1486,7 +1544,7 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
     -   **Github:** <https://github.com/heartexlabs/label-studio>
 
 
-<a id="orgff7fcb8"></a>
+<a id="orgaf6a574"></a>
 
 ### Data Exploration / Feature Engineering
 
@@ -1502,7 +1560,7 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
 -   <https://de.wikipedia.org/wiki/Shapiro-Wilk-Test>  -  Signifikanztest, der die Hypothese überprüft, dass die zugrunde liegende Grundgesamtheit einer Stichprobe normalverteilt
 
 
-<a id="org37f0cc9"></a>
+<a id="org0fdcfab"></a>
 
 ### Data Testing
 
@@ -1512,7 +1570,7 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
     they help you guard against upstream data changes and monitor data quality.
 
 
-<a id="orga3b81f3"></a>
+<a id="orgecb73ce"></a>
 
 ### Data Visualization     :Visualization:
 
@@ -1530,7 +1588,7 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
 -   <https://towardsdatascience.com/vis-amz-83dea6fcb059>  - Visualizing 100,000 Products Fast sentence embeddings (fse) for millions of reviews in only a few minutes. :NLP:
 
 
-<a id="org4d19ea9"></a>
+<a id="orgba9a683"></a>
 
 ### NLP     :NLP:
 
@@ -1579,6 +1637,9 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
     -   <https://github.com/zalandoresearch/flair/>
     
     -   <https://github.com/pytorch/fairseq>
+    -   <https://github.com/jbesomi/texthero> - python toolkit to work with text-based
+        dataset quickly and effortlessly. Texthero is very simple to learn and
+        designed to be used on top of Pandas.
 
 6.  Embeddings
 
@@ -1634,7 +1695,7 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
     -   <https://medium.com/dair-ai/xlnet-outperforms-bert-on-several-nlp-tasks-9ec867bb563b>
 
 
-<a id="org57c42f3"></a>
+<a id="org33d384e"></a>
 
 ### Computer Vision
 
@@ -1681,7 +1742,7 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
     -   <https://towardsdatascience.com/review-yolov3-you-only-look-once-object-detection-eab75d7a1ba6>
 
 
-<a id="org8ac2690"></a>
+<a id="orge19b67c"></a>
 
 ### Time Series
 
@@ -1690,7 +1751,7 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
 -   <https://towardsdatascience.com/anomaly-detection-time-series-4c661f6f165f> - Detect anomaly in time series with facebook Prophet
 
 
-<a id="org79f1aee"></a>
+<a id="org629ef73"></a>
 
 ### Deployments     :DevOps:
 
@@ -1698,7 +1759,7 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
 -   <https://medium.com/@colinshaw_36798/fully-utilizing-your-deep-learning-gpus-61ee7acd3e57>
 
 
-<a id="org03672a4"></a>
+<a id="org873766c"></a>
 
 ## Data Engineering
 
@@ -1710,7 +1771,7 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
     Discusses the Alternating Algorithm (LargeStar, SmallStar) to have a fast and local working connection graph algorithm working up to huge data scale
 
 
-<a id="orgf844942"></a>
+<a id="orgdcdbec1"></a>
 
 ## Math     :Math:
 
@@ -1722,9 +1783,10 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
 -   <https://towardsdatascience.com/a-b-testing-is-there-a-better-way-an-exploration-of-multi-armed-bandits-98ca927b357d>  - Overview of different algorithms for Multi Armed Bandits
 -   <https://towardsdatascience.com/rip-correlation-introducing-the-predictive-power-score-3d90808b9598>  - Better way to find correlation instead of correlation matrices
     Main advantage to something like Mutual Information Score is that it can also applied to categorical variables
+-   <https://towardsdatascience.com/how-floating-point-numbers-work-1429907b6d1d>
 
 
-<a id="orgda7eb7b"></a>
+<a id="orgc839c68"></a>
 
 ## Physics
 
