@@ -52,6 +52,19 @@
     is functionally equivalent to magical growth. Yes, it looks cool on a chart,
     but it doesn’t represent anything compelling about the underlying
     fundamentals of the business
+- https://medium.com/@aarondinin/the-two-letter-word-that-will-destroy-your-company-1e66a71b5349
+  - *If* we can close X% of the leads we’ve got coming into the pipeline…
+    *If* only X% of our website visitors click…
+    *If* we can just get picked up by a couple of media outlets…
+    *If* just one of our videos goes viral…
+    *If* we get just one investor to commit…
+  - Even in the few examples I’ve given, I hope you’ve noticed how easy and
+    dangerous it is to make assumptions about the outcomes of difficult work and
+    then cover it with the word “if.”
+  - obfuscate tasks that are enormously complex, difficult, time-consuming,
+    expensive, and perhaps impossible
+  - replacing my original “if-statement” with the following phrase:
+    “If we can do something that takes 12 months and costs us a million dollars.”
 
 ** Personal Development
 
@@ -346,6 +359,38 @@
     =util= or other generic classes, and if you can't assign an abstraction to
     one topic, I think it's a good sign of a bad abstraction or an abstraction
     that should be only internally used in a bit fatter package
+- https://www.kalzumeus.com/2010/06/17/falsehoods-programmers-believe-about-names/
+  tldr; It's a huge mess, don't expect anything (not even unicode)
+
+  In theory, the best would be to implement something like a free data field and
+  then an implementation of how to interpret it and then algorithm on top of it
+  using the most appropriate interface to work with the name. But really, who
+  does that, is there even at least one example for it?
+- https://sockpuppet.org/blog/2015/03/06/the-hiring-post/
+  Very detailed:
+  - but try to make interviewing unimportant (you need good coder skills, not good talking/social stress skills)
+  - prefer coding testing from practice
+  - but keep objective scoring criteria: like test coverage, algorithmic complexity, spotted problem A, B, ..., ...
+  - if interviewing: keep a warm up phase with unimportant personal questions,
+    keep highly structured interviews [all though they won't be loved](with robot-like scripts for the
+    interviewer) and make them same/comparable for every one
+  - still allow free Q&A, but make it shorter and with less influence on all
+  - make it respectful for the interviewed person: free books etc to compensate for the work
+
+  ... not sure about what company size the author is talking, for small
+  companies, the main problem is usually to get at least one competent worker,
+  not to select between different highly skilled apprentices
+
+  ... in general: I'm personal doubtful about long interviewing procedures with
+  several rounds. There are many studies showing that in the end, they really
+  don't help. There are 2 reliable proxies: high potential (graduate degree)
+  [problem: isn't productive from day1] and is working successful for someone
+  else [expensive]. I personal think, it's in case better to make a quick
+  decision probably relying on something like
+  https://en.wikipedia.org/wiki/Secretary_problem than to overestimate the own
+  scoring procedures of interviewing. One problem of long interviewing is that
+  the best will find another job before the selection process has finished
+  (unless you are the one and only company)
 
 *** Some Collection of Best of Talks
 
@@ -368,6 +413,7 @@ Nowhere complete, nowhere top selected per se, but some are interesting, so let'
 - https://towardsdatascience.com/leading-a-software-development-team-be13b3f6b0f
 - https://www.youtube.com/watch?v=28S4CVkYhWA&list=WL&index=2  - Mob Programming and the Power of Flow
 - https://github.com/18F/technology-budgeting/blob/master/handbook.md  - De-risking custom technology projects (wie Behörden IT-Projekte am besten ausschreiben/planen/usw.)
+- https://medium.com/static-void-academy/5-things-more-important-than-intelligence-in-software-engineering-23d52fb105b0
 
 *** YAML
 
