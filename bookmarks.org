@@ -391,6 +391,23 @@
   scoring procedures of interviewing. One problem of long interviewing is that
   the best will find another job before the selection process has finished
   (unless you are the one and only company)
+- https://programmingisterrible.com/post/176657481103/repeat-yourself-do-more-than-one-thing-and
+  - Repeat yourself, but don’t repeat other people’s hard work. Repeat yourself:
+    duplicate to find the right abstraction first, then deduplicate to implement
+    it.
+  - With “Don’t Repeat Yourself”, some insist that it isn’t about avoiding
+    duplication of code, but about avoiding duplication of functionality or
+    duplication of responsibility. This is more popularly known as the “Single
+    Responsibility Principle”, and it’s just as easily mishandled. (like many boolean flags etc)
+  - A given module often gets changed because it is the easiest module to
+    change, rather than the best place for the change to be made. In the end,
+    what defines a module is what pieces of the system it will never responsible
+    for, rather what it is currently responsible for.
+  - In the end, we call our good decisions ‘clean code’ and our bad decisions
+    ‘technical debt’, despite following the same rules and practices to get
+    there.
+
+
 
 *** Some Collection of Best of Talks
 
