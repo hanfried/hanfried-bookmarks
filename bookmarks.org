@@ -65,6 +65,21 @@
     expensive, and perhaps impossible
   - replacing my original “if-statement” with the following phrase:
     “If we can do something that takes 12 months and costs us a million dollars.”
+- https://medium.com/@aarondinin/10-things-a-vc-would-rather-do-with-your-nda-than-sign-it-9f7cff9175ee
+  - Investors meet with dozens of companies each week, and many of those
+    companies have similarities based around the investor’s investment thesis.
+    By signing your NDA, they could inadvertently put themselves in a position
+    of not being able to discuss something necessary for considering another
+    investment.
+  - A venture capitalist has no interest in “stealing” your idea or proprietary
+    information because venture capitalists don’t build companies. That’s not
+    their business model. Their business model is to invest in companies, and
+    that’s a full time job. They don’t have time to do whatever work is involved
+    in building the company you’re pitching.
+  - The job of a venture-backed entrepreneur is to grow a company to the point
+    at which it can exit and generate a return on the VC’s investment.
+  - investors don’t want their entrepreneurs wasting time trying to figure out
+    new and proprietary ways of building and growing companies
 
 ** Personal Development
 
@@ -406,6 +421,52 @@
   - In the end, we call our good decisions ‘clean code’ and our bad decisions
     ‘technical debt’, despite following the same rules and practices to get
     there.
+- https://www.joelonsoftware.com/2002/11/11/the-law-of-leaky-abstractions/
+  - All non-trivial abstractions, to some degree, are leaky.
+    - iterating over a large two-dimensional array can have radically different
+      performance if you do it horizontally rather than vertically,
+    - But in some cases, certain SQL queries are thousands of times slower than
+      other logically equivalent queries. A famous example of this is that some
+      SQL servers are dramatically faster if you specify “where a=b and b=c and
+      a=c”
+    - network libraries like NFS and SMB let you treat files on remote machines
+      “as if” they were local, sometimes the connection becomes very slow or
+      goes down, and the file stops acting like it was local, and as a
+      programmer you have to write code to deal with this.
+    - C++ string classes are supposed to let you pretend that strings are
+      first-class data. They try to abstract away the fact that strings are hard
+      and let you act as if they were as easy as integers. Almost all C++ string
+      classes overload the + operator so you can write s + “bar” to concatenate.
+      But you know what? No matter how hard they try, there is no C++ string
+      class on Earth that will let you type “foo” + “bar”, because string
+      literals in C++ are always char*’s, never strings.
+    - And you can’t drive as fast when it’s raining, even though your car has
+      windshield wipers and headlights and a roof and a heater, all of which
+      protect you from caring about the fact that it’s raining (they abstract
+      away the weather), but lo, you have to worry about hydroplaning (or
+      aquaplaning in England) and sometimes the rain is so strong you can’t see
+      very far ahead so you go slower in the rain, because the weather can never
+      be completely abstracted away
+  - So the abstractions save us time working, but they don’t save us time learning.
+  - And all this means that paradoxically, even as we have higher and higher
+    level programming tools with better and better abstractions, becoming a
+    proficient programmer is getting harder and harder.
+- https://blog.nelhage.com/post/reflections-on-performance/
+  - Performance — in particular, being notably fast — is a feature in and of its
+    own right, which fundamentally alters how a tool is used and perceived.
+  - Fast tools don’t just allow users to accomplish tasks faster; they allow
+    users to accomplish entirely new types of tasks, in entirely new ways.
+  - “performance last” model will rarely, if ever, produce truly fast software
+  - The basic architecture of a system — the high-level structure, dataflow and
+    organization — often has profound implications for performance.
+  - the more 1% regressions you can avoid in the first place, the easier this
+    work is.
+  - attempts to add performance to a slow system often add complexity, in the
+    form of complex caching, distributed systems, or additional bookkeeping for
+    fine-grained incremental recomputation
+  - tool is fast in the first place, these additional layers may be unnecessary
+    to achieve acceptable overall performance, resulting in a system that is in
+    net much simpler for a given level of performance
 
 
 
@@ -541,6 +602,9 @@ Nowhere complete, nowhere top selected per se, but some are interesting, so let'
 *** Javascript
 
 - https://medium.com/@michael.karen/learning-modern-javascript-with-tetris-92d532bcd057
+*** Java
+- https://medium.com/swlh/native-memory-the-silent-jvm-killer-595913cba8e7  - more interesting than the debugging:
+  *be aware that java.util.zip written in C has serious memory leaks without a good alternative*
 
 *** REST APIs / Web Development / HTML
 
