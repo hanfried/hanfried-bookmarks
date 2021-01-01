@@ -15,7 +15,6 @@
 
 ** Bahn
 
-- https://covid19.datanomiq.de/#section-cases  - Covid 19 Dashboard
 - Anzeige von Bahn API Daten https://marudor.de/
   Inklusive detaillierte Wagenreihung und Anfahrtspläne für einen Bahnhof
 - https://bahn.guru  - Sparpreis-Finder
@@ -467,8 +466,26 @@
   - tool is fast in the first place, these additional layers may be unnecessary
     to achieve acceptable overall performance, resulting in a system that is in
     net much simpler for a given level of performance
-
-
+- https://www.somethingsimilar.com/2013/01/14/notes-on-distributed-systems-for-young-bloods/
+  - Distributed systems are different because they fail often
+  - Writing robust distributed systems costs more than writing robust single-machine systems
+  - Robust, open source distributed systems are much less common than robust, single-machine systems
+  - Coordination is very hard
+  - If you can fit your problem in memory, it’s probably trivial
+  - “It’s slow” is the hardest problem you’ll ever debug
+  - Implement backpressure throughout your system
+  - Find ways to be partially available
+  - Metrics are the only way to get your job done
+  - Use percentiles, not averages
+  - Learn to estimate your capacity
+  - Feature flags are how infrastructure is rolled out
+  - Choose id spaces wisely
+  - Exploit data-locality
+  - Writing cached data back to persistent storage is bad
+  - Computers can do more than you think they can
+  - Use the CAP theorem to critique systems
+  - Extract services
+- https://www.stilldrinking.org/programming-sucks  - just epic and an exact description of programming world
 
 *** Some Collection of Best of Talks
 
@@ -671,7 +688,7 @@ Nowhere complete, nowhere top selected per se, but some are interesting, so let'
 - https://arslan.io/2019/07/03/how-to-write-idempotent-bash-scripts/
 - https://medium.com/better-programming/top-tips-for-writing-unsurprising-bash-scripts-9b9f4f0cc30e
   1. Tell Bash to Run in Safe Mode
-     #+BEGIN_SRC sh
+    #+BEGIN_SRC sh
 # start your script with
 #!/bin/bash -eu
 
@@ -689,6 +706,97 @@ set -o nounset
   4. Don't write Programs (more than 100 lines of code => use python instead)
 
   5. Give helpful error messages (https://levelup.gitconnected.com/helpful-errors-in-bash-scripts-c1e3c2c50bf8)
+- https://betterdev.blog/minimal-safe-bash-script-template/
+
+  #+BEGIN_SRC bash
+#!/usr/bin/env bash
+
+set -Eeuo pipefail
+trap cleanup SIGINT SIGTERM ERR EXIT
+
+script_dir=$(cd "$(dirname "${BASH_SOURCE[0]}")" &>/dev/null && pwd -P)
+
+usage() {
+cat <<EOF
+Usage: $(basename "${BASH_SOURCE[0]}") [-h] [-v] [-f] -p param_value arg1 [arg2...]
+
+Script description here.
+
+Available options:
+
+-h, --help      Print this help and exit
+-v, --verbose   Print script debug info
+-f, --flag      Some flag description
+-p, --param     Some param description
+EOF
+exit
+}
+
+cleanup() {
+trap - SIGINT SIGTERM ERR EXIT
+# script cleanup here
+}
+
+setup_colors() {
+if [[ -t 2 ]] && [[ -z "${NO_COLOR-}" ]] && [[ "${TERM-}" != "dumb" ]]; then
+    NOFORMAT='\033[0m' RED='\033[0;31m' GREEN='\033[0;32m' ORANGE='\033[0;33m' BLUE='\033[0;34m' PURPLE='\033[0;35m' CYAN='\033[0;36m' YELLOW='\033[1;33m'
+else
+    NOFORMAT='' RED='' GREEN='' ORANGE='' BLUE='' PURPLE='' CYAN='' YELLOW=''
+fi
+}
+
+msg() {
+echo >&2 -e "${1-}"
+}
+
+die() {
+local msg=$1
+local code=${2-1} # default exit status 1
+msg "$msg"
+exit "$code"
+}
+
+parse_params() {
+# default values of variables set from params
+flag=0
+param=''
+
+while :; do
+    case "${1-}" in
+    -h | --help) usage ;;
+    -v | --verbose) set -x ;;
+    --no-color) NO_COLOR=1 ;;
+    -f | --flag) flag=1 ;; # example flag
+    -p | --param) # example named parameter
+    param="${2-}"
+    shift
+    ;;
+    -?*) die "Unknown option: $1" ;;
+    *) break ;;
+    esac
+    shift
+done
+
+args=("$@")
+
+# check required params and arguments
+[[ -z "${param-}" ]] && die "Missing required parameter: param"
+[[ ${#args[@]} -eq 0 ]] && die "Missing script arguments"
+
+return 0
+}
+
+parse_params "$@"
+setup_colors
+
+# script logic here
+
+msg "${RED}Read parameters:${NOFORMAT}"
+msg "- flag: ${flag}"
+msg "- param: ${param}"
+msg "- arguments: ${args[*]-}
+    #+END_SRC
+
 - https://towardsdatascience.com/9-time-saving-tricks-for-your-command-line-c7535f1aa648
   - !! :: reexecutes last command
   - !foo :: reexecute last command with foo
@@ -715,7 +823,7 @@ A list with items where you need a skilled DBA to understand, but written good e
 - http://asvignesh.in/3-2-1-backup-strategy/
 - https://medium.com/scopedev/introduction-to-profiling-and-optimizing-sql-queries-for-software-engineers-3cf376ecc712
 - https://explain.depesz.com/  - Tool: PostgreSQL's explain analyze made readable
-- https://medium.com/faun/how-are-passwords-securely-stored-in-databases-be883241959f
+- 410 gone medium.com/faun/how-are-passwords-securely-stored-in-databases-be883241959f
   tldr; The first method considered safe as of 2017 is Password-Based Key
   Derivation Functions (PBKDF2):
 
@@ -725,6 +833,8 @@ A list with items where you need a skilled DBA to understand, but written good e
       intermediate = hash(password + intermediate)
   result_hash := intermediate
   #+END_SRC
+- https://edgedb.com/blog/we-can-do-better-than-sql
+- https://towardsdatascience.com/the-curious-case-of-mysql-postgresql-and-hive-9e7cae9e52f4  - subtle changes in behaviour given same syntax
 
 ** DevOps / Security
 *** Misc
@@ -784,6 +894,7 @@ A list with items where you need a skilled DBA to understand, but written good e
 
 *** Monorepo vs Multirepo
 
+- https://www.bennadel.com/blog/3944-why-ive-been-merging-microservices-back-into-the-monolith-at-invision.htm
 - https://www.rookout.com/cant-git-no-satisfaction-why-we-need-a-new-gen-source-control/  - Advantages/Disadvantages of Monorepo vs Multirepo
 - https://medium.com/opendoor-labs/our-python-monorepo-d34028f2b6fa  - many interesting small decisions
   - Seperate into projects, libraries and tools
@@ -923,6 +1034,7 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
 *** Docker/Containers :Docker:
 **** Misc
 
+- https://medium.com/swlh/alpine-slim-stretch-buster-jessie-bullseye-bookworm-what-are-the-differences-in-docker-62171ed4531d
 - https://pythonspeed.com/articles/base-image-python-docker-images/ :Docker:
 - https://pythonspeed.com/articles/dockerizing-python-is-hard/    :Docker:
 - https://pythonspeed.com/articles/alpine-docker-python/  - why not to use alpine as docker image for python
@@ -962,6 +1074,7 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
 **** Docker Best Practices & Docker Security
 
 - https://medium.com/better-programming/docker-best-practices-and-anti-patterns-e7cbccba4f19
+- https://ayozefernandez.com/blog/load-average-and-docker/  - 70-80% load on cluster, but not necessary on individual node
 - https://medium.com/@cwgem/thoughts-about-docker-security-8e0df4b43650
   - Usage Of Official Images
   - Pull Signed Images
