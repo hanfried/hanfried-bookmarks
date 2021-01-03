@@ -573,6 +573,7 @@ Nowhere complete, nowhere top selected per se, but some are interesting, so let'
 - https://github.com/agronholm/typeguard  - Run-time type checker for Python
 - https://github.com/python-discord/flake8-annotations  - Flake8 Type Annotation Checking
 - https://github.com/samuelcolvin/pydantic/  - Data validation and settings management using Python type hinting
+- https://medium.com/better-programming/the-beginners-guide-to-pydantic-ba33b26cde89
 - https://github.com/python-desert/desert  - generates serialization schemas for dataclasses and attrs classes
 ***** Data Science
 - https://towardsdatascience.com/an-overview-of-pythons-datatable-package-5d3a97394ee9
@@ -804,6 +805,8 @@ msg "- arguments: ${args[*]-}
   - Ctrl+a :: hop to beginning of line
   - Ctrl+e :: hop to end of line
   - Ctrl+k :: delete everything from cursor to end of line
+*** Makefiles
+- https://medium.com/better-programming/how-to-create-a-self-documenting-makefile-533ebf8f82e2
 
 *** Databases
 
@@ -1554,6 +1557,8 @@ In all use cases, the information extraction is based on analysing the semantic 
 - https://towardsdatascience.com/what-is-xlnet-and-why-it-outperforms-bert-8d8fce710335
 - https://towardsdatascience.com/xlnet-a-clever-language-modeling-solution-ab41e87798b0
 - https://medium.com/dair-ai/xlnet-outperforms-bert-on-several-nlp-tasks-9ec867bb563b
+**** GPT
+- https://medium.com/@melaniemitchell.me/can-gpt-3-make-analogies-16436605c446  - very impressive, it can. Read especially the follow up.
 *** Computer Vision
 **** Misc
 - https://medium.com/@CharlesOllion/whats-easy-hard-in-ai-computer-vision-these-days-e7679b9f7db7
@@ -1613,6 +1618,7 @@ but also why they are so sensitive to adversial networks
 - https://towardsdatascience.com/rip-correlation-introducing-the-predictive-power-score-3d90808b9598  - Better way to find correlation instead of correlation matrices
   Main advantage to something like Mutual Information Score is that it can also applied to categorical variables
 - https://towardsdatascience.com/how-floating-point-numbers-work-1429907b6d1d
+- https://towardsdatascience.com/the-lost-boarding-pass-problem-2a17313b2d8a  - a bit similar to birthday paradox
 ** Physics
 
 - https://www.youtube.com/watch?v=Ps5wovm3OQ4 - Wolfram Physics Harvard Black Hole Initiative: A
