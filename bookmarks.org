@@ -529,6 +529,8 @@ Nowhere complete, nowhere top selected per se, but some are interesting, so let'
   - https://medium.com/@cjolowicz/hypermodern-python-6-ci-cd-b233accfa2f6
 - https://towardsdatascience.com/whats-init-for-me-d70a312da583  - Designing for Python package import patterns
 - https://instagram-engineering.com/static-analysis-at-scale-an-instagram-story-8f498ab71a0c  - Linters, Codemods, ...
+**** Python Internals
+- https://towardsdatascience.com/understand-slots-in-python-e3081ef5196d
 
 **** Modules
 
@@ -807,6 +809,7 @@ msg "- arguments: ${args[*]-}
   - Ctrl+k :: delete everything from cursor to end of line
 *** Makefiles
 - https://medium.com/better-programming/how-to-create-a-self-documenting-makefile-533ebf8f82e2
+- https://nullprogram.com/blog/2017/08/20/  - A Tutorial on Portable Makefiles
 
 *** Databases
 
@@ -1601,6 +1604,7 @@ but also why they are so sensitive to adversial networks
 - https://medium.com/datadriveninvestor/deploy-your-pytorch-model-to-production-f69460192217 :PyTorch:
 - https://medium.com/@colinshaw_36798/fully-utilizing-your-deep-learning-gpus-61ee7acd3e57
 ** Data Engineering
+- https://itnext.io/big-data-pipeline-recipe-c416c1782908  - Complete holistic overview to big data landscape 2020
 - [[https://docs.google.com/spreadsheets/d/1VcIk_enQ5wefkbRWAoSpy3ZZux5-WgSPipqVLuNsjcA/edit#gid=0][The Awesome Kafka Resources]]
 - https://medium.com/better-programming/kafka-vs-rabbitmq-why-use-kafka-8401b2863b8b
   - Kafka :: Pull Model (and very well suited for really high throughput situations)
