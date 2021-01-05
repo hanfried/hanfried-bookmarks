@@ -79,6 +79,7 @@
     at which it can exit and generate a return on the VC’s investment.
   - investors don’t want their entrepreneurs wasting time trying to figure out
     new and proprietary ways of building and growing companies
+- https://medium.com/young-coder/how-microsoft-beat-the-innovators-dilemma-5b78e3692ed3
 
 ** Personal Development
 
@@ -544,6 +545,14 @@ Nowhere complete, nowhere top selected per se, but some are interesting, so let'
   - https://github.com/LuminosoInsight/python-ftfy  - fix somehow broken unicode characters
 - https://github.com/jpvanhal/inflection  - string transformation library. It singularizes and pluralizes English words, and transforms strings from CamelCase to underscored string.
 - https://github.com/lepture/python-livereload  - nice file watcher
+- https://github.com/tiangolo/fastapi  - framework, high performance, easy to learn, fast to code, ready for production
+- https://medium.com/better-programming/python-celery-best-practices-ae182730bb81
+- https://github.com/seatgeek/fuzzywuzzy  -  Fuzzy String Matching in Python (useful for CLI help and similar)
+- https://github.com/mingrammer/diagrams  - lets you draw the cloud system architecture in Python code.
+***** CLI
+- https://github.com/tiangolo/typer  - build great CLIs. Easy to code. Based on Python type hints.
+- https://typer.tiangolo.com/  - fastapi equivalent for CLI tools -> use it for the next CLI tool if possible
+- https://github.com/onelivesleft/PrettyErrors  - readable stack traces for terminals with colors
 - https://github.com/Delgan/loguru  - Python logging made (stupidly) simple
   Loguru is a library which aims to bring enjoyable logging in Python.
 
@@ -555,10 +564,6 @@ Nowhere complete, nowhere top selected per se, but some are interesting, so let'
   Also, this library is intended to make Python logging less painful by adding a bunch of useful
   functionalities that solve caveats of the standard loggers. Using logs in your application
   should be an automatism, Loguru tries to make it both pleasant and powerful.
-- https://github.com/tiangolo/fastapi  - framework, high performance, easy to learn, fast to code, ready for production
-- https://github.com/tiangolo/typer  - build great CLIs. Easy to code. Based on Python type hints.
-- https://medium.com/better-programming/python-celery-best-practices-ae182730bb81
-- https://github.com/seatgeek/fuzzywuzzy  -  Fuzzy String Matching in Python (useful for CLI help and similar)
 
 ***** Code Quality/CI
 - https://tox.readthedocs.io/en/latest/  - standardize testing in Python
@@ -661,6 +666,7 @@ Nowhere complete, nowhere top selected per se, but some are interesting, so let'
   - "%q"  :: print string with quotes
   - "%t"  :: print boolean
   - "%e"/"%E" :: print float in scientific notation
+- https://medium.com/a-journey-with-go/go-multiple-errors-management-a67477628cf1
 
 *** Git / GitHub / Versioning
 **** Misc
@@ -810,6 +816,7 @@ msg "- arguments: ${args[*]-}
 *** Makefiles
 - https://medium.com/better-programming/how-to-create-a-self-documenting-makefile-533ebf8f82e2
 - https://nullprogram.com/blog/2017/08/20/  - A Tutorial on Portable Makefiles
+- https://www.gnu.org/software/make/manual/make.html#Rules  - Writing Rules documentation
 
 *** Databases
 
@@ -1488,6 +1495,8 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
 - https://towardsdatascience.com/reliving-avengers-infinity-war-with-spacy-and-natural-language-processing-2abcb48e4ba1  - Discovering the top nouns, verbs, entities and text similarity
 - https://towardsdatascience.com/a-technique-for-building-nlp-classifiers-efficiently-with-transfer-learning-and-weak-supervision-a8e2f21ca9c8
 - https://towardsdatascience.com/fuzzy-matching-at-scale-84f2bfd0c536  - Use tf-idf on substrings to make very, very fast fuzzy matching - clever trick
+**** Search
+- https://towardsdatascience.com/introducing-txtai-an-ai-powered-search-engine-built-on-transformers-37674be252ec
 **** Summarisation
 - https://towardsdatascience.com/automatic-text-summarisation-ccc98d2b323f  - Condensing with TextRank
   TextRank works similar to PageRank with the idea of:
@@ -1556,6 +1565,8 @@ In all use cases, the information extraction is based on analysing the semantic 
   - Smaller Inputs :: Dynamic Shapes, no zero paddings needed if batch size for inference is just 1
   - Smaller Weights :: Dynamic Quantization (down to 8bit ints!!)
   - Smaller Nr of Requests :: by caching (they got 40% cache hit!)
+- https://towardsdatascience.com/fine-tuning-bert-for-text-classification-with-farm-2880665065e2
+- https://towardsdatascience.com/labse-language-agnostic-bert-sentence-embedding-by-google-ai-531f677d775f
 **** XLNet
 - https://towardsdatascience.com/what-is-xlnet-and-why-it-outperforms-bert-8d8fce710335
 - https://towardsdatascience.com/xlnet-a-clever-language-modeling-solution-ab41e87798b0
@@ -1600,6 +1611,8 @@ but also why they are so sensitive to adversial networks
 - Forecasting at scale: https://facebook.github.io/prophet/
 - https://towardsdatascience.com/on-the-automation-of-time-series-forecasting-models-technical-and-organizational-considerations-286db3120c8e
 - https://towardsdatascience.com/anomaly-detection-time-series-4c661f6f165f - Detect anomaly in time series with facebook Prophet
+*** Graphs
+- https://towardsdatascience.com/large-scale-graph-mining-with-spark-part-2-2c3d9ed15bb5
 *** Deployments :DevOps:
 - https://medium.com/datadriveninvestor/deploy-your-pytorch-model-to-production-f69460192217 :PyTorch:
 - https://medium.com/@colinshaw_36798/fully-utilizing-your-deep-learning-gpus-61ee7acd3e57
