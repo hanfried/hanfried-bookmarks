@@ -79,6 +79,7 @@
     at which it can exit and generate a return on the VC’s investment.
   - investors don’t want their entrepreneurs wasting time trying to figure out
     new and proprietary ways of building and growing companies
+- https://medium.com/swlh/why-startups-should-never-hire-straight-a-students-75b176b8e907
 - https://medium.com/young-coder/how-microsoft-beat-the-innovators-dilemma-5b78e3692ed3
 
 ** Personal Development
@@ -1404,6 +1405,8 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
 - https://towardsdatascience.com/multi-layer-perceptron-usingfastai-and-pytorch-9e401dd288b8 :PyTorch:fastai:
 - https://towardsdatascience.com/deep-learning-for-diagnosis-of-skin-images-with-fastai-792160ab5495 :fastai:
 - https://medium.com/huggingface/from-tensorflow-to-pytorch-265f40ef2a28 :PyTorch:tensorflow:
+*** Web Scraping
+- https://medium.com/better-programming/introducing-autoscraper-a-smart-fast-and-lightweight-web-scraper-for-python-20987f52c749
 
 *** Datasets
 
@@ -1567,6 +1570,7 @@ In all use cases, the information extraction is based on analysing the semantic 
   - Smaller Nr of Requests :: by caching (they got 40% cache hit!)
 - https://towardsdatascience.com/fine-tuning-bert-for-text-classification-with-farm-2880665065e2
 - https://towardsdatascience.com/labse-language-agnostic-bert-sentence-embedding-by-google-ai-531f677d775f
+- https://towardsdatascience.com/understanding-bigbird-is-it-another-big-milestone-in-nlp-e7546b2c9643
 **** XLNet
 - https://towardsdatascience.com/what-is-xlnet-and-why-it-outperforms-bert-8d8fce710335
 - https://towardsdatascience.com/xlnet-a-clever-language-modeling-solution-ab41e87798b0
@@ -1613,6 +1617,7 @@ but also why they are so sensitive to adversial networks
 - https://towardsdatascience.com/anomaly-detection-time-series-4c661f6f165f - Detect anomaly in time series with facebook Prophet
 *** Graphs
 - https://towardsdatascience.com/large-scale-graph-mining-with-spark-part-2-2c3d9ed15bb5
+- https://towardsdatascience.com/graphframes-in-jupyter-a-practical-guide-9b3b346cebc5
 *** Deployments :DevOps:
 - https://medium.com/datadriveninvestor/deploy-your-pytorch-model-to-production-f69460192217 :PyTorch:
 - https://medium.com/@colinshaw_36798/fully-utilizing-your-deep-learning-gpus-61ee7acd3e57
