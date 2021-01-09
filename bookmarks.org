@@ -112,6 +112,7 @@
 - https://hackernoon.com/the-fine-art-of-fast-development-f3b1abb509da
 - https://testing.googleblog.com/2015/04/just-say-no-to-more-end-to-end-tests.html
 - https://medium.com/@cscalfani/goodbye-object-oriented-programming-a59cda4c0e53
+- https://caseymuratori.com/blog_0015  - Semantic Compression of Code instead of Abstracting in Advance/OOP
 - https://medium.com/@liman.rom/f-spoiled-me-or-why-i-dont-enjoy-c-anymore-39e025035a98  - nice examples of advantages of a well designed functional language
 - https://levelup.gitconnected.com/why-rewriting-applications-from-scratch-is-almost-always-a-bad-idea-5402d1715006
 - https://glitch.com/  - Coding together in a collaborative way
@@ -962,6 +963,8 @@ A list with items where you need a skilled DBA to understand, but written good e
 **** GCP
 
 - https://medium.com/google-cloud/completely-private-gke-clusters-with-no-internet-connectivity-945fffae1ccd
+**** Openshift
+- https://medium.com/swlh/im-so-sorry-openshift-i-ve-taken-you-for-granted-f36fb47ea4d9  - advantages of Openshift vs AKS/EKS,GKS,..., tldr; it's much simpler
 
 **** Terraform
 ***** Misc
@@ -1451,6 +1454,8 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
 
 - https://towardsdatascience.com/introducing-label-studio-a-swiss-army-knife-of-data-labeling-140c1be92881
   - Github :: https://github.com/heartexlabs/label-studio
+*** Data Cleaning
+- https://counting.substack.com/p/data-cleaning-is-analysis-not-grunt
 
 *** Data Exploration / Feature Engineering
 
@@ -1618,10 +1623,12 @@ but also why they are so sensitive to adversial networks
 *** Graphs
 - https://towardsdatascience.com/large-scale-graph-mining-with-spark-part-2-2c3d9ed15bb5
 - https://towardsdatascience.com/graphframes-in-jupyter-a-practical-guide-9b3b346cebc5
+- https://towardsdatascience.com/an-introduction-to-spark-graphframe-with-examples-analyzing-the-wikipedia-link-graph-67e58c20a107
 *** Deployments :DevOps:
 - https://medium.com/datadriveninvestor/deploy-your-pytorch-model-to-production-f69460192217 :PyTorch:
 - https://medium.com/@colinshaw_36798/fully-utilizing-your-deep-learning-gpus-61ee7acd3e57
 ** Data Engineering
+*** Misc
 - https://itnext.io/big-data-pipeline-recipe-c416c1782908  - Complete holistic overview to big data landscape 2020
 - [[https://docs.google.com/spreadsheets/d/1VcIk_enQ5wefkbRWAoSpy3ZZux5-WgSPipqVLuNsjcA/edit#gid=0][The Awesome Kafka Resources]]
 - https://medium.com/better-programming/kafka-vs-rabbitmq-why-use-kafka-8401b2863b8b
@@ -1629,6 +1636,8 @@ but also why they are so sensitive to adversial networks
   - RabbitMQ :: Push Model, probably a bit easier to work with (following article and "Messaging the just works" self advertisment of RabbitMQ)
 - https://www.youtube.com/watch?v=Io1x6mQlh1E  - Connected Components in MapReduce and Beyond
   Discusses the Alternating Algorithm (LargeStar, SmallStar) to have a fast and local working connection graph algorithm working up to huge data scale
+*** Spark
+- https://towardsdatascience.com/successful-spark-submits-for-python-projects-53012ca7405a  - complete setup including bundling env and dependencies
 ** Math :Math:
 
 - https://de.wikipedia.org/wiki/Braess-Paradoxon
