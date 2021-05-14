@@ -512,6 +512,9 @@ Nowhere complete, nowhere top selected per se, but some are interesting, so let'
 - https://www.youtube.com/watch?v=28S4CVkYhWA&list=WL&index=2  - Mob Programming and the Power of Flow
 - https://github.com/18F/technology-budgeting/blob/master/handbook.md  - De-risking custom technology projects (wie Behörden IT-Projekte am besten ausschreiben/planen/usw.)
 - https://medium.com/static-void-academy/5-things-more-important-than-intelligence-in-software-engineering-23d52fb105b0
+*** JSON
+
+- https://labs.bishopfox.com/tech-blog/an-exploration-of-json-interoperability-vulnerabilities
 
 *** YAML
 
@@ -889,17 +892,6 @@ A list with items where you need a skilled DBA to understand, but written good e
 *** Logging
 
 - https://medium.com/anton-on-security/retaining-logs-for-a-year-boring-or-useful-70ea21fa3dda
-- https://medium.com/faun/12-critical-linux-log-files-to-monitor-bd4a20f91a55
-  - /var/log/messages
-  - /var/log/auth.log
-  - /var/log/secure  # on RHEL/CentOS
-  - /var/log/boot.log
-  - /var/log/dmesg  - core ring buffer messages
-  - /var/log/kern.log
-  - /var/log/faillog  - failed login attempts
-  - /var/log/yum.log  # on RHEL/CentOS
-  - /var/log/httpd
-  - mentioned in the article also, but somehow obsolete (maillog and mysql logs)
 - https://github.com/timberio/vector  - lightweight, ultra-fast, open-source tool for building observability pipelines
   - to replace Logstash, Fluent*, Telegraf, Beats, or similar tools
   - as a daemon or sidecar.
@@ -1091,7 +1083,6 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
 **** Docker Best Practices & Docker Security
 
 - https://medium.com/better-programming/docker-best-practices-and-anti-patterns-e7cbccba4f19
-- https://ayozefernandez.com/blog/load-average-and-docker/  - 70-80% load on cluster, but not necessary on individual node
 - https://medium.com/@cwgem/thoughts-about-docker-security-8e0df4b43650
   - Usage Of Official Images
   - Pull Signed Images
@@ -1235,7 +1226,6 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
 
 *** SSH
 
-- https://yanaiela.github.io/post/remote-servers/  - Make SSH great again (config, tunnelling, ...)
 - https://medium.com/maverislabs/proxyjump-the-ssh-option-you-probably-never-heard-of-2d7e41d43464
 
 *** General Computer/Networking/... Security :Security:
