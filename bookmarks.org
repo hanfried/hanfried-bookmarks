@@ -1379,6 +1379,8 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
 - https://towardsdatascience.com/finding-good-learning-rate-and-the-one-cycle-policy-7159fe1db5d6 :fastai:
 - https://medium.com/@lessw/new-deep-learning-optimizer-ranger-synergistic-combination-of-radam-lookahead-for-the-best-of-2dc83f79a48d :fastai:
 - https://towardsdatascience.com/self-paced-learning-for-machine-learning-f1c489316c61
+- https://pub.towardsai.net/morphnet-is-a-google-model-to-build-faster-and-smaller-neural-networks-f890276da456
+  Uses cycles of reduction phase (and notes about casts related to target) and expansion phase where high costs to neuron layers (=reducing quality of model) are more expanded than other layers
 
 *** Jupyter Notebooks
 
@@ -1444,6 +1446,9 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
 
 - https://towardsdatascience.com/introducing-label-studio-a-swiss-army-knife-of-data-labeling-140c1be92881
   - Github :: https://github.com/heartexlabs/label-studio
+- https://towardsdatascience.com/introducing-mito-how-to-generate-pandas-code-while-editing-a-spreadsheet-96cf874b70c2
+  Similar to OpenRefine maybe, didn't checked it yet
+
 *** Data Cleaning
 - https://counting.substack.com/p/data-cleaning-is-analysis-not-grunt
 
