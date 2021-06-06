@@ -505,7 +505,9 @@ Nowhere complete, nowhere top selected per se, but some are interesting, so let'
   - https://www.youtube.com/watch?v=r-TLSBdHe1A  - Performance matters (about how difficult it is to really get correct measures and causal profiling [for parallel/distributed programs])
   - https://www.infoq.com/presentations/moore-law-expiring/
   - https://www.youtube.com/watch?v=Mj5P47F6nJg  - Structured concurrency
-   
+
+*** Project Management
+- https://sboots.ca/2021/05/12/rule-number-one-avoid-vendor-lock-in/  - from perspective of government/public institution projects
 *** Team Management
 
 - https://towardsdatascience.com/leading-a-software-development-team-be13b3f6b0f
@@ -700,6 +702,7 @@ Nowhere complete, nowhere top selected per se, but some are interesting, so let'
 - https://kvz.io/bash-best-practices.html
 - https://blog.yossarian.net/2020/01/23/Anybody-can-write-good-bash-with-a-little-effort
 - https://arslan.io/2019/07/03/how-to-write-idempotent-bash-scripts/
+- https://betterprogramming.pub/5-bash-scripting-power-tips-bfd919b619c1
 - https://medium.com/better-programming/top-tips-for-writing-unsurprising-bash-scripts-9b9f4f0cc30e
   1. Tell Bash to Run in Safe Mode
     #+BEGIN_SRC sh
@@ -876,6 +879,7 @@ A list with items where you need a skilled DBA to understand, but written good e
   8. Non-Production Environments Have Diminishing Returns
   9. Things Will Always Break
 - http://onemogin.com/observability/dashboards/practitioners-guide-to-system-dashboard-design.html
+- https://medium.com/salesforce-ux/metric-display-standards-54736533c81
 - https://thechief.io/c/blameless/5-best-practices-nailing-incident-retrospectives/
   1. Use visuals in your postmortems
      Graphs like when the incidents happened
