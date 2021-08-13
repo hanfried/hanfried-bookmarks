@@ -119,7 +119,6 @@
  
 *** Lessons from 50 years experience (Project-Management etc)...
 
-- https://medium.com/swlh/62-lessons-from-50-years-of-software-experience-2db0f400f706  - *READ AND APPLY THEM*
 - https://medium.com/@karlwiegers/growing-a-culture-of-software-quality-eb39a090e76b  - Interview about code reviews
   Excerpt:
   - One obvious indicator is a lack of customer satisfaction. But you don’t want
@@ -621,10 +620,6 @@ Nowhere complete, nowhere top selected per se, but some are interesting, so let'
 - https://mattsegal.dev/django-prod-architectures.html
 - https://medium.com/@jwdobken/python-django-with-docker-and-gitlab-ci-b83cc4e7e2e  - based on cookiecutter django
 - https://www.youtube.com/watch?v=FPfBhqL-uek  - Django for Admins
-- https://djangosuit.com/  - Modern theme for Django admin interface
- There also alternatives w/ different pricing or open source models and different looks.
- Note, it's not a good idea to give customers access to django admin panels (it's really only for internal purposes).
- For externals, just give a REST API and HyperlinkedModelSerializer view.
 - https://docs.djangoproject.com/en/3.0/topics/performance/  - Optimizing Django
 - http://intercoolerjs.org/docs.html  - Use familiar, declarative HTML attributes to add AJAX to your application. Use web standards like CSS, REST and Javascript events to enhance your app.
   - Blog :: https://engineering.instawork.com/iterating-with-simplicity-evolving-a-django-app-with-intercooler-js-8ed8e69d8a52
@@ -924,10 +919,6 @@ A list with items where you need a skilled DBA to understand, but written good e
 *** Cloud Provisioners
 **** For all platforms
 
-- http://blog.drgriffin.com.au/posts/2020-06-21-the-three-fs-of-cloud-pricing.html
-  - Free Tier
-  - F-you zone: minimize costs as early as possible
-  - F-off zone: dunno, but don't expect much help from AWS/... or the size of your own company
 - https://github.com/gruntwork-io/cloud-nuke  - get rid of all allocated resources, finally!
 - https://medium.com/@nandovillalba/why-i-think-gcp-is-better-than-aws-ea78f9975bda
 
@@ -1241,6 +1232,7 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
   A web page to generate the nginx.conf as starting point following best practices (and still configurable)
 - https://medium.freecodecamp.org/discovering-the-hidden-mine-of-credentials-and-sensitive-information-8e5ccfef2724
 - https://www.youtube.com/watch?v=k8FIDGmmYvs  - How to break PDFs
+- https://www.philvenables.com/post/cybersecurity-and-the-curse-of-binary-thinking
  
 **** Anti-Patterns
 
@@ -1649,6 +1641,7 @@ but also why they are so sensitive to adversial networks
   Main advantage to something like Mutual Information Score is that it can also applied to categorical variables
 - https://towardsdatascience.com/how-floating-point-numbers-work-1429907b6d1d
 - https://towardsdatascience.com/the-lost-boarding-pass-problem-2a17313b2d8a  - a bit similar to birthday paradox
+- https://towardsdatascience.com/what-really-is-a-matrix-determinant-89c09884164c  - the scaling factor of an enclosed area by two vectors after the transformation described by the matrix
 ** Physics
 
 - https://www.youtube.com/watch?v=Ps5wovm3OQ4 - Wolfram Physics Harvard Black Hole Initiative: A
