@@ -1117,6 +1117,7 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
 - https://blog.pipetail.io/posts/2020-05-04-most-common-mistakes-k8s/
 - https://github.com/jamiehannaford/what-happens-when-k8s
 - https://matthias-endler.de/2019/maybe-you-dont-need-kubernetes/ :Kubernetes:
+- https://ably.com/blog/no-we-dont-use-kubernetes
 - https://towardsdatascience.com/key-kubernetes-commands-741fe61fde8 :Kubernetes:
 - https://medium.com/90seconds/lessons-learned-with-gitlab-runner-on-kubernetes-d547c30ad5fb :Kubernetes:
 - https://prefetch.net/blog/2019/10/16/the-beginners-guide-to-creating-kubernetes-manifests/ :Kubernetes:
