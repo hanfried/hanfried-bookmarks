@@ -12,6 +12,7 @@
 - https://www.nature.com/articles/d41586-019-02918-5  - how to write a great science paper
 - https://www.fast.ai/2019/05/13/blogging-advice/  - Advice for Better Blog Posts
 - https://techblog.commercetools.com/easy-steps-to-get-obs-running-for-high-quality-demo-and-presentation-recordings-a6eef311e56e
+- https://www.gulp.de/knowledge-base/recht-und-steuern/unternehmer-selbststaendiger-oder-freiberufler.html
 
 ** Bahn
 
@@ -570,6 +571,7 @@ Nowhere complete, nowhere top selected per se, but some are interesting, so let'
   Also, this library is intended to make Python logging less painful by adding a bunch of useful
   functionalities that solve caveats of the standard loggers. Using logs in your application
   should be an automatism, Loguru tries to make it both pleasant and powerful.
+- https://github.com/willmcgugan/rich  - Python library for rich text and beautiful formatting in the terminal
 
 ***** Code Quality/CI
 - https://tox.readthedocs.io/en/latest/  - standardize testing in Python
@@ -624,7 +626,6 @@ Nowhere complete, nowhere top selected per se, but some are interesting, so let'
 - http://intercoolerjs.org/docs.html  - Use familiar, declarative HTML attributes to add AJAX to your application. Use web standards like CSS, REST and Javascript events to enhance your app.
   - Blog :: https://engineering.instawork.com/iterating-with-simplicity-evolving-a-django-app-with-intercooler-js-8ed8e69d8a52
 - https://medium.com/better-programming/how-to-use-drf-serializers-effectively-dc58edc73998  - How to use django rest framework serializers
-- https://vsupalov.com/vue-js-in-django-template/
 
 *** Javascript
 
@@ -1234,6 +1235,7 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
 - https://medium.freecodecamp.org/discovering-the-hidden-mine-of-credentials-and-sensitive-information-8e5ccfef2724
 - https://www.youtube.com/watch?v=k8FIDGmmYvs  - How to break PDFs
 - https://www.philvenables.com/post/cybersecurity-and-the-curse-of-binary-thinking
+- https://www.netmeister.org/blog/tlds.html  - Domain Name System or DNS is a never-ending source of amusement and amazement
  
 **** Anti-Patterns
 
@@ -1428,6 +1430,8 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
   - Text (Embeddings)
   - Image (Classification, Feature Vector, Generator, Other)
   - Video (Classification)
+- https://archive.org/details/GeneralIndex  -  gigantic index of the words and short phrases contained in more than 100 million journal articles — including many paywalled papers
+  see also: https://www.nature.com/articles/d41586-021-02895-8
 - https://www.si.edu/openaccess  -  enthält 2D- und 3D-Darstellungen von kulturellen, wissenschaftlichen, historischen, künstlerischen, technischen und Design-Exponaten aus seinen 19 Museen, 9 Forschungszentren, Bibliotheken, Archiven und dem National Zoo. Hinzu kommen Forschungsdaten und Daten zu Sammlungen
 
 *** Pandas :Pandas:
@@ -1438,6 +1442,8 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
 - https://www.youtube.com/watch?v=xPPs59pn6qU  - pivot and pivot_table usage (part of a pandas video series)
 - https://towardsdatascience.com/analyzing-time-series-data-in-pandas-be3887fdd621 :TimeSeries:
 - https://towardsdatascience.com/geopandas-101-plot-any-data-with-a-latitude-and-longitude-on-a-map-98e01944b972 :Visualization:
+- https://towardsdatascience.com/how-to-work-with-million-row-datasets-like-a-pro-76fb5c381cdd  - reducing memory
+- https://towardsdatascience.com/process-10m-row-datasets-in-milliseconds-in-this-comprehensive-pandas-speed-guide-5a3125cbb78
 
 *** Data Annotation
 
@@ -1641,6 +1647,7 @@ but also why they are so sensitive to adversial networks
 - https://towardsdatascience.com/rip-correlation-introducing-the-predictive-power-score-3d90808b9598  - Better way to find correlation instead of correlation matrices
   Main advantage to something like Mutual Information Score is that it can also applied to categorical variables
 - https://towardsdatascience.com/how-floating-point-numbers-work-1429907b6d1d
+- https://rootly.io/blog/you-do-the-math-reliability-issues-triggered-by-math-errors
 - https://towardsdatascience.com/the-lost-boarding-pass-problem-2a17313b2d8a  - a bit similar to birthday paradox
 - https://towardsdatascience.com/what-really-is-a-matrix-determinant-89c09884164c  - the scaling factor of an enclosed area by two vectors after the transformation described by the matrix
 ** Physics
