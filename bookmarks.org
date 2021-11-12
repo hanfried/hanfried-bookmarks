@@ -1197,6 +1197,7 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
 - https://medium.com/@kgamanji/customise-your-kind-clusters-networking-layer-1249e7916100
 - https://medium.com/faun/private-container-registry-on-kubernetes-78118a62a9c8  - backed by S3
 - https://insights.project-a.com/using-github-actions-to-deploy-to-kubernetes-122c653c0b09
+- https://martinheinz.dev/blog/60  - Keeping Kubernetes Clusters Clean and Tidy
 **** Monitoring
 
 - https://tech.showmax.com/2019/10/prometheus-introduction/
@@ -1491,6 +1492,7 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
     #+END_SRC
   - prefer file formats like parquet
   - read pandas user guide
+- https://towardsdatascience.com/an-overview-of-pythons-datatable-package-5d3a97394ee9
 
 
 
@@ -1683,8 +1685,9 @@ but also why they are so sensitive to adversial networks
   - RabbitMQ :: Push Model, probably a bit easier to work with (following article and "Messaging the just works" self advertisment of RabbitMQ)
 - https://www.youtube.com/watch?v=Io1x6mQlh1E  - Connected Components in MapReduce and Beyond
   Discusses the Alternating Algorithm (LargeStar, SmallStar) to have a fast and local working connection graph algorithm working up to huge data scale
+- https://towardsdatascience.com/orchestrate-a-data-science-project-in-python-with-prefect-e69c61a49074  - Interesting (and less complex) alternative to Airflow, as long as it is in Python
 *** Spark
-- https://towardsdatascience.com/successful-spark-submits-for-python-projects-53012ca7405a  - complete setup including bundling env and dependencies
+- https://towardsdatascience.com/successful-spark-submits-for-python-projects-53012ca7405a  - complete setup including bundling env and dependencie
 ** Math :Math:
 
 - https://de.wikipedia.org/wiki/Braess-Paradoxon
