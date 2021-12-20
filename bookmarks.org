@@ -517,6 +517,16 @@ Nowhere complete, nowhere top selected per se, but some are interesting, so let'
 *** JSON
 
 - https://labs.bishopfox.com/tech-blog/an-exploration-of-json-interoperability-vulnerabilities
+- https://blog.kellybrazil.com/2021/12/03/tips-on-adding-json-output-to-your-cli-app/  - talking about: jc an impressive tool that outputs typical cli as jsons
+  Gives also some very useful best practices to work with JSON, so it's easy to pipe, parse and extract information out of it:
+  * Make a Schema
+  * Flatten the Structure
+  * Output JSON Lines for Streaming Output
+  * Use Predictable Key Names (especially no dynamically created keys like "Interface 1", "Interface 2", ... - better "Interface": "Interface 1")
+  * Pretty Print with Two Spaces or Don’t Format at All
+  * Don’t Use Special Characters in Key Names
+  * Don’t Allow Duplicate Keys
+  * Don’t Use Very Large Numbers
 
 *** YAML
 
@@ -820,7 +830,6 @@ msg "- arguments: ${args[*]-}
 *** Makefiles
 - https://medium.com/better-programming/how-to-create-a-self-documenting-makefile-533ebf8f82e2
 - https://nullprogram.com/blog/2017/08/20/  - A Tutorial on Portable Makefiles
-- https://www.gnu.org/software/make/manual/make.html#Rules  - Writing Rules documentation
 
 *** Databases
 
@@ -850,7 +859,6 @@ A list with items where you need a skilled DBA to understand, but written good e
       intermediate = hash(password + intermediate)
   result_hash := intermediate
   #+END_SRC
-- https://edgedb.com/blog/we-can-do-better-than-sql
 - https://towardsdatascience.com/the-curious-case-of-mysql-postgresql-and-hive-9e7cae9e52f4  - subtle changes in behaviour given same syntax
 
 ** DevOps / Security
