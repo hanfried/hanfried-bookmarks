@@ -111,6 +111,7 @@
   off you go. Mastering the system that makes your software function, however, can take a
   lifetime.
 - https://hackernoon.com/the-fine-art-of-fast-development-f3b1abb509da
+- https://erik-engheim.medium.com/developers-got-to-stop-turning-advice-into-rules-3d969657fb9a
 - https://testing.googleblog.com/2015/04/just-say-no-to-more-end-to-end-tests.html
 - https://medium.com/@cscalfani/goodbye-object-oriented-programming-a59cda4c0e53
 - https://caseymuratori.com/blog_0015  - Semantic Compression of Code instead of Abstracting in Advance/OOP
@@ -545,6 +546,7 @@ Nowhere complete, nowhere top selected per se, but some are interesting, so let'
   - https://medium.com/@cjolowicz/hypermodern-python-4-typing-31bcf12314ff
   - https://medium.com/@cjolowicz/hypermodern-python-5-documentation-13219991028c
   - https://medium.com/@cjolowicz/hypermodern-python-6-ci-cd-b233accfa2f6
+- https://martinheinz.dev/blog/59  - Secure Password Handling in Python
 - https://towardsdatascience.com/whats-init-for-me-d70a312da583  - Designing for Python package import patterns
 - https://instagram-engineering.com/static-analysis-at-scale-an-instagram-story-8f498ab71a0c  - Linters, Codemods, ...
 **** Python Internals
@@ -1017,6 +1019,7 @@ including:
 
 - https://www.oreilly.com/ideas/how-to-get-started-with-site-reliability-engineering-sre
 - https://hackernoon.com/introduction-into-chaos-engineering-from-an-architects-perspective-kh5x3wkw
+- https://tech.deliveryhero.com/our-reliability-manifesto/
  
 **** Incident Management / Alerting
 
@@ -1237,6 +1240,7 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
 *** General Computer/Networking/... Security :Security:
 **** Misc
 
+- https://github.com/redacted/XKCD-password-generator  - Generate secure multiword passwords/passphrases, inspired by XKCD
 - https://www.youtube.com/watch?v=BreKdM7CKnY&list=PL_IxoDz1Nq2YjnEpUMSqeqVUXgyEcsJdu&index=2&t=0s  - Hirne hacken, Sicherheit aus psychologischer Sicht
 - https://medium.com/@stestagg/stealing-secrets-from-developers-using-websockets-254f98d577a0  - A browse up example: scanning localhost ports in the frontend
 - https://www.digitalocean.com/community/tools/nginx  - The easiest way to configure a performant, secure, and stable NGINX server.
@@ -1620,7 +1624,6 @@ In all use cases, the information extraction is based on analysing the semantic 
 - https://medium.com/hiredscore-engineering/introducing-octoml-73bd527491b1  - makes it easy to use BERT
 - https://towardsdatascience.com/xlm-enhancing-bert-for-cross-lingual-language-model-5aeed9e6f14b
 - https://towardsdatascience.com/a-review-of-bert-based-models-4ffdc0f15d58
-- https://x.ai/blog/the-unreasonable-effectiveness-of-neural-machine-translation-a-breakthrough-in-temporal-expression-understanding  - Parse date times with NLP / Bert instead of traditional stacking
 - https://towardsdatascience.com/train-and-deploy-mighty-transformer-nlp-models-using-fastbert-and-aws-sagemaker-cc4303c51cf3 :AWS:DevOps:
 - https://towardsdatascience.com/bert-for-dummies-step-by-step-tutorial-fb90890ffe03
 - https://medium.com/roblox-tech-blog/how-we-scaled-bert-to-serve-1-billion-daily-requests-on-cpus-d99be090db26
