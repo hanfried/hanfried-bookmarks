@@ -1028,6 +1028,7 @@ including:
 - https://shubheksha.com/posts/2019/04/re-framing-how-we-think-about-production-incidents/
 - https://thechief.io/c/blameless/best-practices-effective-incident-management/
 - https://developers.soundcloud.com/blog/alerting-on-slos
+- https://firehydrant.io/blog/incident-severity-and-priority-101/  - Severity SEV1..SEV5 and Priority P1..P4 definition in natural language for everyone in the company
 
 **** Deployment Strategies
 - https://charity.wtf/2019/05/01/friday-deploy-freezes-are-exactly-like-murdering-puppies/
@@ -1401,6 +1402,7 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
 - https://towardsdatascience.com/how-to-effortlessly-optimize-jupyter-notebooks-e864162a06ee
 - https://github.com/fastai/fastprogress  - Simple and flexible progress bar for Jupyter Notebook and console
 - https://towardsdatascience.com/jupyter-is-the-new-excel-but-not-for-your-boss-d24340ebf314  - ways to export/give other easy access to notebooks (hiding cells etc)
+- https://towardsdatascience.com/on-the-myths-and-problems-of-jupyter-notebooks-81517a4696ef  - You can version control, test and modularize notebooks with current tools. Let’s discuss the real issues.
 - https://towardsdatascience.com/introduction-to-papermill-2c61f66bea30  - How to transform your Jupyter Notebook into a workflow tool
 
 *** Streamlit
