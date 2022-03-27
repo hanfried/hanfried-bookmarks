@@ -862,7 +862,8 @@ A list with items where you need a skilled DBA to understand, but written good e
   result_hash := intermediate
   #+END_SRC
 - https://towardsdatascience.com/the-curious-case-of-mysql-postgresql-and-hive-9e7cae9e52f4  - subtle changes in behaviour given same syntax
-
+*** Cronjobs
+- https://github.com/healthchecks/healthchecks  - A cron monitoring tool written in Python & Django
 ** DevOps / Security
 *** Misc
 
@@ -1145,6 +1146,7 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
   6. Be open for framework specific solutions
   7. Be prepared for rollback
 - https://itnext.io/before-you-use-kustomize-eaa9529cdd19  - Advantages/Disadvantages of Kustomize vs Helm
+- https://www.eficode.com/blog/the-future-of-kubernetes-and-why-developers-should-look-beyond-kubernetes-in-2022
 **** Linters
 
 - https://github.com/instrumenta/kubeval/
@@ -1386,6 +1388,7 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
 - https://towardsdatascience.com/six-challenges-every-data-scientist-will-face-and-how-to-overcome-them-2d7ccd6e88c4
 - https://towardsdatascience.com/data-science-is-boring-1d43473e353e
 - https://towardsdatascience.com/how-to-screw-up-a-computer-vision-project-166dfcc44a5f
+- https://towardsdatascience.com/why-data-scientists-and-engineers-quit-their-jobs-afc2350eef9a
 
 *** Optimizers / Learn Rates
 
