@@ -829,6 +829,8 @@ msg "- arguments: ${args[*]-}
   - Ctrl+a :: hop to beginning of line
   - Ctrl+e :: hop to end of line
   - Ctrl+k :: delete everything from cursor to end of line
+- https://levelup.gitconnected.com/5-modern-bash-scripting-techniques-that-only-a-few-programmers-know-4abb58ddadad
+
 *** Makefiles
 - https://medium.com/better-programming/how-to-create-a-self-documenting-makefile-533ebf8f82e2
 - https://nullprogram.com/blog/2017/08/20/  - A Tutorial on Portable Makefiles
