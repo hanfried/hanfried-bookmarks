@@ -551,6 +551,7 @@ Nowhere complete, nowhere top selected per se, but some are interesting, so let'
 - https://instagram-engineering.com/static-analysis-at-scale-an-instagram-story-8f498ab71a0c  - Linters, Codemods, ...
 **** Python Internals
 - https://towardsdatascience.com/understand-slots-in-python-e3081ef5196d
+- https://towardsdatascience.com/python-f-strings-are-more-powerful-than-you-might-think-8271d3efbd7d
 
 **** Modules
 
@@ -830,6 +831,29 @@ msg "- arguments: ${args[*]-}
   - Ctrl+e :: hop to end of line
   - Ctrl+k :: delete everything from cursor to end of line
 - https://levelup.gitconnected.com/5-modern-bash-scripting-techniques-that-only-a-few-programmers-know-4abb58ddadad
+  - Technique for showing spinner like animation via bash ::
+
+    #+BEGIN_SRC bash
+#!/bin/bash
+sleep 5 &
+pid=$!
+frames="/ | \\ -"
+while kill -0 $pid 2&>1 > /dev/null;
+do
+    for frame in $frames;
+    do
+        printf "\r$frame Loading..."
+        sleep 0.5
+    done
+done
+printf "\n"
+    #+END_SRC
+  - Displaying Native GUI Notifications from Bash ::
+    #+BEGIN_SRC bash
+#!/bin/bash
+sleep 10
+notify-send "notify.sh" "Task #1 was completed successfully"
+    #+END_SRC
 
 *** Makefiles
 - https://medium.com/better-programming/how-to-create-a-self-documenting-makefile-533ebf8f82e2
