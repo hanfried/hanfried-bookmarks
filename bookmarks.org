@@ -80,6 +80,15 @@
     at which it can exit and generate a return on the VC’s investment.
   - investors don’t want their entrepreneurs wasting time trying to figure out
     new and proprietary ways of building and growing companies
+- https://entrepreneurshandbook.co/when-startups-fail-its-usually-because-founders-overlook-these-3-obvious-things-24aa05d05d40
+  1. If you don’t have customers, you don’t have a business
+     What matters is getting people to buy your product.
+  2. People who don’t know about your product can’t buy it
+     if nobody knows about it, nobody can buy it.
+     If you’re not good at marketing, nothing else about your business can succeed. You need to obsess about that above everything else.
+  3. Successful businesses solve people’s problems
+     building amazing products isn’t what successful entrepreneurs do. Instead, having an amazing product is the outcome of an entrepreneur’s hard work.
+     entrepreneurship isn’t about building things. Entrepreneurship is about solving people’s problems
 - https://medium.com/swlh/why-startups-should-never-hire-straight-a-students-75b176b8e907
 - https://medium.com/young-coder/how-microsoft-beat-the-innovators-dilemma-5b78e3692ed3
 
@@ -101,6 +110,7 @@
 - https://onezero.medium.com/relentless-com-life-as-a-cog-in-amazons-e-tail-machine-d46b3ef05eb8
 - https://www.bento.de/gefuehle/badeunfall-mein-freund-waere-fast-ertrunken-was-ich-daraus-gelernt-habe-a-1517a3af-5571-483b-af01-4e25d9600927
 - https://fragdenstaat.de
+- https://medium.com/illumination-curated/one-simple-reason-why-my-husband-and-i-wont-raise-our-daughter-in-the-u-s-81ac37e5369c
 
 ** Software-Development :Software_Development:
 *** Misc
@@ -118,6 +128,7 @@
 - https://medium.com/@liman.rom/f-spoiled-me-or-why-i-dont-enjoy-c-anymore-39e025035a98  - nice examples of advantages of a well designed functional language
 - https://levelup.gitconnected.com/why-rewriting-applications-from-scratch-is-almost-always-a-bad-idea-5402d1715006
 - https://glitch.com/  - Coding together in a collaborative way
+- https://dx.tips/the-end-of-localhost  - Interesting discussion of movement to move development in the cloud (instead of working locally)
  
 *** Lessons from 50 years experience (Project-Management etc)...
 
@@ -470,7 +481,7 @@
   - tool is fast in the first place, these additional layers may be unnecessary
     to achieve acceptable overall performance, resulting in a system that is in
     net much simpler for a given level of performance
-- https://www.somethingsimilar.com/2013/01/14/notes-on-distributed-systems-for-young-bloods/
+- https://web.archive.org/web/20220418020617/https://www.somethingsimilar.com/2013/01/14/notes-on-distributed-systems-for-young-bloods/
   - Distributed systems are different because they fail often
   - Writing robust distributed systems costs more than writing robust single-machine systems
   - Robust, open source distributed systems are much less common than robust, single-machine systems
@@ -509,6 +520,7 @@ Nowhere complete, nowhere top selected per se, but some are interesting, so let'
 
 *** Project Management
 - https://sboots.ca/2021/05/12/rule-number-one-avoid-vendor-lock-in/  - from perspective of government/public institution projects
+- https://itnext.io/creating-quality-software-takes-more-effort-and-skill-not-more-time-27301de8624
 *** Team Management
 
 - https://towardsdatascience.com/leading-a-software-development-team-be13b3f6b0f
@@ -534,7 +546,9 @@ Nowhere complete, nowhere top selected per se, but some are interesting, so let'
 - https://yamllint.readthedocs.io/en/stable/
 - https://blog.atomist.com/in-defense-of-yaml/
 - https://arp242.net/weblog/yaml_probably_not_so_great_after_all.html
-
+*** RegEx
+- https://regex101.com/  - can help you build and test RegExes, as well as break them down and identify its individual parts
+- https://regex-vis.com/  - generates a graph from a RegEx which is very helpful for understanding what the expression actually does
 *** Python
 **** Best Practices
 
@@ -552,7 +566,24 @@ Nowhere complete, nowhere top selected per se, but some are interesting, so let'
 **** Python Internals
 - https://towardsdatascience.com/understand-slots-in-python-e3081ef5196d
 - https://towardsdatascience.com/python-f-strings-are-more-powerful-than-you-might-think-8271d3efbd7d
-
+  - Format date and timestamps :: f"{dt.datetime.today():%Y-%M-%d}"
+  - Speed :: f-strings are fastest of all concatenation options in python
+  - Format specification mini-language :: f"{text_to_center:^15}
+  - Nested f-strings ::
+    - f"{f'$number:.3f}':>10s}"
+    - f"{value:{width}.{precision}}"
+  - Conditionals formatting :: f"{value:{'4.3' if value < 100 else '8.5'}}"
+- https://docs.python.org/3/library/string.html#formatspec  - Format specification mini-language
+  #+BEGIN_SRC
+format_spec     ::=  [[fill]align][sign][#][0][width][grouping_option][.precision][type]
+fill            ::=  <any character>
+align           ::=  "<" | ">" | "=" | "^"
+sign            ::=  "+" | "-" | " "
+width           ::=  digit+
+grouping_option ::=  "_" | ","
+precision       ::=  digit+
+type            ::=  "b" | "c" | "d" | "e" | "E" | "f" | "F" | "g" | "G" | "n" | "o" | "s" | "x" | "X" | "%"
+  #+END_SRC
 **** Modules
 
 ***** Misc
@@ -640,9 +671,11 @@ Nowhere complete, nowhere top selected per se, but some are interesting, so let'
   - Blog :: https://engineering.instawork.com/iterating-with-simplicity-evolving-a-django-app-with-intercooler-js-8ed8e69d8a52
 - https://medium.com/better-programming/how-to-use-drf-serializers-effectively-dc58edc73998  - How to use django rest framework serializers
 
-*** Javascript
+*** Javascript / CSS
 
 - https://medium.com/@michael.karen/learning-modern-javascript-with-tetris-92d532bcd057
+- https://medium.com/codex/stop-fighting-the-reason-css-exists-with-these-dumbass-frameworks-91732f5993c7
+ 
 *** Java
 - https://medium.com/swlh/native-memory-the-silent-jvm-killer-595913cba8e7  - more interesting than the debugging:
   *be aware that java.util.zip written in C has serious memory leaks without a good alternative*
@@ -939,7 +972,7 @@ A list with items where you need a skilled DBA to understand, but written good e
 *** Monorepo vs Multirepo
 
 - https://www.bennadel.com/blog/3944-why-ive-been-merging-microservices-back-into-the-monolith-at-invision.htm
-- https://www.rookout.com/cant-git-no-satisfaction-why-we-need-a-new-gen-source-control/  - Advantages/Disadvantages of Monorepo vs Multirepo
+- https://web.archive.org/web/20201030222344/https://www.rookout.com/blog/cant-git-no-satisfaction-why-we-need-a-new-gen-source-control  - Advantages/Disadvantages of Monorepo vs Multirepo
 - https://medium.com/opendoor-labs/our-python-monorepo-d34028f2b6fa  - many interesting small decisions
   - Seperate into projects, libraries and tools
   - Different CI/CD pipelines for all of them --> invest time in tooling
@@ -1134,7 +1167,6 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
   - CIS Benchmarks (CIS = Center for Internet Security) --> look for tools similiar to docker-bench-security/kube-bench
   - Language Specific Package Scanning
   - Static Code Analysis
-- https://sec.sr2k.info/?p=211&lang=en  - Docker Security Tools overview
 - https://towardsdatascience.com/top-20-docker-security-tips-81c41dd06f57 :Docker:
 - https://medium.com/faun/container-security-101-scanning-images-for-vulnerabilities-8030af2441ba
 - https://boxboat.com/2020/04/24/image-scanning-tech-compared/
@@ -1162,7 +1194,6 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
 - https://medium.com/90seconds/lessons-learned-with-gitlab-runner-on-kubernetes-d547c30ad5fb :Kubernetes:
 - https://prefetch.net/blog/2019/10/16/the-beginners-guide-to-creating-kubernetes-manifests/ :Kubernetes:
 - https://learnk8s.io/cloud-resources-kubernetes  - Provisioning
-- https://octetz.com/docs/2020/2020-01-06-vim-k8s-yaml-support/  - Kubernetes (completion) support for vim
 - https://piotrminkowski.com/2020/03/10/best-practices-for-microservices-on-kubernetes/ with examples from Spring Boot
   1. Allow platform to collect metrics
   2. Prepare logs in right format
@@ -1389,6 +1420,8 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
   Split it up into at least 2 data sizes
 
   Introductionary, but very well written text
+*** Compilations
+- https://github.com/khuyentran1401/Data-science  - Collection of useful data science topics along with code and articles (good curated)
 
 *** Interesting Analysis :Analysis:
 
@@ -1568,6 +1601,7 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
   Pipeline tests are applied to data (instead of code) and at batch time (instead
   of compile or deploy time). Pipeline tests are like unit tests for datasets:
   they help you guard against upstream data changes and monitor data quality.
+- https://towardsdatascience.com/validate-your-pandas-dataframe-with-pandera-2995910e564  - pandera provides a flexible and expressive API for performing data validation on dataframes to make data processing pipelines more readable and robust.
 
 *** Data Visualization :Visualization:
 
@@ -1744,6 +1778,7 @@ but also why they are so sensitive to adversial networks
 - https://rootly.io/blog/you-do-the-math-reliability-issues-triggered-by-math-errors
 - https://towardsdatascience.com/the-lost-boarding-pass-problem-2a17313b2d8a  - a bit similar to birthday paradox
 - https://towardsdatascience.com/what-really-is-a-matrix-determinant-89c09884164c  - the scaling factor of an enclosed area by two vectors after the transformation described by the matrix
+- https://towardsdatascience.com/how-to-create-slick-math-animations-like-3blue1brown-in-python-457f74701f68
 ** Physics
 
 - https://www.youtube.com/watch?v=Ps5wovm3OQ4 - Wolfram Physics Harvard Black Hole Initiative: A
