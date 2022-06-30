@@ -521,6 +521,24 @@ Nowhere complete, nowhere top selected per se, but some are interesting, so let'
 *** Project Management
 - https://sboots.ca/2021/05/12/rule-number-one-avoid-vendor-lock-in/  - from perspective of government/public institution projects
 - https://itnext.io/creating-quality-software-takes-more-effort-and-skill-not-more-time-27301de8624
+- https://flyingbarron.medium.com/known-unknowns-webb-struck-by-meteoroid-fde752dec87a
+|-----------+----------------------------------------------------------+----------------+--------------------------------------------------------|
+|           | Understand                                               |                | Not Understand                                         |
+|-----------+----------------------------------------------------------+----------------+--------------------------------------------------------|
+| Aware     | Known-Knowns                                             |                | Known-Unknowns                                         |
+|           | I'm aware of potential problems                          |                | I'm aware of potential problems                        |
+|           | and I understand how to solve them                       | <= Work <=     | but I don't know how to solve or avoid them            |
+|-----------+----------------------------------------------------------+----------------+--------------------------------------------------------|
+|           | ^                                                        |                | ^                                                      |
+|           | Work                                                     |                | Research                                               |
+|           | ^                                                        |                | ^                                                      |
+|-----------+----------------------------------------------------------+----------------+--------------------------------------------------------|
+| Not Aware | Unknown-Knowns                                           |                | Unknown-Unknowns                                       |
+|           | There are problems out there I'm not aware of            |                | There are problems out there I haven't even considered |
+|           | but I've got a good idea of how to approach new problems | <= Training <= | and I don't know what I'll do when I encounter them    |
+|-----------+----------------------------------------------------------+----------------+--------------------------------------------------------|
+
+
 *** Team Management
 
 - https://towardsdatascience.com/leading-a-software-development-team-be13b3f6b0f
@@ -926,6 +944,7 @@ A list with items where you need a skilled DBA to understand, but written good e
 ** DevOps / Security
 *** Misc
 
+- https://leebriggs.co.uk/blog/2022/06/21/devops-is-a-failure  - DevOps has become Ops more or less
 - https://medium.com/better-programming/top-8-devops-interview-questions-and-answers-9120f554d1b9  - worth to read even when not preparing for an interview
 - https://gruntwork.io/devops-checklist/  - Production Readiness Checklist
     Read also: https://blog.gruntwork.io/5-lessons-learned-from-writing-over-300-000-lines-of-infrastructure-code-36ba7fadeac1
