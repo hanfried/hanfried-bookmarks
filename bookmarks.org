@@ -537,7 +537,7 @@ Nowhere complete, nowhere top selected per se, but some are interesting, so let'
 |           | There are problems out there I'm not aware of            |                | There are problems out there I haven't even considered |
 |           | but I've got a good idea of how to approach new problems | <= Training <= | and I don't know what I'll do when I encounter them    |
 |-----------+----------------------------------------------------------+----------------+--------------------------------------------------------|
-
+- https://medium.com/analysts-corner/telepathy-and-clairvoyance-requirements-practices-that-dont-work-8945e8a02979
 
 *** Team Management
 
