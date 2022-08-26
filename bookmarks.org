@@ -744,6 +744,7 @@ type            ::=  "b" | "c" | "d" | "e" | "E" | "f" | "F" | "g" | "G" | "n" |
 - https://github.com/timqian/star-history
  (1.0.0 -> 1.0.1 bugfix -> 1.1.0 new functionality -> ... -> 2.0.0 backward incompatible breaking change)
 - https://mogron.github.io/blog/github-star-analysis/
+- https://itnext.io/seven-git-configs-9de48007aa77
 
 **** Best Practices / Linters
 
@@ -987,7 +988,19 @@ A list with items where you need a skilled DBA to understand, but written good e
   - as a Kafka consumer/producer for observability data.
   - in resource constrained environments (such as devices)
   - see also: https://www.kartar.net/2020/05/a-bit-of-a-vector/
+*** Dashboarding
+- https://shkspr.mobi/blog/2022/08/the-point-of-a-dashboard-isnt-to-use-a-dashboard/
+  it shows that you have access to your data => huge deal
+  - Live data
+  - Historic data
+  - Comparative metrics
+  - Access to multiple databases
+  - External data sources
+  - ...
 
+It is there to prove that the data are easily accessible, comparable, and trackable. Only once that is done can they be actionable.
+
+Trapped data is useless data.
 *** Monorepo vs Multirepo
 
 - https://www.bennadel.com/blog/3944-why-ive-been-merging-microservices-back-into-the-monolith-at-invision.htm
