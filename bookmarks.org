@@ -538,6 +538,7 @@ Nowhere complete, nowhere top selected per se, but some are interesting, so let'
 |           | but I've got a good idea of how to approach new problems | <= Training <= | and I don't know what I'll do when I encounter them    |
 |-----------+----------------------------------------------------------+----------------+--------------------------------------------------------|
 - https://medium.com/analysts-corner/telepathy-and-clairvoyance-requirements-practices-that-dont-work-8945e8a02979
+- https://itnext.io/why-creating-software-is-always-harder-than-expected-14d241f70656
 
 *** Team Management
 
@@ -756,6 +757,9 @@ type            ::=  "b" | "c" | "d" | "e" | "E" | "f" | "F" | "g" | "G" | "n" |
 - https://github.com/awslabs/git-secrets - Prevents you from committing
   passwords and other sensitive information to a git repository
 - https://github.com/zricethezav/gitleaks  - Scan git repos for secrets using regex and entropy
+**** Tools
+- https://github.com/dandavison/delta  A syntax-highlighting pager for git, diff, and grep output
+  - Installation :: https://dandavison.github.io/delta/installation.html
 
 *** Shell/Bash/Zsh
 
@@ -932,6 +936,9 @@ rsync -rv <src> <dst> --progress
     #+BEGIN_SRC bash
 pv a_big_file.txt | gzip > a_big_file.log.gz
     #+END_SRC
+- https://betterprogramming.pub/6-more-oddball-linux-utilities-you-should-try-7ba8552c2e2e
+  - lam file1 file2 ... :: laminated, files are joined together as columns
+  - encguess file :: attempts to guess the encoding of a text file
 
 *** Makefiles
 - https://medium.com/better-programming/how-to-create-a-self-documenting-makefile-533ebf8f82e2
@@ -1506,6 +1513,31 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
 - https://towardsdatascience.com/data-science-is-boring-1d43473e353e
 - https://towardsdatascience.com/how-to-screw-up-a-computer-vision-project-166dfcc44a5f
 - https://towardsdatascience.com/why-data-scientists-and-engineers-quit-their-jobs-afc2350eef9a
+- https://tedbauer2003.medium.com/data-driven-approaches-flop-because-well-they-terrify-people-a66fc92ba9fe
+  Excerpt:
+  - Data nerds that I’ve met fucking love data. They want to explain all these formulas they put together. Execs don’t have time for that.
+  - a major problem with “data-driven decisions” is that executives want to believe in their gut
+  - If “Big Data” removes some of these reasons, how relevant are they anymore?
+  - who wants 750 rows of information if guesswork makes you feel better?
+  - No one is going to use data if it makes them less relevant or contradicts their “gut feels” and “instincts about their industry.” I mean, that’s just human psychology.
+  - Analysis paralysis: More data just means more to analyze // more to mess up analyzing, and that’s actually slowing down decision-making.
+  - [data] It’s gotten this religious importance at the leadership level, even though most leaders have no idea what any of it represents
+  - implementation of big data. It’s not about collecting the data or having it to show. That’s what most companies think. It’s about (a) empathy for how other people want to interact with it and (b) using it for better decisions
+  Recommended actions:
+  - Let employees work on small data projects
+  - Let them block one hour/day to take an online class about data or processing information
+  - Let everyone be associated with 1–2 surveys that go out across a year
+  - Ask actual data-driven questions when you interview
+  - Include small data projects in hiring assessments if you want to see people’s ability to mess around with stuff
+  - Make the projects small, guided, and step-by-step so that people don’t feel overwhelmed
+  - Don’t let the hardcore data people make it scarier for everyone else, especially if you view data as a future competitive advantage
+  - Don’t let hardcore data people do presentations that showcase massive data sets and cross-tabs and whatever … this scares others
+  - Slow and steady gets you more people who can contribute
+  Comments:
+  - Shane Murphy :: ... I dislike the idea of anything being data-driven, to be honest. I prefer the term "data-informed." It's less corporate and implies that the data is a part of a larger decision making process, which is what it should be. The idea of just taking a set of data and making a decision based on that data is a bit insulting to a human being who is tasked (and paid) to actually make decisions ...
+  - Crazyrichfeen :: ... One is that, if data truly does lead to better decision, then at some point someone is going to get over their fear of lack of relevance and use it to dominate their competition. ... Most people look at the world through an a priori model, and have already decided how it works, and cherry pick 'evidence' to support their already existing models. This is the ultimate reason why data driven approaches are eschewed right now. When done right, they tend to tell people things they don't want to hear ...
+  - MXM :: ... would add that SOME level of skepticism about data is normal and healthy ... If there is a formula that comes out it doesn’t explain WHY the data came out that way.  ... There are many silly correlations in the world
+  - Cameron Warren :: Data translation is the key ... 90% of analytics work results in overly complicated dashboards that die after a week. The power users of dashboards are, you guessed it, just other “data” people that are less technical.
 
 *** Optimizers / Learn Rates
 
@@ -1514,7 +1546,11 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
 - https://towardsdatascience.com/self-paced-learning-for-machine-learning-f1c489316c61
 - https://pub.towardsai.net/morphnet-is-a-google-model-to-build-faster-and-smaller-neural-networks-f890276da456
   Uses cycles of reduction phase (and notes about casts related to target) and expansion phase where high costs to neuron layers (=reducing quality of model) are more expanded than other layers
-
+*** Visidata
+- Documentation :: https://www.visidata.org/docs/
+- Github :: https://github.com/saulpw/visidata
+- Installing (via pipx) :: https://gist.github.com/jsvine/4fd295176b4f5257dfb89b3898a21a7e
+- Video Tutorial :: https://www.youtube.com/playlist?list=PLxu7QdBkC7drrAGfYzatPGVHIpv4Et46W
 *** Jupyter Notebooks
 
 - https://nextjournal.com/schmudde/how-to-version-control-jupyter
@@ -1829,6 +1865,7 @@ but also why they are so sensitive to adversial networks
 - https://de.wikipedia.org/wiki/Braess-Paradoxon
     zusätzliche Handlungsoption unter der Annahme rationaler Einzelentscheidungen zu einer
     Verschlechterung der Situation für alle führen kann
+- https://www.cantorsparadise.com/how-to-benefit-from-braesss-paradox-b29b20d76149
 - https://towardsdatascience.com/simpsons-paradox-d2f4d8f08d42
 - https://towardsdatascience.com/the-inspection-paradox-is-everywhere-2ef1c2e9d709 :Statistical:
 - https://towardsdatascience.com/a-b-testing-is-there-a-better-way-an-exploration-of-multi-armed-bandits-98ca927b357d  - Overview of different algorithms for Multi Armed Bandits
