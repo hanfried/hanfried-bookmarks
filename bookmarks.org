@@ -1154,6 +1154,7 @@ including:
 - https://thechief.io/c/blameless/best-practices-effective-incident-management/
 - https://developers.soundcloud.com/blog/alerting-on-slos
 - https://firehydrant.io/blog/incident-severity-and-priority-101/  - Severity SEV1..SEV5 and Priority P1..P4 definition in natural language for everyone in the company
+- https://thenewstack.io/running-more-low-severity-incidents-is-improving-our-culture/
 
 **** Deployment Strategies
 - https://charity.wtf/2019/05/01/friday-deploy-freezes-are-exactly-like-murdering-puppies/
@@ -1487,6 +1488,8 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
   Introductionary, but very well written text
 *** Compilations
 - https://github.com/khuyentran1401/Data-science  - Collection of useful data science topics along with code and articles (good curated)
+- https://towardsdatascience.com/ai-papers-to-read-in-2022-c6edd4302247
+  - [[https://arxiv.org/abs/2106.03253][Tabular Data: Deep Learning is Not All You Need]]
 
 *** Interesting Analysis :Analysis:
 
@@ -1560,6 +1563,9 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
 - https://towardsdatascience.com/jupyter-is-the-new-excel-but-not-for-your-boss-d24340ebf314  - ways to export/give other easy access to notebooks (hiding cells etc)
 - https://towardsdatascience.com/on-the-myths-and-problems-of-jupyter-notebooks-81517a4696ef  - You can version control, test and modularize notebooks with current tools. Let’s discuss the real issues.
 - https://towardsdatascience.com/introduction-to-papermill-2c61f66bea30  - How to transform your Jupyter Notebook into a workflow tool
+- https://towardsdatascience.com/jupyter-notebook-as-a-function-create-reusable-notebooks-with-papermill-8f9bea5b9727
+- https://medium.com/y-data-stories/automating-jupyter-notebooks-with-papermill-4b8543ece92f
+- https://github.com/ploomber/ploomber  - Ploomber is the fastest way to build data pipelines zap. Use your favorite editor (Jupyter, VSCode, PyCharm) to develop interactively and deploy cloud without code changes (Kubernetes, Airflow, AWS Batch, and SLURM). Do you have legacy notebooks? Refactor them into modular pipelines with a single command
 
 *** Streamlit
 
@@ -1843,6 +1849,11 @@ but also why they are so sensitive to adversial networks
 - https://towardsdatascience.com/large-scale-graph-mining-with-spark-part-2-2c3d9ed15bb5
 - https://towardsdatascience.com/graphframes-in-jupyter-a-practical-guide-9b3b346cebc5
 - https://towardsdatascience.com/an-introduction-to-spark-graphframe-with-examples-analyzing-the-wikipedia-link-graph-67e58c20a107
+*** Semi Supervised Learning
+- https://medium.com/mlearning-ai/how-i-used-sklearns-labelpropogation-to-carry-out-semi-supervised-training-91401e2734be
+- https://towardsdatascience.com/how-to-benefit-from-the-semi-supervised-learning-with-label-spreading-algorithm-2f373ae5de96
+- https://scikit-learn.org/stable/modules/generated/sklearn.semi_supervised.LabelPropagation.html
+- https://scikit-learn.org/stable/modules/generated/sklearn.semi_supervised.LabelSpreading.html#sklearn.semi_supervised.LabelSpreading
 *** Deployments :DevOps:
 - https://medium.com/datadriveninvestor/deploy-your-pytorch-model-to-production-f69460192217 :PyTorch:
 - https://medium.com/@colinshaw_36798/fully-utilizing-your-deep-learning-gpus-61ee7acd3e57

@@ -6,6 +6,21 @@
  parts, but not what weights are and how they work together). But main advantage of artificial
  networks is that we can inspect them and play around with them with ease, as we have at least
  the whole information.
+*** [[https://arxiv.org/abs/2106.03253][Tabular Data: Deep Learning is Not All You Need]] (Shwartz-Ziv, Ravid, and Amitai Armon: November 2021)
+- Tree ensembles usually recommended for problems with tabular data
+- deep neural networks lack of
+  - locality
+  - missing values
+  - mixed feature types (numeric, ordinal, categorical),
+  - prior knowledge (no real transfer learning etc)
+  - black box approach
+- XGBoost generally outperforms the deep models
+- no deep model consistently outperforms the others
+- ensemble of deep models and XGBoost outperform the other models in most cases
+- training on datasets other than those in their original papers, the deep models performs worse the XGBoost
+- ensemble of classical models performed much worse than ensemble of deep networks and XGBoost
+- subset of models: only three models were needed to achieve almost optimal performance
+- XGBoost can be significantly faster then the deep networks (more than a magnitude)
 
 ** NLP
 *** Pretrained Language Model Papers: https://github.com/thunlp/PLMpapers
