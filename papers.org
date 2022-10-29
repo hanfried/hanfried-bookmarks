@@ -21,6 +21,88 @@
 - ensemble of classical models performed much worse than ensemble of deep networks and XGBoost
 - subset of models: only three models were needed to achieve almost optimal performance
 - XGBoost can be significantly faster then the deep networks (more than a magnitude)
+*** [[https://arxiv.org/pdf/2201.03545.pdf][A ConvNet for the 2020s]] (Liu, Mao, Wu, Feichtenhofer, et al: March 2022)
+- VGGNet, Inceptions, ResNeXt, DenseNet, MobileNet, EfficientNet, RegNet
+  focused on different aspects of accuracy, efficiency and scalability and popularized many useful design principles
+- sliding window strategy intrinsic to visual processing
+- translation equivariance
+- computations shared
+- NLP took different path: Transformers replaced recurrent neural networks
+- converged in 2020: introduction of Vision Transformers
+- Transformers can outperform standard ResNets by significant margin
+- global attention design has quadratic complexity with respect to the input size
+- Hierarchical Transformers bridge this gap
+- Swin Transformes with a generic vision backbone and tasks beyond image classification
+- implementation can be expensive
+- ConvNets already satisfies many of those desired properties straightforward
+- key question: How do design deciisions in Transformers impact ConvNets' performance?
+  as result: propose a family of pure ConvNets -> ConvNeXt
+- compete favorably with Transformers in terms of accuracy, scalability and robustness across all major benchmarks
+- training exceeded to 300 epochs, AdamW optimizer, data augmentation techniques
+  significant performance difference between traditional ConvNets and vision Transformes is due the training techniques
+- important design in every Transformer block is that it creates an inverted bottleneck
+- aspect of vision Transformers is non-local attention ... Swin Transformers reintroduced local window
+- Replacing ReLI with GELU
+- Fewer activation functions: use a single GELU activation in each block
+- Substitution Batch Normalization with Layer Normalization
+- ConvNeXt are simpler to fine tune at different resolutions as network is fully convolutional
+  and there is no need to adjust the input patch size or interpolate absolute/relatve position biases
+*** [[https://arxiv.org/pdf/2002.05709.pdf][A Simple Framework for Contrastive Learning of Visual Representations]] (Chen, Kornblinth, Norouzi, Hinton: July 2020)
+- shows that:
+  1) composition of data augmentation plays critical role in defining effictive predictive task
+  2) learning non-linear transformation between representation and contrastive loss substitantially improves quality of learned representations
+  3) contrastive learning benefits from larger batch sizer and more training steps compared to supervised learning
+     considerably outperform previous methods for self-supervised and semi-supervised learning on ImageNet
+- Learning effective visual representation without human supervision is a long standing problems
+  - Generative approaches (learning to generate pixels): computationally expensive and may not be necessary for representation learning
+  - Discriminative approaches (learn representations similar to to supervised learnings): perform pretext taxt without labels
+- Framework:
+  - stochastic data augmentation: (no simple transformation suffices to learn good representations)
+    - *random cropping and resizing to original resolution*
+    - *random color distortion (very important to avoid color histogram learning)*
+    - Gaussian blur
+  - base encoder ~ ResNet
+  - small extra network as projection head representations -> space of contrastive loss (as a result the hidden representation for this mapping is a better representation)
+  - contrastive loss function
+- no extra negative sampling, other 2(N-1) augmented examples within a minibatch as negative example
+*** [[https://arxiv.org/pdf/1905.11946.pdf][EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks]] (Mingxing Tan, Quoc V. Le: Sep 2020)
+- ConvNets commonly developed at a fixed ressource budget and then scaled up for better accuracy if more ressources are available
+- propose new scaling method that uniformly scales all dimensions of depth/width/resolution using a simple yet highly effective **compound coefficient**
+- results in StateOfTheArt accuracy, but much smaller and faster
+- so far scaling up not well understood and most common way:
+  - by depth :: can capture richer and more complex features and generalize well on new tasks, but difficult to train due gradient vanishing and accuracy diminishes
+  - by width :: capture more fine grained features and easier to train, but don't capture will more higher level features, accuracy quickly saturates
+  - by resolution :: improves accuracy, but diminishes for very high resolutions
+  - arbitrary scaling :: requires tedious manual tuning and still often yields sub-optimal accuracy and efficiency
+  - central question :: is there a principled method to scale up ConvNets
+  - surprisingly :: such balance can be achieved by simply scaling each of them with constant ratio
+  - develop :: new baseline Network and scale it up to obtain a family of models: EfficientNets
+  - significantly outperform :: other ConvNets
+- Observation 1 :: Scaling up any dimension improves accuracy, but gain diminishes for bigger models
+- Observation 2 :: to pursue better accuracy and efficiency, it's critical to balance all dimensions of network during ConvNet scaling
+- compound coefficient phi :: depth d = alpha ** phi, width w = beta ** phi, resolution r = gamma ** phi
+- EfficientNet B0 ::
+  - baseline network via a multi-objective neural architecture search optimizing accuracy **and** FLOPS
+  - alpha = 1.2, beta = 1.1, gamma = 1.15
+- EfficientNets B1 to B7 :: scaled up with different phi
+*** [[https://proceedings.neurips.cc/paper/2020/file/747e32ab0fea7fbd2ad9ec03daa3f840-Paper.pdf][Pushing the Limits of Narrow Precision Inferencing
+at Cloud Scale with Microsoft Floating Point]] (Microsoft: Dec 2020)
+- narrow fixed point datatypes incur a low hardware overhead, but lack a wide enough dynamic range
+- rising interest in custom datatypes specifically designed for DNN workloads
+- Microsoft Floating Point (MSFP) is a class of new datatypes for robust and low cost DNN inference at scale
+  enables efficient realization of dot product
+  maintaining a high dynamic range (2^-126 .. 2^127)
+- MSFP relies on using a shared experiment among number of values (->bounding box)
+- similar to fixed-point, MSFP is affected by extreme outlier values
+- compromise between dynamic range of floating point and hardware efficiency of fixed point
+- dot product in MSFP consists of:
+  - 1 fixed point addition of exponents,
+  - n fixed point multiplication of mantissas
+  - n n - 1 fixed point additions of mantissa products
+- in practice found a bounding box of 16-128 to be effective of preserving the accuracy while incurrnig a moderate hardware cost
+  - simplest approach treat entire matrix a single bounding box :: can lead to severe accuracy loss due to outliers and need careful re-calibration per benchmark
+  - bounding boxes to columns of matrix :: all dot products still be between pair of bounding boxes
+  - more effective to split the composition into finer grainer regions :: that align with hardware tiles
 
 ** NLP
 *** Pretrained Language Model Papers: https://github.com/thunlp/PLMpapers

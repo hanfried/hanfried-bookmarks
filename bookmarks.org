@@ -619,6 +619,7 @@ type            ::=  "b" | "c" | "d" | "e" | "E" | "f" | "F" | "g" | "G" | "n" |
 - https://medium.com/better-programming/python-celery-best-practices-ae182730bb81
 - https://github.com/seatgeek/fuzzywuzzy  -  Fuzzy String Matching in Python (useful for CLI help and similar)
 - https://github.com/mingrammer/diagrams  - lets you draw the cloud system architecture in Python code.
+- https://towardsdatascience.com/4-tools-to-automatically-extract-data-from-datetime-in-python-9ecf44943f89
 ***** CLI
 - https://github.com/tiangolo/typer  - build great CLIs. Easy to code. Based on Python type hints.
 - https://typer.tiangolo.com/  - fastapi equivalent for CLI tools -> use it for the next CLI tool if possible
@@ -713,6 +714,10 @@ type            ::=  "b" | "c" | "d" | "e" | "E" | "f" | "F" | "g" | "G" | "n" |
   - Discussions
   - Reference
 - https://medium.com/better-programming/best-practices-for-versioning-an-api-for-rest-apis-530a9398f311
+- https://www.freecodecamp.org/news/rest-is-the-new-soap-97ff6c09896d/
+- https://medium.com/dailyjs/what-every-software-engineer-should-know-about-oauth-2-0-10f0ef4998e5
+- https://medium.com/100-days-of-linux/10-curl-commands-that-you-should-know-ee3d032eb351
+*** HTML
 - https://itnext.io/html-underrated-tags-119ef3e45b94
   - picture :: to have alternative imgs depending on media without all the css/js mash
   - progress :: progressbars just in plain html
@@ -722,9 +727,29 @@ type            ::=  "b" | "c" | "d" | "e" | "E" | "f" | "F" | "g" | "G" | "n" |
   - mark :: use it instead of <span class="..."> to mark something
   - abbr :: easy to forget, but very useful
   - div contenteditable :: to create an editable field (and get rid of textarea)
-- https://www.freecodecamp.org/news/rest-is-the-new-soap-97ff6c09896d/
-- https://medium.com/dailyjs/what-every-software-engineer-should-know-about-oauth-2-0-10f0ef4998e5
-- https://medium.com/100-days-of-linux/10-curl-commands-that-you-should-know-ee3d032eb351
+- https://javascript.plainenglish.io/9-html-tips-nobody-is-talking-about-2022-edition-b7c095029030
+  - Fallback image ::
+    #+BEGIN_SRC html
+    <img src="pic2.src" onerror="this.style.display='none'"/>
+    <img src="pic1.src" onerror="this.src='fallback-img.jpg'"/>
+    #+END_SRC
+  - Directly call from HTML ::
+    #+BEGIN_SRC html
+    <a href="tel:123-456-7890">123-456-7890</a>
+    #+END_SRC
+  - Translate ::
+    #+BEGIN_SRC html
+    <p translate=”no”>Don’t translate this!</p>
+    <p>This can be translated to any language.</p>
+    #+END_SRC
+  - Poster :: attribute helps you set an image to be shown while the video is downloading
+    #+BEGIN_SRC html
+    <video controls poster="/images/w3html5.gif">
+        <source src="movie.mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+    </video>
+    #+END_SRC
 *** Golang
 
 - https://towardsdatascience.com/ultimate-setup-for-your-next-golang-project-1cc989ad2a96
@@ -745,7 +770,6 @@ type            ::=  "b" | "c" | "d" | "e" | "E" | "f" | "F" | "g" | "G" | "n" |
 - https://github.com/timqian/star-history
  (1.0.0 -> 1.0.1 bugfix -> 1.1.0 new functionality -> ... -> 2.0.0 backward incompatible breaking change)
 - https://mogron.github.io/blog/github-star-analysis/
-- https://itnext.io/seven-git-configs-9de48007aa77
 
 **** Best Practices / Linters
 
@@ -757,7 +781,9 @@ type            ::=  "b" | "c" | "d" | "e" | "E" | "f" | "F" | "g" | "G" | "n" |
 - https://github.com/awslabs/git-secrets - Prevents you from committing
   passwords and other sensitive information to a git repository
 - https://github.com/zricethezav/gitleaks  - Scan git repos for secrets using regex and entropy
-**** Tools
+**** Config + Tools
+- https://itnext.io/seven-git-configs-9de48007aa77
+- https://medium.com/pragmatic-programmers/git-config-diff-colormoved-8e2f24af6645
 - https://github.com/dandavison/delta  A syntax-highlighting pager for git, diff, and grep output
   - Installation :: https://dandavison.github.io/delta/installation.html
 
@@ -975,6 +1001,8 @@ A list with items where you need a skilled DBA to understand, but written good e
 - https://towardsdatascience.com/the-curious-case-of-mysql-postgresql-and-hive-9e7cae9e52f4  - subtle changes in behaviour given same syntax
 *** Cronjobs
 - https://github.com/healthchecks/healthchecks  - A cron monitoring tool written in Python & Django
+*** Editors
+**** https://elsewebdevelopment.com/neovim-vs-helix-which-is-the-best-vi-vim-style-modal-editor/
 ** DevOps / Security
 *** Misc
 
@@ -1021,6 +1049,7 @@ A list with items where you need a skilled DBA to understand, but written good e
   - as a Kafka consumer/producer for observability data.
   - in resource constrained environments (such as devices)
   - see also: https://www.kartar.net/2020/05/a-bit-of-a-vector/
+- https://medium.com/@JaouherK/creating-a-human-and-machine-freindly-logging-format-bb6d4bb01dca
 *** Dashboarding
 - https://shkspr.mobi/blog/2022/08/the-point-of-a-dashboard-isnt-to-use-a-dashboard/
   it shows that you have access to your data => huge deal
@@ -1183,6 +1212,7 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
 - https://pythonspeed.com/articles/alpine-docker-python/  - why not to use alpine as docker image for python
 - https://semaphoreci.com/blog/docker-benefits                    :Docker:
 - https://towardsdatascience.com/docker-tensorflow-google-cloud-platform-love-87c026f08cc7
+- https://iximiuz.com/en/posts/containers-distroless-images/
 
 **** Linters
 
@@ -1490,6 +1520,7 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
 - https://github.com/khuyentran1401/Data-science  - Collection of useful data science topics along with code and articles (good curated)
 - https://towardsdatascience.com/ai-papers-to-read-in-2022-c6edd4302247
   - [[https://arxiv.org/abs/2106.03253][Tabular Data: Deep Learning is Not All You Need]]
+  - [[https://arxiv.org/pdf/2201.03545.pdf][A ConvNet for the 2020s]]
 
 *** Interesting Analysis :Analysis:
 
@@ -1620,7 +1651,6 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
 - https://towardsdatascience.com/analyzing-time-series-data-in-pandas-be3887fdd621 :TimeSeries:
 - https://towardsdatascience.com/geopandas-101-plot-any-data-with-a-latitude-and-longitude-on-a-map-98e01944b972 :Visualization:
 - https://towardsdatascience.com/how-to-work-with-million-row-datasets-like-a-pro-76fb5c381cdd  - reducing memory
-- https://towardsdatascience.com/process-10m-row-datasets-in-milliseconds-in-this-comprehensive-pandas-speed-guide-5a3125cbb78
 - https://towardsdatascience.com/6-pandas-mistakes-that-silently-tell-you-are-a-rookie-b566a252e60d
   - Read CSVs is slow: Prefer using a specialiced module for it, e.g.: https://github.com/h2oai/datatable
   - dtypes, worst is object, there is a also a =category= dtype
@@ -1867,6 +1897,7 @@ but also why they are so sensitive to adversial networks
 - https://www.youtube.com/watch?v=Io1x6mQlh1E  - Connected Components in MapReduce and Beyond
   Discusses the Alternating Algorithm (LargeStar, SmallStar) to have a fast and local working connection graph algorithm working up to huge data scale
 - https://towardsdatascience.com/orchestrate-a-data-science-project-in-python-with-prefect-e69c61a49074  - Interesting (and less complex) alternative to Airflow, as long as it is in Python
+- https://towardsdatascience.com/designing-your-database-schema-best-practices-31843dc78a8d  - Star vs Snowflake
 *** Spark
 - https://towardsdatascience.com/successful-spark-submits-for-python-projects-53012ca7405a  - complete setup including bundling env and dependencie
 *** Data Drift Detection
@@ -1882,8 +1913,8 @@ but also why they are so sensitive to adversial networks
 - https://towardsdatascience.com/a-b-testing-is-there-a-better-way-an-exploration-of-multi-armed-bandits-98ca927b357d  - Overview of different algorithms for Multi Armed Bandits
 - https://towardsdatascience.com/rip-correlation-introducing-the-predictive-power-score-3d90808b9598  - Better way to find correlation instead of correlation matrices
   Main advantage to something like Mutual Information Score is that it can also applied to categorical variables
+- https://towardsdatascience.com/psmpy-propensity-score-matching-in-python-a3e0cd4d2631
 - https://towardsdatascience.com/how-floating-point-numbers-work-1429907b6d1d
-- https://rootly.io/blog/you-do-the-math-reliability-issues-triggered-by-math-errors
 - https://towardsdatascience.com/the-lost-boarding-pass-problem-2a17313b2d8a  - a bit similar to birthday paradox
 - https://towardsdatascience.com/what-really-is-a-matrix-determinant-89c09884164c  - the scaling factor of an enclosed area by two vectors after the transformation described by the matrix
 - https://towardsdatascience.com/how-to-create-slick-math-animations-like-3blue1brown-in-python-457f74701f68
