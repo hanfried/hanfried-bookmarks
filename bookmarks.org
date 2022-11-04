@@ -21,10 +21,9 @@
 - https://bahn.guru  - Sparpreis-Finder
 
 ** Business
-
+*** Misc
 - https://clutch.co/app-developers/resources/what-is-riskiest-assumption-test  - RAT vs MVP
 - https://entrepreneurshandbook.co/the-real-reasons-why-a-vc-passed-on-your-startup-917c30103ecb  - pretty complete check list
-- https://www.gulp.de/knowledge-base/19/iii/neue-checkliste-fuer-freelancer-bin-ich-scheinselbststaendig.html
 - https://medium.com/swlh/5-more-stupid-things-entrepreneurs-should-never-say-when-fundraising-67121dee1c1b
   - _"If we capture X% of the market…"_ ::  Instead, marketing sizing estimates
     show how much money is already being spent, which means capturing market
@@ -91,6 +90,9 @@
      entrepreneurship isn’t about building things. Entrepreneurship is about solving people’s problems
 - https://medium.com/swlh/why-startups-should-never-hire-straight-a-students-75b176b8e907
 - https://medium.com/young-coder/how-microsoft-beat-the-innovators-dilemma-5b78e3692ed3
+*** Steuern / Finanzamt / Einstufung Selbstständigkeit
+- https://www.gulp.de/knowledge-base/19/iii/neue-checkliste-fuer-freelancer-bin-ich-scheinselbststaendig.html
+- https://www.gulp.de/freelancing/wissen/geschaeftswagen/entfernungspauschale-reisekosten-erste-betriebsstaette
 
 ** Personal Development
 
@@ -129,6 +131,8 @@
 - https://levelup.gitconnected.com/why-rewriting-applications-from-scratch-is-almost-always-a-bad-idea-5402d1715006
 - https://glitch.com/  - Coding together in a collaborative way
 - https://dx.tips/the-end-of-localhost  - Interesting discussion of movement to move development in the cloud (instead of working locally)
+- https://medium.com/geekculture/why-todays-code-documentation-is-a-heap-of-garbage-c66ac8aa6cb6  - Continuous Documentation
+- https://www.netmeister.org/blog/epoch.html  - About unix timestamps
  
 *** Lessons from 50 years experience (Project-Management etc)...
 
@@ -666,6 +670,13 @@ type            ::=  "b" | "c" | "d" | "e" | "E" | "f" | "F" | "g" | "G" | "n" |
     One of the subprojects is a seamless pandas scaling framework [[https://github.com/modin-project/modin][modin]]!
 - https://github.com/modin-project/modin  - scale your pandas workflows by changing one line of code
 - https://github.com/8080labs/ppscore  - Predictive Power Score (PPS) instead of correlation matrices
+***** Databases
+- Ibis Medium Article :: https://towardsdatascience.com/an-introduction-to-ibis-for-python-programmers-2112ea32370d  - A More Pythonic Way To Work With Databases
+  Ibis is a Python framework to access data and perform analytical computations from different sources, in a standard way.
+  In a way, you can think of Ibis as writing SQL in Python, with a focus on analytics, more than simply accessing data.
+  And aside from SQL databases, you can use it with other backends, including big data systems.
+- Ibis Github :: https://github.com/ibis-project/ibis/
+- Ibis Tutorial :: https://ibis-project.org/docs/3.1.0/tutorial/01-Introduction-to-Ibis/
 **** Debugging
 
 - https://github.com/benfred/py-spy
@@ -1585,6 +1596,8 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
 - Github :: https://github.com/saulpw/visidata
 - Installing (via pipx) :: https://gist.github.com/jsvine/4fd295176b4f5257dfb89b3898a21a7e
 - Video Tutorial :: https://www.youtube.com/playlist?list=PLxu7QdBkC7drrAGfYzatPGVHIpv4Et46W
+- Vdsql Github :: https://github.com/visidata/vdsql
+- Vdsql Video :: https://www.youtube.com/watch?v=y3voGFX359I
 *** Jupyter Notebooks
 
 - https://nextjournal.com/schmudde/how-to-version-control-jupyter
@@ -1761,6 +1774,7 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
 - https://towardsdatascience.com/fuzzy-matching-at-scale-84f2bfd0c536  - Use tf-idf on substrings to make very, very fast fuzzy matching - clever trick
 **** Search
 - https://towardsdatascience.com/introducing-txtai-an-ai-powered-search-engine-built-on-transformers-37674be252ec
+- https://medium.com/neuml/serverless-vector-search-with-txtai-96f6163ab972
 **** Summarisation
 - https://towardsdatascience.com/automatic-text-summarisation-ccc98d2b323f  - Condensing with TextRank
   TextRank works similar to PageRank with the idea of:

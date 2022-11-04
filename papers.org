@@ -103,6 +103,31 @@ at Cloud Scale with Microsoft Floating Point]] (Microsoft: Dec 2020)
   - simplest approach treat entire matrix a single bounding box :: can lead to severe accuracy loss due to outliers and need careful re-calibration per benchmark
   - bounding boxes to columns of matrix :: all dot products still be between pair of bounding boxes
   - more effective to split the composition into finer grainer regions :: that align with hardware tiles
+*** [[https://arxiv.org/pdf/1912.13200.pdf][AdderNet: Do We Really Need Multiplications in Deep Learning]] (Chen, Wang, Xu, et al: July 2021)
+- convolutions in deep neural networks are cross-correlations to measure the similarity
+- multiplications between float values
+- AdderNets to trade these massive multiplications for much cheaper additions to reduce computation costs
+- l1 norm distance (hardware friendly) between filters and input feature as output response
+- develop a special back propagation approach by investigating the full precision gradient
+- high power consumption of high end GPUs block modern deep learning system from being deployed to mobile devices
+- need many other hardware for support (memory chips, power circuits, voltage regulators, other controller chips)
+- necessary to study efficient deep neural networks that can run with affordable computation ressources on mobile devices
+- previously proposed
+  - BNNs :: which binarized not only weights but also activations significantly reduces computation costs, but
+    - original recognition accuracy often can't be preserved
+    - not stable
+    - slower convergence speed
+  - pruning based methods / knowledge distillation :: still contain massive multiplications
+- output of an adder filter is always negative -> need batch normalization (involves multiplications, but magnitudes less effort)
+- l1 norm adder filter has connection with template matching
+- derivative would be sgnSGD with discrete steps that almost never takes the (direct) direction if steepes descent
+  (becomes even worse as dimensionality grows)
+- propose to use full precision gradient (instead of discrete one)
+- clip gradient to [-1, 1] -> HardTanh function HT(x) = x if -1 < x < 1 else 1 if x > 1 else -1
+- addition operation tends to bring much larger variations of outputs in AdderNets
+- propose adaptive learning for different layers in AdderNets
+- features tend to be clustered towards different class centers
+- AdderNets can well approximate performance of CNNs of same architecture (checked in the paper up to LeNet-5)
 
 ** NLP
 *** Pretrained Language Model Papers: https://github.com/thunlp/PLMpapers
