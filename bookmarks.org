@@ -583,6 +583,7 @@ Nowhere complete, nowhere top selected per se, but some are interesting, so let'
   - https://medium.com/@cjolowicz/hypermodern-python-4-typing-31bcf12314ff
   - https://medium.com/@cjolowicz/hypermodern-python-5-documentation-13219991028c
   - https://medium.com/@cjolowicz/hypermodern-python-6-ci-cd-b233accfa2f6
+- https://betterprogramming.pub/tools-and-technics-for-better-project-setup-9909abca263f
 - https://martinheinz.dev/blog/59  - Secure Password Handling in Python
 - https://towardsdatascience.com/whats-init-for-me-d70a312da583  - Designing for Python package import patterns
 - https://instagram-engineering.com/static-analysis-at-scale-an-instagram-story-8f498ab71a0c  - Linters, Codemods, ...
@@ -1745,6 +1746,16 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
   of compile or deploy time). Pipeline tests are like unit tests for datasets:
   they help you guard against upstream data changes and monitor data quality.
 - https://towardsdatascience.com/validate-your-pandas-dataframe-with-pandera-2995910e564  - pandera provides a flexible and expressive API for performing data validation on dataframes to make data processing pipelines more readable and robust.
+- https://towardsdatascience.com/data-drift-it-can-come-at-you-from-anywhere-b78eb186855  - Nice presentation about all the already very ugly data shifts
+  - Level shift :: Obviously
+  - Variance shift :: Subtler
+  - Variance decrease :: That’s a drift too
+  - Peak shifts inside a period :: The relative position of that peak (within a period) shifted
+  - some simple spectral analysis will indicate a shift. So, you have to bring in some knowledge of signal processing to catch this data drift
+  - Contextual data — another way to catch the drift
+  - Phase-shift/delay :: For ML models training and inferencing on time-series data, a slight phase delay can generate totally wrong predictions. Basically, the model was trained like “If X1 and X2 were similar then predict Y0, otherwise predict Y1”
+  - Some are drift, some not :: industrial or manufacturing scenarios, process recipes and settings change all the time
+  - Measurement/Sensor drift :: The input data streams and the generative processes may be fine but there may be drift on the sensor
 
 *** Data Visualization :Visualization:
 
@@ -1774,6 +1785,21 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
 - https://towardsdatascience.com/fuzzy-matching-at-scale-84f2bfd0c536  - Use tf-idf on substrings to make very, very fast fuzzy matching - clever trick
 **** Search
 - https://towardsdatascience.com/introducing-txtai-an-ai-powered-search-engine-built-on-transformers-37674be252ec
+- https://medium.com/neuml/run-machine-learning-workflows-to-transform-data-and-build-ai-powered-text-indices-with-txtai-43d769b566a7
+  Allows:
+  - Vectorizing of data including
+    - text
+    - documents (like pdfs)
+    - audio
+    - images
+  - Supports Pipelines via e.g. HuggingFace Transformers or pytorch models for
+    - Questions :: Answer questions using a text context
+    - Labels :: Apply labels to text using a zero-shot classification model. Also supports similarity comparisons.
+    - Summary :: Abstractive text summarization
+    - Textractor :: Extract text from documents
+    - Transcription :: Transcribe audio to text
+    - Translation :: Machine translation
+  - Workflows combining these tasks
 - https://medium.com/neuml/serverless-vector-search-with-txtai-96f6163ab972
 **** Summarisation
 - https://towardsdatascience.com/automatic-text-summarisation-ccc98d2b323f  - Condensing with TextRank
