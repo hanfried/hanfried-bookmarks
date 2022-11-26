@@ -615,16 +615,14 @@ type            ::=  "b" | "c" | "d" | "e" | "E" | "f" | "F" | "g" | "G" | "n" |
 - https://www.youtube.com/watch?v=GIF3LaRqgXo  - Publishing (Perfect) Python Packages on PyPi
 - https://github.com/vinta/awesome-python  - A curated list of awesome Python frameworks, libraries, software and resources.
 - https://towardsdatascience.com/the-most-underrated-python-packages-e22bf6049b5e
-  some surprising little packages:
-  - https://github.com/huggingface/knockknock  - get notified when your training/function ends
-  - https://github.com/LuminosoInsight/python-ftfy  - fix somehow broken unicode characters
-- https://github.com/jpvanhal/inflection  - string transformation library. It singularizes and pluralizes English words, and transforms strings from CamelCase to underscored string.
 - https://github.com/lepture/python-livereload  - nice file watcher
 - https://github.com/tiangolo/fastapi  - framework, high performance, easy to learn, fast to code, ready for production
 - https://medium.com/better-programming/python-celery-best-practices-ae182730bb81
-- https://github.com/seatgeek/fuzzywuzzy  -  Fuzzy String Matching in Python (useful for CLI help and similar)
-- https://github.com/mingrammer/diagrams  - lets you draw the cloud system architecture in Python code.
 - https://towardsdatascience.com/4-tools-to-automatically-extract-data-from-datetime-in-python-9ecf44943f89
+***** String/Text utils
+- https://github.com/LuminosoInsight/python-ftfy  - fix somehow broken unicode characters
+- https://github.com/jpvanhal/inflection  - string transformation library. It singularizes and pluralizes English words, and transforms strings from CamelCase to underscored string.
+- https://github.com/seatgeek/fuzzywuzzy  -  Fuzzy String Matching in Python (useful for CLI help and similar)
 ***** CLI
 - https://github.com/tiangolo/typer  - build great CLIs. Easy to code. Based on Python type hints.
 - https://typer.tiangolo.com/  - fastapi equivalent for CLI tools -> use it for the next CLI tool if possible
@@ -648,7 +646,7 @@ type            ::=  "b" | "c" | "d" | "e" | "E" | "f" | "F" | "g" | "G" | "n" |
 - https://github.com/asottile/reorder_python_imports
 - https://github.com/PyCQA/flake8-bugbear
 - https://github.com/PyCQA/bandit
-- https://gitlab.com/pycqa/flake8-docstrings
+- https://github.com/PyCQA/flake8-docstrings
 - https://github.com/terrencepreilly/darglint  - checks that the docstring description matches the definition
 - https://github.com/Erotemic/xdoctest - runs the examples in your docstrings
   and compares the actual output to the expected output as per the docstring
@@ -671,6 +669,7 @@ type            ::=  "b" | "c" | "d" | "e" | "E" | "f" | "F" | "g" | "G" | "n" |
     One of the subprojects is a seamless pandas scaling framework [[https://github.com/modin-project/modin][modin]]!
 - https://github.com/modin-project/modin  - scale your pandas workflows by changing one line of code
 - https://github.com/8080labs/ppscore  - Predictive Power Score (PPS) instead of correlation matrices
+- https://github.com/huggingface/knockknock  - get notified when your training/function ends
 ***** Databases
 - Ibis Medium Article :: https://towardsdatascience.com/an-introduction-to-ibis-for-python-programmers-2112ea32370d  - A More Pythonic Way To Work With Databases
   Ibis is a Python framework to access data and perform analytical computations from different sources, in a standard way.
@@ -678,6 +677,9 @@ type            ::=  "b" | "c" | "d" | "e" | "E" | "f" | "F" | "g" | "G" | "n" |
   And aside from SQL databases, you can use it with other backends, including big data systems.
 - Ibis Github :: https://github.com/ibis-project/ibis/
 - Ibis Tutorial :: https://ibis-project.org/docs/3.1.0/tutorial/01-Introduction-to-Ibis/
+***** Diagrams / QR-Codes
+- https://github.com/mingrammer/diagrams  - lets you draw the cloud system architecture in Python code.
+- https://github.com/x-hw/amazing-qr  - amazing QRCode generator in Python (supporting animated gif)
 **** Debugging
 
 - https://github.com/benfred/py-spy
@@ -686,7 +688,7 @@ type            ::=  "b" | "c" | "d" | "e" | "E" | "f" | "F" | "g" | "G" | "n" |
 
 - https://medium.com/@cjolowicz/hypermodern-python-5-documentation-13219991028c
   Tools:
-  - https://gitlab.com/pycqa/flake8-docstrings - adds an extension for the fantastic pydocstyle tool to flake8.
+  - https://github.com/PyCQA/flake8-docstrings  - adds an extension for the fantastic pydocstyle tool to flake8.
   - https://github.com/terrencepreilly/darglint  - linter which checks that the docstring description matches the definition.
   - https://github.com/Erotemic/xdoctest  - testing the examples in the docstrings
 - https://towardsdatascience.com/how-to-set-up-your-python-project-docs-for-success-aab613f79626
@@ -739,6 +741,7 @@ type            ::=  "b" | "c" | "d" | "e" | "E" | "f" | "F" | "g" | "G" | "n" |
   - mark :: use it instead of <span class="..."> to mark something
   - abbr :: easy to forget, but very useful
   - div contenteditable :: to create an editable field (and get rid of textarea)
+- https://learntheweb.courses/topics/html-semantics-cheat-sheet/
 - https://javascript.plainenglish.io/9-html-tips-nobody-is-talking-about-2022-edition-b7c095029030
   - Fallback image ::
     #+BEGIN_SRC html
@@ -782,6 +785,7 @@ type            ::=  "b" | "c" | "d" | "e" | "E" | "f" | "F" | "g" | "G" | "n" |
 - https://github.com/timqian/star-history
  (1.0.0 -> 1.0.1 bugfix -> 1.1.0 new functionality -> ... -> 2.0.0 backward incompatible breaking change)
 - https://mogron.github.io/blog/github-star-analysis/
+- https://github.com/kamranahmedse/git-standup  - Recall what you did on the last working day
 
 **** Best Practices / Linters
 
@@ -1296,8 +1300,6 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
 **** Misc
 - https://blog.pipetail.io/posts/2020-05-04-most-common-mistakes-k8s/
 - https://github.com/jamiehannaford/what-happens-when-k8s
-- https://matthias-endler.de/2019/maybe-you-dont-need-kubernetes/ :Kubernetes:
-- https://ably.com/blog/no-we-dont-use-kubernetes
 - https://towardsdatascience.com/key-kubernetes-commands-741fe61fde8 :Kubernetes:
 - https://medium.com/90seconds/lessons-learned-with-gitlab-runner-on-kubernetes-d547c30ad5fb :Kubernetes:
 - https://prefetch.net/blog/2019/10/16/the-beginners-guide-to-creating-kubernetes-manifests/ :Kubernetes:
@@ -1312,6 +1314,10 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
   7. Be prepared for rollback
 - https://itnext.io/before-you-use-kustomize-eaa9529cdd19  - Advantages/Disadvantages of Kustomize vs Helm
 - https://www.eficode.com/blog/the-future-of-kubernetes-and-why-developers-should-look-beyond-kubernetes-in-2022
+**** Yes/No
+- https://matthias-endler.de/2019/maybe-you-dont-need-kubernetes/ :Kubernetes:
+- https://ably.com/blog/no-we-dont-use-kubernetes
+- https://medium.com/digital-mckinsey/does-kubernetes-really-give-you-multicloud-portability-476270a0acc7
 **** Linters
 
 - https://github.com/instrumenta/kubeval/
@@ -1592,13 +1598,14 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
 - https://towardsdatascience.com/self-paced-learning-for-machine-learning-f1c489316c61
 - https://pub.towardsai.net/morphnet-is-a-google-model-to-build-faster-and-smaller-neural-networks-f890276da456
   Uses cycles of reduction phase (and notes about casts related to target) and expansion phase where high costs to neuron layers (=reducing quality of model) are more expanded than other layers
-*** Visidata
+*** CLI introspection (Visidata/xsv/...)
 - Documentation :: https://www.visidata.org/docs/
 - Github :: https://github.com/saulpw/visidata
 - Installing (via pipx) :: https://gist.github.com/jsvine/4fd295176b4f5257dfb89b3898a21a7e
 - Video Tutorial :: https://www.youtube.com/playlist?list=PLxu7QdBkC7drrAGfYzatPGVHIpv4Et46W
 - Vdsql Github :: https://github.com/visidata/vdsql
 - Vdsql Video :: https://www.youtube.com/watch?v=y3voGFX359I
+- https://github.com/BurntSushi/xsv  - A fast CSV command line toolkit written in Rust
 *** Jupyter Notebooks
 
 - https://nextjournal.com/schmudde/how-to-version-control-jupyter
@@ -1611,7 +1618,8 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
 - https://towardsdatascience.com/jupyter-notebook-as-a-function-create-reusable-notebooks-with-papermill-8f9bea5b9727
 - https://medium.com/y-data-stories/automating-jupyter-notebooks-with-papermill-4b8543ece92f
 - https://github.com/ploomber/ploomber  - Ploomber is the fastest way to build data pipelines zap. Use your favorite editor (Jupyter, VSCode, PyCharm) to develop interactively and deploy cloud without code changes (Kubernetes, Airflow, AWS Batch, and SLURM). Do you have legacy notebooks? Refactor them into modular pipelines with a single command
-
+*** Google Colab
+- https://pub.towardsai.net/use-google-colab-like-a-pro-39a97184358d
 *** Streamlit
 
 - https://towardsdatascience.com/how-to-deploy-a-streamlit-app-using-an-amazon-free-ec2-instance-416a41f69dc3
@@ -1663,6 +1671,7 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
 - https://hackersandslackers.com/using-hierarchical-indexes-with-pandas/   - That's part 12 of it
 - https://www.youtube.com/watch?v=xPPs59pn6qU  - pivot and pivot_table usage (part of a pandas video series)
 - https://towardsdatascience.com/analyzing-time-series-data-in-pandas-be3887fdd621 :TimeSeries:
+- https://pub.towardsai.net/manipulating-time-series-data-in-python-49aed42685a0 :TimeSeries:
 - https://towardsdatascience.com/geopandas-101-plot-any-data-with-a-latitude-and-longitude-on-a-map-98e01944b972 :Visualization:
 - https://towardsdatascience.com/how-to-work-with-million-row-datasets-like-a-pro-76fb5c381cdd  - reducing memory
 - https://towardsdatascience.com/6-pandas-mistakes-that-silently-tell-you-are-a-rookie-b566a252e60d
@@ -1713,8 +1722,6 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
   - prefer file formats like parquet
   - read pandas user guide
 - https://towardsdatascience.com/an-overview-of-pythons-datatable-package-5d3a97394ee9
-
-
 
 *** Data Annotation
 
