@@ -1,92 +1,92 @@
 
 # Table of Contents
 
-1.  [Bookmarks](#orgc99db20)
-    1.  [Misc](#org61b1384)
-    2.  [Bahn](#orgfd5e89b)
-    3.  [Business](#orgdb88706)
-        1.  [Misc](#orge22f081)
-        2.  [Steuern / Finanzamt / Einstufung Selbstständigkeit](#orgac9cbf3)
-    4.  [Personal Development](#org2621d43)
-    5.  [Gesellschaftliches](#org4f6f1dc)
-    6.  [Software-Development](#org4447a57):Software_Development:
-        1.  [Misc](#org37523c5)
-        2.  [Lessons from 50 years experience (Project-Management etc)&#x2026;](#org2c61ca9)
-        3.  [Essays on Programming](#org9d2de18)
-        4.  [Some Collection of Best of Talks](#orgae7fc24)
-        5.  [Project Management](#orgfa91eec)
-        6.  [Team Management](#org886d316)
-        7.  [JSON](#org4d69a4f)
-        8.  [YAML](#org8b82a0d)
-        9.  [RegEx](#org8cd9f57)
-        10. [Python](#org2affa88)
-        11. [Django](#orgb0bd081)
-        12. [Javascript / CSS](#orgf20d73f)
-        13. [Java](#org5ddb25e)
-        14. [REST APIs / Web Development / HTML](#orgb4edce8)
-        15. [HTML](#orgf03eb5d)
-        16. [Golang](#org6566322)
-        17. [Git / GitHub / Versioning](#org1e6fd7c)
-        18. [Shell/Bash/Zsh](#org2469171)
-        19. [Makefiles](#org5d0867b)
-        20. [Databases](#org63fa192)
-        21. [Cronjobs](#org43f2d03)
-        22. [Editors](#orgad36f0c)
-    7.  [DevOps / Security](#orgfe3673f)
-        1.  [Misc](#org1b970e9)
-        2.  [Logging](#org6f9cfad)
-        3.  [Dashboarding](#org22e58b8)
-        4.  [Monorepo vs Multirepo](#orgb867ff9)
-        5.  [CI/CD-Pipeline](#org7a761c8)
-        6.  [Cloud Provisioners](#orgc5d734b)
-        7.  [Site Reliability](#org337f5d3)
-        8.  [Microservices / Serverless](#orgaacd9fa)
-        9.  [Docker/Containers](#orgbc56c9f):Docker:
-        10. [Kubernetes](#org630fe87):Kubernetes:
-        11. [SSH](#org373f71a)
-        12. [General Computer/Networking/&#x2026; Security](#org913328c):Security:
-        13. [Security Tools](#org1a8ec63)
-    8.  [Data Science / ML / NLP](#org528e216):DataScience:
-        1.  [Misc](#orgebda644)
-        2.  [Compilations](#org4d2dc24)
-        3.  [Interesting Analysis](#orgfa18e41):Analysis:
-        4.  [Kaggle](#org21010f8):Kaggle:
-        5.  [Team (Management, Hiring, Organization, &#x2026;)](#org61aa252)
-        6.  [Optimizers / Learn Rates](#org20c4823)
-        7.  [CLI introspection (Visidata/xsv/&#x2026;)](#orgca3bb54)
-        8.  [Jupyter Notebooks](#orgee5a40c)
-        9.  [Google Colab](#org0ef51f0)
-        10. [Streamlit](#org00c6379)
-        11. [Pytorch/fastai](#org9896025)
-        12. [Web Scraping](#orgc691884)
-        13. [Datasets](#org2a5bff7)
-        14. [Pandas](#org645ec65):Pandas:
-        15. [Data Annotation](#orgf87e3ab)
-        16. [Data Cleaning](#org243835e)
-        17. [Data Exploration / Feature Engineering](#orgdca37bb)
-        18. [Data Testing](#orgc118fc8)
-        19. [Data Visualization](#org0c7c3d2):Visualization:
-        20. [NLP](#orgf2ba780):NLP:
-        21. [Computer Vision](#orgbd771f7)
-        22. [Time Series](#orgf106072)
-        23. [Graphs](#org32d2e83)
-        24. [Semi Supervised Learning](#orgea7f026)
-        25. [Deployments](#org5c6a085):DevOps:
-    9.  [Data Engineering](#orgca01928)
-        1.  [Misc](#org87fb053)
-        2.  [Spark](#org0df5632)
-        3.  [Data Drift Detection](#org5634d8c)
-    10. [Math](#org96e563d):Math:
-    11. [Physics](#org4742c84)
+1.  [Bookmarks](#org515ae83)
+    1.  [Misc](#org93265c7)
+    2.  [Bahn](#orgd7b0b8b)
+    3.  [Business](#org8ab8855)
+        1.  [Misc](#org90b2f82)
+        2.  [Steuern / Finanzamt / Einstufung Selbstständigkeit](#orgd9875e5)
+    4.  [Personal Development](#org418f46a)
+    5.  [Gesellschaftliches](#org3d1a835)
+    6.  [Software-Development](#org80ff686):Software_Development:
+        1.  [Misc](#org12d0013)
+        2.  [Lessons from 50 years experience (Project-Management etc)&#x2026;](#orgb185ced)
+        3.  [Essays on Programming](#orgffe015f)
+        4.  [Some Collection of Best of Talks](#orgad22286)
+        5.  [Project Management](#orgadd92ec)
+        6.  [Team Management](#org305d55d)
+        7.  [JSON](#orgf007055)
+        8.  [YAML](#org733d2b8)
+        9.  [RegEx](#org206beb3)
+        10. [Python](#orga03030c)
+        11. [Django](#org0e614a2)
+        12. [Javascript / CSS](#orge2d0827)
+        13. [Java](#org3273c01)
+        14. [REST APIs / Web Development / HTML](#orgd77b87f)
+        15. [HTML](#org01b5a5e)
+        16. [Golang](#orga2e302e)
+        17. [Git / GitHub / Versioning](#org88146ee)
+        18. [Shell/Bash/Zsh](#orgbd10f30)
+        19. [Makefiles](#org621dd59)
+        20. [Databases](#org5c1813b)
+        21. [Cronjobs](#orgc4c71ed)
+        22. [Editors](#org948c1a8)
+    7.  [DevOps / Security](#org939894f)
+        1.  [Misc](#orgb66c7d8)
+        2.  [Logging](#org1ac4e12)
+        3.  [Dashboarding](#org17997ab)
+        4.  [Monorepo vs Multirepo](#org42ba025)
+        5.  [CI/CD-Pipeline](#org5f82eb0)
+        6.  [Cloud Provisioners](#orgec87a25)
+        7.  [Site Reliability](#orgebddc1c)
+        8.  [Microservices / Serverless](#org6bfe5c6)
+        9.  [Docker/Containers](#org4bbad97):Docker:
+        10. [Kubernetes](#orgd7199f5):Kubernetes:
+        11. [SSH](#orgdbf5953)
+        12. [General Computer/Networking/&#x2026; Security](#org847fcf0):Security:
+        13. [Security Tools](#org1fc43d2)
+    8.  [Data Science / ML / NLP](#org886485c):DataScience:
+        1.  [Misc](#orgece5608)
+        2.  [Compilations](#org0219208)
+        3.  [Interesting Analysis](#org70bb98d):Analysis:
+        4.  [Kaggle](#orge8a7ab7):Kaggle:
+        5.  [Team (Management, Hiring, Organization, &#x2026;)](#org7b71adf)
+        6.  [Optimizers / Learn Rates](#org988adfe)
+        7.  [CLI introspection (Visidata/xsv/&#x2026;)](#orgde575ab)
+        8.  [Jupyter Notebooks](#org6b1bffd)
+        9.  [Google Colab](#org3633e16)
+        10. [Streamlit](#orga6886d0)
+        11. [Pytorch/fastai](#org64794de)
+        12. [Web Scraping](#orgdeb3066)
+        13. [Datasets](#orga38e1ae)
+        14. [Pandas](#org6a2616b):Pandas:
+        15. [Data Annotation](#org86e28a5)
+        16. [Data Cleaning](#org6487c33)
+        17. [Data Exploration / Feature Engineering](#org87660e6)
+        18. [Data Testing](#orgc35bedc)
+        19. [Data Visualization](#org1130ef7):Visualization:
+        20. [NLP](#org290ac5f):NLP:
+        21. [Computer Vision](#org306ea63)
+        22. [Time Series](#org7df1571)
+        23. [Graphs](#org94b7b5b)
+        24. [Semi Supervised Learning](#org7e9dd76)
+        25. [Deployments](#orgc53da59):DevOps:
+    9.  [Data Engineering](#orga8cbd51)
+        1.  [Misc](#orge48e9c7)
+        2.  [Spark](#org4641cb4)
+        3.  [Data Drift Detection](#org816941b)
+    10. [Math](#org85a6222):Math:
+    11. [Physics](#orge85becf)
 
 
 
-<a id="orgc99db20"></a>
+<a id="org515ae83"></a>
 
 # Bookmarks
 
 
-<a id="org61b1384"></a>
+<a id="org93265c7"></a>
 
 ## Misc
 
@@ -98,7 +98,7 @@
 -   <https://www.gulp.de/knowledge-base/recht-und-steuern/unternehmer-selbststaendiger-oder-freiberufler.html>
 
 
-<a id="orgfd5e89b"></a>
+<a id="orgd7b0b8b"></a>
 
 ## Bahn
 
@@ -107,12 +107,12 @@
 -   <https://bahn.guru>  - Sparpreis-Finder
 
 
-<a id="orgdb88706"></a>
+<a id="org8ab8855"></a>
 
 ## Business
 
 
-<a id="orge22f081"></a>
+<a id="org90b2f82"></a>
 
 ### Misc
 
@@ -186,7 +186,7 @@
 -   <https://medium.com/young-coder/how-microsoft-beat-the-innovators-dilemma-5b78e3692ed3>
 
 
-<a id="orgac9cbf3"></a>
+<a id="orgd9875e5"></a>
 
 ### Steuern / Finanzamt / Einstufung Selbstständigkeit
 
@@ -194,7 +194,7 @@
 -   <https://www.gulp.de/freelancing/wissen/geschaeftswagen/entfernungspauschale-reisekosten-erste-betriebsstaette>
 
 
-<a id="org2621d43"></a>
+<a id="org418f46a"></a>
 
 ## Personal Development
 
@@ -202,9 +202,10 @@
 -   <https://onezero.medium.com/the-efficiency-delusion-f6a97241e1e1>
 -   <https://elemental.medium.com/why-you-should-try-micromastery-90b080b3befa>
 -   <https://medium.com/better-programming/why-do-incompetent-managers-get-promoted-815165a03bee>
+-   <https://medium.com/mind-cafe/cheat-codes-for-life-i-know-at-36-that-i-wish-i-knew-at-26-294f6e865db5>
 
 
-<a id="org4f6f1dc"></a>
+<a id="org3d1a835"></a>
 
 ## Gesellschaftliches
 
@@ -220,12 +221,12 @@
 -   <https://medium.com/illumination-curated/one-simple-reason-why-my-husband-and-i-wont-raise-our-daughter-in-the-u-s-81ac37e5369c>
 
 
-<a id="org4447a57"></a>
+<a id="org80ff686"></a>
 
 ## Software-Development     :Software_Development:
 
 
-<a id="org37523c5"></a>
+<a id="org12d0013"></a>
 
 ### Misc
 
@@ -247,7 +248,7 @@
 -   <https://www.netmeister.org/blog/epoch.html>  - About unix timestamps
 
 
-<a id="org2c61ca9"></a>
+<a id="orgb185ced"></a>
 
 ### Lessons from 50 years experience (Project-Management etc)&#x2026;
 
@@ -480,7 +481,7 @@
     -   My general rule is: “Review early and often, formally and informally.”
 
 
-<a id="org9d2de18"></a>
+<a id="orgffe015f"></a>
 
 ### Essays on Programming
 
@@ -628,7 +629,7 @@
 -   <https://www.stilldrinking.org/programming-sucks>  - just epic and an exact description of programming world
 
 
-<a id="orgae7fc24"></a>
+<a id="orgad22286"></a>
 
 ### Some Collection of Best of Talks
 
@@ -647,7 +648,7 @@ Nowhere complete, nowhere top selected per se, but some are interesting, so let&
     -   <https://www.youtube.com/watch?v=Mj5P47F6nJg>  - Structured concurrency
 
 
-<a id="orgfa91eec"></a>
+<a id="orgadd92ec"></a>
 
 ### Project Management
 
@@ -756,7 +757,7 @@ Nowhere complete, nowhere top selected per se, but some are interesting, so let&
 -   <https://itnext.io/why-creating-software-is-always-harder-than-expected-14d241f70656>
 
 
-<a id="org886d316"></a>
+<a id="org305d55d"></a>
 
 ### Team Management
 
@@ -766,7 +767,7 @@ Nowhere complete, nowhere top selected per se, but some are interesting, so let&
 -   <https://medium.com/static-void-academy/5-things-more-important-than-intelligence-in-software-engineering-23d52fb105b0>
 
 
-<a id="org4d69a4f"></a>
+<a id="orgf007055"></a>
 
 ### JSON
 
@@ -783,7 +784,7 @@ Nowhere complete, nowhere top selected per se, but some are interesting, so let&
     -   Don’t Use Very Large Numbers
 
 
-<a id="org8b82a0d"></a>
+<a id="org733d2b8"></a>
 
 ### YAML
 
@@ -792,7 +793,7 @@ Nowhere complete, nowhere top selected per se, but some are interesting, so let&
 -   <https://arp242.net/weblog/yaml_probably_not_so_great_after_all.html>
 
 
-<a id="org8cd9f57"></a>
+<a id="org206beb3"></a>
 
 ### RegEx
 
@@ -800,7 +801,7 @@ Nowhere complete, nowhere top selected per se, but some are interesting, so let&
 -   <https://regex-vis.com/>  - generates a graph from a RegEx which is very helpful for understanding what the expression actually does
 
 
-<a id="org2affa88"></a>
+<a id="orga03030c"></a>
 
 ### Python
 
@@ -888,16 +889,21 @@ Nowhere complete, nowhere top selected per se, but some are interesting, so let&
         -   <https://github.com/Erotemic/xdoctest> - runs the examples in your docstrings
             and compares the actual output to the expected output as per the docstring
     
-    5.  Typing
+    5.  Configuration / Environments
+    
+        -   <https://medium.com/pythonistas/configuration-management-in-python-like-a-boss-pydantic-with-python-dotenv-b4832eb9d930>
+    
+    6.  Typing
     
         -   <https://google.github.io/pytype/>  - checks and infers types for your Python code - without requiring type annotations
         -   <https://github.com/agronholm/typeguard>  - Run-time type checker for Python
         -   <https://github.com/python-discord/flake8-annotations>  - Flake8 Type Annotation Checking
         -   <https://github.com/samuelcolvin/pydantic/>  - Data validation and settings management using Python type hinting
         -   <https://medium.com/better-programming/the-beginners-guide-to-pydantic-ba33b26cde89>
+        -   <https://towardsdatascience.com/how-to-make-the-most-of-pydantic-aa374d5c12d>
         -   <https://github.com/python-desert/desert>  - generates serialization schemas for dataclasses and attrs classes
     
-    6.  Data Science
+    7.  Data Science
     
         -   <https://towardsdatascience.com/an-overview-of-pythons-datatable-package-5d3a97394ee9>
         -   <https://github.com/ray-project/ray>  - seems to be an elegant alternative to celery
@@ -912,7 +918,7 @@ Nowhere complete, nowhere top selected per se, but some are interesting, so let&
         -   <https://github.com/8080labs/ppscore>  - Predictive Power Score (PPS) instead of correlation matrices
         -   <https://github.com/huggingface/knockknock>  - get notified when your training/function ends
     
-    7.  Databases
+    8.  Databases
     
         -   **Ibis Medium Article:** <https://towardsdatascience.com/an-introduction-to-ibis-for-python-programmers-2112ea32370d>  - A More Pythonic Way To Work With Databases
             Ibis is a Python framework to access data and perform analytical computations from different sources, in a standard way.
@@ -921,7 +927,7 @@ Nowhere complete, nowhere top selected per se, but some are interesting, so let&
         -   **Ibis Github:** <https://github.com/ibis-project/ibis/>
         -   **Ibis Tutorial:** <https://ibis-project.org/docs/3.1.0/tutorial/01-Introduction-to-Ibis/>
     
-    8.  Diagrams / QR-Codes
+    9.  Diagrams / QR-Codes
     
         -   <https://github.com/mingrammer/diagrams>  - lets you draw the cloud system architecture in Python code.
         -   <https://github.com/x-hw/amazing-qr>  - amazing QRCode generator in Python (supporting animated gif)
@@ -940,7 +946,7 @@ Nowhere complete, nowhere top selected per se, but some are interesting, so let&
     -   <https://towardsdatascience.com/how-to-set-up-your-python-project-docs-for-success-aab613f79626>
 
 
-<a id="orgb0bd081"></a>
+<a id="org0e614a2"></a>
 
 ### Django
 
@@ -955,15 +961,35 @@ Nowhere complete, nowhere top selected per se, but some are interesting, so let&
 -   <https://medium.com/better-programming/how-to-use-drf-serializers-effectively-dc58edc73998>  - How to use django rest framework serializers
 
 
-<a id="orgf20d73f"></a>
+<a id="orge2d0827"></a>
 
 ### Javascript / CSS
 
 -   <https://medium.com/@michael.karen/learning-modern-javascript-with-tetris-92d532bcd057>
 -   <https://medium.com/codex/stop-fighting-the-reason-css-exists-with-these-dumbass-frameworks-91732f5993c7>
+-   <https://betterprogramming.pub/10-css-tricks-that-greatly-improve-user-experience-5ee52886ca4b>
+    -   **Clickable area:** button {
+                position: relative;
+            }
+            
+            button::before {
+                content: "";
+                position: absolute;
+                top: -20px;
+                right: -20px;
+                bottom: -20px;
+                left: -20px;
+            }
+    -   **Smooth scroll:** scroll-behaviour: smooth;
+    -   **Select all text:** user-select: all;
+    -   **Pseudo class to influence selected text:** ::selection
+    -   **Cursor:** cursor: pointer | not-allowed | wait | zoom-in | help;
+    -   **Text overflow:** white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
 
 
-<a id="org5ddb25e"></a>
+<a id="org3273c01"></a>
 
 ### Java
 
@@ -971,7 +997,7 @@ Nowhere complete, nowhere top selected per se, but some are interesting, so let&
     **be aware that java.util.zip written in C has serious memory leaks without a good alternative**
 
 
-<a id="orgb4edce8"></a>
+<a id="orgd77b87f"></a>
 
 ### REST APIs / Web Development / HTML
 
@@ -992,7 +1018,7 @@ Nowhere complete, nowhere top selected per se, but some are interesting, so let&
 -   <https://medium.com/100-days-of-linux/10-curl-commands-that-you-should-know-ee3d032eb351>
 
 
-<a id="orgf03eb5d"></a>
+<a id="org01b5a5e"></a>
 
 ### HTML
 
@@ -1021,7 +1047,7 @@ Nowhere complete, nowhere top selected per se, but some are interesting, so let&
             </video>
 
 
-<a id="org6566322"></a>
+<a id="orga2e302e"></a>
 
 ### Golang
 
@@ -1035,7 +1061,7 @@ Nowhere complete, nowhere top selected per se, but some are interesting, so let&
 -   <https://medium.com/a-journey-with-go/go-multiple-errors-management-a67477628cf1>
 
 
-<a id="org1e6fd7c"></a>
+<a id="org88146ee"></a>
 
 ### Git / GitHub / Versioning
 
@@ -1068,7 +1094,7 @@ Nowhere complete, nowhere top selected per se, but some are interesting, so let&
         -   **Installation:** <https://dandavison.github.io/delta/installation.html>
 
 
-<a id="org2469171"></a>
+<a id="orgbd10f30"></a>
 
 ### Shell/Bash/Zsh
 
@@ -1234,7 +1260,7 @@ Nowhere complete, nowhere top selected per se, but some are interesting, so let&
     -   **encguess file:** attempts to guess the encoding of a text file
 
 
-<a id="org5d0867b"></a>
+<a id="org621dd59"></a>
 
 ### Makefiles
 
@@ -1242,7 +1268,7 @@ Nowhere complete, nowhere top selected per se, but some are interesting, so let&
 -   <https://nullprogram.com/blog/2017/08/20/>  - A Tutorial on Portable Makefiles
 
 
-<a id="org63fa192"></a>
+<a id="org5c1813b"></a>
 
 ### Databases
 
@@ -1273,26 +1299,26 @@ A list with items where you need a skilled DBA to understand, but written good e
 -   <https://towardsdatascience.com/the-curious-case-of-mysql-postgresql-and-hive-9e7cae9e52f4>  - subtle changes in behaviour given same syntax
 
 
-<a id="org43f2d03"></a>
+<a id="orgc4c71ed"></a>
 
 ### Cronjobs
 
 -   <https://github.com/healthchecks/healthchecks>  - A cron monitoring tool written in Python & Django
 
 
-<a id="orgad36f0c"></a>
+<a id="org948c1a8"></a>
 
 ### Editors
 
 1.  <https://elsewebdevelopment.com/neovim-vs-helix-which-is-the-best-vi-vim-style-modal-editor/>
 
 
-<a id="orgfe3673f"></a>
+<a id="org939894f"></a>
 
 ## DevOps / Security
 
 
-<a id="org1b970e9"></a>
+<a id="orgb66c7d8"></a>
 
 ### Misc
 
@@ -1331,7 +1357,7 @@ A list with items where you need a skilled DBA to understand, but written good e
     5.  Tell a (complete) story (not only for insiders)
 
 
-<a id="org6f9cfad"></a>
+<a id="org1ac4e12"></a>
 
 ### Logging
 
@@ -1345,7 +1371,7 @@ A list with items where you need a skilled DBA to understand, but written good e
 -   <https://medium.com/@JaouherK/creating-a-human-and-machine-freindly-logging-format-bb6d4bb01dca>
 
 
-<a id="org22e58b8"></a>
+<a id="org17997ab"></a>
 
 ### Dashboarding
 
@@ -1363,7 +1389,7 @@ It is there to prove that the data are easily accessible, comparable, and tracka
 Trapped data is useless data.
 
 
-<a id="orgb867ff9"></a>
+<a id="org42ba025"></a>
 
 ### Monorepo vs Multirepo
 
@@ -1378,7 +1404,7 @@ Trapped data is useless data.
     -   group of Python reviewers for shared code (**really a best practice IMHO**)
 
 
-<a id="org7a761c8"></a>
+<a id="org5f82eb0"></a>
 
 ### CI/CD-Pipeline
 
@@ -1389,7 +1415,7 @@ Trapped data is useless data.
 -   <https://github.com/nektos/act>  - Run your GitHub Actions locally
 
 
-<a id="orgc5d734b"></a>
+<a id="orgec87a25"></a>
 
 ### Cloud Provisioners
 
@@ -1475,7 +1501,7 @@ Trapped data is useless data.
         -   **github:** <https://github.com/Fizzadar/pyinfra>
 
 
-<a id="org337f5d3"></a>
+<a id="orgebddc1c"></a>
 
 ### Site Reliability
 
@@ -1514,7 +1540,7 @@ Trapped data is useless data.
     -   <https://medium.com/@copyconstruct/testing-in-production-the-safe-way-18ca102d0ef1>
 
 
-<a id="orgaacd9fa"></a>
+<a id="org6bfe5c6"></a>
 
 ### Microservices / Serverless
 
@@ -1529,7 +1555,7 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
 -   <https://theburningmonk.com/2019/04/comparing-nuclio-and-aws-lambda/>
 
 
-<a id="orgbc56c9f"></a>
+<a id="org4bbad97"></a>
 
 ### Docker/Containers     :Docker:
 
@@ -1728,7 +1754,7 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
     -   <https://domm.plix.at/perl/2020_06_docker_prune_volumes_by_label.html>
 
 
-<a id="org630fe87"></a>
+<a id="orgd7199f5"></a>
 
 ### Kubernetes     :Kubernetes:
 
@@ -1856,14 +1882,14 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
     -   <https://medium.com/@pklinker/performance-impacts-of-an-istio-service-mesh-63957a0000b>  - tldr; significant, but not very much
 
 
-<a id="org373f71a"></a>
+<a id="orgdbf5953"></a>
 
 ### SSH
 
 -   <https://medium.com/maverislabs/proxyjump-the-ssh-option-you-probably-never-heard-of-2d7e41d43464>
 
 
-<a id="org913328c"></a>
+<a id="org847fcf0"></a>
 
 ### General Computer/Networking/&#x2026; Security     :Security:
 
@@ -1963,7 +1989,7 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
     -   <https://onezero.medium.com/how-to-totally-secure-your-smartphone-48b7a85a5ed8>
 
 
-<a id="org1a8ec63"></a>
+<a id="org1fc43d2"></a>
 
 ### Security Tools
 
@@ -1974,12 +2000,12 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
     Video <https://www.youtube.com/watch?v=Bppr9rbmwz4>  - Attacking with HTTP Requests
 
 
-<a id="org528e216"></a>
+<a id="org886485c"></a>
 
 ## Data Science / ML / NLP     :DataScience:
 
 
-<a id="orgebda644"></a>
+<a id="orgece5608"></a>
 
 ### Misc
 
@@ -2002,7 +2028,7 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
     Introductionary, but very well written text
 
 
-<a id="org4d2dc24"></a>
+<a id="org0219208"></a>
 
 ### Compilations
 
@@ -2012,7 +2038,7 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
     -   [A ConvNet for the 2020s](https://arxiv.org/pdf/2201.03545.pdf)
 
 
-<a id="orgfa18e41"></a>
+<a id="org70bb98d"></a>
 
 ### Interesting Analysis     :Analysis:
 
@@ -2023,7 +2049,7 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
 -   <https://towardsdatascience.com/march-madness-analyze-video-to-detect-players-teams-and-who-attempted-the-basket-8cad67745b88>
 
 
-<a id="org21010f8"></a>
+<a id="orge8a7ab7"></a>
 
 ### Kaggle     :Kaggle:
 
@@ -2031,7 +2057,7 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
 -   <https://towardsdatascience.com/a-story-of-my-first-gold-medal-in-one-kaggle-competition-things-done-and-lessons-learned-c269d9c233d1>
 
 
-<a id="org61aa252"></a>
+<a id="org7b71adf"></a>
 
 ### Team (Management, Hiring, Organization, &#x2026;)
 
@@ -2077,7 +2103,7 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
     -   **Cameron Warren:** Data translation is the key &#x2026; 90% of analytics work results in overly complicated dashboards that die after a week. The power users of dashboards are, you guessed it, just other “data” people that are less technical.
 
 
-<a id="org20c4823"></a>
+<a id="org988adfe"></a>
 
 ### Optimizers / Learn Rates
 
@@ -2086,9 +2112,35 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
 -   <https://towardsdatascience.com/self-paced-learning-for-machine-learning-f1c489316c61>
 -   <https://pub.towardsai.net/morphnet-is-a-google-model-to-build-faster-and-smaller-neural-networks-f890276da456>
     Uses cycles of reduction phase (and notes about casts related to target) and expansion phase where high costs to neuron layers (=reducing quality of model) are more expanded than other layers
+-   <https://pub.towardsai.net/6-tips-save-me-time-memory-when-training-machine-learning-models-1294c252baf1>
+    -   **Randomized PCA:** rnd_pca = PCA(n_components=100, svd_solver="randomized")
+            X_reduced_rand = rnd_pca.fit_transform(train_X_reshaped)
+    -   **Use Incremental PCA:** from sklearn.decomposition import IncrementalPCA
+            
+            inc_pca = IncrementalPCA(n_components=100)
+            for X_batch in np.array_split(train_X_reshaped, n_batches):
+                inc_pca.partial_fit(X_batch)
+            
+            X_reduced = inc_pca.transform(train_X_reshaped)
+    -   **Apply Chain Rule:** First, you apply a faster dimensionality reduction algorithm on the whole data to reduce the dimension into a lower one and then apply a slower one to reduce the rest with higher quality. This always works as both dimension reductions will have a similar effect on the higher dimensions.
+        
+            from sklearn.manifold import LocallyLinearEmbedding
+            
+            rnd_pca = PCA(n_components=100, svd_solver="randomized")
+            X_reduced_rand = rnd_pca.fit_transform(train_X_reshaped[0:5000,:])
+            
+            lle = LocallyLinearEmbedding(n_components=2, n_neighbors=10)
+            X_reduced_LLE = lle.fit_transform(X_reduced_rand)
+    -   **Use Linear SVM:** No kernel trick speeds up a lot (and might not mean such dramatic reduce in accuracy)
+        
+        Use LinearSVC in sklearn instead of SVC
+    -   **Use Mini-Batch K-Means:** from sklearn.cluster import MiniBatchKMeans
+            
+            minibatch_kmeans = MiniBatchKMeans(n_clusters=9)
+            minibatch_kmeans.fit(train_X_reshaped)
 
 
-<a id="orgca3bb54"></a>
+<a id="orgde575ab"></a>
 
 ### CLI introspection (Visidata/xsv/&#x2026;)
 
@@ -2101,7 +2153,7 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
 -   <https://github.com/BurntSushi/xsv>  - A fast CSV command line toolkit written in Rust
 
 
-<a id="orgee5a40c"></a>
+<a id="org6b1bffd"></a>
 
 ### Jupyter Notebooks
 
@@ -2117,21 +2169,21 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
 -   <https://github.com/ploomber/ploomber>  - Ploomber is the fastest way to build data pipelines zap. Use your favorite editor (Jupyter, VSCode, PyCharm) to develop interactively and deploy cloud without code changes (Kubernetes, Airflow, AWS Batch, and SLURM). Do you have legacy notebooks? Refactor them into modular pipelines with a single command
 
 
-<a id="org0ef51f0"></a>
+<a id="org3633e16"></a>
 
 ### Google Colab
 
 -   <https://pub.towardsai.net/use-google-colab-like-a-pro-39a97184358d>
 
 
-<a id="org00c6379"></a>
+<a id="orga6886d0"></a>
 
 ### Streamlit
 
 -   <https://towardsdatascience.com/how-to-deploy-a-streamlit-app-using-an-amazon-free-ec2-instance-416a41f69dc3>
 
 
-<a id="org9896025"></a>
+<a id="org64794de"></a>
 
 ### Pytorch/fastai
 
@@ -2140,14 +2192,14 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
 -   <https://medium.com/huggingface/from-tensorflow-to-pytorch-265f40ef2a28> :PyTorch:tensorflow:
 
 
-<a id="orgc691884"></a>
+<a id="orgdeb3066"></a>
 
 ### Web Scraping
 
 -   <https://medium.com/better-programming/introducing-autoscraper-a-smart-fast-and-lightweight-web-scraper-for-python-20987f52c749>
 
 
-<a id="org2a5bff7"></a>
+<a id="orga38e1ae"></a>
 
 ### Datasets
 
@@ -2182,68 +2234,77 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
 -   <https://www.si.edu/openaccess>  -  enthält 2D- und 3D-Darstellungen von kulturellen, wissenschaftlichen, historischen, künstlerischen, technischen und Design-Exponaten aus seinen 19 Museen, 9 Forschungszentren, Bibliotheken, Archiven und dem National Zoo. Hinzu kommen Forschungsdaten und Daten zu Sammlungen
 
 
-<a id="org645ec65"></a>
+<a id="org6a2616b"></a>
 
 ### Pandas     :Pandas:
 
--   <https://towardsdatascience.com/7-useful-pandas-tips-for-data-management-8b23a85bf41f>  - read<sub>html</sub> and read<sub>pdf</sub>, use .xs method for multi-indexing
--   <https://hackersandslackers.com/intro-to-data-analysis-in-python-using-pandas/>  - Really deep and good information (interesting for beginners and advanced readers) in 12 Parts &#x2026;
--   <https://hackersandslackers.com/using-hierarchical-indexes-with-pandas/>   - That&rsquo;s part 12 of it
--   <https://www.youtube.com/watch?v=xPPs59pn6qU>  - pivot and pivot<sub>table</sub> usage (part of a pandas video series)
--   <https://towardsdatascience.com/analyzing-time-series-data-in-pandas-be3887fdd621> :TimeSeries:
--   <https://pub.towardsai.net/manipulating-time-series-data-in-python-49aed42685a0> :TimeSeries:
--   <https://towardsdatascience.com/geopandas-101-plot-any-data-with-a-latitude-and-longitude-on-a-map-98e01944b972> :Visualization:
--   <https://towardsdatascience.com/how-to-work-with-million-row-datasets-like-a-pro-76fb5c381cdd>  - reducing memory
--   <https://towardsdatascience.com/6-pandas-mistakes-that-silently-tell-you-are-a-rookie-b566a252e60d>
-    -   Read CSVs is slow: Prefer using a specialiced module for it, e.g.: <https://github.com/h2oai/datatable>
-    -   dtypes, worst is object, there is a also a `category` dtype
-    -   Little helper function from <https://gist.githubusercontent.com/BexTuychiev/4e34c55454c50c6fb1d0043d2848de6a/raw/f8af2217bdf3cb19881f068a9ba42ce67b1d6d8c/10206.py>
-        to reduce in memory footprint of dataframes (might not hold after saving)
-        
-            def reduce_memory_usage(df, verbose=True):
-                numerics = ["int8", "int16", "int32", "int64", "float16", "float32", "float64"]
-                start_mem = df.memory_usage().sum() / 1024 ** 2
-                for col in df.columns:
-                    col_type = df[col].dtypes
-                    if col_type in numerics:
-                        c_min = df[col].min()
-                        c_max = df[col].max()
-                        if str(col_type)[:3] == "int":
-                            if c_min > np.iinfo(np.int8).min and c_max < np.iinfo(np.int8).max:
-                                df[col] = df[col].astype(np.int8)
-                            elif c_min > np.iinfo(np.int16).min and c_max < np.iinfo(np.int16).max:
-                                df[col] = df[col].astype(np.int16)
-                            elif c_min > np.iinfo(np.int32).min and c_max < np.iinfo(np.int32).max:
-                                df[col] = df[col].astype(np.int32)
-                            elif c_min > np.iinfo(np.int64).min and c_max < np.iinfo(np.int64).max:
-                                df[col] = df[col].astype(np.int64)
-                        else:
-                            if (
-                                c_min > np.finfo(np.float16).min
-                                and c_max < np.finfo(np.float16).max
-                            ):
-                                df[col] = df[col].astype(np.float16)
-                            elif (
-                                c_min > np.finfo(np.float32).min
-                                and c_max < np.finfo(np.float32).max
-                            ):
-                                df[col] = df[col].astype(np.float32)
+1.  Misc
+
+    -   <https://towardsdatascience.com/7-useful-pandas-tips-for-data-management-8b23a85bf41f>  - read<sub>html</sub> and read<sub>pdf</sub>, use .xs method for multi-indexing
+    -   <https://hackersandslackers.com/intro-to-data-analysis-in-python-using-pandas/>  - Really deep and good information (interesting for beginners and advanced readers) in 12 Parts &#x2026;
+    -   <https://hackersandslackers.com/using-hierarchical-indexes-with-pandas/>   - That&rsquo;s part 12 of it
+    -   <https://www.youtube.com/watch?v=xPPs59pn6qU>  - pivot and pivot<sub>table</sub> usage (part of a pandas video series)
+    -   <https://towardsdatascience.com/geopandas-101-plot-any-data-with-a-latitude-and-longitude-on-a-map-98e01944b972> :Visualization:
+
+2.  Time Series
+
+    -   <https://towardsdatascience.com/analyzing-time-series-data-in-pandas-be3887fdd621> :TimeSeries:
+    -   <https://pub.towardsai.net/manipulating-time-series-data-in-python-49aed42685a0> :TimeSeries:
+
+3.  Performance
+
+    -   <https://towardsdatascience.com/efficiently-iterating-over-rows-in-a-pandas-dataframe-7dd5f9992c01>
+    -   <https://towardsdatascience.com/how-to-work-with-million-row-datasets-like-a-pro-76fb5c381cdd>  - reducing memory
+    -   <https://towardsdatascience.com/6-pandas-mistakes-that-silently-tell-you-are-a-rookie-b566a252e60d>
+        -   Read CSVs is slow: Prefer using a specialiced module for it, e.g.: <https://github.com/h2oai/datatable>
+        -   dtypes, worst is object, there is a also a `category` dtype
+        -   Little helper function from <https://gist.githubusercontent.com/BexTuychiev/4e34c55454c50c6fb1d0043d2848de6a/raw/f8af2217bdf3cb19881f068a9ba42ce67b1d6d8c/10206.py>
+            to reduce in memory footprint of dataframes (might not hold after saving)
+            
+                def reduce_memory_usage(df, verbose=True):
+                    numerics = ["int8", "int16", "int32", "int64", "float16", "float32", "float64"]
+                    start_mem = df.memory_usage().sum() / 1024 ** 2
+                    for col in df.columns:
+                        col_type = df[col].dtypes
+                        if col_type in numerics:
+                            c_min = df[col].min()
+                            c_max = df[col].max()
+                            if str(col_type)[:3] == "int":
+                                if c_min > np.iinfo(np.int8).min and c_max < np.iinfo(np.int8).max:
+                                    df[col] = df[col].astype(np.int8)
+                                elif c_min > np.iinfo(np.int16).min and c_max < np.iinfo(np.int16).max:
+                                    df[col] = df[col].astype(np.int16)
+                                elif c_min > np.iinfo(np.int32).min and c_max < np.iinfo(np.int32).max:
+                                    df[col] = df[col].astype(np.int32)
+                                elif c_min > np.iinfo(np.int64).min and c_max < np.iinfo(np.int64).max:
+                                    df[col] = df[col].astype(np.int64)
                             else:
-                                df[col] = df[col].astype(np.float64)
-                end_mem = df.memory_usage().sum() / 1024 ** 2
-                if verbose:
-                    print(
-                        "Mem. usage decreased to {:.2f} Mb ({:.1f}% reduction)".format(
-                            end_mem, 100 * (start_mem - end_mem) / start_mem
+                                if (
+                                    c_min > np.finfo(np.float16).min
+                                    and c_max < np.finfo(np.float16).max
+                                ):
+                                    df[col] = df[col].astype(np.float16)
+                                elif (
+                                    c_min > np.finfo(np.float32).min
+                                    and c_max < np.finfo(np.float32).max
+                                ):
+                                    df[col] = df[col].astype(np.float32)
+                                else:
+                                    df[col] = df[col].astype(np.float64)
+                    end_mem = df.memory_usage().sum() / 1024 ** 2
+                    if verbose:
+                        print(
+                            "Mem. usage decreased to {:.2f} Mb ({:.1f}% reduction)".format(
+                                end_mem, 100 * (start_mem - end_mem) / start_mem
+                            )
                         )
-                    )
-                return df
-    -   prefer file formats like parquet
-    -   read pandas user guide
--   <https://towardsdatascience.com/an-overview-of-pythons-datatable-package-5d3a97394ee9>
+                    return df
+        -   prefer file formats like parquet
+        -   read pandas user guide
+    -   <https://towardsdatascience.com/an-overview-of-pythons-datatable-package-5d3a97394ee9>
 
 
-<a id="orgf87e3ab"></a>
+<a id="org86e28a5"></a>
 
 ### Data Annotation
 
@@ -2253,14 +2314,14 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
     Similar to OpenRefine maybe, didn&rsquo;t checked it yet
 
 
-<a id="org243835e"></a>
+<a id="org6487c33"></a>
 
 ### Data Cleaning
 
 -   <https://counting.substack.com/p/data-cleaning-is-analysis-not-grunt>
 
 
-<a id="orgdca37bb"></a>
+<a id="org87660e6"></a>
 
 ### Data Exploration / Feature Engineering
 
@@ -2276,7 +2337,7 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
 -   <https://de.wikipedia.org/wiki/Shapiro-Wilk-Test>  -  Signifikanztest, der die Hypothese überprüft, dass die zugrunde liegende Grundgesamtheit einer Stichprobe normalverteilt
 
 
-<a id="orgc118fc8"></a>
+<a id="orgc35bedc"></a>
 
 ### Data Testing
 
@@ -2297,7 +2358,7 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
     -   **Measurement/Sensor drift:** The input data streams and the generative processes may be fine but there may be drift on the sensor
 
 
-<a id="org0c7c3d2"></a>
+<a id="org1130ef7"></a>
 
 ### Data Visualization     :Visualization:
 
@@ -2315,7 +2376,7 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
 -   <https://towardsdatascience.com/vis-amz-83dea6fcb059>  - Visualizing 100,000 Products Fast sentence embeddings (fse) for millions of reviews in only a few minutes. :NLP:
 
 
-<a id="orgf2ba780"></a>
+<a id="org290ac5f"></a>
 
 ### NLP     :NLP:
 
@@ -2448,7 +2509,7 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
     -   <https://medium.com/@melaniemitchell.me/can-gpt-3-make-analogies-16436605c446>  - very impressive, it can. Read especially the follow up.
 
 
-<a id="orgbd771f7"></a>
+<a id="org306ea63"></a>
 
 ### Computer Vision
 
@@ -2495,7 +2556,7 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
     -   <https://towardsdatascience.com/review-yolov3-you-only-look-once-object-detection-eab75d7a1ba6>
 
 
-<a id="orgf106072"></a>
+<a id="org7df1571"></a>
 
 ### Time Series
 
@@ -2504,7 +2565,7 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
 -   <https://towardsdatascience.com/anomaly-detection-time-series-4c661f6f165f> - Detect anomaly in time series with facebook Prophet
 
 
-<a id="org32d2e83"></a>
+<a id="org94b7b5b"></a>
 
 ### Graphs
 
@@ -2513,7 +2574,7 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
 -   <https://towardsdatascience.com/an-introduction-to-spark-graphframe-with-examples-analyzing-the-wikipedia-link-graph-67e58c20a107>
 
 
-<a id="orgea7f026"></a>
+<a id="org7e9dd76"></a>
 
 ### Semi Supervised Learning
 
@@ -2523,7 +2584,7 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
 -   <https://scikit-learn.org/stable/modules/generated/sklearn.semi_supervised.LabelSpreading.html#sklearn.semi_supervised.LabelSpreading>
 
 
-<a id="org5c6a085"></a>
+<a id="orgc53da59"></a>
 
 ### Deployments     :DevOps:
 
@@ -2531,12 +2592,12 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
 -   <https://medium.com/@colinshaw_36798/fully-utilizing-your-deep-learning-gpus-61ee7acd3e57>
 
 
-<a id="orgca01928"></a>
+<a id="orga8cbd51"></a>
 
 ## Data Engineering
 
 
-<a id="org87fb053"></a>
+<a id="orge48e9c7"></a>
 
 ### Misc
 
@@ -2551,21 +2612,22 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
 -   <https://towardsdatascience.com/designing-your-database-schema-best-practices-31843dc78a8d>  - Star vs Snowflake
 
 
-<a id="org0df5632"></a>
+<a id="org4641cb4"></a>
 
 ### Spark
 
 -   <https://towardsdatascience.com/successful-spark-submits-for-python-projects-53012ca7405a>  - complete setup including bundling env and dependencie
+-   <https://selectfrom.dev/spark-performance-tuning-spill-7318363e18cb>
 
 
-<a id="org5634d8c"></a>
+<a id="org816941b"></a>
 
 ### Data Drift Detection
 
 -   <https://towardsdatascience.com/checking-model-stability-and-population-shift-with-psi-and-csi-6d12af008783>
 
 
-<a id="org96e563d"></a>
+<a id="org85a6222"></a>
 
 ## Math     :Math:
 
@@ -2585,7 +2647,7 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
 -   <https://towardsdatascience.com/how-to-create-slick-math-animations-like-3blue1brown-in-python-457f74701f68>
 
 
-<a id="org4742c84"></a>
+<a id="orge85becf"></a>
 
 ## Physics
 

@@ -100,6 +100,7 @@
 - https://onezero.medium.com/the-efficiency-delusion-f6a97241e1e1
 - https://elemental.medium.com/why-you-should-try-micromastery-90b080b3befa
 - https://medium.com/better-programming/why-do-incompetent-managers-get-promoted-815165a03bee
+- https://medium.com/mind-cafe/cheat-codes-for-life-i-know-at-36-that-i-wish-i-knew-at-26-294f6e865db5
 
 ** Gesellschaftliches
 
@@ -650,12 +651,15 @@ type            ::=  "b" | "c" | "d" | "e" | "E" | "f" | "F" | "g" | "G" | "n" |
 - https://github.com/terrencepreilly/darglint  - checks that the docstring description matches the definition
 - https://github.com/Erotemic/xdoctest - runs the examples in your docstrings
   and compares the actual output to the expected output as per the docstring
+***** Configuration / Environments
+- https://medium.com/pythonistas/configuration-management-in-python-like-a-boss-pydantic-with-python-dotenv-b4832eb9d930
 ***** Typing
 - https://google.github.io/pytype/  - checks and infers types for your Python code - without requiring type annotations
 - https://github.com/agronholm/typeguard  - Run-time type checker for Python
 - https://github.com/python-discord/flake8-annotations  - Flake8 Type Annotation Checking
 - https://github.com/samuelcolvin/pydantic/  - Data validation and settings management using Python type hinting
 - https://medium.com/better-programming/the-beginners-guide-to-pydantic-ba33b26cde89
+- https://towardsdatascience.com/how-to-make-the-most-of-pydantic-aa374d5c12d
 - https://github.com/python-desert/desert  - generates serialization schemas for dataclasses and attrs classes
 ***** Data Science
 - https://towardsdatascience.com/an-overview-of-pythons-datatable-package-5d3a97394ee9
@@ -709,6 +713,32 @@ type            ::=  "b" | "c" | "d" | "e" | "E" | "f" | "F" | "g" | "G" | "n" |
 
 - https://medium.com/@michael.karen/learning-modern-javascript-with-tetris-92d532bcd057
 - https://medium.com/codex/stop-fighting-the-reason-css-exists-with-these-dumbass-frameworks-91732f5993c7
+- https://betterprogramming.pub/10-css-tricks-that-greatly-improve-user-experience-5ee52886ca4b
+  - Clickable area ::
+    #+BEGIN_SRC css
+    button {
+        position: relative;
+    }
+
+    button::before {
+        content: "";
+        position: absolute;
+        top: -20px;
+        right: -20px;
+        bottom: -20px;
+        left: -20px;
+    }
+    #+END_SRC
+  - Smooth scroll :: scroll-behaviour: smooth;
+  - Select all text :: user-select: all;
+  - Pseudo class to influence selected text :: ::selection
+  - Cursor :: cursor: pointer | not-allowed | wait | zoom-in | help;
+  - Text overflow ::
+    #+BEGIN_SRC css
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    #+END_SRC
  
 *** Java
 - https://medium.com/swlh/native-memory-the-silent-jvm-killer-595913cba8e7  - more interesting than the debugging:
@@ -1598,6 +1628,43 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
 - https://towardsdatascience.com/self-paced-learning-for-machine-learning-f1c489316c61
 - https://pub.towardsai.net/morphnet-is-a-google-model-to-build-faster-and-smaller-neural-networks-f890276da456
   Uses cycles of reduction phase (and notes about casts related to target) and expansion phase where high costs to neuron layers (=reducing quality of model) are more expanded than other layers
+- https://pub.towardsai.net/6-tips-save-me-time-memory-when-training-machine-learning-models-1294c252baf1
+  - Randomized PCA ::
+    #+BEGIN_SRC python
+    rnd_pca = PCA(n_components=100, svd_solver="randomized")
+    X_reduced_rand = rnd_pca.fit_transform(train_X_reshaped)
+    #+END_SRC
+  - Use Incremental PCA ::
+    #+BEGIN_SRC python
+    from sklearn.decomposition import IncrementalPCA
+
+    inc_pca = IncrementalPCA(n_components=100)
+    for X_batch in np.array_split(train_X_reshaped, n_batches):
+        inc_pca.partial_fit(X_batch)
+
+    X_reduced = inc_pca.transform(train_X_reshaped)
+    #+END_SRC
+  - Apply Chain Rule ::
+    First, you apply a faster dimensionality reduction algorithm on the whole data to reduce the dimension into a lower one and then apply a slower one to reduce the rest with higher quality. This always works as both dimension reductions will have a similar effect on the higher dimensions.
+    #+BEGIN_SRC python
+    from sklearn.manifold import LocallyLinearEmbedding
+
+    rnd_pca = PCA(n_components=100, svd_solver="randomized")
+    X_reduced_rand = rnd_pca.fit_transform(train_X_reshaped[0:5000,:])
+
+    lle = LocallyLinearEmbedding(n_components=2, n_neighbors=10)
+    X_reduced_LLE = lle.fit_transform(X_reduced_rand)
+    #+END_SRC
+  - Use Linear SVM :: No kernel trick speeds up a lot (and might not mean such dramatic reduce in accuracy)
+
+   Use LinearSVC in sklearn instead of SVC
+  - Use Mini-Batch K-Means ::
+    #+BEGIN_SRC python
+    from sklearn.cluster import MiniBatchKMeans
+
+    minibatch_kmeans = MiniBatchKMeans(n_clusters=9)
+    minibatch_kmeans.fit(train_X_reshaped)
+    #+END_SRC
 *** CLI introspection (Visidata/xsv/...)
 - Documentation :: https://www.visidata.org/docs/
 - Github :: https://github.com/saulpw/visidata
@@ -1665,14 +1732,20 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
 - https://www.si.edu/openaccess  -  enthält 2D- und 3D-Darstellungen von kulturellen, wissenschaftlichen, historischen, künstlerischen, technischen und Design-Exponaten aus seinen 19 Museen, 9 Forschungszentren, Bibliotheken, Archiven und dem National Zoo. Hinzu kommen Forschungsdaten und Daten zu Sammlungen
 
 *** Pandas :Pandas:
+**** Misc
 
 - https://towardsdatascience.com/7-useful-pandas-tips-for-data-management-8b23a85bf41f  - read_html and read_pdf, use .xs method for multi-indexing
 - https://hackersandslackers.com/intro-to-data-analysis-in-python-using-pandas/  - Really deep and good information (interesting for beginners and advanced readers) in 12 Parts ...
 - https://hackersandslackers.com/using-hierarchical-indexes-with-pandas/   - That's part 12 of it
 - https://www.youtube.com/watch?v=xPPs59pn6qU  - pivot and pivot_table usage (part of a pandas video series)
+- https://towardsdatascience.com/geopandas-101-plot-any-data-with-a-latitude-and-longitude-on-a-map-98e01944b972 :Visualization:
+**** Time Series
+
 - https://towardsdatascience.com/analyzing-time-series-data-in-pandas-be3887fdd621 :TimeSeries:
 - https://pub.towardsai.net/manipulating-time-series-data-in-python-49aed42685a0 :TimeSeries:
-- https://towardsdatascience.com/geopandas-101-plot-any-data-with-a-latitude-and-longitude-on-a-map-98e01944b972 :Visualization:
+**** Performance
+
+- https://towardsdatascience.com/efficiently-iterating-over-rows-in-a-pandas-dataframe-7dd5f9992c01
 - https://towardsdatascience.com/how-to-work-with-million-row-datasets-like-a-pro-76fb5c381cdd  - reducing memory
 - https://towardsdatascience.com/6-pandas-mistakes-that-silently-tell-you-are-a-rookie-b566a252e60d
   - Read CSVs is slow: Prefer using a specialiced module for it, e.g.: https://github.com/h2oai/datatable
@@ -1722,7 +1795,6 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
   - prefer file formats like parquet
   - read pandas user guide
 - https://towardsdatascience.com/an-overview-of-pythons-datatable-package-5d3a97394ee9
-
 *** Data Annotation
 
 - https://towardsdatascience.com/introducing-label-studio-a-swiss-army-knife-of-data-labeling-140c1be92881
@@ -1947,6 +2019,7 @@ but also why they are so sensitive to adversial networks
 - https://towardsdatascience.com/designing-your-database-schema-best-practices-31843dc78a8d  - Star vs Snowflake
 *** Spark
 - https://towardsdatascience.com/successful-spark-submits-for-python-projects-53012ca7405a  - complete setup including bundling env and dependencie
+- https://selectfrom.dev/spark-performance-tuning-spill-7318363e18cb
 *** Data Drift Detection
 - https://towardsdatascience.com/checking-model-stability-and-population-shift-with-psi-and-csi-6d12af008783
 ** Math :Math:
