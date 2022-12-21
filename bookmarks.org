@@ -114,6 +114,7 @@
 - https://www.bento.de/gefuehle/badeunfall-mein-freund-waere-fast-ertrunken-was-ich-daraus-gelernt-habe-a-1517a3af-5571-483b-af01-4e25d9600927
 - https://fragdenstaat.de
 - https://medium.com/illumination-curated/one-simple-reason-why-my-husband-and-i-wont-raise-our-daughter-in-the-u-s-81ac37e5369c
+- https://medium.com/street-science/asymmetric-dominance-effect-how-to-make-sense-of-human-irrationality-db3591440e11
 
 ** Software-Development :Software_Development:
 *** Misc
@@ -134,7 +135,7 @@
 - https://dx.tips/the-end-of-localhost  - Interesting discussion of movement to move development in the cloud (instead of working locally)
 - https://medium.com/geekculture/why-todays-code-documentation-is-a-heap-of-garbage-c66ac8aa6cb6  - Continuous Documentation
 - https://www.netmeister.org/blog/epoch.html  - About unix timestamps
- 
+
 *** Lessons from 50 years experience (Project-Management etc)...
 
 - https://medium.com/@karlwiegers/growing-a-culture-of-software-quality-eb39a090e76b  - Interview about code reviews
@@ -544,6 +545,20 @@ Nowhere complete, nowhere top selected per se, but some are interesting, so let'
 |-----------+----------------------------------------------------------+----------------+--------------------------------------------------------|
 - https://medium.com/analysts-corner/telepathy-and-clairvoyance-requirements-practices-that-dont-work-8945e8a02979
 - https://itnext.io/why-creating-software-is-always-harder-than-expected-14d241f70656
+- https://blog.devgenius.io/rule-one-on-page-one-of-the-book-of-software-development-is-9b9cb1e75ce3
+  The first rule on page one of the book of software development is to never underestimate the complexity and difficulty of creating software.
+  Almost every aspect of creating software seems simple but turns out to be more complex than anyone imagines.
+ 
+  Nothing in software development is simple and anyone who says it is either doesn't know what they are doing or is an idiot.
+  The best approach is to assume everything is complex until you have proven and clarified it’s simple.
+
+  Assume
+  - mistakes will happen
+  - things will go wrong
+  - requirement will change and more will be discovered
+  - people will leave
+  - no one knows the Software required
+  - the wing software will be made and changed
 
 *** Team Management
 
@@ -589,6 +604,7 @@ Nowhere complete, nowhere top selected per se, but some are interesting, so let'
 - https://towardsdatascience.com/whats-init-for-me-d70a312da583  - Designing for Python package import patterns
 - https://instagram-engineering.com/static-analysis-at-scale-an-instagram-story-8f498ab71a0c  - Linters, Codemods, ...
 **** Python Internals
+- https://pythontutor.com/  - can visualize execution in Python and the related data structures
 - https://towardsdatascience.com/understand-slots-in-python-e3081ef5196d
 - https://towardsdatascience.com/python-f-strings-are-more-powerful-than-you-might-think-8271d3efbd7d
   - Format date and timestamps :: f"{dt.datetime.today():%Y-%M-%d}"
