@@ -1,9 +1,9 @@
-BOOKMARKS = bookmarks.org papers.org
+BOOKMARKS = bookmarks.org papers.org books.org
 TODAY := $(shell date +%F)
 
 all:
 	@echo "Bookmarks org files $(BOOKMARKS)"
-	for t in $(BOOKMARKS); do cp ~/org/$$t .; done
+	for t in $(BOOKMARKS); do cp -u ~/org/$$t .; done
 
 	@echo "Check emacs daemon is running and if not, start it"
 	(ps afux | grep 'emacs.*--daemon' | grep -v grep) || emacs --daemon
