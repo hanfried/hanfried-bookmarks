@@ -1,0 +1,75 @@
+#+TITLE: Books
+
+* SQL Antipatterns Volume 1
+Avoiding the Pitfalls of Database Programming
+
+** Chapter 1 - What is an anti pattern
+** Chapter 2 - Jaywalking
+Use comma separated lists or similar to avoid creating an intersection table for many-to-many relationships
+
+Objective: Store multivalue attributes
+
+Problems addressed in book:
+- Querying with regexes or similar
+- Aggregations like counts or similar have to do complicated string operations (length(replace(...)))
+- Updating the list needs something like string concatenation and easy to mess up or have no order in the list, double entries and so on
+- Removing is even worse
+- No referential integrity for items in the list
+- Separator character might be part of data (or if not it might be some time later)
+- List length limitations
+
+Further problems IMHO:
+- Memory/Disk consumption in case of eg categorical textual list entries
+- Even for exports, we'll still need custom logic to handle the lists for further processing most of the time
+- Given a list, it's always unclear whether the order matters or not or if duplicates or intended or not
+- It's easy to misinterpret the list structure as a scalar if most of the time the list consist of <= 1 items
+- To join the items with other tables back, the rows need to be exploded,
+  what is complex, seldom used, error prone (danger of duplications) and increases memory in a way no optimizer can work with well
+  Especially in distributed computing, this can result in OOM, instance crashes and so on
+  Databases are optimized for joins of normalized tables
+
+Legitimate usages addressed in book:
+- In some cases useful for denormalization (mostly readonly exports)
+- Vendor specific SQL array types are a bit better, but still overcomplicate to use and need special syntax and still no integrity
+
+Legitimate usages IMHO:
+- Using documents content eg lists as json (binary) data resolves many issues from above and is supported relatively equally in all languages,
+  but still no referential integrity and semantic interpretation and memory/storage is still uncontrolled and easily out of bounds
+  Younger developer tend to overuse it for these reasons
+- When working a lot with cli/chainable tools such list structures can be nice as export format (as long as it is not stored in this way internally)
+
+Solution:
+- Create intersection table
+** Chapter 3 - Naive Trees
+Table referencing tree structure as adjacency list via a parent foreign key (parent_id) or similar
+
+Objective: Store and query hierarchies
+
+Problems addressed in this book:
+- Querying a tree with usual SQL gets awkward
+  Needs many left outer joins for every hierarchical level and still handles only fixed number of levels
+  Also can be problematic for performance and memory consumption
+- Hard to compute aggregates like simple counts or filtering out sub levels on given conditions
+
+Further problems IMHO:
+- Hard to visualize (SQL databases and frontends usually aren't graph database or views)
+- Not useful ad hoc for any Machine Learning, Feature Generation or easy Denormalization (e.g. to feed into an analytics engine or a standard ML approach like decision trees or clustering algos)
+- Tough to do plausbilizations, data drift checks or other data tests or reporting
+
+Legitimate usages addressed in book:
+- still simple (KISS) format of most hierarchical data
+- don't need support for unlimited depth
+- if mainly operations are inserting/updating the information, not querying them
+
+Legitimate usages IMHO:
+- if it's getting forwarded to a Graph model, database or visualization anyway
+
+Solution:
+- Recursive Queries
+  Disadvantages: steep learning curve and a bit unusual, and still performance, and a bit custom db specific)
+- Path enumeration similar to unix file system ("1/4/5")
+  Disadvantages: Jaywalking
+- Nested sets where each node receives a nsleft <= all node nrs below in the hierarchy <= nsright
+  Querying then is very fast, insertions are not fast
+- Closure table having another Table referencing each node 1 : m all children including the node itself
+  Fast querying, fast updating, deletion, inserting, but needs a lot of space
