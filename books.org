@@ -73,3 +73,35 @@ Solution:
   Querying then is very fast, insertions are not fast
 - Closure table having another Table referencing each node 1 : m all children including the node itself
   Fast querying, fast updating, deletion, inserting, but needs a lot of space
+* Data Pipelines with Apache Airflow
+** Chapter 1 - Meet Apache Airflow
+- Data pipelines as graphs ::
+  works on DAGs, so does not contain any loops or cycles
+  extremely important, as it prevents us from running into circular dependencies
+- Pipeline graphs vs sequential scripts ::
+  single monolithic script may not initially seem like that much of a problem,
+  but it can introduce some inefficiencies when tasks in the pipeline fail
+- Defining pipelines flexibility in (python) code ::
+  in airflow, define you DAGs using Python code in DAG files,
+  which are essentially Python scripts that describe the structure of the corresponding DAG
+- Reasons to choose Airflow ::
+  features such as backfilling enable to easily (re)process historical data,
+  allowing to recompute any derived data sets after making changes to your code
+- Reasons not to choose Airflow ::
+  - handling streaming pipelines
+  - implementing highly dynamic pipelines
+    although Airflow can implement this kind of dynamic behaviour,
+    the web interface will only show tasks that are still defined in the most recent version of the DAG
+  - it's primarly a workflow/pipeline management platform,
+    does not contain features as maintaining data lineages, data versioning, ...
+- Summary ::
+  implementing efficient, batch-oriented data pipelines
+** Chapter 2 - Anatomy of an Airflow DAG
+- Running Airflow in a Python environment ::
+  Make sure to install apache-airflow and not just airflow
+- Summary ::
+  - Workflows in Airflow are represented as DAGs
+  - Operators represent a single unit of work
+  - Airflow contains an array of operators both for generic and specific types of work
+  - Airflow UI offers a graph view for viewing the DAG structure and tree view for viewing DAG runs over time
+  - Failed tasks can be restarted anywhere in the DAG
