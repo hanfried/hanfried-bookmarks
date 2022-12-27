@@ -700,9 +700,10 @@ type            ::=  "b" | "c" | "d" | "e" | "E" | "f" | "F" | "g" | "G" | "n" |
 ***** Diagrams / QR-Codes
 - https://github.com/mingrammer/diagrams  - lets you draw the cloud system architecture in Python code.
 - https://github.com/x-hw/amazing-qr  - amazing QRCode generator in Python (supporting animated gif)
-**** Debugging
+**** Debugging / Profilíng
 
 - https://github.com/benfred/py-spy
+- https://www.youtube.com/watch?v=vVUnCXKuNOg  - "Python performance matters" introducing Scalene, what seems to be a really good profiler in all ways 
 
 **** Documentation
 
