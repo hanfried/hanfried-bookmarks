@@ -190,3 +190,183 @@ Solution:
   - Airflow contains an array of operators both for generic and specific types of work
   - Airflow UI offers a graph view for viewing the DAG structure and tree view for viewing DAG runs over time
   - Failed tasks can be restarted anywhere in the DAG
+** Chapter 3 - Scheduling in Airflow
+- Defining scheduling intervals :: e.g.
+#+BEGIN_SRC python
+dag = DAG(
+    dag_id="02_daily_schedule",
+    schedule_interval="@daily",
+    start_date=dt.datetime(2023, 1, 1),
+    ...
+)
+#+END_SRC
+  Airflow starts tasks in an interval *at the end of the interval*
+  so @daily will run at end of day at midnight
+- Cron based intervals :: min hour day_of_the_month month day_of_week_sunday_to_saturday
+- Frequently used scheduling intervals ::
+  - @once
+  - @hourly
+  - @daily
+  - @weekly
+  - @monthly
+  - @yearly
+- Frequency based intervals :: e.g.
+  #+BEGIN_SRC python
+dag = DAG(
+    dag_id="02_daily_schedule",
+    schedule_interval=dt.timedelta(days=3),
+    start_date=dt.datetime(2023, 1, 1),
+    ...
+)
+  #+END_SRC
+- Dynamic time references using execution dates ::
+  via context variables:
+  - execution_date :: datetime of start of current execution interval
+  - next_execution_date :: datetime of end of current execution interval
+  - previous_execution_date :: start of previous execution interval
+
+  can be used e.g. via jinja2 templating like
+    #+BEGIN_SRC python
+  fetch_events = BashOperator(
+      task_id="fetch_events",
+      bash_command=f"""
+         ... &&
+         curl ...?start_date={{execution_date.strftime("%Y-%m-%d")}}&end_date={{next_execution_date.strftime("%Y-%m-%d")}}
+      """
+  )
+    #+END_SRC
+
+    shorthand notations:
+    - ds :: execution_date.strftime("%Y-%m-%d")
+    - next_ds, next_ds_nodash, prev_ds, prev_ds_nodash :: similar
+- partitioning data :: possible via a templates_dict in context variable, e.g.
+  #+BEGIN_SRC python
+def calculate_some_stats(**context):
+    input_path = context["templates_dict"]["input_path"]
+    output_path = context["templates_dict"]["output_path"]
+
+    ...
+
+calculate_stats_operator = PythonOperator(
+    task_id="calculate_stats",
+    python_callable=calculate_some_stats,
+    templates_dict={
+        "input_path": "/data/events/{{ds}}.json",
+        "output_path": "/data/stats/{{ds}}.csv"
+    },
+    dag=dag
+)
+  #+END_SRC
+- Understanding Airflow's execution dates ::
+  interval-based approach has advantage that it is exactly known for which time interval the task has to work in contrast to cron jobs
+
+  *Caveat*: interval parameters can be undefined if runs are triggered manually in Airflow
+- Using backfilling to fill in past gaps ::
+  by default, Airflow will schedule and run *any past* schedule that have not been run
+  so will result in all intervals that have been passed before the current time being executed
+
+  controlled by =catchup= parameter, e.g.:
+  #+BEGIN_SRC python
+dag = DAG(
+    dag_id="09_no_catchup",
+    schedule_interval="@daily",
+    start_date=dt.datetime(year=2023, month=1, day=1),
+    end_date=dt.datetime(year=2024, month=1, day=1),
+    catchup=False,  # don't rerun dayly tasks for previous days than current day in case
+)
+  #+END_SRC
+
+  can be used to reprocess data after we've made changes in our code
+- Best practices for designing tasks ::
+  Airflow tasks: atomicity and idempotency
+** Chapter 4 - Templating tasks using the Airflow context
+- Templating operator arguments :: Airflow uses pendulum library for datetime
+- What is available for templating ::
+  Context variables
+  |---------------------------+---------------------------------------------------------------------------------------------------|
+  | conf                      | Airflow configuration                                                                             |
+  | dag                       | current DAG object                                                                                |
+  | dag_run                   | current DagRun object                                                                             |
+  | ds                        | execution_date formatted as %Y-%m-%d                                                              |
+  | ds_nodash                 | execution_date formatted as %Y%m%d                                                                |
+  | execution_date            | start datetime of current interval                                                                |
+  | inlets                    | ??                                                                                                |
+  | macros                    | ??                                                                                                |
+  | next_ds                   | execution date of next interval (=end of current interval) formatted as %Y-%m-%d                  |
+  | next_ds_no_dash           | execution date of next interval (=end of current interval) formatted as %Y%m%d                    |
+  | next_execution_date       | execution date of next interval (=end of current interval)                                        |
+  | outlets                   | ??                                                                                                |
+  | params                    | user provided variables to the task context (intended for key value pairs dynamically configured) |
+  | prev_ds                   | execution date of previous interval formatted as %Y-%m-%d                                         |
+  | prev_ds_nodash            | execution date of previous interval formatted as %Y%m%d                                           |
+  | prev_execution_date       | execution date of previous interval                                                               |
+  | prev_start_date_success   | date and time of which the last successful run of the same task (only in past) was started        |
+  | run_id                    | DagRun's run_id                                                                                   |
+  | task                      | current operator                                                                                  |
+  | task_instance (short: ti) | current TaskInstance object                                                                       |
+  | task_instance_key_str     | unique identifier for current TaskInstance ={dag_id}_{task_id}_{ds_nodash}=                       |
+  | templates_dict            | user provided variables to the task context (intended for default variables)                      |
+  | test_mode                 | boolean whether airflow is running in test model                                                  |
+  | tomorrow_ds               | ds plus one day                                                                                   |
+  | tomorrow_ds_nodash        | ds_nodash plus one day                                                                            |
+  | ts                        | execution_date formatted as ISO8601                                                               |
+  | ts_nodash                 | execution_date formatted as ISO8601 without dashes                                                |
+  | ts_nodash_with_tz         | execution_date formatted as ISO8601 without dashes but with timezones                             |
+  | var                       | helpers objects for dealing with Airflow variables                                                |
+  | yesterday_ds              | ds minus one day                                                                                  |
+  | yesterday_ds_nodash       | ds_nodash minus one day                                                                           |
+  |---------------------------+---------------------------------------------------------------------------------------------------|
+- Templating to PythonOperator ::
+  is an exception to above, needs instead a python_callable that explicitly demands the needed variables
+
+  #+BEGIN_SRC python
+dag = DAG(...)
+def get_data(execution_date):
+    ...
+
+get_data_operator = PythonOperator(
+    task_id="get_data",
+    python_callable=get_data,
+    dag=dag
+)
+  #+END_SRC
+
+  or
+
+  #+BEGIN_SRC python
+def get_data(**context):
+    start = context["execution_date"]
+    ...
+  #+END_SRC
+
+  or even
+
+    #+BEGIN_SRC python
+def get_data(execution_date, **context):
+    start = execution_date
+    remaining_context = context
+    ...
+  #+END_SRC
+- Providing variables to the PythonOperator ::
+  #+BEGIN_SRC python
+get_data_operator = PythonOperator(
+    task_id="get_data",
+    python_callable=get_data,
+    op_args=["arg1", "arg2", ...],
+    op_kwargs={"keyX": "argX", "keyY": "argY", ...},
+)
+  #+END_SRC
+- Inspecting templated arguments ::
+  in UI via clicking the Rendere Template button after running a task
+
+  by CLI via =airflow task render [dag_id] [task_id] [desired execution date]
+- Hooking up other systems ::
+  passing data between taks:
+  - either using Airflow metastore to read and write results between Tasks => *XCom*
+    - only suitable for smaller objects
+    - typically advised to apply XComs only for transferring small pieces of data such as a handful of strings
+  - or by writing results to and from a persistent location
+    - ususally via one of the providers (with pip packages like =apache-airflow-providers-*=, eg =apache-airflow-providers-postgres=)
+    - might instantiate a hook (dealing with creating connections, sending queries and closing connections again)
+    - operators determine what has to be done, hooks determine how to do something
+    - ususally when building pipelines, you'll only deal with operators: hooks are used internally in operators
