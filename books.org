@@ -106,6 +106,7 @@ Further problems IMHO:
 
 Legitimate usages:
 - pseudo key is a good choice as a surrogate for a natural key that's too long to be practical
+- data warehousing
 
 Solution as in book:
 - tell it like it is ::
@@ -122,7 +123,8 @@ Further solutions IMHO:
   - if it is unsure whether natural keys are guaranteed to stay natural keys in future
   - are too long
   - or have other problems, like they are sensitive and might not be exported or something like that, but you still need them for linking
-** Chapter 5 - Keyless Entry (leaving out referential integrity to simplify database design/architecture/programming)
+** Chapter 5 - Keyless Entry
+leaving out referential integrity to simplify database design/architecture/programming
 instead of fail early whenever a user submitted invalid data
 
 Problems addressed in this book:
@@ -158,6 +160,146 @@ Legitimate usages IMHO:
 Solution:
 - Declare constraints
 - Define cascading updates
+** Chapter 6 - Entity-Attribute-Value
+support variable attribute via a 2nd table with columns like (id, attr_name, attr_value)
+also calls open schema, schemaless, name-value pairs
+with:
+- both tables have few columns
+- number of columns doesn't need to grow to support new attributes
+- avoid clutter of columns with many nulls
+
+Problems addressed in this book:
+- Querying :: will also need to use a WHERE attr_name = ? clause instead of a SELECT ..., attr_name statement
+  IMHO I don't think that's so terrible, but more problematic is that slight typos or similar might be completely missed
+- Data Integrity ::
+  - can't make mandatory attributes
+  - can't use SQL data types (usually attr_value will be just a string)
+    IMHO in addition no really good and performant way to do even more than SQL types (like writing a constraint),
+    even if you can do it, it will have a lot of branching inside, what's just terrible for readability, correctness, performance, exportability, maintainability
+  - can't enforce referential integrity
+  - can't make up attribute names like =attr_name IN ('date_reported', 'report_date'))=
+    IMHO: this is a very common problem
+- reconstructing a row is problematic (in pure SQL it's really ugly)
+  IMHO: usually there are custom wide <> short format converters that make it manageable
+
+Further problems:
+- querying on a combination of different attr_name:attr_value pairs very easily becomes a mess,
+  it's usually possible with aggregation functions, but ugly to write, ugly to read and can have many surprises if there are attr_name non unique (e.g. as multiple ids were selected etc)
+- it's much tougher to make plausibility checks against possibly dirty data, e.g. typos in values, just as the domain for values is so much bigger and heterogenous
+- same values might have complete different meanings (e.g. "true")
+  that's confusing for us humans
+  bad for quality checks
+  bad for any easy to gather statistics
+  terrible for any ML input
+- it's even possible that same attr_name have a different meaning (maybe because they are coming from a different source)
+- it's also possible that multiple same attr_name are mentioned (what's then the correct value or should it be multivalued?)
+  that's manageable by setting a unique constraint, but again, that might influence performance and get lost in exports and is in every case possibly confusing for humans, but also for JSON exports or other such structures
+- explaining this format to SME is no fun and handling by them has a huge potential to miss the points even if they know SQL well
+  key value structures might be natural for programmers, but for the rest of the world flat, long tables are much more intuitive (with the exception of visualizing individual results in a frontend)
+
+Legimate usages addressed in the book:
+- hard to justify in a relational databases => if there are nonrelational data needs -> use NoSQL technology
+
+Legitimate usages IMHO:
+- if close to all data is relational, but you need one such "open schema" and going JSON or similar is no way (because tools don't really support it, let's say Excel likish ones)
+  it's certainly better than to add a complete different tool (NoSQL, special logic to have JSON <> wide views, automatic converters or plugins)
+- really: if most attributes are null most of the time, but there are many hundreds or even more of them
+  IMHO you easily get lost in those many columns (it's not a problem for the machine or the SQL database, but for us humans)
+  in case: at least try to nail down the attr_name by having them be a foreign key for attr_name lookup table (where you could also store things like comments, synonyms or differentiate between homonyms)
+
+Solutions addressed in book:
+- Single Table Inheritance ::
+  - store all related types in one table
+  - use one attribute to define the subtype of a given row
+  - best when only few subtypes and few subtype specific attributes and a need for a single table access pattern
+- Concrete Table Inheritance ::
+  - create separate table for each subtype
+  - every table contains same attributes that are common in the base type plus the specific subtype attributes
+  - best if you seldom need to query agains all subtypes at once
+- Class Table Inheritance ::
+  - single table for the base type
+  - for each sub type create another table with a primary key that is also a foreign key to the base table
+  - best if you need often to query across all subtypes, referencing the columns they have in common
+- Semistructured Data ::
+  - use something like JSON or JSONB column
+  - it's for at least completely extensible and more or less standard format with tools for it (custom SQL support, but also things like JSON schema, etc)
+  - best used, when you can't limit yourself to a finite set of subtypes and need complete flexibility to define new attributes at any time
+- Post-Processing ::
+  - don't try to write queries that fetch entities as a single row as though data were stored in a conventional table
+  - just query all rows for specific ids
+  - write application code to loop over it
+  IMHO:
+  - works only for small data, but then very well, especially with tools like pandas, dplyr, ...
+  - filtering down ids for specific keys might be necessary anyway (possible, but not very performant with subqueries)
+  - if you can arrange data to be local structure (partition by id e.g.), pivoting locally and transforming into a wide table format is possible
+    (again, might not be very performant depending on the database)
+    but leads to having natural queries instead of many tedious joins and/or subqueries
+
+Further Solutions IMHO:
+- it's possible to write triggers in PL/SQL or other languages supported by the database that
+  automatically create a read only copy of a key value table (and all inserts, updates, deletes) into wide format table
+  (probably adding columns ad hoc if needed)
+  it's redundant and has a suprise and little performance penalty on changes (but is fast to read then), and works ok in practice
+  biggest disadvantage is that bigger refactorings can become a mess
+  if you need this demand on multiple occassions, it might be worth to do a real CQRS solution with a streaming tool like Kafka
+  a subtle disadvantage is that it is hard to check both tables keep in sync (or to supervision the copy trigger logic)
+ - Note: You should not design a database to work with such a schema intentionally
+         That's a workaround if the input data is in key value format and SMEs etc are used to work with it to some degree,
+         but so you have to keep it in such a raw format, but still would want to write proper SQL for further work.
+** Chapter 7 - Polymorphic Associations
+Reference multiple different parents for a common artefact table (like comments, blogs, images, ...)
+
+Anti-Pattern: Use dual purpose foreign key
+so you reference the artefact_id with joining on them, but without having foreign key relations (because you can only have a foreign key to one of the parents, not to all)
+
+Problems addressed in book:
+- Referential integrity is not enforced by database
+- can only reference parents by left outer join them, resulting in duplicate column names if parents have columns in common (not a problem for SQL but for humans)
+  or by having a parent_type information that again is not enforced by database
+
+Legitimate usages addressed in book:
+- ORMs might do something like that for us (and that might be ok, as it should battle proofed), but don't do such designs from scratch
+
+Solutions:
+- Creating intersection tables ::
+  #+BEGIN_SRC sql
+---- Comments
+     ---- BugsComments    ---- Bugs
+     ---- FeatureComments ---- Features
+
+CREATE TABLE BugsComments(  -- and similar FeatureComments
+       issue_id     BIGINT UNSIGNED NOT NULL,
+       comment_id   BIGINT UNSIGNED NOT NULL,
+       UNIQUE KEY (comment_id),  -- if a comment shouldn't be used in different bugs, still would allow to have a comment used in a Bug and in a Feature (needs application logic to constraint that)
+       PRIMARY KEY (issue_id, comment_id),
+       FOREIGN KEY (issue_id) REFERENCES Bugs(issue_id),  -- or Feature(issue_id)
+       FOREIGN KEY (comment_id) REFERENCES Comments(comment_id)
+);
+  #+END_SRC
+- Create common super table ::
+  #+BEGIN_SRC sql
+---- Issues
+     ---- Bugs
+     ---- Features
+     ---- Comments
+
+CREATE TABLE Issues(
+       issue_id     SERIAL PRIMARY KEY
+);
+CREATE TABLE Bugs( -- and similar Features
+       issue_id     BIGINT UNSIGNED PRIMARY KEY,
+       FOREIGN KEY (issue_id) REFERENCES Issues(issue_id),
+       ...
+);
+CREATE TABLE Comments(
+       comment_id   SERIAL PRIMARY KEY,
+       issue_id     BIGINT UNSIGNED NOT NULL,
+       ...,  -- author, comment text, date, ...
+       FOREIGN KEY (issue_id) REFERENCES Issues(issue_id)
+);
+  #+END_SRC
+
+
 * Data Pipelines with Apache Airflow
 ** Chapter 1 - Meet Apache Airflow
 - Data pipelines as graphs ::
@@ -370,3 +512,110 @@ get_data_operator = PythonOperator(
     - might instantiate a hook (dealing with creating connections, sending queries and closing connections again)
     - operators determine what has to be done, hooks determine how to do something
     - ususally when building pipelines, you'll only deal with operators: hooks are used internally in operators
+** Chapter 5 - Defining dependencies between tasks
+- Linear dependencies :: via >> operator like
+  #+BEGIN_SRC python
+# either separate as
+download_launches >> get_pictures
+get_pictures >> notify
+
+# or multiple dependencies in one go
+download_launches >> get_pictures >> notify
+  #+END_SRC
+#+END_SRC
+- Fan in/out dependencies ::
+  #+BEGIN_SRC python
+from airflow.operators.dummy import DummyOperator
+
+start = DummyOperator(task_id="start")  # dummy start task
+start >> [fetch_wheather, fetch_sales]  # fan out
+
+fetch_wheather >> clean_wheather  # linear dependencies that run in parallel
+fetch_sales >> clean_sales
+
+[clean_wheather, clean_sales] >> join_datasets  # fan in
+
+join_datasets >> train_model >> deploy_model  # just simple linear dependencies
+  #+END_SRC
+- Branching within tasks :: flexible, but difficult to see which code branch is being used
+  #+BEGIN_SRC python
+def _clean_sales(**context):
+    if context["execution_date"] < ERP_CHANGE_DATE:
+        _clean_sales_old(**context)
+    else:
+        _clean_sales_new(**context)
+  #+END_SRC
+- Branching within DAG :: =BranchPythonOperator= expected to return ID of downstream task
+  #+BEGIN_SRC python
+fetch_sales_old = PythonOperator(...)
+clean_sales_old = PythonOperator(...)
+
+fetch_sales_new = PythonOperator(...)
+clean_sales_new = PythonOperator(...)
+
+fetch_sales_old >> clean_sales_old
+fetch_sales_new >> clean_sales_new
+
+pick_erp_system = BranchPythonOperator(  # <-- Explicit branching
+    task_id="pick_erp_system",
+    python_callable=_pick_erp_system,  # depending on day or w/w will either return "fetch_sales_old" or "fetch_sales_new"
+)
+
+join_datasets = PythonOperator(
+    ...,
+    trigger_rule="none_failed"  # <-- now only one of two branches will succeed, so need to adapt the triggering
+)
+  #+END_SRC
+- Conditions within tasks :: again flexible, but invisible
+  #+BEGIN_SRC python
+def _deploy_conditionally(**context):
+    if context["execution_date"] == ...:
+        deploy_model()
+
+deploy_if_most_recent_run = PythonOperator(
+    task_id="deploy_model_if_most_recent_run",
+    python_callable=_deploy_conditionally
+)
+  #+END_SRC
+- Making tasks conditional :: adding task that raises =AirflowSkipException= if downstream tasks should be skipped
+  #+BEGIN_SRC python
+from airflow.exceptions import AirflowSkipException
+
+def _latest_only(**context):
+    left_window = context["dag"].following_schedule(context["execution_date"])
+    right_window = context["dag"].following_schedule(left_window)
+
+    now = pendulum.utcnow()
+    if not left_window < now <= right_window:
+        raise AirflowSkipException("Not the most recent run")
+
+latest_only = PythonOperator(
+    task_id="latest_only",
+    python_callable=_latest_only,
+    dag=dag
+)
+
+latest_only >> deploy_model
+  #+END_SRC
+- Using builtin operators :: =LatestOnlyOperator=
+  #+BEGIN_SRC python
+from airflow.operators import LatestOnlyOperator
+
+latest_only = LatestOnlyOperator(
+    task_id="latest_only",
+    dag=dag
+)
+
+train_model >> latest_only >> deploy_model
+  #+END_SRC
+- Trigger rules ::
+  |--------------+----------------------------------------------------+----------------------------------------------------------------------------------|
+  | all_success  | all parent tasks have completed successful         | default                                                                          |
+  | all_failed   | all parents (or their ancestors) have failed       | to trigger error handling when at least one should be succeeded                  |
+  | all_done     | all parents are done independent of success        | to execute clean up code                                                         |
+  | one_failed   | trigger as soon as at least one parent failed      | quickly trigger some error handling like notifications or rollbacks              |
+  | one_success  | trigger as soon as at least one parent succeeded   | quickly trigger downstream computations/notifications as one result is available |
+  | none_failed  | all parents completed or were skipped              | for conditional branching                                                        |
+  | none_skipped | no parents have been skipped                       | trigger code if all upstream tasks were executed                                 |
+  | dummy        | triggers regardless of state of any upstream tasks | testing                                                                          |
+  |--------------+----------------------------------------------------+----------------------------------------------------------------------------------|
