@@ -301,7 +301,8 @@ CREATE TABLE Comments(
 
 
 * Data Pipelines with Apache Airflow
-** Chapter 1 - Meet Apache Airflow
+** Part I - Getting Started
+*** Chapter 1 - Meet Apache Airflow
 - Data pipelines as graphs ::
   works on DAGs, so does not contain any loops or cycles
   extremely important, as it prevents us from running into circular dependencies
@@ -323,7 +324,13 @@ CREATE TABLE Comments(
     does not contain features as maintaining data lineages, data versioning, ...
 - Summary ::
   implementing efficient, batch-oriented data pipelines
-** Chapter 2 - Anatomy of an Airflow DAG
+*** Chapter 2 - Anatomy of an Airflow DAG
+- Tasks vs operators :: what's the difference
+  - operators have a single responsibility: they exist to perform a single piece of responsibility
+    e.g. =BashOperator= or =PythonOperator= or =EmailOperator= or =SimpleHTTPOperator=
+  - in context of DAGs and throughout Airflow documentation, terms /operator/ and /task/ used interchangeable
+  - Airflow has a base class =BaseOperator= and provides many subclasses of it (see above for examples)
+  - tasks in Airflow manage the execution of an operator
 - Running Airflow in a Python environment ::
   Make sure to install apache-airflow and not just airflow
 - Summary ::
@@ -332,7 +339,7 @@ CREATE TABLE Comments(
   - Airflow contains an array of operators both for generic and specific types of work
   - Airflow UI offers a graph view for viewing the DAG structure and tree view for viewing DAG runs over time
   - Failed tasks can be restarted anywhere in the DAG
-** Chapter 3 - Scheduling in Airflow
+*** Chapter 3 - Scheduling in Airflow
 - Defining scheduling intervals :: e.g.
 #+BEGIN_SRC python
 dag = DAG(
@@ -421,7 +428,7 @@ dag = DAG(
   can be used to reprocess data after we've made changes in our code
 - Best practices for designing tasks ::
   Airflow tasks: atomicity and idempotency
-** Chapter 4 - Templating tasks using the Airflow context
+*** Chapter 4 - Templating tasks using the Airflow context
 - Templating operator arguments :: Airflow uses pendulum library for datetime
 - What is available for templating ::
   Context variables
@@ -512,7 +519,7 @@ get_data_operator = PythonOperator(
     - might instantiate a hook (dealing with creating connections, sending queries and closing connections again)
     - operators determine what has to be done, hooks determine how to do something
     - ususally when building pipelines, you'll only deal with operators: hooks are used internally in operators
-** Chapter 5 - Defining dependencies between tasks
+*** Chapter 5 - Defining dependencies between tasks
 - Linear dependencies :: via >> operator like
   #+BEGIN_SRC python
 # either separate as
@@ -619,3 +626,267 @@ train_model >> latest_only >> deploy_model
   | none_skipped | no parents have been skipped                       | trigger code if all upstream tasks were executed                                 |
   | dummy        | triggers regardless of state of any upstream tasks | testing                                                                          |
   |--------------+----------------------------------------------------+----------------------------------------------------------------------------------|
+- Sharing data using XComs ::
+  upstream task responsible for pushing the XCom value
+  explicitly within one task using the =xcom_push= method
+
+  #+BEGIN_SRC python
+def _train_model(**context):
+    model_id = str(uuid.uuid4())
+    context["task_instance"].xcom_push(key="model_id", value=model_id)  # <--
+
+train_model = PythonOperator(
+    task_id="train_model",
+    python_callable=_train_model,
+)
+  #+END_SRC
+
+  after running, you can view these published XCom values in web interface (Admin -> XComs)
+
+  retrieve the XCom value in other tasks using the =xcom_pull= method
+
+  #+BEGIN_SRC python
+def _deploy_model(**context):
+    model_id = context["task_instance"].xcom_pull(  # <--
+        task_ids="train_model", key="model_id"
+    )
+
+deploy_model = PythonOperator(
+    task_id="deploy_model",
+    python_callable=_deploy_model,  # <--
+)
+  #+END_SRC
+
+ or via template variables:
+
+ #+BEGIN_SRC python
+def _deploy_model(templates_dict, **context):
+    model_id = templates_dict["model_id"]
+    ...
+
+deploy_model = PythonOperator(
+    task_id="deploy_model",
+    python_callable=_deploy_model,
+    templates_dict={
+        "model_id": "{{task_instance.xcom_pull(task_ids='train_model', key='model_id')}}"  # <--
+    }
+)
+ #+END_SRC
+- when (not) to use XComs ::
+  - disadvantages:
+    - add hidden dependency between tasks
+    - can be anti-pattern when breaking atomicity of tasks (e.g. passing tokens that will be invalid hours later)
+- using custom XCom backends ::
+  - standard XCom does not scale well for larger volumes
+    so better be used to store individual values or small results
+  - can write own =CustomXComBackend= deriving from =airflow.models.xcom.BaseXCom= and provide def for =serialize_value= and =deserialize_value=
+- simplifying Python tasks with Taskflow API ::
+  decorator bases API for defining Python tasks and their dependencies
+
+  #+BEGIN_SRC python
+from airflow.decorators import task
+
+with DAG(...) as dag:
+    ...
+
+    @task
+    def train_model():
+        model_id = str(uuid.uuid4())
+        ...
+        return model_id
+
+    @task
+    def deploy_model(model_id):
+        ...
+
+    model_id = train_model()
+    deploy_model(model_id)
+  #+END_SRC
+- when (not) to use the Taskflow API ::
+  - simpler approach for defining Python tasks and their dependencies
+    using syntax closer to using regular Python functions
+  - explicitly ensuring values are passed between tasks (and not hiding them and expect programmer to do the right thing)
+  - limited to Python tasks
+    but can combine object oriented tasks piping with >> operator and Taskflow API
+** Part II - Beyond Basics
+*** Chapter 6 - Triggering workflows
+- Intro :: Trigger actions are often the result of external events, like:
+  - a file uploaded to a shared drive
+  - a developer pushing code to a repository
+  - existence of a partition in a Hive table
+  - ...
+- Polling conditions with sensors ::
+  special type (subclass) of operators
+  poll for certain condition to be true and succed if some
+
+  #+BEGIN_SRC python
+from airflow.sensors.filesystem import FileSensor
+
+wait_for_supermarket_1 = FileSensor(  # check for existence of file and return true if it exists
+    task_id="wait_for_supermarket_1",
+    filepath="/data/supermarket1/data.csv"
+)
+  #+END_SRC
+
+  dag start time should be place at the start of the data arrival boundaries
+- Polling custom conditions :: =PythonSensor= is a PythonOperator thas python_callable returning true if condition is fulfilled and false if not
+- Sensors outside the happy flow ::
+  - by default, sensor timeout is 7 days !!
+  - however new DAGs runs are added every (e.g. day) including their sensors
+  - catch: there's a limit to the number of tasks Airflow can handle and will run -> *sensor deadlock*
+    #+BEGIN_SRC python
+dag = DAG(
+    dag_id="couponing_app",
+    start_date=dt.datetime(2023, 1, 1),
+    schedule_interval="0 0 * * *",
+    concurrency=50,  # changes limits of nr of tasks simultaneously run by Airflow
+)
+    #+END_SRC
+  - sensor class has argument mode = poke (default) | reschedule (non-blocking)
+- Triggering other DAGs ::
+  one option to circumvent repeated tasks with (almost) equal functionality is to split your DAG into multiple smaller DAGs
+  so you can call DAG 2 multiple times from DAG 1
+  can be achieved with =TriggerDagRunOperator=
+  #+BEGIN_SRC python
+for supermarket_id in range(1, 5):
+    ...
+    trigger_create_metrics_dag = TriggerDagRunOperator(
+        task_id=f"trigger_create_metrics_dag_supermarket_{supermarket_id}",
+        trigger_dag_id="create_metrics",  # references to the called DAG
+        dag=dag1,
+    )
+
+dag2 = DAG(
+    dag_id="create_metrics",
+    start_date=airflow.utils.days_ago(3),
+    schedule_interval=None,  # <-- will be triggered explicitly and not scheduled
+)
+  #+END_SRC
+
+  each DAG run holds field run_id starting with "scheduled__" | "backfill__" | "manual__"
+- Backfilling with the TriggerDagRunOperator ::
+  tasks downstream of a TrigerDagRunOperator in another DAG are not cleared
+  clearing tasks in a DAG including TriggerDagRunOperator will trigger a new DAG run instead of clearing the corresponding previously triggered DAG runs
+- Polling state of other DAGs :: =ExternalTaskSensor= which is a sensor poking the state of tasks in other DAGs
+  #+BEGIN_SRC python
+dag1 = DAG(dag_id="ingest_supermarket_data", schedule_interval="0 16 * * *", ...)
+
+DummyOperator(task_id="copy_to_raw", dag=dag1) >> DummyOperator(task_id="process_supermarket", dag=dag1)
+
+dag2 = DAG(schedule_interval="0 16 * * *", ...)
+wait = ExternalTaskSensor(  # <-- polling state of other dag
+    task_id="wait_for_process_supermarket",
+    external_dag_id="ingest_supermarket_data",
+    external_task_id="process_supermarket",
+    dag=dag2
+)
+wait >> DummyOperator(task_id="report")
+  #+END_SRC
+
+  default behaviour is simly check for a successful state of a task with the *exact* same execution date as itself
+  can be configured with a =execution_delta= argument to the ExternalTaskSensor,
+  positive timedelta will look back in time
+  also possible to provide function =execution_date_fn= returning a list of timedeltas
+- Starting workflows with REST/CLI ::
+  #+BEGIN_SRC sh
+airflow dags trigger dag1
+
+# or with configuration
+airflow dags trigger --conf '{"supermarket_id": 1}' dag1
+  #+END_SRC
+
+  or via REST API with a POST request containing json configuration
+*** Chapter 7 - Communication with external systems
+- External system meaning :: any technology other than Airflow *and* the machine Airflow is running on...
+- Connection to cloud services ::
+  in context of Airflow, to the programmer the interface is an operator,
+  these internally make use of the Cloud SDK to send requests and provide a small layer around the Cloud SDK
+- Installing extra dependencies ::
+  #+begin_src shell
+pip install apache-airflow-providers-amazon  # yield in having e.g. a S3CopyOperator
+pip install apache-airflow-providers-google
+pip install apache-airflow-providers-microsoft-azure
+  #+end_src
+- Developing a machine learning model ::
+  Most AWS services are supported by an Airflow operator
+  #+begin_src python
+,,,
+download_mnist_data = S3CopyOperator(
+    task_id=...,
+    source_bucket_name=...,
+    source_bucket_key=...,
+    dest_bucket_name=...,
+    dest_bucket_key=...,
+    dag=dag
+)
+...
+s3Hook = S3Hook()
+
+mnist_buffer = io.BytesIO()
+mnist_obj = s3Hook.get_key(
+    bucket_name=...,
+    key=...
+)
+...
+s3Hook.load_file_obj(
+    output_buffer,
+    key=...,
+    bucket_name=...,
+    replace=True,  # <-- important for idempotency
+)
+...
+sagemaker_train_model = SageMakerTrainingOperator(
+    task_id=...,
+    config={
+       ...  # huge config for SageMaker
+    },
+    wait_for_completion=True,  # otherwise it would just start the training, but don't wait till it's finished
+    print_log=True,  # get all CloudWatch logs, too
+    check_interval=10,
+    dag=dag
+)
+
+sagemaker_deploy_model = SageMakerEndpointOperator(
+    task_id=...,
+    wait_for_completion=True,
+    config={ ... },
+    dag=dag
+)
+  #+end_src
+
+- Developing locally with external systems ::
+#+begin_src shell
+export CONFIG_VARIABLES="..."
+# ...
+
+airflow db init  # Initialization, will use AIRFLOW_CORE_SQL_ALCHEMY_CONN or init a local sqlite db
+airflow tasks test <TASK_NAME> <EXECUTION_DATE>  # runs a single task
+#+end_src
+- Moving data from between systems ::
+  Airflow acts as the "spider in the web",
+  starting and managing jobs and ensuring all finish successfully in the correct order,
+  failing the pipeline if not
+
+  Many A-to-B operators, like:
+  - =MySqlToGoogleCloudStorageOperator=
+  - =SFTPToS3Operator=
+  - =SimpleHTTPOperator=
+
+  Tricky part is often not the orchestration of jobs with Airflow,
+  but ensuring all bits and pieces of various jobs are configured correctly and fit together like puzzle pieces
+- Outsourcing heavy work ::
+  common discussion is whether to view Airflow as not only a task orchestration system, but also a task execution system
+
+  regarding Spark, there are various ways to start a job:
+  - =SparkSubmitOperator= with a spark-submit binary on Airflow's machine plus configuration as YARN client
+  - =SSHOperator= to login to a Spark instance
+  - =SimpleHTTPOperator= to start Spark Job via a REST API (e.g. Livy)
+- Summary ::
+  - Operators for external systems expose functionality by calling the client for a given system
+  - Sometimes these operators are merely passing through arguments to the Python client
+  - Other times they provide additional functionality, such as the =SageMakerTrainingOperator=,
+    which continuously polls AWS and blocks until completion
+  - If access to external services from the local machine is possible we can test tasks using the CLI command
+    #+BEGIN_SRC sh
+airflow tasks test
+    #+END_SRC
