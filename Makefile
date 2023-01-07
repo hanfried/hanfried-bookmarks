@@ -6,7 +6,7 @@ all:
 	for t in $(BOOKMARKS); do cp -u ~/org/$$t .; done
 
 	@echo "Check emacs daemon is running and if not, start it"
-	(ps afux | grep 'emacs.*--daemon' | grep -v grep) || emacs --daemon
+	(ps afux | grep -P 'emacs.*--(fg-)?daemon' | grep -v grep) || emacs --daemon
 
 	@echo "Call emacsclient to export bookmarks.org to markdown and copy it as README.md"
 	emacsclient -e '(progn (find-file "~/org/bookmarks.org") (org-md-export-to-markdown))'
