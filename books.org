@@ -890,3 +890,109 @@ airflow tasks test <TASK_NAME> <EXECUTION_DATE>  # runs a single task
     #+BEGIN_SRC sh
 airflow tasks test
     #+END_SRC
+*** Chapter 8 - Building custom components
+- Building a custom hook :: One way of dealing with the complexity of interacting with an API is to encapsulate the code into reusable Airflow hook
+- Designing a custom hook :: All hooks are created as subclasses of abstract =BaseHook= class
+  #+begin_src python
+from airflow.hooks.base_hook import BaseHook
+
+class MovielensHook(BaseHook):
+    def __init__(self, conn_id, ...):
+        super().__init__()
+        self._conn_id = conn_id
+        self._session = None
+
+    def get_conn(self):
+        """ Most Airflow hooks are expected to define a get_conn method
+            responsible for setting up a connection to an external system
+        """
+        ...
+        # Instead of hardcoding credentials, they should be fetched from Airflow credentials store (Admin > Connections)
+        if self._session is None:  # and probably cache sessions, too
+            config = self.get_connection(self._conn_id)
+            ...
+            self._session = ...
+
+    def get_ratings(self, ...):  # public method provided by the hook to be called by the users
+        .,.
+
+    def _get_with_pagination(self, ...):  # private helper method
+        ...
+  #+end_src
+
+  provides nice encapsulation of API logic (here as example for movie ratings)
+- Building DAG with the (custom) hook ::
+  #+begin_src
+airflow_folder
+|-- dags
+|   |-- custom  # example package name for custom (hook etc) logic
+|   |   |-- __init__.py
+|   |   |-- hooks.py  # <-- module containing custom hook code
+|   |-- 01_python.py
+|   |-- 02_hook.py
+|-- docker_compose.yaml
+|-- ...
+  #+end_src
+
+  #+begin_src python
+from custom.hooks import XYZ_Hook  # can be used in this way then
+  #+end_src
+
+  Note, to use the hook, it still need to be wrapped into a PythonOperator that takes care of supplying e.g. correct start/end dates for given DAG run
+- Defining custom operator :: All operators are built as subclasses of =BaseOperator= class
+  #+begin_src python
+from airflow.models import BaseOperator
+from airflow.utils.decorators import apply_defaults
+
+class MyCustomOperator(BaseOperator):
+    ...
+    template_fields = ("_start_date", "_end_date", "_output_path", ...)  # tell Airflow to template these instance variables on our operator
+    ...
+
+    @apply_defaults  # to ensure default arguments are applied to custom operator, in practice, always include it !!
+    def __init__(self,
+                 conn_id,
+                 output_path,
+                 start_date="{{ds}}",  # templating possible with above defined template_fields
+                 end_date="{{next_ds}}",
+                 ...,
+                 ,*kwargs
+    ):
+        super().__init__(self, **kwargs)
+        self._conn_id = conn_id
+        ...
+
+    def execute(self, context: dict):
+        """ main method of airflow operator """
+        ...
+        hook = CustomHook(self._conn_id)
+        try:
+            self.log(f"Fetching ratings for {self._start_date} to {self._end_date}")
+            ratings = list(hooks.get_ratings(start_date=self._start_date, end_date=self._end_date))
+            self.log(f"Fetched {len(ratings)} ratings")
+        finally:
+            hook.close  # to release any ressources
+        ...
+  #+end_src
+- Building custom sensors :: very similar to custom operators, except inherit from =BaseSensorOperator= and define method =poke= instead of =execute=
+  #+begin_src python
+from airflow.sensors.base import BaseSensorOperator
+
+class MyCustomSensor(BaseSensorOperator):
+    ...
+    def poke(self, context: dict):
+        ...
+  #+end_src
+- Bootstrapping a Python package :: Instead of putting custom logic into airflow directory, creating a Python package and publishing/putting to a specific file location might be superior for bigger projects
+  #+begin_src shell
+$ tree airflow-custom-package
+airflow-custom-package
+|-- src
+    |-- airflow_custom_package
+        |-- __init__.py
+        |-- hooks.py
+        |-- operators.py
+        |-- sensors.py
+  #+end_src
+
+  Base structure, of course, add tests, etc.
