@@ -3,8 +3,9 @@
 * SQL Antipatterns Volume 1
 Avoiding the Pitfalls of Database Programming
 
-** Chapter 1 - What is an anti pattern
-** Chapter 2 - Jaywalking
+** Part I - Logical database design antipatterns
+*** Chapter 1 - What is an anti pattern
+*** Chapter 2 - Jaywalking
 Use comma separated lists or similar to avoid creating an intersection table for many-to-many relationships
 
 Objective: Store multivalue attributes
@@ -40,7 +41,7 @@ Legitimate usages IMHO:
 
 Solution:
 - Create intersection table
-** Chapter 3 - Naive Trees
+*** Chapter 3 - Naive Trees
 Table referencing tree structure as adjacency list via a parent foreign key (parent_id) or similar
 
 Objective: Store and query hierarchies
@@ -73,7 +74,7 @@ Solution:
   Querying then is very fast, insertions are not fast
 - Closure table having another Table referencing each node 1 : m all children including the node itself
   Fast querying, fast updating, deletion, inserting, but needs a lot of space
-** Chapter 4 - ID Required
+*** Chapter 4 - ID Required
 Add new column like `id` as pseudo key or surrogate key to every table so that every row can be addressed uniquely
 while also allowing all other attributes to contain duplicates
 
@@ -123,7 +124,7 @@ Further solutions IMHO:
   - if it is unsure whether natural keys are guaranteed to stay natural keys in future
   - are too long
   - or have other problems, like they are sensitive and might not be exported or something like that, but you still need them for linking
-** Chapter 5 - Keyless Entry
+*** Chapter 5 - Keyless Entry
 leaving out referential integrity to simplify database design/architecture/programming
 instead of fail early whenever a user submitted invalid data
 
@@ -160,7 +161,7 @@ Legitimate usages IMHO:
 Solution:
 - Declare constraints
 - Define cascading updates
-** Chapter 6 - Entity-Attribute-Value
+*** Chapter 6 - Entity-Attribute-Value
 support variable attribute via a 2nd table with columns like (id, attr_name, attr_value)
 also calls open schema, schemaless, name-value pairs
 with:
@@ -246,7 +247,7 @@ Further Solutions IMHO:
  - Note: You should not design a database to work with such a schema intentionally
          That's a workaround if the input data is in key value format and SMEs etc are used to work with it to some degree,
          but so you have to keep it in such a raw format, but still would want to write proper SQL for further work.
-** Chapter 7 - Polymorphic Associations
+*** Chapter 7 - Polymorphic Associations
 Reference multiple different parents for a common artefact table (like comments, blogs, images, ...)
 
 Anti-Pattern: Use dual purpose foreign key
@@ -299,6 +300,98 @@ CREATE TABLE Comments(
 );
   #+END_SRC
 
+*** Chapter 8 - Multicolumn Attributes
+Similar problem as for Jaywalking: An attribute seems to belong to a table, but the attribute has multiple values
+This time "solved" with multiple columns instead of one column with comma separated values:
+
+#+begin_src sql
+CREATE TABLE Bugs(
+       bug_id       SERIAL PRIMARY KEY,
+       description  VARCHAR(1000),
+       tag1         VARCHAR(20),
+       tag2         VARCHAR(20),
+       tag3         VARCHAR(20)
+)
+#+end_src
+
+Problems addressed in book:
+- Searching for values gets verbose and error prone
+- Updating or Removing values gets easily a mess
+- Ensuring uniqueness also is close to impossible to achieve
+- Handling growing sets of values might end up in adding more columns
+
+Further problems IMHO:
+- over time there is the tendency to give the order a meaning, but that's hard to interprete as it's never enforced, never consistent and only implicit
+- there is also the tendency that different columns might "specialice" in their own meaning for specific situations
+- the content of the columns is not standardized, so be prepared to have tags written differently meaning the same and vice versa
+
+Note, disappointing:
+- That's a realistic anti-pattern: I've seen tables in regulated environments with attribute1 .. attribute20 with all the problems from above
+  (to be fair, they were more polymorphic as adressed in Chapter 7, but in the end, this was close to impossible to validate or harmonize or and process automatically to a common standard)
+
+Solutions:
+- Create dependent table ::
+  #+begin_src sql
+CREATE TABLE Tags(
+       bug_id   BIGINT UNSIGNED NOT NULL,
+       tag VARCHAR(20),
+       PRIMARY KEY (bug_id, tag),
+       FOREIGN KEY (bug_id) REFERENCES Bugs(bug_id)
+)
+  #+end_src
+*** Cahpter 9 - Metadata Tribbles
+Having data for different years (or whatever) in different tables or columns
+
+Antipattern: Clone tables or columns
+
+Problems addressed in book:
+- Spawning Tables :: which data belongs to which table is error prone, hardly to enforce (data overlapping a year or entering the system late, ...)
+- Managing Data Integrity :: mistakes are tough to find on not be found via relational integrity (e.g. entering data into wrong year table/column)
+- Synchronizing/Updating Data :: might need to be removed from one table/column to another even though it's just a tiny change (e.g. date)
+- Querying across tables :: SELECT ... UNION SELECT ... UNION SELECT ... ... - have fun
+- Synchronizing Metadata :: If a new column has to be added, should it be added to other tables, too? How do we update the SELECT statements properly, ...
+- Managing referential integrity :: dependent tables can't declare foreign key relationships (they might still hold the keys, but then without referential integrity)
+
+Legitimate uses of the antipattern:
+- Archiving (if you only seldom will query historic results)
+
+Solution:
+- Horizontal Partitioning :: Define a (group of columns) as partition keys and let the DBMS do the work for you
+- Vertical Partitioning :: "Outsourcing" big data chunks (BLOBS, TEXT) into an own table and just referencing it
+  IMHO: This also gives the chance to do data compressing or similar
+** Part II - Physical database design antipatterns
+*** Chapter 10 - Rounding errors
+Using floats for anything not a scientific approximate number (used to do approximate calculation)
+
+Problems addressed in this book:
+- Rounding by necessity (and unclear what should be the rounding be)
+- values are *not* stored exaclty (unless they are representable as binary float exactly)
+- need many rounds of explaining what's going on under the hood, even to programmers
+
+Further problems IMHO:
+- aggregations don't follow associativity nor distributivity
+  so a SUM(float_values) <> SUM(float_values) in general between different executions
+- there are often silent casts between float32, float64 when im-/exporting data that can be confusing as hell
+- data problems might be hidden behind a not helpful =NaN= or =inf= representation
+- might give the impression of too precise values
+
+Solution addressed in this book:
+- Use =NUMERIC= data type
+
+Further solutions IMHO:
+- if exact representation matters, but values can have huge different ranges and not correctly anticipated up front
+  use =VARCHAR= data type or similar to represent the exact value
+  Note, this has disadvantages, too:
+  - Precision can be either stored as trailing zeros ("1.00") - disadvantage: might be hard to enforce and ambiguous interpretable, especially if there further im/exports
+    or as seperate column (hard to enforce integrity with the string) and easy to miss for further processing (and SQL does not support dynamic rounding by another column)
+  - further numeric processing either needs casts to =FLOAT= or you need to store the numeric value next to it (but can't enforce the integrity well)
+  - any value can appear in strings from ("N/A", "1e6", "1€6", "=120 + 240", "1.79 (1.24)" - and yes, all of these were entries from a regulated database)
+  - any errors are silently suppressed as =FLOAT(nonsense)= yields =NULL= not an error
+  - so, if there is the slightest chance to represent it via =NUMERIC= value, use it
+- make the number value a dimension (put it into an own table with all the different representations and conventions used to convert)
+- especially if working with many im-/exports to non SQL data stores (JSON and similiar)
+  storing =INT= and give an information where the decimal point is intended to be, e.g. store (=cents_dollar= as =INT= and not =dollar= as numeric)
+  does not work very often and still has error/confusing potential and hard to alter in case another precision is necessary
 
 * Data Pipelines with Apache Airflow
 ** Part I - Getting Started

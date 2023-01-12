@@ -1,37 +1,37 @@
 
 # Table of Contents
 
-1.  [Papers](#org9dbd566)
-    1.  [Misc](#org625baec)
-        1.  [What does it mean to understand a neural network? (Lillicrap, Kording: July 2019)](#org84494dc)
-        2.  [Tabular Data: Deep Learning is Not All You Need (Shwartz-Ziv, Ravid, and Amitai Armon: November 2021)](#orgc6b0218)
-        3.  [A ConvNet for the 2020s (Liu, Mao, Wu, Feichtenhofer, et al: March 2022)](#orgdb1687b)
-        4.  [A Simple Framework for Contrastive Learning of Visual Representations (Chen, Kornblinth, Norouzi, Hinton: July 2020)](#org55d52bb)
-        5.  [EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks (Mingxing Tan, Quoc V. Le: Sep 2020)](#org21896da)
-        6.  [[[https://proceedings.neurips.cc/paper/2020/file/747e32ab0fea7fbd2ad9ec03daa3f840-Paper.pdf][Pushing the Limits of Narrow Precision Inferencing](#org47ff3ff)
-        7.  [AdderNet: Do We Really Need Multiplications in Deep Learning (Chen, Wang, Xu, et al: July 2021)](#org435b1cf)
-    2.  [NLP](#org78e0cdb)
-        1.  [Pretrained Language Model Papers: https://github.com/thunlp/PLMpapers](#orgdce6d8c)
-    3.  [Computer Vision](#orga6b6d3c)
-        1.  [Fine-tuning CNN Image Retrievalwith No Human Annotation (Radenovic, Tolias, Chum: Jul 2018)](#org3740a4d)
-        2.  [Squeeze-and-Excitation Networks (Hu, Chen, Albanie, Sun, Wu: Mai 2019)](#orga41bf83)
-        3.  [EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks (Tan, Le: May/June 2019)](#orgcaed3a5)
-        4.  [Natural Adversarial Examples (Hendrycks, Zhao, Basart, Steinhardt, Song: July 2019)](#org6a548a7)
-    4.  [NLP](#orgd5292b9)
-        1.  [XLNet: Generalized Autoregressive Pretraining for Language Understanding (Yang, Dai, Yang, Carbonelle, Salakhutdinov, V. Le: June 2019)](#org77fc1a0)
+1.  [Papers](#org48ebc83)
+    1.  [Misc](#org24d8586)
+        1.  [What does it mean to understand a neural network? (Lillicrap, Kording: July 2019)](#org3164cb4)
+        2.  [Tabular Data: Deep Learning is Not All You Need (Shwartz-Ziv, Ravid, and Amitai Armon: November 2021)](#org61ff54a)
+        3.  [A ConvNet for the 2020s (Liu, Mao, Wu, Feichtenhofer, et al: March 2022)](#org84fcb42)
+        4.  [A Simple Framework for Contrastive Learning of Visual Representations (Chen, Kornblinth, Norouzi, Hinton: July 2020)](#org3f9d89a)
+        5.  [EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks (Mingxing Tan, Quoc V. Le: Sep 2020)](#orgd9ff1fa)
+        6.  [[[https://proceedings.neurips.cc/paper/2020/file/747e32ab0fea7fbd2ad9ec03daa3f840-Paper.pdf][Pushing the Limits of Narrow Precision Inferencing](#org1b87f2b)
+        7.  [AdderNet: Do We Really Need Multiplications in Deep Learning (Chen, Wang, Xu, et al: July 2021)](#org3d12758)
+    2.  [NLP](#orgb89e000)
+        1.  [Pretrained Language Model Papers: https://github.com/thunlp/PLMpapers](#orgecb78a9)
+    3.  [Computer Vision](#org9f108e4)
+        1.  [Fine-tuning CNN Image Retrievalwith No Human Annotation (Radenovic, Tolias, Chum: Jul 2018)](#org0d4be01)
+        2.  [Squeeze-and-Excitation Networks (Hu, Chen, Albanie, Sun, Wu: Mai 2019)](#orgb543b3a)
+        3.  [EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks (Tan, Le: May/June 2019)](#orgc1b3caf)
+        4.  [Natural Adversarial Examples (Hendrycks, Zhao, Basart, Steinhardt, Song: July 2019)](#org7e374e1)
+    4.  [NLP](#org9124546)
+        1.  [XLNet: Generalized Autoregressive Pretraining for Language Understanding (Yang, Dai, Yang, Carbonelle, Salakhutdinov, V. Le: June 2019)](#orga3308d2)
 
 
-<a id="org9dbd566"></a>
+<a id="org48ebc83"></a>
 
 # Papers
 
 
-<a id="org625baec"></a>
+<a id="org24d8586"></a>
 
 ## Misc
 
 
-<a id="org84494dc"></a>
+<a id="org3164cb4"></a>
 
 ### [What does it mean to understand a neural network?](http://arxiv.org/abs/1907.06374v1) (Lillicrap, Kording: July 2019)
 
@@ -41,7 +41,7 @@ networks is that we can inspect them and play around with them with ease, as we 
 the whole information.
 
 
-<a id="orgc6b0218"></a>
+<a id="org61ff54a"></a>
 
 ### [Tabular Data: Deep Learning is Not All You Need](https://arxiv.org/abs/2106.03253) (Shwartz-Ziv, Ravid, and Amitai Armon: November 2021)
 
@@ -61,7 +61,7 @@ the whole information.
 -   XGBoost can be significantly faster then the deep networks (more than a magnitude)
 
 
-<a id="orgdb1687b"></a>
+<a id="org84fcb42"></a>
 
 ### [A ConvNet for the 2020s](https://arxiv.org/pdf/2201.03545.pdf) (Liu, Mao, Wu, Feichtenhofer, et al: March 2022)
 
@@ -92,7 +92,7 @@ the whole information.
     and there is no need to adjust the input patch size or interpolate absolute/relatve position biases
 
 
-<a id="org55d52bb"></a>
+<a id="org3f9d89a"></a>
 
 ### [A Simple Framework for Contrastive Learning of Visual Representations](https://arxiv.org/pdf/2002.05709.pdf) (Chen, Kornblinth, Norouzi, Hinton: July 2020)
 
@@ -115,7 +115,7 @@ the whole information.
 -   no extra negative sampling, other 2(N-1) augmented examples within a minibatch as negative example
 
 
-<a id="org21896da"></a>
+<a id="orgd9ff1fa"></a>
 
 ### [EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks](https://arxiv.org/pdf/1905.11946.pdf) (Mingxing Tan, Quoc V. Le: Sep 2020)
 
@@ -139,7 +139,7 @@ the whole information.
 -   **EfficientNets B1 to B7:** scaled up with different phi
 
 
-<a id="org47ff3ff"></a>
+<a id="org1b87f2b"></a>
 
 ### [[<https://proceedings.neurips.cc/paper/2020/file/747e32ab0fea7fbd2ad9ec03daa3f840-Paper.pdf>][Pushing the Limits of Narrow Precision Inferencing
 
@@ -163,7 +163,7 @@ at Cloud Scale with Microsoft Floating Point]] (Microsoft: Dec 2020)
     -   **more effective to split the composition into finer grainer regions:** that align with hardware tiles
 
 
-<a id="org435b1cf"></a>
+<a id="org3d12758"></a>
 
 ### [AdderNet: Do We Really Need Multiplications in Deep Learning](https://arxiv.org/pdf/1912.13200.pdf) (Chen, Wang, Xu, et al: July 2021)
 
@@ -193,32 +193,32 @@ at Cloud Scale with Microsoft Floating Point]] (Microsoft: Dec 2020)
 -   AdderNets can well approximate performance of CNNs of same architecture (checked in the paper up to LeNet-5)
 
 
-<a id="org78e0cdb"></a>
+<a id="orgb89e000"></a>
 
 ## NLP
 
 
-<a id="orgdce6d8c"></a>
+<a id="orgecb78a9"></a>
 
 ### Pretrained Language Model Papers: <https://github.com/thunlp/PLMpapers>
 
 
-<a id="orga6b6d3c"></a>
+<a id="org9f108e4"></a>
 
 ## Computer Vision
 
 
-<a id="org3740a4d"></a>
+<a id="org0d4be01"></a>
 
 ### [Fine-tuning CNN Image Retrievalwith No Human Annotation](https://arxiv.org/pdf/1711.02512.pdf) (Radenovic, Tolias, Chum: Jul 2018)
 
 
-<a id="orga41bf83"></a>
+<a id="orgb543b3a"></a>
 
 ### [Squeeze-and-Excitation Networks](https://arxiv.org/pdf/1709.01507.pdf) (Hu, Chen, Albanie, Sun, Wu: Mai 2019)
 
 
-<a id="orgcaed3a5"></a>
+<a id="orgc1b3caf"></a>
 
 ### [EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks](https://arxiv.org/abs/1905.11946) (Tan, Le: May/June 2019)
 
@@ -228,7 +228,7 @@ at Cloud Scale with Microsoft Floating Point]] (Microsoft: Dec 2020)
 -   Source Code (PyTorch): <https://github.com/lukemelas/EfficientNet-PyTorch>
 
 
-<a id="org6a548a7"></a>
+<a id="org7e374e1"></a>
 
 ### [Natural Adversarial Examples](http://arxiv.org/abs/1907.07174v2) (Hendrycks, Zhao, Basart, Steinhardt, Song: July 2019)
 
@@ -240,12 +240,12 @@ The big dataset could be very helpful to train more robust models and also inspe
 problems that could be tackled by data augmentation or better/other preprocessing.
 
 
-<a id="orgd5292b9"></a>
+<a id="org9124546"></a>
 
 ## NLP
 
 
-<a id="org77fc1a0"></a>
+<a id="orga3308d2"></a>
 
 ### [XLNet: Generalized Autoregressive Pretraining for Language Understanding](https://arxiv.org/abs/1906.08237v1) (Yang, Dai, Yang, Carbonelle, Salakhutdinov, V. Le: June 2019)
 

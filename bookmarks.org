@@ -707,6 +707,7 @@ type            ::=  "b" | "c" | "d" | "e" | "E" | "f" | "F" | "g" | "G" | "n" |
 - https://github.com/modin-project/modin  - scale your pandas workflows by changing one line of code
 - https://github.com/8080labs/ppscore  - Predictive Power Score (PPS) instead of correlation matrices
 - https://github.com/huggingface/knockknock  - get notified when your training/function ends
+- https://github.com/ibis-project/ibis  - Expressive analytics in Python at any scale.
 ***** Databases
 - Ibis Medium Article :: https://towardsdatascience.com/an-introduction-to-ibis-for-python-programmers-2112ea32370d  - A More Pythonic Way To Work With Databases
   Ibis is a Python framework to access data and perform analytical computations from different sources, in a standard way.
@@ -866,6 +867,7 @@ type            ::=  "b" | "c" | "d" | "e" | "E" | "f" | "F" | "g" | "G" | "n" |
 - https://medium.com/pragmatic-programmers/git-config-diff-colormoved-8e2f24af6645
 - https://github.com/dandavison/delta  A syntax-highlighting pager for git, diff, and grep output
   - Installation :: https://dandavison.github.io/delta/installation.html
+- https://github.com/mergestat/mergestat-lite  - Query git repositories with SQL. Generate reports, perform status checks, analyze codebases.
 
 *** Shell/Bash/Zsh
 
@@ -1828,6 +1830,8 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
   - prefer file formats like parquet
   - read pandas user guide
 - https://towardsdatascience.com/an-overview-of-pythons-datatable-package-5d3a97394ee9
+**** Big Data Alternatives
+- https://github.com/ibis-project/ibis  - Expressive analytics in Python at any scale
 *** Data Annotation
 
 - https://towardsdatascience.com/introducing-label-studio-a-swiss-army-knife-of-data-labeling-140c1be92881

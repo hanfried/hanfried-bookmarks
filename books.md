@@ -1,43 +1,53 @@
 
 # Table of Contents
 
-1.  [SQL Antipatterns Volume 1](#org0c79749)
-    1.  [Chapter 1 - What is an anti pattern](#org4e4e0ca)
-    2.  [Chapter 2 - Jaywalking](#org13690d1)
-    3.  [Chapter 3 - Naive Trees](#orged8e48a)
-    4.  [Chapter 4 - ID Required](#org0548b0a)
-    5.  [Chapter 5 - Keyless Entry](#orgb4fbdee)
-    6.  [Chapter 6 - Entity-Attribute-Value](#org8efeb45)
-    7.  [Chapter 7 - Polymorphic Associations](#org2caa884)
-2.  [Data Pipelines with Apache Airflow](#org7d42e91)
-    1.  [Part I - Getting Started](#orgcdfa168)
-        1.  [Chapter 1 - Meet Apache Airflow](#org6302ec6)
-        2.  [Chapter 2 - Anatomy of an Airflow DAG](#orgc9c2aef)
-        3.  [Chapter 3 - Scheduling in Airflow](#org6291313)
-        4.  [Chapter 4 - Templating tasks using the Airflow context](#orge82d0ce)
-        5.  [Chapter 5 - Defining dependencies between tasks](#org39f888e)
-    2.  [Part II - Beyond Basics](#orgd0723c5)
-        1.  [Chapter 6 - Triggering workflows](#orgcf059f2)
-        2.  [Chapter 7 - Communication with external systems](#org9ec230e)
-        3.  [Chapter 8 - Building custom components](#orga44ccb7)
+1.  [SQL Antipatterns Volume 1](#org4e161a6)
+    1.  [Part I - Logical database design antipatterns](#orgc8a8afc)
+        1.  [Chapter 1 - What is an anti pattern](#orgbd9fe1b)
+        2.  [Chapter 2 - Jaywalking](#orgca8eec1)
+        3.  [Chapter 3 - Naive Trees](#org8eedc34)
+        4.  [Chapter 4 - ID Required](#org0761fba)
+        5.  [Chapter 5 - Keyless Entry](#org08d0f03)
+        6.  [Chapter 6 - Entity-Attribute-Value](#org4c9e682)
+        7.  [Chapter 7 - Polymorphic Associations](#org53888c9)
+        8.  [Chapter 8 - Multicolumn Attributes](#org958c81d)
+        9.  [Cahpter 9 - Metadata Tribbles](#org53e26d1)
+    2.  [Part II - Physical database design antipatterns](#org433cd64)
+        1.  [Chapter 10 - Rounding errors](#org67a50e8)
+2.  [Data Pipelines with Apache Airflow](#orge75bdde)
+    1.  [Part I - Getting Started](#orgaf13eed)
+        1.  [Chapter 1 - Meet Apache Airflow](#org8b921f3)
+        2.  [Chapter 2 - Anatomy of an Airflow DAG](#org25dd8ed)
+        3.  [Chapter 3 - Scheduling in Airflow](#orga53adc4)
+        4.  [Chapter 4 - Templating tasks using the Airflow context](#org7a3d432)
+        5.  [Chapter 5 - Defining dependencies between tasks](#orgba6a63d)
+    2.  [Part II - Beyond Basics](#orgd51b769)
+        1.  [Chapter 6 - Triggering workflows](#org72b96c0)
+        2.  [Chapter 7 - Communication with external systems](#orgf9b56db)
+        3.  [Chapter 8 - Building custom components](#org0822883)
 
 
 
-<a id="org0c79749"></a>
+<a id="org4e161a6"></a>
 
 # SQL Antipatterns Volume 1
 
 Avoiding the Pitfalls of Database Programming
 
 
-<a id="org4e4e0ca"></a>
+<a id="orgc8a8afc"></a>
 
-## Chapter 1 - What is an anti pattern
+## Part I - Logical database design antipatterns
 
 
-<a id="org13690d1"></a>
+<a id="orgbd9fe1b"></a>
 
-## Chapter 2 - Jaywalking
+### Chapter 1 - What is an anti pattern
+
+
+<a id="orgca8eec1"></a>
+
+### Chapter 2 - Jaywalking
 
 Use comma separated lists or similar to avoid creating an intersection table for many-to-many relationships
 
@@ -81,9 +91,9 @@ Solution:
 -   Create intersection table
 
 
-<a id="orged8e48a"></a>
+<a id="org8eedc34"></a>
 
-## Chapter 3 - Naive Trees
+### Chapter 3 - Naive Trees
 
 Table referencing tree structure as adjacency list via a parent foreign key (parent<sub>id</sub>) or similar
 
@@ -124,9 +134,9 @@ Solution:
     Fast querying, fast updating, deletion, inserting, but needs a lot of space
 
 
-<a id="org0548b0a"></a>
+<a id="org0761fba"></a>
 
-## Chapter 4 - ID Required
+### Chapter 4 - ID Required
 
 Add new column like \`id\` as pseudo key or surrogate key to every table so that every row can be addressed uniquely
 while also allowing all other attributes to contain duplicates
@@ -182,9 +192,9 @@ Further solutions IMHO:
     -   or have other problems, like they are sensitive and might not be exported or something like that, but you still need them for linking
 
 
-<a id="orgb4fbdee"></a>
+<a id="org08d0f03"></a>
 
-## Chapter 5 - Keyless Entry
+### Chapter 5 - Keyless Entry
 
 leaving out referential integrity to simplify database design/architecture/programming
 instead of fail early whenever a user submitted invalid data
@@ -229,9 +239,9 @@ Solution:
 -   Define cascading updates
 
 
-<a id="org8efeb45"></a>
+<a id="org4c9e682"></a>
 
-## Chapter 6 - Entity-Attribute-Value
+### Chapter 6 - Entity-Attribute-Value
 
 support variable attribute via a 2nd table with columns like (id, attr<sub>name</sub>, attr<sub>value</sub>)
 also calls open schema, schemaless, name-value pairs
@@ -323,9 +333,9 @@ Further Solutions IMHO:
         but so you have to keep it in such a raw format, but still would want to write proper SQL for further work.
 
 
-<a id="org2caa884"></a>
+<a id="org53888c9"></a>
 
-## Chapter 7 - Polymorphic Associations
+### Chapter 7 - Polymorphic Associations
 
 Reference multiple different parents for a common artefact table (like comments, blogs, images, &#x2026;)
 
@@ -377,17 +387,134 @@ Solutions:
         );
 
 
-<a id="org7d42e91"></a>
+<a id="org958c81d"></a>
+
+### Chapter 8 - Multicolumn Attributes
+
+Similar problem as for Jaywalking: An attribute seems to belong to a table, but the attribute has multiple values
+This time &ldquo;solved&rdquo; with multiple columns instead of one column with comma separated values:
+
+    CREATE TABLE Bugs(
+           bug_id       SERIAL PRIMARY KEY,
+           description  VARCHAR(1000),
+           tag1         VARCHAR(20),
+           tag2         VARCHAR(20),
+           tag3         VARCHAR(20)
+    )
+
+Problems addressed in book:
+
+-   Searching for values gets verbose and error prone
+-   Updating or Removing values gets easily a mess
+-   Ensuring uniqueness also is close to impossible to achieve
+-   Handling growing sets of values might end up in adding more columns
+
+Further problems IMHO:
+
+-   over time there is the tendency to give the order a meaning, but that&rsquo;s hard to interprete as it&rsquo;s never enforced, never consistent and only implicit
+-   there is also the tendency that different columns might &ldquo;specialice&rdquo; in their own meaning for specific situations
+-   the content of the columns is not standardized, so be prepared to have tags written differently meaning the same and vice versa
+
+Note, disappointing:
+
+-   That&rsquo;s a realistic anti-pattern: I&rsquo;ve seen tables in regulated environments with attribute1 .. attribute20 with all the problems from above
+    (to be fair, they were more polymorphic as adressed in Chapter 7, but in the end, this was close to impossible to validate or harmonize or and process automatically to a common standard)
+
+Solutions:
+
+-   **Create dependent table:** CREATE TABLE Tags(
+               bug_id   BIGINT UNSIGNED NOT NULL,
+               tag VARCHAR(20),
+               PRIMARY KEY (bug_id, tag),
+               FOREIGN KEY (bug_id) REFERENCES Bugs(bug_id)
+        )
+
+
+<a id="org53e26d1"></a>
+
+### Cahpter 9 - Metadata Tribbles
+
+Having data for different years (or whatever) in different tables or columns
+
+Antipattern: Clone tables or columns
+
+Problems addressed in book:
+
+-   **Spawning Tables:** which data belongs to which table is error prone, hardly to enforce (data overlapping a year or entering the system late, &#x2026;)
+-   **Managing Data Integrity:** mistakes are tough to find on not be found via relational integrity (e.g. entering data into wrong year table/column)
+-   **Synchronizing/Updating Data:** might need to be removed from one table/column to another even though it&rsquo;s just a tiny change (e.g. date)
+-   **Querying across tables:** SELECT &#x2026; UNION SELECT &#x2026; UNION SELECT &#x2026; &#x2026; - have fun
+-   **Synchronizing Metadata:** If a new column has to be added, should it be added to other tables, too? How do we update the SELECT statements properly, &#x2026;
+-   **Managing referential integrity:** dependent tables can&rsquo;t declare foreign key relationships (they might still hold the keys, but then without referential integrity)
+
+Legitimate uses of the antipattern:
+
+-   Archiving (if you only seldom will query historic results)
+
+Solution:
+
+-   **Horizontal Partitioning:** Define a (group of columns) as partition keys and let the DBMS do the work for you
+-   **Vertical Partitioning:** &ldquo;Outsourcing&rdquo; big data chunks (BLOBS, TEXT) into an own table and just referencing it
+    IMHO: This also gives the chance to do data compressing or similar
+
+
+<a id="org433cd64"></a>
+
+## Part II - Physical database design antipatterns
+
+
+<a id="org67a50e8"></a>
+
+### Chapter 10 - Rounding errors
+
+Using floats for anything not a scientific approximate number (used to do approximate calculation)
+
+Problems addressed in this book:
+
+-   Rounding by necessity (and unclear what should be the rounding be)
+-   values are **not** stored exaclty (unless they are representable as binary float exactly)
+-   need many rounds of explaining what&rsquo;s going on under the hood, even to programmers
+
+Further problems IMHO:
+
+-   aggregations don&rsquo;t follow associativity nor distributivity
+    so a SUM(float<sub>values</sub>) <> SUM(float<sub>values</sub>) in general between different executions
+-   there are often silent casts between float32, float64 when im-/exporting data that can be confusing as hell
+-   data problems might be hidden behind a not helpful `NaN` or `inf` representation
+-   might give the impression of too precise values
+
+Solution addressed in this book:
+
+-   Use `NUMERIC` data type
+
+Further solutions IMHO:
+
+-   if exact representation matters, but values can have huge different ranges and not correctly anticipated up front
+    use `VARCHAR` data type or similar to represent the exact value
+    Note, this has disadvantages, too:
+    -   Precision can be either stored as trailing zeros (&ldquo;1.00&rdquo;) - disadvantage: might be hard to enforce and ambiguous interpretable, especially if there further im/exports
+        or as seperate column (hard to enforce integrity with the string) and easy to miss for further processing (and SQL does not support dynamic rounding by another column)
+    -   further numeric processing either needs casts to `FLOAT` or you need to store the numeric value next to it (but can&rsquo;t enforce the integrity well)
+    -   any value can appear in strings from (&ldquo;N/A&rdquo;, &ldquo;1e6&rdquo;, &ldquo;1€6&rdquo;, &ldquo;=120 + 240&rdquo;, &ldquo;1.79 (1.24)&rdquo; - and yes, all of these were entries from a regulated database)
+    -   any errors are silently suppressed as `FLOAT(nonsense)` yields `NULL` not an error
+    -   so, if there is the slightest chance to represent it via `NUMERIC` value, use it
+-   make the number value a dimension (put it into an own table with all the different representations and conventions used to convert)
+-   especially if working with many im-/exports to non SQL data stores (JSON and similiar)
+    storing `INT` and give an information where the decimal point is intended to be, e.g. store (`cents_dollar` as `INT` and not `dollar` as numeric)
+    does not work very often and still has error/confusing potential and hard to alter in case another precision is necessary
+
+
+<a id="orge75bdde"></a>
 
 # Data Pipelines with Apache Airflow
 
 
-<a id="orgcdfa168"></a>
+<a id="orgaf13eed"></a>
 
 ## Part I - Getting Started
 
 
-<a id="org6302ec6"></a>
+<a id="org8b921f3"></a>
 
 ### Chapter 1 - Meet Apache Airflow
 
@@ -408,7 +535,7 @@ Solutions:
 -   **Summary:** implementing efficient, batch-oriented data pipelines
 
 
-<a id="orgc9c2aef"></a>
+<a id="org25dd8ed"></a>
 
 ### Chapter 2 - Anatomy of an Airflow DAG
 
@@ -426,7 +553,7 @@ Solutions:
     -   Failed tasks can be restarted anywhere in the DAG
 
 
-<a id="org6291313"></a>
+<a id="orga53adc4"></a>
 
 ### Chapter 3 - Scheduling in Airflow
 
@@ -514,7 +641,7 @@ so @daily will run at end of day at midnight
 -   **Best practices for designing tasks:** Airflow tasks: atomicity and idempotency
 
 
-<a id="orge82d0ce"></a>
+<a id="org7a3d432"></a>
 
 ### Chapter 4 - Templating tasks using the Airflow context
 
@@ -760,7 +887,7 @@ so @daily will run at end of day at midnight
         -   ususally when building pipelines, you&rsquo;ll only deal with operators: hooks are used internally in operators
 
 
-<a id="org39f888e"></a>
+<a id="orgba6a63d"></a>
 
 ### Chapter 5 - Defining dependencies between tasks
 
@@ -990,12 +1117,12 @@ so @daily will run at end of day at midnight
         but can combine object oriented tasks piping with >> operator and Taskflow API
 
 
-<a id="orgd0723c5"></a>
+<a id="orgd51b769"></a>
 
 ## Part II - Beyond Basics
 
 
-<a id="orgcf059f2"></a>
+<a id="org72b96c0"></a>
 
 ### Chapter 6 - Triggering workflows
 
@@ -1075,7 +1202,7 @@ so @daily will run at end of day at midnight
     or via REST API with a POST request containing json configuration
 
 
-<a id="org9ec230e"></a>
+<a id="orgf9b56db"></a>
 
 ### Chapter 7 - Communication with external systems
 
@@ -1166,7 +1293,7 @@ so @daily will run at end of day at midnight
             airflow tasks test
 
 
-<a id="orga44ccb7"></a>
+<a id="org0822883"></a>
 
 ### Chapter 8 - Building custom components
 
