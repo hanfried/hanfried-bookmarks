@@ -559,6 +559,30 @@ Nowhere complete, nowhere top selected per se, but some are interesting, so let'
   - people will leave
   - no one knows the Software required
   - the wing software will be made and changed
+- https://blog.devgenius.io/software-development-is-a-marathon-run-in-sprints-d61eed6cb784  - You cannot sprint a marathon
+  Software projects have the expectations of Stephen King (6 pages a day and 360 pages per month)
+  but turn out to be more like George R.R. Martin (Game of Thrones) a book every 5 years and his last book was released in 2012.
+
+  Software development is a long-term process that usually takes months, split into 2 week sprints with many made up deadlines.
+
+  Agile software development creates small deadlines, daily updates and constant deadlines.
+  This diverts time, resources and attention to reporting on progress, instead of making progress.
+
+  These regular deadlines are like someone sprinting at the end of every mile in a marathon.
+  Instead of a steady pace, like most marathon runners do, people get out of breath by sprinting.
+
+  Software development needs a steady pace.
+
+  The deadlines make development teams rush, force development and trade speed for quality.
+  This causes mistakes, lower quality and tires the development team out.
+
+  Anytime you are building something, its common to have underestimated the cost, difficultly and time it will take.
+
+  Software development is a slow process that is more complex than everyone assumes.
+
+  People know it’s difficult but assume their project will be different, not for a valid reason but just because they are on it.
+
+  Steady progress is the process that creates better software and doesn’t break developers.
 
 *** Team Management
 
@@ -583,6 +607,7 @@ Nowhere complete, nowhere top selected per se, but some are interesting, so let'
   - list elements within a workspace
   - validate a JSON/DSL workspace definition
 - https://github.com/mingrammer/diagrams  - Diagram as Code for prototyping cloud system architectures
+- https://draw.io == https://app.diagrams.net/  - open-source, cross-platform diagramming tool
 *** JSON
 
 - https://labs.bishopfox.com/tech-blog/an-exploration-of-json-interoperability-vulnerabilities
