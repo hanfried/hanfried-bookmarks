@@ -1,51 +1,51 @@
 
 # Table of Contents
 
-1.  [SQL Antipatterns Volume 1](#org39af58a)
-    1.  [Part I - Logical database design antipatterns](#org0b03277)
-        1.  [Chapter 1 - What is an anti pattern](#orge5b847a)
-        2.  [Chapter 2 - Jaywalking](#org1d46658)
-        3.  [Chapter 3 - Naive Trees](#org7969ebc)
-        4.  [Chapter 4 - ID Required](#org2dc76e9)
-        5.  [Chapter 5 - Keyless Entry](#org21cf10a)
-        6.  [Chapter 6 - Entity-Attribute-Value](#org8b8554d)
-        7.  [Chapter 7 - Polymorphic Associations](#org5e0867a)
-        8.  [Chapter 8 - Multicolumn Attributes](#org84d8123)
-        9.  [Cahpter 9 - Metadata Tribbles](#org79510c2)
-    2.  [Part II - Physical database design antipatterns](#orgedd0b07)
-        1.  [Chapter 10 - Rounding errors](#orgfad69a6)
-2.  [Data Pipelines with Apache Airflow](#orgb88d5ce)
-    1.  [Part I - Getting Started](#orgdd913f5)
-        1.  [Chapter 1 - Meet Apache Airflow](#org47d6338)
-        2.  [Chapter 2 - Anatomy of an Airflow DAG](#org65f3d6a)
-        3.  [Chapter 3 - Scheduling in Airflow](#orgccbd143)
-        4.  [Chapter 4 - Templating tasks using the Airflow context](#org7efe40a)
-        5.  [Chapter 5 - Defining dependencies between tasks](#org089c1c3)
-    2.  [Part II - Beyond Basics](#orgdab9e1a)
-        1.  [Chapter 6 - Triggering workflows](#org31e3705)
-        2.  [Chapter 7 - Communication with external systems](#org6a0ed53)
-        3.  [Chapter 8 - Building custom components](#orgc86200c)
+1.  [SQL Antipatterns Volume 1](#org006cc38)
+    1.  [Part I - Logical database design antipatterns](#org652baad)
+        1.  [Chapter 1 - What is an anti pattern](#orgfdca94c)
+        2.  [Chapter 2 - Jaywalking](#org1f369d1)
+        3.  [Chapter 3 - Naive Trees](#org8c74e92)
+        4.  [Chapter 4 - ID Required](#org04fdaed)
+        5.  [Chapter 5 - Keyless Entry](#org547bb67)
+        6.  [Chapter 6 - Entity-Attribute-Value](#org0672eee)
+        7.  [Chapter 7 - Polymorphic Associations](#org902d731)
+        8.  [Chapter 8 - Multicolumn Attributes](#orga3df4ba)
+        9.  [Cahpter 9 - Metadata Tribbles](#org40855c7)
+    2.  [Part II - Physical database design antipatterns](#orgbdd0b1e)
+        1.  [Chapter 10 - Rounding errors](#orge6a1498)
+2.  [Data Pipelines with Apache Airflow](#orgc4ef5f5)
+    1.  [Part I - Getting Started](#orga3b4c6f)
+        1.  [Chapter 1 - Meet Apache Airflow](#orgad65dc0)
+        2.  [Chapter 2 - Anatomy of an Airflow DAG](#orgd2d71fd)
+        3.  [Chapter 3 - Scheduling in Airflow](#org149c2e7)
+        4.  [Chapter 4 - Templating tasks using the Airflow context](#orgb69e915)
+        5.  [Chapter 5 - Defining dependencies between tasks](#org1401b0c)
+    2.  [Part II - Beyond Basics](#orgea187dc)
+        1.  [Chapter 6 - Triggering workflows](#org65a9122)
+        2.  [Chapter 7 - Communication with external systems](#org2a5e7e7)
+        3.  [Chapter 8 - Building custom components](#org2095fa5)
 
 
 
-<a id="org39af58a"></a>
+<a id="org006cc38"></a>
 
 # SQL Antipatterns Volume 1
 
 Avoiding the Pitfalls of Database Programming
 
 
-<a id="org0b03277"></a>
+<a id="org652baad"></a>
 
 ## Part I - Logical database design antipatterns
 
 
-<a id="orge5b847a"></a>
+<a id="orgfdca94c"></a>
 
 ### Chapter 1 - What is an anti pattern
 
 
-<a id="org1d46658"></a>
+<a id="org1f369d1"></a>
 
 ### Chapter 2 - Jaywalking
 
@@ -91,7 +91,7 @@ Solution:
 -   Create intersection table
 
 
-<a id="org7969ebc"></a>
+<a id="org8c74e92"></a>
 
 ### Chapter 3 - Naive Trees
 
@@ -134,7 +134,7 @@ Solution:
     Fast querying, fast updating, deletion, inserting, but needs a lot of space
 
 
-<a id="org2dc76e9"></a>
+<a id="org04fdaed"></a>
 
 ### Chapter 4 - ID Required
 
@@ -192,7 +192,7 @@ Further solutions IMHO:
     -   or have other problems, like they are sensitive and might not be exported or something like that, but you still need them for linking
 
 
-<a id="org21cf10a"></a>
+<a id="org547bb67"></a>
 
 ### Chapter 5 - Keyless Entry
 
@@ -239,7 +239,7 @@ Solution:
 -   Define cascading updates
 
 
-<a id="org8b8554d"></a>
+<a id="org0672eee"></a>
 
 ### Chapter 6 - Entity-Attribute-Value
 
@@ -333,7 +333,7 @@ Further Solutions IMHO:
         but so you have to keep it in such a raw format, but still would want to write proper SQL for further work.
 
 
-<a id="org5e0867a"></a>
+<a id="org902d731"></a>
 
 ### Chapter 7 - Polymorphic Associations
 
@@ -387,7 +387,7 @@ Solutions:
         );
 
 
-<a id="org84d8123"></a>
+<a id="orga3df4ba"></a>
 
 ### Chapter 8 - Multicolumn Attributes
 
@@ -430,7 +430,7 @@ Solutions:
         )
 
 
-<a id="org79510c2"></a>
+<a id="org40855c7"></a>
 
 ### Cahpter 9 - Metadata Tribbles
 
@@ -458,12 +458,12 @@ Solution:
     IMHO: This also gives the chance to do data compressing or similar
 
 
-<a id="orgedd0b07"></a>
+<a id="orgbdd0b1e"></a>
 
 ## Part II - Physical database design antipatterns
 
 
-<a id="orgfad69a6"></a>
+<a id="orge6a1498"></a>
 
 ### Chapter 10 - Rounding errors
 
@@ -504,17 +504,17 @@ Further solutions IMHO:
     does not work very often and still has error/confusing potential and hard to alter in case another precision is necessary
 
 
-<a id="orgb88d5ce"></a>
+<a id="orgc4ef5f5"></a>
 
 # Data Pipelines with Apache Airflow
 
 
-<a id="orgdd913f5"></a>
+<a id="orga3b4c6f"></a>
 
 ## Part I - Getting Started
 
 
-<a id="org47d6338"></a>
+<a id="orgad65dc0"></a>
 
 ### Chapter 1 - Meet Apache Airflow
 
@@ -535,7 +535,7 @@ Further solutions IMHO:
 -   **Summary:** implementing efficient, batch-oriented data pipelines
 
 
-<a id="org65f3d6a"></a>
+<a id="orgd2d71fd"></a>
 
 ### Chapter 2 - Anatomy of an Airflow DAG
 
@@ -553,7 +553,7 @@ Further solutions IMHO:
     -   Failed tasks can be restarted anywhere in the DAG
 
 
-<a id="orgccbd143"></a>
+<a id="org149c2e7"></a>
 
 ### Chapter 3 - Scheduling in Airflow
 
@@ -641,7 +641,7 @@ so @daily will run at end of day at midnight
 -   **Best practices for designing tasks:** Airflow tasks: atomicity and idempotency
 
 
-<a id="org7efe40a"></a>
+<a id="orgb69e915"></a>
 
 ### Chapter 4 - Templating tasks using the Airflow context
 
@@ -887,7 +887,7 @@ so @daily will run at end of day at midnight
         -   ususally when building pipelines, you&rsquo;ll only deal with operators: hooks are used internally in operators
 
 
-<a id="org089c1c3"></a>
+<a id="org1401b0c"></a>
 
 ### Chapter 5 - Defining dependencies between tasks
 
@@ -1117,12 +1117,12 @@ so @daily will run at end of day at midnight
         but can combine object oriented tasks piping with >> operator and Taskflow API
 
 
-<a id="orgdab9e1a"></a>
+<a id="orgea187dc"></a>
 
 ## Part II - Beyond Basics
 
 
-<a id="org31e3705"></a>
+<a id="org65a9122"></a>
 
 ### Chapter 6 - Triggering workflows
 
@@ -1202,7 +1202,7 @@ so @daily will run at end of day at midnight
     or via REST API with a POST request containing json configuration
 
 
-<a id="org6a0ed53"></a>
+<a id="org2a5e7e7"></a>
 
 ### Chapter 7 - Communication with external systems
 
@@ -1293,7 +1293,7 @@ so @daily will run at end of day at midnight
             airflow tasks test
 
 
-<a id="orgc86200c"></a>
+<a id="org2095fa5"></a>
 
 ### Chapter 8 - Building custom components
 

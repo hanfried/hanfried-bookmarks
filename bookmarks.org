@@ -14,12 +14,6 @@
 - https://techblog.commercetools.com/easy-steps-to-get-obs-running-for-high-quality-demo-and-presentation-recordings-a6eef311e56e
 - https://www.gulp.de/knowledge-base/recht-und-steuern/unternehmer-selbststaendiger-oder-freiberufler.html
 
-** Bahn
-
-- Anzeige von Bahn API Daten https://marudor.de/
-  Inklusive detaillierte Wagenreihung und Anfahrtspläne für einen Bahnhof
-- https://bahn.guru  - Sparpreis-Finder
-
 ** Business
 *** Misc
 - https://clutch.co/app-developers/resources/what-is-riskiest-assumption-test  - RAT vs MVP
@@ -627,6 +621,7 @@ Nowhere complete, nowhere top selected per se, but some are interesting, so let'
 - https://yamllint.readthedocs.io/en/stable/
 - https://blog.atomist.com/in-defense-of-yaml/
 - https://arp242.net/weblog/yaml_probably_not_so_great_after_all.html
+- https://ruudvanasseldonk.com/2023/01/11/the-yaml-document-from-hell
 *** RegEx
 - https://regex101.com/  - can help you build and test RegExes, as well as break them down and identify its individual parts
 - https://regex-vis.com/  - generates a graph from a RegEx which is very helpful for understanding what the expression actually does
@@ -739,7 +734,7 @@ type            ::=  "b" | "c" | "d" | "e" | "E" | "f" | "F" | "g" | "G" | "n" |
   In a way, you can think of Ibis as writing SQL in Python, with a focus on analytics, more than simply accessing data.
   And aside from SQL databases, you can use it with other backends, including big data systems.
 - Ibis Github :: https://github.com/ibis-project/ibis/
-- Ibis Tutorial :: https://ibis-project.org/docs/3.1.0/tutorial/01-Introduction-to-Ibis/
+- Ibis Home :: https://ibis-project.org/
 ***** Diagrams / QR-Codes
 - https://github.com/mingrammer/diagrams  - lets you draw the cloud system architecture in Python code.
 - https://github.com/x-hw/amazing-qr  - amazing QRCode generator in Python (supporting animated gif)
@@ -805,12 +800,9 @@ type            ::=  "b" | "c" | "d" | "e" | "E" | "f" | "F" | "g" | "G" | "n" |
   *be aware that java.util.zip written in C has serious memory leaks without a good alternative*
 
 *** REST APIs / Web Development / HTML
+**** Misc
 
 - https://medium.com/@aleksei.kornev/production-readiness-checklist-for-backend-applications-8d2b0c57ccec
-- http://www.webpagetest.org/  - checks speed of a web page from different locations, browsers, with auth, protocols ...
-- https://developers.google.com/web/tools/lighthouse - run it against any web
-  page, public or requiring authentication. It has audits for performance,
-  accessibility, progressive web apps, SEO and more.
 - https://hackernoon.com/a-documentation-crash--45006a85c15c
 - https://documentation.divio.com/  - What nobody tells you about documentation
   - Tutorials
@@ -821,6 +813,12 @@ type            ::=  "b" | "c" | "d" | "e" | "E" | "f" | "F" | "g" | "G" | "n" |
 - https://www.freecodecamp.org/news/rest-is-the-new-soap-97ff6c09896d/
 - https://medium.com/dailyjs/what-every-software-engineer-should-know-about-oauth-2-0-10f0ef4998e5
 - https://medium.com/100-days-of-linux/10-curl-commands-that-you-should-know-ee3d032eb351
+**** Web Application testing
+- http://www.webpagetest.org/  - checks speed of a web page from different locations, browsers, with auth, protocols ...
+- https://developers.google.com/web/tools/lighthouse - run it against any web
+  page, public or requiring authentication. It has audits for performance,
+  accessibility, progressive web apps, SEO and more.
+- https://github.com/cobrateam/splinter  - Selenium like python test framework for web applications
 *** HTML
 - https://itnext.io/html-underrated-tags-119ef3e45b94
   - picture :: to have alternative imgs depending on media without all the css/js mash
@@ -1605,6 +1603,11 @@ Read Details about in https://towardsdatascience.com/api-as-a-product-how-to-sel
   intended to be compliant with the DevSec Linux Baseline.
 - Tool https://github.com/hannob/snallygaster  - scan for secret files on HTTP Servers
   Video https://www.youtube.com/watch?v=Bppr9rbmwz4  - Attacking with HTTP Requests
+- https://github.com/deepfence/SecretScanner  - Find secrets and passwords in container images and file systems
+- See also Docker/Container -> Linters
+- https://github.com/prowler-cloud/prowler  - Open Source Security tool
+  to perform Cloud Security best practices assessments, audits, incident response, continuous monitoring, hardening and forensics readiness.
+  It contains hundreds of controls covering CIS, PCI-DSS, ISO27001, GDPR, HIPAA, FFIEC, SOC2, AWS FTR, ENS and custom security frameworks
 
 ** Data Science / ML / NLP :DataScience:
 *** Misc
@@ -1990,7 +1993,6 @@ In all use cases, the information extraction is based on analysing the semantic 
 - https://github.com/sannykim/transformers  - a collection of resources to study Transformers in depth
 - https://medium.com/inside-machine-learning/what-is-a-transformer-d07dd1fbec04
 - http://nlp.seas.harvard.edu/2018/04/03/attention.html  - annotated implementation of a transformer
-- http://mostafadehghani.com/2019/05/05/universal-transformers/
 - https://medium.com/tensorflow/lingvo-a-tensorflow-framework-for-sequence-modeling-8b1d6ffba5bb
 - https://slator.com/technology/is-googles-new-lingvo-framework-a-big-deal-for-machine-translation/
 **** BERT

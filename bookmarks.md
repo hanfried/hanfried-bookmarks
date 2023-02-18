@@ -1,93 +1,92 @@
 
 # Table of Contents
 
-1.  [Bookmarks](#org1eb49e5)
-    1.  [Misc](#orgec8c0b1)
-    2.  [Bahn](#org61fb156)
-    3.  [Business](#orga6997a7)
-        1.  [Misc](#orgbaccb9a)
-        2.  [Steuern / Finanzamt / Einstufung Selbstständigkeit](#org01265c0)
-    4.  [Personal Development](#orgedde62a)
-    5.  [Gesellschaftliches](#org2a74772)
-    6.  [Software-Development](#org9203254):Software_Development:
-        1.  [Misc](#org099ca24)
-        2.  [Lessons from 50 years experience (Project-Management etc)&#x2026;](#orgb1e9788)
-        3.  [Essays on Programming](#org6370970)
-        4.  [Some Collection of Best of Talks](#orgb1c8771)
-        5.  [Project Management](#org27f4e0f)
-        6.  [Team Management](#org667facc)
-        7.  [Software Architectures / Diagrams](#orgf6aa0e7)
-        8.  [JSON](#org9781b00)
-        9.  [YAML](#org8d65426)
-        10. [RegEx](#orga761002)
-        11. [Python](#org33c913a)
-        12. [Django](#orgfd4f6ca)
-        13. [Javascript / CSS](#org06070f8)
-        14. [Java](#org2bfc7d7)
-        15. [REST APIs / Web Development / HTML](#org402b9eb)
-        16. [HTML](#org643623f)
-        17. [Golang](#org2adf064)
-        18. [Git / GitHub / Versioning](#org870a5e5)
-        19. [Shell/Bash/Zsh](#orgd1e0b2f)
-        20. [Makefiles](#org7a8971c)
-        21. [Databases](#org4d52eb0)
-        22. [Cronjobs](#orgfb010d3)
-        23. [Editors](#orgdbcaca0)
-    7.  [DevOps / Security](#org8aa77dc)
-        1.  [Misc](#org3f9c1a3)
-        2.  [Logging](#orga119d76)
-        3.  [Dashboarding](#org660e977)
-        4.  [Monorepo vs Multirepo](#org851c495)
-        5.  [CI/CD-Pipeline](#orga528498)
-        6.  [Cloud Provisioners](#org4541d59)
-        7.  [Site Reliability](#orge6d915c)
-        8.  [Microservices / Serverless](#org2ce370a)
-        9.  [Docker/Containers](#org0c95a17):Docker:
-        10. [Kubernetes](#orgf79d95d):Kubernetes:
-        11. [SSH](#org86a7a0d)
-        12. [General Computer/Networking/&#x2026; Security](#org96c9e27):Security:
-        13. [Security Tools](#org0720f2f)
-    8.  [Data Science / ML / NLP](#orgd2e6b2d):DataScience:
-        1.  [Misc](#org8ad8b8a)
-        2.  [Compilations](#org6296ab9)
-        3.  [Interesting Analysis](#org08818b1):Analysis:
-        4.  [Kaggle](#org011bccf):Kaggle:
-        5.  [Team (Management, Hiring, Organization, &#x2026;)](#org1de06a8)
-        6.  [Optimizers / Learn Rates](#org3180ac7)
-        7.  [CLI introspection (Visidata/xsv/&#x2026;)](#orge1ac761)
-        8.  [Jupyter Notebooks](#org2b9a5f3)
-        9.  [Google Colab](#org7c2de26)
-        10. [Streamlit](#org9a91075)
-        11. [Pytorch/fastai](#org9a32de4)
-        12. [Web Scraping](#org8d51d27)
-        13. [Datasets](#org7a030d9)
-        14. [Pandas](#org7f9cb42):Pandas:
-        15. [Data Annotation](#orgfc4017a)
-        16. [Data Cleaning](#orgc6161e3)
-        17. [Data Exploration / Feature Engineering](#org28d209d)
-        18. [Data Testing](#org075568e)
-        19. [Data Visualization](#org64085c7):Visualization:
-        20. [NLP](#org39df888):NLP:
-        21. [Computer Vision](#org85c0f9b)
-        22. [Time Series](#org90f1f9f)
-        23. [Graphs](#org4192dd6)
-        24. [Semi Supervised Learning](#orgadc09e7)
-        25. [Deployments](#orgf02c4ff):DevOps:
-    9.  [Data Engineering](#orgdd150a8)
-        1.  [Misc](#org803f1a4)
-        2.  [Spark](#org0e1cdaa)
-        3.  [Data Drift Detection](#orgfa0c2d7)
-    10. [Math](#orge2aaceb):Math:
-    11. [Physics](#orgb454600)
+1.  [Bookmarks](#org7c5f26f)
+    1.  [Misc](#org8921fdb)
+    2.  [Business](#orgca75589)
+        1.  [Misc](#orga0f60cf)
+        2.  [Steuern / Finanzamt / Einstufung Selbstständigkeit](#org71899ef)
+    3.  [Personal Development](#org1c77613)
+    4.  [Gesellschaftliches](#orgaf6d960)
+    5.  [Software-Development](#orgbf18725):Software_Development:
+        1.  [Misc](#orge6dd4b3)
+        2.  [Lessons from 50 years experience (Project-Management etc)&#x2026;](#org60f0f1f)
+        3.  [Essays on Programming](#org1955112)
+        4.  [Some Collection of Best of Talks](#orgc5b8e78)
+        5.  [Project Management](#orge71777c)
+        6.  [Team Management](#org420f456)
+        7.  [Software Architectures / Diagrams](#orgc90fd10)
+        8.  [JSON](#orga51f6d3)
+        9.  [YAML](#orgbd170a9)
+        10. [RegEx](#orgb997931)
+        11. [Python](#org735d5c2)
+        12. [Django](#orgc2130bc)
+        13. [Javascript / CSS](#orgf30984c)
+        14. [Java](#org9f4d708)
+        15. [REST APIs / Web Development / HTML](#org78b8d26)
+        16. [HTML](#org7b1137f)
+        17. [Golang](#org355403c)
+        18. [Git / GitHub / Versioning](#org305509e)
+        19. [Shell/Bash/Zsh](#org7c523bb)
+        20. [Makefiles](#org0655251)
+        21. [Databases](#orged73d02)
+        22. [Cronjobs](#orgb881882)
+        23. [Editors](#org92527d9)
+    6.  [DevOps / Security](#orgaa8ae9a)
+        1.  [Misc](#orgcec2e6c)
+        2.  [Logging](#org57490ee)
+        3.  [Dashboarding](#org6e4575c)
+        4.  [Monorepo vs Multirepo](#org7337c01)
+        5.  [CI/CD-Pipeline](#org1b906c4)
+        6.  [Cloud Provisioners](#org7457ee8)
+        7.  [Site Reliability](#org62c0af2)
+        8.  [Microservices / Serverless](#org6a26008)
+        9.  [Docker/Containers](#orge22a708):Docker:
+        10. [Kubernetes](#orgf08db66):Kubernetes:
+        11. [SSH](#orgb9e87bb)
+        12. [General Computer/Networking/&#x2026; Security](#org8293702):Security:
+        13. [Security Tools](#orgf76e211)
+    7.  [Data Science / ML / NLP](#org1d3fb55):DataScience:
+        1.  [Misc](#org3b9fa72)
+        2.  [Compilations](#org229472a)
+        3.  [Interesting Analysis](#org140d9b7):Analysis:
+        4.  [Kaggle](#orge1fb959):Kaggle:
+        5.  [Team (Management, Hiring, Organization, &#x2026;)](#orgcb5d42d)
+        6.  [Optimizers / Learn Rates](#org0b8ec8f)
+        7.  [CLI introspection (Visidata/xsv/&#x2026;)](#orgc8e6c55)
+        8.  [Jupyter Notebooks](#org82f46bf)
+        9.  [Google Colab](#org6df1cbc)
+        10. [Streamlit](#org2319751)
+        11. [Pytorch/fastai](#org6bb4df7)
+        12. [Web Scraping](#org3bf7115)
+        13. [Datasets](#org844ce2e)
+        14. [Pandas](#orgf29c57c):Pandas:
+        15. [Data Annotation](#org81071bb)
+        16. [Data Cleaning](#org60ce1c0)
+        17. [Data Exploration / Feature Engineering](#orgd26990c)
+        18. [Data Testing](#org6f7a18c)
+        19. [Data Visualization](#org9e65e9a):Visualization:
+        20. [NLP](#org4883b17):NLP:
+        21. [Computer Vision](#org474b672)
+        22. [Time Series](#org29ba1d1)
+        23. [Graphs](#org95e1cdc)
+        24. [Semi Supervised Learning](#orgbb4612d)
+        25. [Deployments](#org5e7bb32):DevOps:
+    8.  [Data Engineering](#org4fe96c3)
+        1.  [Misc](#org60228e3)
+        2.  [Spark](#org88f8f66)
+        3.  [Data Drift Detection](#org87bacd7)
+    9.  [Math](#org4d7e3aa):Math:
+    10. [Physics](#org89135d3)
 
 
 
-<a id="org1eb49e5"></a>
+<a id="org7c5f26f"></a>
 
 # Bookmarks
 
 
-<a id="orgec8c0b1"></a>
+<a id="org8921fdb"></a>
 
 ## Misc
 
@@ -99,21 +98,12 @@
 -   <https://www.gulp.de/knowledge-base/recht-und-steuern/unternehmer-selbststaendiger-oder-freiberufler.html>
 
 
-<a id="org61fb156"></a>
-
-## Bahn
-
--   Anzeige von Bahn API Daten <https://marudor.de/>
-    Inklusive detaillierte Wagenreihung und Anfahrtspläne für einen Bahnhof
--   <https://bahn.guru>  - Sparpreis-Finder
-
-
-<a id="orga6997a7"></a>
+<a id="orgca75589"></a>
 
 ## Business
 
 
-<a id="orgbaccb9a"></a>
+<a id="orga0f60cf"></a>
 
 ### Misc
 
@@ -187,7 +177,7 @@
 -   <https://medium.com/young-coder/how-microsoft-beat-the-innovators-dilemma-5b78e3692ed3>
 
 
-<a id="org01265c0"></a>
+<a id="org71899ef"></a>
 
 ### Steuern / Finanzamt / Einstufung Selbstständigkeit
 
@@ -195,7 +185,7 @@
 -   <https://www.gulp.de/freelancing/wissen/geschaeftswagen/entfernungspauschale-reisekosten-erste-betriebsstaette>
 
 
-<a id="orgedde62a"></a>
+<a id="org1c77613"></a>
 
 ## Personal Development
 
@@ -206,7 +196,7 @@
 -   <https://medium.com/mind-cafe/cheat-codes-for-life-i-know-at-36-that-i-wish-i-knew-at-26-294f6e865db5>
 
 
-<a id="org2a74772"></a>
+<a id="orgaf6d960"></a>
 
 ## Gesellschaftliches
 
@@ -223,12 +213,12 @@
 -   <https://medium.com/street-science/asymmetric-dominance-effect-how-to-make-sense-of-human-irrationality-db3591440e11>
 
 
-<a id="org9203254"></a>
+<a id="orgbf18725"></a>
 
 ## Software-Development     :Software_Development:
 
 
-<a id="org099ca24"></a>
+<a id="orge6dd4b3"></a>
 
 ### Misc
 
@@ -250,7 +240,7 @@
 -   <https://www.netmeister.org/blog/epoch.html>  - About unix timestamps
 
 
-<a id="orgb1e9788"></a>
+<a id="org60f0f1f"></a>
 
 ### Lessons from 50 years experience (Project-Management etc)&#x2026;
 
@@ -483,7 +473,7 @@
     -   My general rule is: “Review early and often, formally and informally.”
 
 
-<a id="org6370970"></a>
+<a id="org1955112"></a>
 
 ### Essays on Programming
 
@@ -631,7 +621,7 @@
 -   <https://www.stilldrinking.org/programming-sucks>  - just epic and an exact description of programming world
 
 
-<a id="orgb1c8771"></a>
+<a id="orgc5b8e78"></a>
 
 ### Some Collection of Best of Talks
 
@@ -650,7 +640,7 @@ Nowhere complete, nowhere top selected per se, but some are interesting, so let&
     -   <https://www.youtube.com/watch?v=Mj5P47F6nJg>  - Structured concurrency
 
 
-<a id="org27f4e0f"></a>
+<a id="orge71777c"></a>
 
 ### Project Management
 
@@ -798,7 +788,7 @@ Nowhere complete, nowhere top selected per se, but some are interesting, so let&
     Steady progress is the process that creates better software and doesn’t break developers.
 
 
-<a id="org667facc"></a>
+<a id="org420f456"></a>
 
 ### Team Management
 
@@ -808,7 +798,7 @@ Nowhere complete, nowhere top selected per se, but some are interesting, so let&
 -   <https://medium.com/static-void-academy/5-things-more-important-than-intelligence-in-software-engineering-23d52fb105b0>
 
 
-<a id="orgf6aa0e7"></a>
+<a id="orgc90fd10"></a>
 
 ### Software Architectures / Diagrams
 
@@ -831,7 +821,7 @@ Nowhere complete, nowhere top selected per se, but some are interesting, so let&
 -   <https://draw.io> == <https://app.diagrams.net/>  - open-source, cross-platform diagramming tool
 
 
-<a id="org9781b00"></a>
+<a id="orga51f6d3"></a>
 
 ### JSON
 
@@ -848,16 +838,17 @@ Nowhere complete, nowhere top selected per se, but some are interesting, so let&
     -   Don’t Use Very Large Numbers
 
 
-<a id="org8d65426"></a>
+<a id="orgbd170a9"></a>
 
 ### YAML
 
 -   <https://yamllint.readthedocs.io/en/stable/>
 -   <https://blog.atomist.com/in-defense-of-yaml/>
 -   <https://arp242.net/weblog/yaml_probably_not_so_great_after_all.html>
+-   <https://ruudvanasseldonk.com/2023/01/11/the-yaml-document-from-hell>
 
 
-<a id="orga761002"></a>
+<a id="orgb997931"></a>
 
 ### RegEx
 
@@ -865,7 +856,7 @@ Nowhere complete, nowhere top selected per se, but some are interesting, so let&
 -   <https://regex-vis.com/>  - generates a graph from a RegEx which is very helpful for understanding what the expression actually does
 
 
-<a id="org33c913a"></a>
+<a id="org735d5c2"></a>
 
 ### Python
 
@@ -991,7 +982,7 @@ Nowhere complete, nowhere top selected per se, but some are interesting, so let&
             In a way, you can think of Ibis as writing SQL in Python, with a focus on analytics, more than simply accessing data.
             And aside from SQL databases, you can use it with other backends, including big data systems.
         -   **Ibis Github:** <https://github.com/ibis-project/ibis/>
-        -   **Ibis Tutorial:** <https://ibis-project.org/docs/3.1.0/tutorial/01-Introduction-to-Ibis/>
+        -   **Ibis Home:** <https://ibis-project.org/>
     
     9.  Diagrams / QR-Codes
     
@@ -1013,7 +1004,7 @@ Nowhere complete, nowhere top selected per se, but some are interesting, so let&
     -   <https://towardsdatascience.com/how-to-set-up-your-python-project-docs-for-success-aab613f79626>
 
 
-<a id="orgfd4f6ca"></a>
+<a id="orgc2130bc"></a>
 
 ### Django
 
@@ -1028,7 +1019,7 @@ Nowhere complete, nowhere top selected per se, but some are interesting, so let&
 -   <https://medium.com/better-programming/how-to-use-drf-serializers-effectively-dc58edc73998>  - How to use django rest framework serializers
 
 
-<a id="org06070f8"></a>
+<a id="orgf30984c"></a>
 
 ### Javascript / CSS
 
@@ -1056,7 +1047,7 @@ Nowhere complete, nowhere top selected per se, but some are interesting, so let&
             text-overflow: ellipsis;
 
 
-<a id="org2bfc7d7"></a>
+<a id="org9f4d708"></a>
 
 ### Java
 
@@ -1064,28 +1055,34 @@ Nowhere complete, nowhere top selected per se, but some are interesting, so let&
     **be aware that java.util.zip written in C has serious memory leaks without a good alternative**
 
 
-<a id="org402b9eb"></a>
+<a id="org78b8d26"></a>
 
 ### REST APIs / Web Development / HTML
 
--   <https://medium.com/@aleksei.kornev/production-readiness-checklist-for-backend-applications-8d2b0c57ccec>
--   <http://www.webpagetest.org/>  - checks speed of a web page from different locations, browsers, with auth, protocols &#x2026;
--   <https://developers.google.com/web/tools/lighthouse> - run it against any web
-    page, public or requiring authentication. It has audits for performance,
-    accessibility, progressive web apps, SEO and more.
--   <https://hackernoon.com/a-documentation-crash--45006a85c15c>
--   <https://documentation.divio.com/>  - What nobody tells you about documentation
-    -   Tutorials
-    -   How-To-Guides
-    -   Discussions
-    -   Reference
--   <https://medium.com/better-programming/best-practices-for-versioning-an-api-for-rest-apis-530a9398f311>
--   <https://www.freecodecamp.org/news/rest-is-the-new-soap-97ff6c09896d/>
--   <https://medium.com/dailyjs/what-every-software-engineer-should-know-about-oauth-2-0-10f0ef4998e5>
--   <https://medium.com/100-days-of-linux/10-curl-commands-that-you-should-know-ee3d032eb351>
+1.  Misc
+
+    -   <https://medium.com/@aleksei.kornev/production-readiness-checklist-for-backend-applications-8d2b0c57ccec>
+    -   <https://hackernoon.com/a-documentation-crash--45006a85c15c>
+    -   <https://documentation.divio.com/>  - What nobody tells you about documentation
+        -   Tutorials
+        -   How-To-Guides
+        -   Discussions
+        -   Reference
+    -   <https://medium.com/better-programming/best-practices-for-versioning-an-api-for-rest-apis-530a9398f311>
+    -   <https://www.freecodecamp.org/news/rest-is-the-new-soap-97ff6c09896d/>
+    -   <https://medium.com/dailyjs/what-every-software-engineer-should-know-about-oauth-2-0-10f0ef4998e5>
+    -   <https://medium.com/100-days-of-linux/10-curl-commands-that-you-should-know-ee3d032eb351>
+
+2.  Web Application testing
+
+    -   <http://www.webpagetest.org/>  - checks speed of a web page from different locations, browsers, with auth, protocols &#x2026;
+    -   <https://developers.google.com/web/tools/lighthouse> - run it against any web
+        page, public or requiring authentication. It has audits for performance,
+        accessibility, progressive web apps, SEO and more.
+    -   <https://github.com/cobrateam/splinter>  - Selenium like python test framework for web applications
 
 
-<a id="org643623f"></a>
+<a id="org7b1137f"></a>
 
 ### HTML
 
@@ -1114,7 +1111,7 @@ Nowhere complete, nowhere top selected per se, but some are interesting, so let&
             </video>
 
 
-<a id="org2adf064"></a>
+<a id="org355403c"></a>
 
 ### Golang
 
@@ -1128,7 +1125,7 @@ Nowhere complete, nowhere top selected per se, but some are interesting, so let&
 -   <https://medium.com/a-journey-with-go/go-multiple-errors-management-a67477628cf1>
 
 
-<a id="org870a5e5"></a>
+<a id="org305509e"></a>
 
 ### Git / GitHub / Versioning
 
@@ -1162,7 +1159,7 @@ Nowhere complete, nowhere top selected per se, but some are interesting, so let&
     -   <https://github.com/mergestat/mergestat-lite>  - Query git repositories with SQL. Generate reports, perform status checks, analyze codebases.
 
 
-<a id="orgd1e0b2f"></a>
+<a id="org7c523bb"></a>
 
 ### Shell/Bash/Zsh
 
@@ -1328,7 +1325,7 @@ Nowhere complete, nowhere top selected per se, but some are interesting, so let&
     -   **encguess file:** attempts to guess the encoding of a text file
 
 
-<a id="org7a8971c"></a>
+<a id="org0655251"></a>
 
 ### Makefiles
 
@@ -1336,7 +1333,7 @@ Nowhere complete, nowhere top selected per se, but some are interesting, so let&
 -   <https://nullprogram.com/blog/2017/08/20/>  - A Tutorial on Portable Makefiles
 
 
-<a id="org4d52eb0"></a>
+<a id="orged73d02"></a>
 
 ### Databases
 
@@ -1367,26 +1364,26 @@ A list with items where you need a skilled DBA to understand, but written good e
 -   <https://towardsdatascience.com/the-curious-case-of-mysql-postgresql-and-hive-9e7cae9e52f4>  - subtle changes in behaviour given same syntax
 
 
-<a id="orgfb010d3"></a>
+<a id="orgb881882"></a>
 
 ### Cronjobs
 
 -   <https://github.com/healthchecks/healthchecks>  - A cron monitoring tool written in Python & Django
 
 
-<a id="orgdbcaca0"></a>
+<a id="org92527d9"></a>
 
 ### Editors
 
 1.  <https://elsewebdevelopment.com/neovim-vs-helix-which-is-the-best-vi-vim-style-modal-editor/>
 
 
-<a id="org8aa77dc"></a>
+<a id="orgaa8ae9a"></a>
 
 ## DevOps / Security
 
 
-<a id="org3f9c1a3"></a>
+<a id="orgcec2e6c"></a>
 
 ### Misc
 
@@ -1425,7 +1422,7 @@ A list with items where you need a skilled DBA to understand, but written good e
     5.  Tell a (complete) story (not only for insiders)
 
 
-<a id="orga119d76"></a>
+<a id="org57490ee"></a>
 
 ### Logging
 
@@ -1439,7 +1436,7 @@ A list with items where you need a skilled DBA to understand, but written good e
 -   <https://medium.com/@JaouherK/creating-a-human-and-machine-freindly-logging-format-bb6d4bb01dca>
 
 
-<a id="org660e977"></a>
+<a id="org6e4575c"></a>
 
 ### Dashboarding
 
@@ -1457,7 +1454,7 @@ It is there to prove that the data are easily accessible, comparable, and tracka
 Trapped data is useless data.
 
 
-<a id="org851c495"></a>
+<a id="org7337c01"></a>
 
 ### Monorepo vs Multirepo
 
@@ -1472,7 +1469,7 @@ Trapped data is useless data.
     -   group of Python reviewers for shared code (**really a best practice IMHO**)
 
 
-<a id="orga528498"></a>
+<a id="org1b906c4"></a>
 
 ### CI/CD-Pipeline
 
@@ -1484,7 +1481,7 @@ Trapped data is useless data.
 -   <https://lukeshaughnessy.medium.com/infrastructure-as-code-is-not-the-answer-cfaf4882dcba>
 
 
-<a id="org4541d59"></a>
+<a id="org7457ee8"></a>
 
 ### Cloud Provisioners
 
@@ -1570,7 +1567,7 @@ Trapped data is useless data.
         -   **github:** <https://github.com/Fizzadar/pyinfra>
 
 
-<a id="orge6d915c"></a>
+<a id="org62c0af2"></a>
 
 ### Site Reliability
 
@@ -1609,7 +1606,7 @@ Trapped data is useless data.
     -   <https://medium.com/@copyconstruct/testing-in-production-the-safe-way-18ca102d0ef1>
 
 
-<a id="org2ce370a"></a>
+<a id="org6a26008"></a>
 
 ### Microservices / Serverless
 
@@ -1624,7 +1621,7 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
 -   <https://theburningmonk.com/2019/04/comparing-nuclio-and-aws-lambda/>
 
 
-<a id="org0c95a17"></a>
+<a id="orge22a708"></a>
 
 ### Docker/Containers     :Docker:
 
@@ -1823,7 +1820,7 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
     -   <https://domm.plix.at/perl/2020_06_docker_prune_volumes_by_label.html>
 
 
-<a id="orgf79d95d"></a>
+<a id="orgf08db66"></a>
 
 ### Kubernetes     :Kubernetes:
 
@@ -1951,14 +1948,14 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
     -   <https://medium.com/@pklinker/performance-impacts-of-an-istio-service-mesh-63957a0000b>  - tldr; significant, but not very much
 
 
-<a id="org86a7a0d"></a>
+<a id="orgb9e87bb"></a>
 
 ### SSH
 
 -   <https://medium.com/maverislabs/proxyjump-the-ssh-option-you-probably-never-heard-of-2d7e41d43464>
 
 
-<a id="org96c9e27"></a>
+<a id="org8293702"></a>
 
 ### General Computer/Networking/&#x2026; Security     :Security:
 
@@ -2058,7 +2055,7 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
     -   <https://onezero.medium.com/how-to-totally-secure-your-smartphone-48b7a85a5ed8>
 
 
-<a id="org0720f2f"></a>
+<a id="orgf76e211"></a>
 
 ### Security Tools
 
@@ -2067,14 +2064,19 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
     intended to be compliant with the DevSec Linux Baseline.
 -   Tool <https://github.com/hannob/snallygaster>  - scan for secret files on HTTP Servers
     Video <https://www.youtube.com/watch?v=Bppr9rbmwz4>  - Attacking with HTTP Requests
+-   <https://github.com/deepfence/SecretScanner>  - Find secrets and passwords in container images and file systems
+-   See also Docker/Container -> Linters
+-   <https://github.com/prowler-cloud/prowler>  - Open Source Security tool
+    to perform Cloud Security best practices assessments, audits, incident response, continuous monitoring, hardening and forensics readiness.
+    It contains hundreds of controls covering CIS, PCI-DSS, ISO27001, GDPR, HIPAA, FFIEC, SOC2, AWS FTR, ENS and custom security frameworks
 
 
-<a id="orgd2e6b2d"></a>
+<a id="org1d3fb55"></a>
 
 ## Data Science / ML / NLP     :DataScience:
 
 
-<a id="org8ad8b8a"></a>
+<a id="org3b9fa72"></a>
 
 ### Misc
 
@@ -2097,7 +2099,7 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
     Introductionary, but very well written text
 
 
-<a id="org6296ab9"></a>
+<a id="org229472a"></a>
 
 ### Compilations
 
@@ -2107,7 +2109,7 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
     -   [A ConvNet for the 2020s](https://arxiv.org/pdf/2201.03545.pdf)
 
 
-<a id="org08818b1"></a>
+<a id="org140d9b7"></a>
 
 ### Interesting Analysis     :Analysis:
 
@@ -2118,7 +2120,7 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
 -   <https://towardsdatascience.com/march-madness-analyze-video-to-detect-players-teams-and-who-attempted-the-basket-8cad67745b88>
 
 
-<a id="org011bccf"></a>
+<a id="orge1fb959"></a>
 
 ### Kaggle     :Kaggle:
 
@@ -2126,7 +2128,7 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
 -   <https://towardsdatascience.com/a-story-of-my-first-gold-medal-in-one-kaggle-competition-things-done-and-lessons-learned-c269d9c233d1>
 
 
-<a id="org1de06a8"></a>
+<a id="orgcb5d42d"></a>
 
 ### Team (Management, Hiring, Organization, &#x2026;)
 
@@ -2172,7 +2174,7 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
     -   **Cameron Warren:** Data translation is the key &#x2026; 90% of analytics work results in overly complicated dashboards that die after a week. The power users of dashboards are, you guessed it, just other “data” people that are less technical.
 
 
-<a id="org3180ac7"></a>
+<a id="org0b8ec8f"></a>
 
 ### Optimizers / Learn Rates
 
@@ -2209,7 +2211,7 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
             minibatch_kmeans.fit(train_X_reshaped)
 
 
-<a id="orge1ac761"></a>
+<a id="orgc8e6c55"></a>
 
 ### CLI introspection (Visidata/xsv/&#x2026;)
 
@@ -2222,7 +2224,7 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
 -   <https://github.com/BurntSushi/xsv>  - A fast CSV command line toolkit written in Rust
 
 
-<a id="org2b9a5f3"></a>
+<a id="org82f46bf"></a>
 
 ### Jupyter Notebooks
 
@@ -2238,21 +2240,21 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
 -   <https://github.com/ploomber/ploomber>  - Ploomber is the fastest way to build data pipelines zap. Use your favorite editor (Jupyter, VSCode, PyCharm) to develop interactively and deploy cloud without code changes (Kubernetes, Airflow, AWS Batch, and SLURM). Do you have legacy notebooks? Refactor them into modular pipelines with a single command
 
 
-<a id="org7c2de26"></a>
+<a id="org6df1cbc"></a>
 
 ### Google Colab
 
 -   <https://pub.towardsai.net/use-google-colab-like-a-pro-39a97184358d>
 
 
-<a id="org9a91075"></a>
+<a id="org2319751"></a>
 
 ### Streamlit
 
 -   <https://towardsdatascience.com/how-to-deploy-a-streamlit-app-using-an-amazon-free-ec2-instance-416a41f69dc3>
 
 
-<a id="org9a32de4"></a>
+<a id="org6bb4df7"></a>
 
 ### Pytorch/fastai
 
@@ -2261,14 +2263,14 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
 -   <https://medium.com/huggingface/from-tensorflow-to-pytorch-265f40ef2a28> :PyTorch:tensorflow:
 
 
-<a id="org8d51d27"></a>
+<a id="org3bf7115"></a>
 
 ### Web Scraping
 
 -   <https://medium.com/better-programming/introducing-autoscraper-a-smart-fast-and-lightweight-web-scraper-for-python-20987f52c749>
 
 
-<a id="org7a030d9"></a>
+<a id="org844ce2e"></a>
 
 ### Datasets
 
@@ -2303,7 +2305,7 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
 -   <https://www.si.edu/openaccess>  -  enthält 2D- und 3D-Darstellungen von kulturellen, wissenschaftlichen, historischen, künstlerischen, technischen und Design-Exponaten aus seinen 19 Museen, 9 Forschungszentren, Bibliotheken, Archiven und dem National Zoo. Hinzu kommen Forschungsdaten und Daten zu Sammlungen
 
 
-<a id="org7f9cb42"></a>
+<a id="orgf29c57c"></a>
 
 ### Pandas     :Pandas:
 
@@ -2375,7 +2377,7 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
     -   <https://github.com/ibis-project/ibis>  - Expressive analytics in Python at any scale
 
 
-<a id="orgfc4017a"></a>
+<a id="org81071bb"></a>
 
 ### Data Annotation
 
@@ -2385,14 +2387,14 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
     Similar to OpenRefine maybe, didn&rsquo;t checked it yet
 
 
-<a id="orgc6161e3"></a>
+<a id="org60ce1c0"></a>
 
 ### Data Cleaning
 
 -   <https://counting.substack.com/p/data-cleaning-is-analysis-not-grunt>
 
 
-<a id="org28d209d"></a>
+<a id="orgd26990c"></a>
 
 ### Data Exploration / Feature Engineering
 
@@ -2408,7 +2410,7 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
 -   <https://de.wikipedia.org/wiki/Shapiro-Wilk-Test>  -  Signifikanztest, der die Hypothese überprüft, dass die zugrunde liegende Grundgesamtheit einer Stichprobe normalverteilt
 
 
-<a id="org075568e"></a>
+<a id="org6f7a18c"></a>
 
 ### Data Testing
 
@@ -2429,7 +2431,7 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
     -   **Measurement/Sensor drift:** The input data streams and the generative processes may be fine but there may be drift on the sensor
 
 
-<a id="org64085c7"></a>
+<a id="org9e65e9a"></a>
 
 ### Data Visualization     :Visualization:
 
@@ -2447,7 +2449,7 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
 -   <https://towardsdatascience.com/vis-amz-83dea6fcb059>  - Visualizing 100,000 Products Fast sentence embeddings (fse) for millions of reviews in only a few minutes. :NLP:
 
 
-<a id="org39df888"></a>
+<a id="org4883b17"></a>
 
 ### NLP     :NLP:
 
@@ -2544,7 +2546,6 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
     -   <https://github.com/sannykim/transformers>  - a collection of resources to study Transformers in depth
     -   <https://medium.com/inside-machine-learning/what-is-a-transformer-d07dd1fbec04>
     -   <http://nlp.seas.harvard.edu/2018/04/03/attention.html>  - annotated implementation of a transformer
-    -   <http://mostafadehghani.com/2019/05/05/universal-transformers/>
     -   <https://medium.com/tensorflow/lingvo-a-tensorflow-framework-for-sequence-modeling-8b1d6ffba5bb>
     -   <https://slator.com/technology/is-googles-new-lingvo-framework-a-big-deal-for-machine-translation/>
 
@@ -2581,7 +2582,7 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
     -   <https://medium.com/geekculture/6-chatgpt-mind-blowing-extensions-to-use-it-anywhere-db6638640ec7>
 
 
-<a id="org85c0f9b"></a>
+<a id="org474b672"></a>
 
 ### Computer Vision
 
@@ -2628,7 +2629,7 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
     -   <https://towardsdatascience.com/review-yolov3-you-only-look-once-object-detection-eab75d7a1ba6>
 
 
-<a id="org90f1f9f"></a>
+<a id="org29ba1d1"></a>
 
 ### Time Series
 
@@ -2637,7 +2638,7 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
 -   <https://towardsdatascience.com/anomaly-detection-time-series-4c661f6f165f> - Detect anomaly in time series with facebook Prophet
 
 
-<a id="org4192dd6"></a>
+<a id="org95e1cdc"></a>
 
 ### Graphs
 
@@ -2646,7 +2647,7 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
 -   <https://towardsdatascience.com/an-introduction-to-spark-graphframe-with-examples-analyzing-the-wikipedia-link-graph-67e58c20a107>
 
 
-<a id="orgadc09e7"></a>
+<a id="orgbb4612d"></a>
 
 ### Semi Supervised Learning
 
@@ -2656,7 +2657,7 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
 -   <https://scikit-learn.org/stable/modules/generated/sklearn.semi_supervised.LabelSpreading.html#sklearn.semi_supervised.LabelSpreading>
 
 
-<a id="orgf02c4ff"></a>
+<a id="org5e7bb32"></a>
 
 ### Deployments     :DevOps:
 
@@ -2664,12 +2665,12 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
 -   <https://medium.com/@colinshaw_36798/fully-utilizing-your-deep-learning-gpus-61ee7acd3e57>
 
 
-<a id="orgdd150a8"></a>
+<a id="org4fe96c3"></a>
 
 ## Data Engineering
 
 
-<a id="org803f1a4"></a>
+<a id="org60228e3"></a>
 
 ### Misc
 
@@ -2684,7 +2685,7 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
 -   <https://towardsdatascience.com/designing-your-database-schema-best-practices-31843dc78a8d>  - Star vs Snowflake
 
 
-<a id="org0e1cdaa"></a>
+<a id="org88f8f66"></a>
 
 ### Spark
 
@@ -2692,14 +2693,14 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
 -   <https://selectfrom.dev/spark-performance-tuning-spill-7318363e18cb>
 
 
-<a id="orgfa0c2d7"></a>
+<a id="org87bacd7"></a>
 
 ### Data Drift Detection
 
 -   <https://towardsdatascience.com/checking-model-stability-and-population-shift-with-psi-and-csi-6d12af008783>
 
 
-<a id="orge2aaceb"></a>
+<a id="org4d7e3aa"></a>
 
 ## Math     :Math:
 
@@ -2719,7 +2720,7 @@ Read Details about in <https://towardsdatascience.com/api-as-a-product-how-to-se
 -   <https://towardsdatascience.com/how-to-create-slick-math-animations-like-3blue1brown-in-python-457f74701f68>
 
 
-<a id="orgb454600"></a>
+<a id="org89135d3"></a>
 
 ## Physics
 
